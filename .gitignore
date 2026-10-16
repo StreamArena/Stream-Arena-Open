@@ -1,0 +1,39 @@
+# media and run outputs stay local (see docs/reproduce.md)
+/data/
+/runs/
+/eval/
+/.work/
+/results/
+
+# credentials
+.env
+.env.*
+!.env.example
+
+__pycache__/
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.venv/
+build/
+dist/
+
+# browser runtime of the vendor session backends (npm ci in stream_arena/providers/js)
+node_modules/
+
+# local review and evaluation scratch files
+/local-reports/
+/audit/
+
+# Experiment recordings, sampled outputs, and per-run records stay local
+/recordings/
+/samples/
+/outputs/
+/attempts/
+/traces/
+/replays/
+/logs/
+/videos/
+
+# Generated CPU installation-check assets
+.smoke/

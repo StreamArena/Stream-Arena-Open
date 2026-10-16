@@ -1,0 +1,39 @@
+{
+  "model": "matrix_game_35",
+  "system_id": "matrix_game_35",
+  "model_id": "matrix_game_35",
+  "name": "Matrix-Game 3.5 (distilled, first-person)",
+  "provider": "self-hosted (Riemann Dynamics)",
+  "system_kind": "native",
+  "tracks": [
+    "general_interaction_image"
+  ],
+  "server": {
+    "cmd": "{env}/bin/python {model_dir}/server.py --port {port} --weights {weights}",
+    "port": 18798,
+    "health_timeout_s": 900
+  },
+  "unsupported_ops": [
+    "camera_control",
+    "reference_update"
+  ],
+  "portrait_policy": null,
+  "gpu": {
+    "count": 1
+  },
+  "output": {
+    "width": 1280,
+    "height": 704,
+    "fps": 16
+  },
+  "model_version": "Matrix-Game-3.5-Distilled first-person.safetensors (3-step causal DMD, CFG 3) on Wan2.2-TI2V-5B; code Riemann-Dynamics/Matrix-Game-3.5@fbf7def0",
+  "weights": {
+    "repo": "RiemannDynamics/Matrix-Game-3.5-Distilled@0b38ca0b",
+    "sha256": "de476e7fc0bdd756aafb101a2b80040f65b3ad62dafea109e299aafa599b8094",
+    "base": "Wan-AI/Wan2.2-TI2V-5B@921dbaf3",
+    "depth": "depth-anything/DA3NESTED-GIANT-LARGE-1.1@b2359bdf"
+  },
+  "steps": 3,
+  "license": "code Apache-2.0; weights Apache-2.0 (Matrix-Game-3.5-Distilled, Wan2.2-TI2V-5B) and CC BY-NC 4.0 (DA3NESTED-GIANT-LARGE-1.1, non-commercial)",
+  "notes": "image-anchored world model: text-only start (general_interaction t2v) is impossible, so only the i2v track is registered; static identity camera; user_prompt switches the text condition from the next 12-frame chunk; free-text camera_control and reference_update have no model input"
+}

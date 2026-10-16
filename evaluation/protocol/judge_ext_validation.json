@@ -1,0 +1,116 @@
+{
+  "schema_version": "stream-arena.judge-ext-validation/1",
+  "judge_version": "stream-arena.v1-structured-judge/4-ext/1",
+  "prompts_sha256": "0f3423997b98a44c690bf99ec3f88e6182a92facc301e8995de7817a0d523598",
+  "model": "qwen3.8-max-0902",
+  "criteria": {
+    "false_pass_max": 0.05,
+    "false_fail_max": 0.1,
+    "undetermined_max": 0.1,
+    "blur_lower_min": 0.8
+  },
+  "all_criteria_met": false,
+  "summary": {
+    "classes": 32,
+    "passed": 29
+  },
+  "classes": {
+    "instruction_edit.positive:edit_success": {
+      "meets_criteria": true
+    },
+    "instruction_edit.positive:following": {
+      "meets_criteria": true
+    },
+    "instruction_edit.wrong_target:edit_success": {
+      "meets_criteria": true
+    },
+    "instruction_edit.wrong_target:following": {
+      "meets_criteria": true
+    },
+    "instruction_edit.leaked:edit_success": {
+      "meets_criteria": true
+    },
+    "instruction_edit.unedited:edit_success": {
+      "meets_criteria": true
+    },
+    "instruction_edit.unedited:following": {
+      "meets_criteria": true
+    },
+    "remove_restore.restored:edit_success": {
+      "meets_criteria": true
+    },
+    "remove_restore.unrestored:edit_success": {
+      "meets_criteria": true
+    },
+    "remove_restore.replayed:edit_success": {
+      "meets_criteria": true
+    },
+    "patch_reference.both_slots:edit_success": {
+      "meets_criteria": false
+    },
+    "patch_reference.dropped_slot_a:edit_success": {
+      "meets_criteria": true
+    },
+    "patch_reference.new_slot_missing:edit_success": {
+      "meets_criteria": true
+    },
+    "following_text.positive:following": {
+      "meets_criteria": true
+    },
+    "following_text.ignored:following": {
+      "meets_criteria": true
+    },
+    "following_text.wrong_change:following": {
+      "meets_criteria": true
+    },
+    "reference.own_reference:reference": {
+      "meets_criteria": true
+    },
+    "reference.own_reference:following": {
+      "meets_criteria": true
+    },
+    "reference.other_reference:reference": {
+      "meets_criteria": false
+    },
+    "clip.smooth:continuity": {
+      "meets_criteria": true
+    },
+    "clip.smooth:stability": {
+      "meets_criteria": true
+    },
+    "clip.object_vanishes:continuity": {
+      "meets_criteria": true
+    },
+    "clip.teleport:continuity": {
+      "meets_criteria": true
+    },
+    "patch_instruction.both_slots:edit_success": {
+      "meets_criteria": true
+    },
+    "patch_instruction.dropped_slot_a:edit_success": {
+      "meets_criteria": false
+    },
+    "patch_instruction.new_slot_missing:edit_success": {
+      "meets_criteria": true
+    },
+    "following_camera.positive:following": {
+      "meets_criteria": true
+    },
+    "following_camera.ignored:following": {
+      "meets_criteria": true
+    },
+    "following_camera.wrong_change:following": {
+      "meets_criteria": true
+    },
+    "real_unedited:edit_success": {
+      "meets_criteria": true
+    },
+    "real_restored:edit_success": {
+      "meets_criteria": true
+    },
+    "quality_blur:visual_quality": {
+      "meets_criteria": true
+    }
+  },
+  "validation_basis": "automated; no_human_validated_gold_set; configuration_bound"
+}

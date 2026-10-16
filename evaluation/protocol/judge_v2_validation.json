@@ -1,0 +1,10 @@
+{
+  "schema_version": "stream-arena.judge-v2-validation/1",
+  "judge_version": "stream-arena.v1-structured-judge/4",
+  "prompts_sha256": "e8afa5aceb980ca7a6b372b7a194368c1cdcc6bbffc5cf9a861b26e0719fa4e5",
+  "models": {
+    "primary": "qwen3.8-max-0902",
+    "second": "qwen3-vl-plus"
+  },
+  "validation_basis": "automated; no_human_validated_gold_set; configuration_bound"
+}

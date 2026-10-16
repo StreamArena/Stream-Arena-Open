@@ -1,0 +1,29 @@
+{
+  "system_id": "vivix_a1",
+  "model_id": "vivix_a1",
+  "name": "Vivix A1",
+  "provider": "Vivix",
+  "system_kind": "native",
+  "tracks": [
+    "digital_human_audio"
+  ],
+  "portrait_policy": "benchmark_portrait",
+  "python": "model.py:VivixA1",
+  "model_version": "vivix-a1-stream (provider-assigned version)",
+  "notes": "Audio dialogue; exact benchmark portrait; nova-3 ASR and loongeva_v3.6 voice; Agora media, control WebSocket. Optional dependency: .[vivix]. Needs VIVIX_API_KEY.",
+  "input_adapters": {
+    "digital_human_audio": {
+      "mode": "normalized",
+      "transforms": [
+        {
+          "operation": "audio_resample",
+          "parameters": {
+            "input_rate": 16000,
+            "output_rate": 48000,
+            "method": "linear_continuous"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+ "assets": {
+  "sa.v1.151.performance_portrait": {
+   "bytes": 1339659,
+   "kind": "image",
+   "path": "v1/images/143.png",
+   "role": "performance_portrait",
+   "sha256": "211d74c983a597fdb05c3f3fee07502e81c3eaef17e664132827e1f6d2aa0471"
+  },
+  "sa.v1.151.speech_audio.s1": {
+   "bytes": 165164,
+   "kind": "audio",
+   "path": "v1/audio/133.wav",
+   "role": "speech_audio",
+   "script": "Watch closely here, then observe the distant light.",
+   "sha256": "1b4414e11aae9f2296af1c69604295b927b808f574e58c8461499b5d6daa71ba"
+  }
+ },
+ "dataset_version": "stream_arena_v1.0",
+ "note": "Asset paths are relative to the data root (STREAM_ARENA_DATA).",
+ "population": "excluded"
+}

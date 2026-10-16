@@ -1,0 +1,58 @@
+{
+  "model": "streamv2v",
+  "system_id": "streamv2v_sd15",
+  "model_id": "streamv2v_sd15",
+  "name": "StreamV2V",
+  "provider": "self-hosted (UT Austin)",
+  "system_kind": "native",
+  "tracks": [
+    "instruction_edit"
+  ],
+  "server": {
+    "cmd": "{env}/bin/python {model_dir}/server.py --port {port}",
+    "port": 8777,
+    "health_timeout_s": 1800
+  },
+  "portrait_policy": null,
+  "gpu": {
+    "count": 1
+  },
+  "output": {
+    "width": 640,
+    "height": 384,
+    "fps": 30
+  },
+  "push": {
+    "max_side": 1280,
+    "max_fps": 30
+  },
+  "model_version": "streamv2v@b35f3877e3bc + SD 1.5 (Jiali/stable-diffusion-1.5 @f94658e) + LCM-LoRA @cf2fced + TAESD @614f768",
+  "weights": {
+    "repo": "Jiali/stable-diffusion-1.5 @f94658e + latent-consistency/lcm-lora-sdv1-5 @cf2fced + madebyollin/taesd @614f768",
+    "sha256": {
+      "stable-diffusion-1.5/unet/diffusion_pytorch_model.safetensors": "19da7aaa4b880e59d56843f1fcb4dd9b599c28a1d9d9af7c1143057c8ffae9f1",
+      "stable-diffusion-1.5/text_encoder/model.safetensors": "d008943c017f0092921106440254dbbe00b6a285f7883ec8ba160c3faad88334",
+      "lcm-lora-sdv1-5/pytorch_lora_weights.safetensors": "8f90d840e075ff588a58e22c6586e2ae9a6f7922996ee6649a7f01072333afe4",
+      "taesd/diffusion_pytorch_model.safetensors": "db169d69145ec4ff064e49d99c95fa05d3eb04ee453de35824a6d0f325513549"
+    }
+  },
+  "license": "UT Austin Research License (code); SD 1.5: CreativeML OpenRAIL-M; LCM-LoRA: OpenRAIL++; TAESD: MIT",
+  "steps": 4,
+  "seed": 1,
+  "notes": "Streaming V2V with feature banks, configured as the upstream live-camera demo: SD 1.5 + LCM-LoRA + TAESD, t_index_list [30, 35, 40, 45], denoising batch, cached spatio-temporal attention (cache_interval 4, cache_maxframes 1, ToMe cache) with feature injection 0.8 / threshold 0.98; acceleration none (SDPA cached-attention processor) instead of xformers / TensorRT; demo style LoRAs not loaded. Each text_control instruction is sent verbatim as the new prompt (update_prompt from the next frame; feature bank kept; no rewriting or accumulation; CLIP truncates at 77 tokens). Output 640x384 (384x640 portrait, center crop) at up to 30 fps. Source frames are passed through until the first instruction. No reference path.",
+  "input_adapters": {
+    "instruction_edit": {
+      "mode": "normalized",
+      "transforms": [
+        {
+          "operation": "source_video_normalization",
+          "parameters": {
+            "max_side": 1280,
+            "max_fps": 30,
+            "upscale": false
+          }
+        }
+      ]
+    }
+  }
+}

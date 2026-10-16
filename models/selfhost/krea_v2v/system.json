@@ -1,0 +1,60 @@
+{
+  "model": "krea_v2v",
+  "system_id": "krea_realtime_14b_v2v",
+  "model_id": "krea_realtime_14b_v2v",
+  "name": "Krea Realtime 14B V2V",
+  "provider": "self-hosted (Krea AI)",
+  "system_kind": "native",
+  "tracks": [
+    "instruction_edit"
+  ],
+  "server": {
+    "cmd": "{env}/bin/python {model_dir}/server.py --port {port} --weights {weights}",
+    "port": 8771,
+    "health_timeout_s": 3000
+  },
+  "portrait_policy": null,
+  "gpu": {
+    "count": 1
+  },
+  "output": {
+    "width": 832,
+    "height": 480,
+    "fps": 16
+  },
+  "push": {
+    "max_side": 1280,
+    "max_fps": 16
+  },
+  "model_version": "Krea Realtime 14B: krea-realtime-video-14b.safetensors (Self-Forcing distilled Wan2.1-T2V-14B, causal 3-latent blocks, KV-cache recomputation) in upstream webcam V2V mode, strength 0.8, 4 steps; code krea-ai/realtime-video@acf4b7b4e1a3",
+  "weights": {
+    "repo": "krea/krea-realtime-video@9a2ceea2 (krea-realtime-video-14b.safetensors) + Wan-AI/Wan2.1-T2V-1.3B@37ec5126 (umT5-XXL text encoder, Wan2.1 VAE) + Wan-AI/Wan2.1-T2V-14B config.json",
+    "sha256": {
+      "checkpoints/krea-realtime-video-14b.safetensors": "792f6042a645e227f5d71851845dc4098a7338fec9ec55279f88ebbc3527eec7",
+      "wan_models/Wan2.1-T2V-1.3B/Wan2.1_VAE.pth": "38071ab59bd94681c686fa51d75a1968f64e470262043be31f7a094e442fd981",
+      "wan_models/Wan2.1-T2V-1.3B/models_t5_umt5-xxl-enc-bf16.pth": "7cace0da2b446bbbbc57d031ab6cf163a3d59b366da94e5afe36745b746fd81d"
+    }
+  },
+  "license": {
+    "code": "CC BY-NC-SA 4.0 (krea-ai/realtime-video LICENSE.md)",
+    "weights": "Apache-2.0 (krea/krea-realtime-video model card)"
+  },
+  "steps": 4,
+  "seed": 0,
+  "notes": "Upstream release_server GenerationSession in webcam mode (Krea's own live video-to-video path): every 3-latent block takes the newest live source frames (9 for the first block, then 12 at 16 fps), encodes them with the causal Wan2.1 VAE encoder (cache kept across blocks), noises them to denoising strength 0.8 (demo default) and denoises them in 4 steps (model card / README speed setting; the demo slider defaults to 5) with KV-cache recomputation over 3 context latents. Each text_control instruction is the prompt verbatim: the first starts the session, later ones use upstream's live prompt blend over 4 blocks (weights 0, 1/3, 2/3, 1), acked at the first block with non-zero weight. Source passed through until the first instruction. Output 832x480 at 16 fps for every source (upstream hard-codes 832x480 in its context re-encode; portrait sources are center-cropped); source frames dropped when the model falls behind. Text instructions only: reference_edit not registered. Same weights as krea_realtime_14b (general track).",
+  "input_adapters": {
+    "instruction_edit": {
+      "mode": "normalized",
+      "transforms": [
+        {
+          "operation": "source_video_normalization",
+          "parameters": {
+            "max_side": 1280,
+            "max_fps": 16,
+            "upscale": false
+          }
+        }
+      ]
+    }
+  }
+}

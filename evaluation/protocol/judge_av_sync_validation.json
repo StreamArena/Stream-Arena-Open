@@ -1,0 +1,80 @@
+{
+  "schema_version": "stream-arena.av-sync-validation/1",
+  "judge_version": "stream-arena.v1-av-sync/1",
+  "rule_sha256": "e32a150463e92f3a6f34d21248e6ac8be644cc1dccc2835f5892d34c38bcc769",
+  "prompts_sha256": "b16940c8080d846417a8e6edc405d7806a3138b76c9ef52ea492e69c9bb98492",
+  "model": "gpt-6-astra",
+  "criteria": {
+    "false_pass_max": 0.05,
+    "false_fail_max": 0.1,
+    "undetermined_max": 0.1
+  },
+  "all_criteria_met": false,
+  "summary": {
+    "classes": 20,
+    "passed": 14
+  },
+  "classes": {
+    "dialogue.original:av_sync": {
+      "meets_criteria": true
+    },
+    "dialogue.audio_delay_200:av_sync": {
+      "meets_criteria": false
+    },
+    "dialogue.audio_delay_400:av_sync": {
+      "meets_criteria": true
+    },
+    "dialogue.audio_delay_800:av_sync": {
+      "meets_criteria": true
+    },
+    "dialogue.audio_advance_200:av_sync": {
+      "meets_criteria": false
+    },
+    "dialogue.audio_advance_400:av_sync": {
+      "meets_criteria": true
+    },
+    "dialogue.audio_advance_800:av_sync": {
+      "meets_criteria": true
+    },
+    "dialogue.audio_silent:av_sync": {
+      "meets_criteria": true
+    },
+    "dialogue.other_speech:av_sync": {
+      "meets_criteria": false
+    },
+    "dialogue.frozen_video:av_sync": {
+      "meets_criteria": true
+    },
+    "performance.original:av_sync": {
+      "meets_criteria": true
+    },
+    "performance.audio_delay_200:av_sync": {
+      "meets_criteria": false
+    },
+    "performance.audio_delay_400:av_sync": {
+      "meets_criteria": true
+    },
+    "performance.audio_delay_800:av_sync": {
+      "meets_criteria": true
+    },
+    "performance.audio_advance_200:av_sync": {
+      "meets_criteria": false
+    },
+    "performance.audio_advance_400:av_sync": {
+      "meets_criteria": true
+    },
+    "performance.audio_advance_800:av_sync": {
+      "meets_criteria": true
+    },
+    "performance.audio_silent:av_sync": {
+      "meets_criteria": true
+    },
+    "performance.other_speech:av_sync": {
+      "meets_criteria": false
+    },
+    "performance.frozen_video:av_sync": {
+      "meets_criteria": true
+    }
+  },
+  "validation_basis": "automated; no_human_validated_gold_set; configuration_bound"
+}

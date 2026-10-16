@@ -1,0 +1,57 @@
+{
+  "model": "liveedit",
+  "system_id": "liveedit_1p3b",
+  "model_id": "liveedit_1p3b",
+  "name": "LiveEdit (1.3B)",
+  "provider": "self-hosted (Tsinghua University, HKUST)",
+  "system_kind": "native",
+  "tracks": [
+    "instruction_edit"
+  ],
+  "server": {
+    "cmd": "{env}/bin/python {model_dir}/server.py --port {port}",
+    "port": 8768,
+    "health_timeout_s": 1800
+  },
+  "portrait_policy": null,
+  "gpu": {
+    "count": 1
+  },
+  "output": {
+    "width": 832,
+    "height": 480,
+    "fps": 16
+  },
+  "push": {
+    "max_side": 1280,
+    "max_fps": 16
+  },
+  "model_version": "LiveEdit ar-forcing_002000.pt (stage-3 DMD causal V2V editor, 4 steps) on Wan2.1-T2V-1.3B; code cp-cp/LiveEdit@77a9fcc6ee2e",
+  "weights": {
+    "repo": "cp-cp/LiveEdit@f0269e2a (ar-forcing_002000.pt) + Wan-AI/Wan2.1-T2V-1.3B@37ec5126 (umT5-XXL text encoder, Wan2.1 VAE, DiT config)",
+    "sha256": {
+      "checkpoints/liveedit/ar-forcing_002000.pt": "43676999c322ec5f9137f39e3a78d32b48e7d35d8a8f72c0546ad51052953f95",
+      "wan_models/Wan2.1-T2V-1.3B/models_t5_umt5-xxl-enc-bf16.pth": "7cace0da2b446bbbbc57d031ab6cf163a3d59b366da94e5afe36745b746fd81d",
+      "wan_models/Wan2.1-T2V-1.3B/Wan2.1_VAE.pth": "38071ab59bd94681c686fa51d75a1968f64e470262043be31f7a094e442fd981"
+    }
+  },
+  "license": "code Apache-2.0; checkpoint Apache-2.0 by the GitHub repo licence (the Hugging Face model card states none); Wan2.1-T2V-1.3B Apache-2.0",
+  "steps": 4,
+  "seed": 0,
+  "notes": "Causal chunk-by-chunk instruction editing of the live source: every block of 3 latent frames (9 source frames for the first block of a session, then 12) is VAE-encoded with the causal encoder cache kept across blocks and edited with the source latents concatenated to the noisy latents (upstream design), 4 denoising steps [1000, 750, 500, 250] as in upstream inference (no timestep warp), clean-context KV pass, cached causal decode. Long sessions use upstream's long-video settings (local attention 9 latents, 3 sink latents, window-relative RoPE). Each text_control instruction is the prompt verbatim; an instruction change starts a new causal session on the next live frames (the checkpoint edits one instruction per video). Source passed through until the first instruction. Output 832x480 (480x832 for portrait sources, centre crop) at 16 fps; source frames dropped when the model falls behind. Text instructions only: reference_edit not registered. The AR mask cache (token pruning) is not used.",
+  "input_adapters": {
+    "instruction_edit": {
+      "mode": "normalized",
+      "transforms": [
+        {
+          "operation": "source_video_normalization",
+          "parameters": {
+            "max_side": 1280,
+            "max_fps": 16,
+            "upscale": false
+          }
+        }
+      ]
+    }
+  }
+}

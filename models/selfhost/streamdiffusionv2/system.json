@@ -1,0 +1,58 @@
+{
+  "model": "streamdiffusionv2",
+  "system_id": "streamdiffusionv2_1p3b",
+  "model_id": "streamdiffusionv2_1p3b",
+  "name": "StreamDiffusionV2 1.3B",
+  "provider": "self-hosted (StreamDiffusionV2 team, UT Austin)",
+  "system_kind": "native",
+  "tracks": [
+    "instruction_edit"
+  ],
+  "server": {
+    "cmd": "{env}/bin/python {model_dir}/server.py --port {port}",
+    "port": 8775,
+    "health_timeout_s": 1800
+  },
+  "portrait_policy": null,
+  "gpu": {
+    "count": 1
+  },
+  "output": {
+    "width": 832,
+    "height": 480,
+    "fps": 16
+  },
+  "push": {
+    "max_side": 1280,
+    "max_fps": 16
+  },
+  "model_version": "streamdiffusionv2@6961a5cf2045 (Wan2.1-T2V-1.3B + wan_causal_dmd_v2v)",
+  "weights": {
+    "repo": "jerryfeng/StreamDiffusionV2@2373eb2b (wan_causal_dmd_v2v) + Wan-AI/Wan2.1-T2V-1.3B@37ec5126",
+    "sha256": {
+      "ckpts/wan_causal_dmd_v2v/model.pt": "7fab9eca93eb73d672ee77061d1485580acf0897ab059f6d4c0b8318b43a8930",
+      "wan_models/Wan2.1-T2V-1.3B/diffusion_pytorch_model.safetensors": "96b6b242ca1c2f24e9d02cd6596066fab6d310e2d7538f33ae267cb18d957e8f",
+      "wan_models/Wan2.1-T2V-1.3B/models_t5_umt5-xxl-enc-bf16.pth": "7cace0da2b446bbbbc57d031ab6cf163a3d59b366da94e5afe36745b746fd81d",
+      "wan_models/Wan2.1-T2V-1.3B/Wan2.1_VAE.pth": "38071ab59bd94681c686fa51d75a1968f64e470262043be31f7a094e442fd981"
+    }
+  },
+  "license": "code Apache-2.0; weights Apache-2.0 (Wan2.1-T2V-1.3B, StreamDiffusionV2 checkpoint)",
+  "steps": 2,
+  "seed": 0,
+  "notes": "Prompt-conditioned V2V. Each text_control instruction is sent verbatim as the new prompt (no rewriting, no accumulation of earlier instructions); as in the upstream online demo a prompt change restarts the stream session. Output 832x480 (480x832 for portrait sources, center crop) at 16 fps, 2 denoising steps, noise_scale 0.8, single GPU stream-batch. Source frames are passed through until the first instruction. No reference path (reference_edit not registered).",
+  "input_adapters": {
+    "instruction_edit": {
+      "mode": "normalized",
+      "transforms": [
+        {
+          "operation": "source_video_normalization",
+          "parameters": {
+            "max_side": 1280,
+            "max_fps": 16,
+            "upscale": false
+          }
+        }
+      ]
+    }
+  }
+}

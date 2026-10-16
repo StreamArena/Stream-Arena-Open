@@ -1,0 +1,59 @@
+{
+  "model": "scope_longlive_vace",
+  "system_id": "scope_longlive_vace",
+  "model_id": "scope_longlive_vace",
+  "name": "Daydream Scope (LongLive 1.3B + VACE)",
+  "provider": "self-hosted (Daydream)",
+  "system_kind": "native",
+  "tracks": [
+    "reference_edit"
+  ],
+  "server": {
+    "cmd": "{env}/bin/python {model_dir}/server.py --port {port}",
+    "port": 8769,
+    "health_timeout_s": 1800
+  },
+  "portrait_policy": null,
+  "gpu": {
+    "count": 1
+  },
+  "output": {
+    "width": 832,
+    "height": 480,
+    "fps": 16
+  },
+  "push": {
+    "max_side": 1280,
+    "max_fps": 16
+  },
+  "model_version": "scope@2aced4ded351 (v0.2.5) longlive + VACE 1.3B",
+  "weights": {
+    "repo": "daydreamlive/LongLive-1.3B @7735d25 (models/longlive_base.pt, models/lora.pt) + daydreamlive/WanVideo_comfy @441f3d5 (Wan2_1-VACE_module_1_3B_bf16, umt5-xxl-enc-fp8_e4m3fn) + daydreamlive/Wan2.1-T2V-1.3B @d19e446 (Wan2.1_VAE, tokenizer)",
+    "sha256": {
+      "LongLive-1.3B/models/longlive_base.pt": "10a2aa8fcf89c77d9033f4c117405412a690e289625766619d293f0c5a208ee7",
+      "LongLive-1.3B/models/lora.pt": "c4e43b87d62d4b0614b496773639f1ab170a7ee486dc23407901e9d3a5ebc07a",
+      "WanVideo_comfy/Wan2_1-VACE_module_1_3B_bf16.safetensors": "cbcab35a0fbececa5d0b64af7f1ac1101c3fc61191c407f0d67301ac56fb0574",
+      "WanVideo_comfy/umt5-xxl-enc-fp8_e4m3fn.safetensors": "3fe5173588270c22505d4f9158bb1644b78331b8614206a97e92760b960c9ffa",
+      "Wan2.1-T2V-1.3B/Wan2.1_VAE.pth": "38071ab59bd94681c686fa51d75a1968f64e470262043be31f7a094e442fd981"
+    }
+  },
+  "license": "CC BY-NC-SA 4.0 (Scope code; LongLive-1.3B weights); VACE and Wan2.1 weights Apache-2.0",
+  "steps": 2,
+  "seed": 42,
+  "notes": "Daydream Scope's longlive pipeline (LongLive 1.3B base generator + its LoRA) with VACE enabled, driven as Scope's Video input mode with 'Use Input Video' off (frontend default): 12 live source frames (3 latent frames) per call as latent initialisation (Scope video-mode defaults for longlive: noise_scale 0.7, noise controller, denoising steps [1000, 750]); the reference image as VACE R2V conditioning (context scale 1.0), sent once after each reference change (Scope app semantics, the same policy as scope_sdv2_vace). One reference slot: set/patch/remove/reset applied when the resulting state has exactly one slot, otherwise acked unsupported (2+ slots or an empty state). Reference prompt: 'Replace the <slot scope target> in the video with the one from the reference image, ...' (same template as JoyAI-Video-Edit). Output 832x480 (480x832 portrait, center crop) at 16 fps.",
+  "input_adapters": {
+    "reference_edit": {
+      "mode": "normalized",
+      "transforms": [
+        {
+          "operation": "source_video_normalization",
+          "parameters": {
+            "max_side": 1280,
+            "max_fps": 16,
+            "upscale": false
+          }
+        }
+      ]
+    }
+  }
+}

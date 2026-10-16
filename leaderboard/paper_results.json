@@ -1,0 +1,961 @@
+{
+  "schemaVersion": "stream-arena.paper-results/1",
+  "scope": "149 effective core conditions; three repeats per condition; 4389 runs",
+  "counts": {
+    "coreConfigurations": 49,
+    "coreReportedModels": 39,
+    "coreModelIdentifiers": 45,
+    "coreConfigurationsByTask": {
+      "avatar_performance": 7,
+      "digital_human": 15,
+      "general_interaction": 12,
+      "instruction_edit": 10,
+      "reference_edit": 5
+    }
+  },
+  "manuscriptBaseline": "d97a2761a22b6a0d07a8adf14fb027885bf20559",
+  "aliases": {
+    "aptavatar_comp": "aptavatar",
+    "avatar_forever_comp": "avatar_forever",
+    "avatarforcing_comp": "avatarforcing",
+    "livetalk_comp": "livetalk",
+    "quark_liveavatar_comp": "quark_liveavatar",
+    "soulx_liveact_comp": "soulx_liveact"
+  },
+  "entries": [
+    {
+      "systemId": "aptavatar_comp_audio",
+      "modelId": "aptavatar_comp",
+      "reportedModelId": "aptavatar",
+      "group": "digital_human",
+      "population": "core",
+      "inputProfile": "conversation_audio",
+      "portraitPolicy": "benchmark_portrait",
+      "systemKind": "composition",
+      "name": "AptAvatar 14B",
+      "metrics": {
+        "visual_quality": 68.03,
+        "av_sync": 70.32,
+        "stability": 94.74,
+        "dialogue": 35.98,
+        "identity": 81.0,
+        "overall": 70.01,
+        "overall_common4": 67.26
+      }
+    },
+    {
+      "systemId": "avatar_forever_comp_audio",
+      "modelId": "avatar_forever_comp",
+      "reportedModelId": "avatar_forever",
+      "group": "digital_human",
+      "population": "core",
+      "inputProfile": "conversation_audio",
+      "portraitPolicy": "benchmark_portrait",
+      "systemKind": "composition",
+      "name": "Avatar-Forever 22B",
+      "metrics": {
+        "visual_quality": 50.86,
+        "av_sync": 48.16,
+        "stability": 68.48,
+        "dialogue": 54.92,
+        "identity": 75.23,
+        "overall": 59.53,
+        "overall_common4": 55.6
+      }
+    },
+    {
+      "systemId": "avatarforcing_comp_audio",
+      "modelId": "avatarforcing_comp",
+      "reportedModelId": "avatarforcing",
+      "group": "digital_human",
+      "population": "core",
+      "inputProfile": "conversation_audio",
+      "portraitPolicy": "benchmark_portrait",
+      "systemKind": "composition",
+      "name": "AvatarForcing 1.3B",
+      "metrics": {
+        "visual_quality": 57.17,
+        "av_sync": 0.0,
+        "stability": 87.3,
+        "dialogue": 8.93,
+        "identity": 66.85,
+        "overall": 44.04,
+        "overall_common4": 38.35
+      }
+    },
+    {
+      "systemId": "avtr1_audio",
+      "modelId": "avtr1",
+      "reportedModelId": "avtr1",
+      "group": "digital_human",
+      "population": "core",
+      "inputProfile": "conversation_audio",
+      "portraitPolicy": "benchmark_portrait",
+      "systemKind": "composition",
+      "name": "AVTR-1",
+      "metrics": {
+        "visual_quality": 82.97,
+        "av_sync": 69.37,
+        "stability": 99.87,
+        "dialogue": 54.97,
+        "identity": 88.54,
+        "overall": 79.14,
+        "overall_common4": 76.79
+      }
+    },
+    {
+      "systemId": "liveavatar_full_audio",
+      "modelId": "liveavatar_full",
+      "reportedModelId": "liveavatar_full",
+      "group": "digital_human",
+      "population": "core",
+      "inputProfile": "conversation_audio",
+      "portraitPolicy": "provider_stock",
+      "systemKind": "native",
+      "name": "LiveAvatar FULL",
+      "metrics": {
+        "visual_quality": 76.27,
+        "av_sync": 0.0,
+        "stability": 100.0,
+        "dialogue": 61.36,
+        "identity": null,
+        "overall": 59.4,
+        "overall_common4": 59.4
+      }
+    },
+    {
+      "systemId": "livetalk_comp_audio",
+      "modelId": "livetalk_comp",
+      "reportedModelId": "livetalk",
+      "group": "digital_human",
+      "population": "core",
+      "inputProfile": "conversation_audio",
+      "portraitPolicy": "benchmark_portrait",
+      "systemKind": "composition",
+      "name": "LiveTalk 1.3B",
+      "metrics": {
+        "visual_quality": 61.75,
+        "av_sync": 62.79,
+        "stability": 86.51,
+        "dialogue": 54.4,
+        "identity": 77.51,
+        "overall": 68.59,
+        "overall_common4": 66.36
+      }
+    },
+    {
+      "systemId": "musetalk_audio",
+      "modelId": "musetalk",
+      "reportedModelId": "musetalk",
+      "group": "digital_human",
+      "population": "core",
+      "inputProfile": "conversation_audio",
+      "portraitPolicy": "benchmark_portrait",
+      "systemKind": "composition",
+      "name": "MuseTalk 1.5",
+      "metrics": {
+        "visual_quality": 95.34,
+        "av_sync": 38.09,
+        "stability": 97.11,
+        "dialogue": 54.34,
+        "identity": 88.44,
+        "overall": 74.66,
+        "overall_common4": 71.22
+      }
+    },
+    {
+      "systemId": "quark_liveavatar_comp_audio",
+      "modelId": "quark_liveavatar_comp",
+      "reportedModelId": "quark_liveavatar",
+      "group": "digital_human",
+      "population": "core",
+      "inputProfile": "conversation_audio",
+      "portraitPolicy": "benchmark_portrait",
+      "systemKind": "composition",
+      "name": "Quark Live Avatar 14B",
+      "metrics": {
+        "visual_quality": 56.0,
+        "av_sync": 64.91,
+        "stability": 70.9,
+        "dialogue": 55.01,
+        "identity": 78.1,
+        "overall": 64.98,
+        "overall_common4": 61.7
+      }
+    },
+    {
+      "systemId": "runway_characters_audio",
+      "modelId": "runway_characters",
+      "reportedModelId": "runway_characters",
+      "group": "digital_human",
+      "population": "core",
+      "inputProfile": "conversation_audio",
+      "portraitPolicy": "benchmark_portrait",
+      "systemKind": "native",
+      "name": "Runway Characters",
+      "metrics": {
+        "visual_quality": 57.81,
+        "av_sync": 49.82,
+        "stability": 75.94,
+        "dialogue": 43.53,
+        "identity": 60.4,
+        "overall": 57.49,
+        "overall_common4": 56.77
+      }
+    },
+    {
+      "systemId": "soulx_flashhead_audio",
+      "modelId": "soulx_flashhead",
+      "reportedModelId": "soulx_flashhead",
+      "group": "digital_human",
+      "population": "core",
+      "inputProfile": "conversation_audio",
+      "portraitPolicy": "benchmark_portrait",
+      "systemKind": "composition",
+      "name": "SoulX-FlashHead (Lite)",
+      "metrics": {
+        "visual_quality": 68.43,
+        "av_sync": 29.76,
+        "stability": 91.61,
+        "dialogue": 56.65,
+        "identity": 79.69,
+        "overall": 65.23,
+        "overall_common4": 61.61
+      }
+    },
+    {
+      "systemId": "soulx_flashtalk_audio",
+      "modelId": "soulx_flashtalk",
+      "reportedModelId": "soulx_flashtalk",
+      "group": "digital_human",
+      "population": "core",
+      "inputProfile": "conversation_audio",
+      "portraitPolicy": "benchmark_portrait",
+      "systemKind": "composition",
+      "name": "SoulX-FlashTalk 14B",
+      "metrics": {
+        "visual_quality": 68.9,
+        "av_sync": 66.26,
+        "stability": 95.45,
+        "dialogue": 50.57,
+        "identity": 83.31,
+        "overall": 72.9,
+        "overall_common4": 70.29
+      }
+    },
+    {
+      "systemId": "soulx_liveact_comp_audio",
+      "modelId": "soulx_liveact_comp",
+      "reportedModelId": "soulx_liveact",
+      "group": "digital_human",
+      "population": "core",
+      "inputProfile": "conversation_audio",
+      "portraitPolicy": "benchmark_portrait",
+      "systemKind": "composition",
+      "name": "SoulX-LiveAct 18B",
+      "metrics": {
+        "visual_quality": 64.93,
+        "av_sync": 50.29,
+        "stability": 91.54,
+        "dialogue": 54.98,
+        "identity": 75.09,
+        "overall": 67.36,
+        "overall_common4": 65.43
+      }
+    },
+    {
+      "systemId": "tavus_cvi_full_audio",
+      "modelId": "tavus_cvi_full",
+      "reportedModelId": "tavus_cvi_full",
+      "group": "digital_human",
+      "population": "core",
+      "inputProfile": "conversation_audio",
+      "portraitPolicy": "provider_stock",
+      "systemKind": "native",
+      "name": "Tavus CVI Full",
+      "metrics": {
+        "visual_quality": 75.04,
+        "av_sync": 94.44,
+        "stability": 99.95,
+        "dialogue": 73.91,
+        "identity": null,
+        "overall": 85.83,
+        "overall_common4": 85.83
+      }
+    },
+    {
+      "systemId": "vidu_s2_avatar_audio",
+      "modelId": "vidu_s2_avatar",
+      "reportedModelId": "vidu_s2_avatar",
+      "group": "digital_human",
+      "population": "core",
+      "inputProfile": "conversation_audio",
+      "portraitPolicy": "benchmark_portrait",
+      "systemKind": "native",
+      "name": "Vidu S2 Avatar",
+      "metrics": {
+        "visual_quality": 96.78,
+        "av_sync": 84.87,
+        "stability": 97.83,
+        "dialogue": 60.57,
+        "identity": 90.12,
+        "overall": 86.03,
+        "overall_common4": 85.01
+      }
+    },
+    {
+      "systemId": "vivix_a1_audio",
+      "modelId": "vivix_a1",
+      "reportedModelId": "vivix_a1",
+      "group": "digital_human",
+      "population": "core",
+      "inputProfile": "conversation_audio",
+      "portraitPolicy": "benchmark_portrait",
+      "systemKind": "native",
+      "name": "Vivix A1",
+      "metrics": {
+        "visual_quality": 45.78,
+        "av_sync": 69.15,
+        "stability": 66.83,
+        "dialogue": 50.38,
+        "identity": 75.19,
+        "overall": 61.46,
+        "overall_common4": 58.03
+      }
+    },
+    {
+      "systemId": "aptavatar_performance",
+      "modelId": "aptavatar",
+      "reportedModelId": "aptavatar",
+      "group": "avatar_performance",
+      "population": "core",
+      "inputProfile": "avatar_performance_audio",
+      "portraitPolicy": "benchmark_portrait",
+      "systemKind": "native",
+      "name": "AptAvatar 14B",
+      "metrics": {
+        "visual_quality": 55.55,
+        "av_sync": 98.89,
+        "stability": 78.06,
+        "following": 13.03,
+        "identity": 81.33,
+        "overall": 65.37
+      }
+    },
+    {
+      "systemId": "avatar_forever_performance",
+      "modelId": "avatar_forever",
+      "reportedModelId": "avatar_forever",
+      "group": "avatar_performance",
+      "population": "core",
+      "inputProfile": "avatar_performance_audio",
+      "portraitPolicy": "benchmark_portrait",
+      "systemKind": "native",
+      "name": "Avatar-Forever 22B",
+      "metrics": {
+        "visual_quality": 34.73,
+        "av_sync": 34.66,
+        "stability": 45.31,
+        "following": 6.37,
+        "identity": 74.82,
+        "overall": 39.17
+      }
+    },
+    {
+      "systemId": "avatarforcing_performance",
+      "modelId": "avatarforcing",
+      "reportedModelId": "avatarforcing",
+      "group": "avatar_performance",
+      "population": "core",
+      "inputProfile": "avatar_performance_audio",
+      "portraitPolicy": "benchmark_portrait",
+      "systemKind": "native",
+      "name": "AvatarForcing 1.3B",
+      "metrics": {
+        "visual_quality": 54.32,
+        "av_sync": 18.44,
+        "stability": 71.6,
+        "following": 8.44,
+        "identity": 68.5,
+        "overall": 44.26
+      }
+    },
+    {
+      "systemId": "livetalk_performance",
+      "modelId": "livetalk",
+      "reportedModelId": "livetalk",
+      "group": "avatar_performance",
+      "population": "core",
+      "inputProfile": "avatar_performance_audio",
+      "portraitPolicy": "benchmark_portrait",
+      "systemKind": "native",
+      "name": "LiveTalk 1.3B",
+      "metrics": {
+        "visual_quality": 71.27,
+        "av_sync": 86.44,
+        "stability": 96.06,
+        "following": 16.59,
+        "identity": 83.89,
+        "overall": 70.85
+      }
+    },
+    {
+      "systemId": "quark_liveavatar_performance",
+      "modelId": "quark_liveavatar",
+      "reportedModelId": "quark_liveavatar",
+      "group": "avatar_performance",
+      "population": "core",
+      "inputProfile": "avatar_performance_audio",
+      "portraitPolicy": "benchmark_portrait",
+      "systemKind": "native",
+      "name": "Quark Live Avatar 14B",
+      "metrics": {
+        "visual_quality": 43.51,
+        "av_sync": 98.89,
+        "stability": 55.3,
+        "following": 11.7,
+        "identity": 79.75,
+        "overall": 57.82
+      }
+    },
+    {
+      "systemId": "soulx_liveact_performance",
+      "modelId": "soulx_liveact",
+      "reportedModelId": "soulx_liveact",
+      "group": "avatar_performance",
+      "population": "core",
+      "inputProfile": "avatar_performance_audio",
+      "portraitPolicy": "benchmark_portrait",
+      "systemKind": "native",
+      "name": "SoulX-LiveAct 18B",
+      "metrics": {
+        "visual_quality": 48.39,
+        "av_sync": 48.67,
+        "stability": 64.94,
+        "following": 10.74,
+        "identity": 69.83,
+        "overall": 48.51
+      }
+    },
+    {
+      "systemId": "vidu_s2_avatar_performance_text",
+      "modelId": "vidu_s2_avatar",
+      "reportedModelId": "vidu_s2_avatar",
+      "group": "avatar_performance",
+      "population": "core",
+      "inputProfile": "avatar_performance_audio",
+      "portraitPolicy": "benchmark_portrait",
+      "systemKind": "native",
+      "name": "Vidu S2 Avatar",
+      "metrics": {
+        "visual_quality": 63.68,
+        "av_sync": 99.6,
+        "stability": 97.25,
+        "following": 16.37,
+        "identity": 86.12,
+        "overall": 72.6
+      }
+    },
+    {
+      "systemId": "causal_forcing_1p3b_t2v",
+      "modelId": "causal_forcing_1p3b",
+      "reportedModelId": "causal_forcing_1p3b",
+      "group": "general_interaction",
+      "population": "core",
+      "inputProfile": "general_text_to_video",
+      "portraitPolicy": null,
+      "systemKind": "native",
+      "name": "Causal Forcing++",
+      "metrics": {
+        "visual_quality": 16.02,
+        "stability": 15.83,
+        "following": 3.7,
+        "continuity": 9.04,
+        "overall": 11.14
+      }
+    },
+    {
+      "systemId": "context_forcing_1p3b_t2v",
+      "modelId": "context_forcing_1p3b",
+      "reportedModelId": "context_forcing_1p3b",
+      "group": "general_interaction",
+      "population": "core",
+      "inputProfile": "general_text_to_video",
+      "portraitPolicy": null,
+      "systemKind": "native",
+      "name": "Context Forcing",
+      "metrics": {
+        "visual_quality": 35.7,
+        "stability": 31.03,
+        "following": 7.77,
+        "continuity": 16.49,
+        "overall": 22.75
+      }
+    },
+    {
+      "systemId": "helios_t2v",
+      "modelId": "helios",
+      "reportedModelId": "helios",
+      "group": "general_interaction",
+      "population": "core",
+      "inputProfile": "general_text_to_video",
+      "portraitPolicy": null,
+      "systemKind": "native",
+      "name": "Helios (Distilled)",
+      "metrics": {
+        "visual_quality": 28.79,
+        "stability": 28.03,
+        "following": 4.44,
+        "continuity": 19.89,
+        "overall": 20.29
+      }
+    },
+    {
+      "systemId": "krea_realtime_14b_t2v",
+      "modelId": "krea_realtime_14b",
+      "reportedModelId": "krea_realtime_14b",
+      "group": "general_interaction",
+      "population": "core",
+      "inputProfile": "general_text_to_video",
+      "portraitPolicy": null,
+      "systemKind": "native",
+      "name": "Krea Realtime",
+      "metrics": {
+        "visual_quality": 35.61,
+        "stability": 42.79,
+        "following": 9.62,
+        "continuity": 22.12,
+        "overall": 27.53
+      }
+    },
+    {
+      "systemId": "longlive2_5b_t2v",
+      "modelId": "longlive2_5b",
+      "reportedModelId": "longlive2_5b",
+      "group": "general_interaction",
+      "population": "core",
+      "inputProfile": "general_text_to_video",
+      "portraitPolicy": null,
+      "systemKind": "native",
+      "name": "LongLive 2.0",
+      "metrics": {
+        "visual_quality": 30.08,
+        "stability": 31.84,
+        "following": 9.25,
+        "continuity": 20.74,
+        "overall": 22.98
+      }
+    },
+    {
+      "systemId": "memflow_1p3b_t2v",
+      "modelId": "memflow_1p3b",
+      "reportedModelId": "memflow_1p3b",
+      "group": "general_interaction",
+      "population": "core",
+      "inputProfile": "general_text_to_video",
+      "portraitPolicy": null,
+      "systemKind": "native",
+      "name": "MemFlow",
+      "metrics": {
+        "visual_quality": 40.93,
+        "stability": 40.38,
+        "following": 9.25,
+        "continuity": 29.54,
+        "overall": 30.02
+      }
+    },
+    {
+      "systemId": "reward_forcing_1p3b_t2v",
+      "modelId": "reward_forcing_1p3b",
+      "reportedModelId": "reward_forcing_1p3b",
+      "group": "general_interaction",
+      "population": "core",
+      "inputProfile": "general_text_to_video",
+      "portraitPolicy": null,
+      "systemKind": "native",
+      "name": "Reward Forcing",
+      "metrics": {
+        "visual_quality": 21.72,
+        "stability": 16.05,
+        "following": 4.07,
+        "continuity": 21.4,
+        "overall": 15.81
+      }
+    },
+    {
+      "systemId": "rolling_forcing_1p3b_t2v",
+      "modelId": "rolling_forcing_1p3b",
+      "reportedModelId": "rolling_forcing_1p3b",
+      "group": "general_interaction",
+      "population": "core",
+      "inputProfile": "general_text_to_video",
+      "portraitPolicy": null,
+      "systemKind": "native",
+      "name": "Rolling Forcing",
+      "metrics": {
+        "visual_quality": 45.19,
+        "stability": 44.47,
+        "following": 6.66,
+        "continuity": 24.61,
+        "overall": 30.23
+      }
+    },
+    {
+      "systemId": "self_forcing_1p3b_t2v",
+      "modelId": "self_forcing_1p3b",
+      "reportedModelId": "self_forcing_1p3b",
+      "group": "general_interaction",
+      "population": "core",
+      "inputProfile": "general_text_to_video",
+      "portraitPolicy": null,
+      "systemKind": "native",
+      "name": "Self-Forcing",
+      "metrics": {
+        "visual_quality": 16.28,
+        "stability": 17.05,
+        "following": 5.92,
+        "continuity": 13.62,
+        "overall": 13.22
+      }
+    },
+    {
+      "systemId": "shotstream_1p3b_t2v",
+      "modelId": "shotstream_1p3b",
+      "reportedModelId": "shotstream_1p3b",
+      "group": "general_interaction",
+      "population": "core",
+      "inputProfile": "general_text_to_video",
+      "portraitPolicy": null,
+      "systemKind": "native",
+      "name": "ShotStream",
+      "metrics": {
+        "visual_quality": 33.8,
+        "stability": 20.54,
+        "following": 6.66,
+        "continuity": 9.34,
+        "overall": 17.58
+      }
+    },
+    {
+      "systemId": "yume_5b_t2v",
+      "modelId": "yume_5b",
+      "reportedModelId": "yume_5b",
+      "group": "general_interaction",
+      "population": "core",
+      "inputProfile": "general_text_to_video",
+      "portraitPolicy": null,
+      "systemKind": "native",
+      "name": "Yume 1.5 (720p)",
+      "metrics": {
+        "visual_quality": 25.96,
+        "stability": 27.67,
+        "following": 5.18,
+        "continuity": 26.22,
+        "overall": 21.26
+      }
+    },
+    {
+      "systemId": "zing_0p5_5b_t2v",
+      "modelId": "zing_0p5_5b",
+      "reportedModelId": "zing_0p5_5b",
+      "group": "general_interaction",
+      "population": "core",
+      "inputProfile": "general_text_to_video",
+      "portraitPolicy": null,
+      "systemKind": "native",
+      "name": "Zing-0.5",
+      "metrics": {
+        "visual_quality": 35.6,
+        "stability": 39.14,
+        "following": 2.96,
+        "continuity": 23.65,
+        "overall": 25.34
+      }
+    },
+    {
+      "systemId": "editalive_14b_instruction",
+      "modelId": "editalive_14b",
+      "reportedModelId": "editalive_14b",
+      "group": "instruction_edit",
+      "population": "core",
+      "inputProfile": "edit_instruction",
+      "portraitPolicy": null,
+      "systemKind": "native",
+      "name": "EditaLive (14B)",
+      "metrics": {
+        "visual_quality": 7.86,
+        "stability": 4.12,
+        "following": 12.03,
+        "edit_success": 4.26,
+        "preservation": 23.15,
+        "overall": 10.28
+      }
+    },
+    {
+      "systemId": "joyai_video_edit_instruction",
+      "modelId": "joyai_video_edit",
+      "reportedModelId": "joyai_video_edit",
+      "group": "instruction_edit",
+      "population": "core",
+      "inputProfile": "edit_instruction",
+      "portraitPolicy": null,
+      "systemKind": "native",
+      "name": "JoyAI-Video-Edit",
+      "metrics": {
+        "visual_quality": 11.62,
+        "stability": 9.57,
+        "following": 63.89,
+        "edit_success": 43.52,
+        "preservation": 83.33,
+        "overall": 42.39
+      }
+    },
+    {
+      "systemId": "krea_realtime_14b_v2v_instruction",
+      "modelId": "krea_realtime_14b_v2v",
+      "reportedModelId": "krea_realtime_14b_v2v",
+      "group": "instruction_edit",
+      "population": "core",
+      "inputProfile": "edit_instruction",
+      "portraitPolicy": null,
+      "systemKind": "native",
+      "name": "Krea Realtime 14B V2V",
+      "metrics": {
+        "visual_quality": 1.13,
+        "stability": 0.06,
+        "following": 0.0,
+        "edit_success": 0.0,
+        "preservation": 0.0,
+        "overall": 0.23
+      }
+    },
+    {
+      "systemId": "liveedit_1p3b_instruction",
+      "modelId": "liveedit_1p3b",
+      "reportedModelId": "liveedit_1p3b",
+      "group": "instruction_edit",
+      "population": "core",
+      "inputProfile": "edit_instruction",
+      "portraitPolicy": null,
+      "systemKind": "native",
+      "name": "LiveEdit (1.3B)",
+      "metrics": {
+        "visual_quality": 3.22,
+        "stability": 0.62,
+        "following": 5.37,
+        "edit_success": 1.67,
+        "preservation": 7.04,
+        "overall": 3.58
+      }
+    },
+    {
+      "systemId": "sana_streaming_2b_instruction",
+      "modelId": "sana_streaming_2b",
+      "reportedModelId": "sana_streaming_2b",
+      "group": "instruction_edit",
+      "population": "core",
+      "inputProfile": "edit_instruction",
+      "portraitPolicy": null,
+      "systemKind": "native",
+      "name": "SANA-Streaming 2B",
+      "metrics": {
+        "visual_quality": 15.15,
+        "stability": 9.22,
+        "following": 11.48,
+        "edit_success": 4.63,
+        "preservation": 44.26,
+        "overall": 16.94
+      }
+    },
+    {
+      "systemId": "streamdiffusion_sdturbo_instruction",
+      "modelId": "streamdiffusion_sdturbo",
+      "reportedModelId": "streamdiffusion_sdturbo",
+      "group": "instruction_edit",
+      "population": "core",
+      "inputProfile": "edit_instruction",
+      "portraitPolicy": null,
+      "systemKind": "native",
+      "name": "StreamDiffusion",
+      "metrics": {
+        "visual_quality": 0.04,
+        "stability": 0.0,
+        "following": 0.0,
+        "edit_success": 0.0,
+        "preservation": 1.3,
+        "overall": 0.26
+      }
+    },
+    {
+      "systemId": "streamdiffusionv2_1p3b_instruction",
+      "modelId": "streamdiffusionv2_1p3b",
+      "reportedModelId": "streamdiffusionv2_1p3b",
+      "group": "instruction_edit",
+      "population": "core",
+      "inputProfile": "edit_instruction",
+      "portraitPolicy": null,
+      "systemKind": "native",
+      "name": "StreamDiffusionV2 1.3B",
+      "metrics": {
+        "visual_quality": 0.01,
+        "stability": 0.0,
+        "following": 0.0,
+        "edit_success": 0.0,
+        "preservation": 0.0,
+        "overall": 0.0
+      }
+    },
+    {
+      "systemId": "streamv2v_sd15_instruction",
+      "modelId": "streamv2v_sd15",
+      "reportedModelId": "streamv2v_sd15",
+      "group": "instruction_edit",
+      "population": "core",
+      "inputProfile": "edit_instruction",
+      "portraitPolicy": null,
+      "systemKind": "native",
+      "name": "StreamV2V",
+      "metrics": {
+        "visual_quality": 0.0,
+        "stability": 0.0,
+        "following": 0.0,
+        "edit_success": 0.0,
+        "preservation": 0.56,
+        "overall": 0.11
+      }
+    },
+    {
+      "systemId": "vidu_s2_editing_t2i",
+      "modelId": "vidu_s2_editing",
+      "reportedModelId": "vidu_s2_editing",
+      "group": "instruction_edit",
+      "population": "core",
+      "inputProfile": "edit_instruction",
+      "portraitPolicy": null,
+      "systemKind": "composition",
+      "name": "Vidu S2 Editing",
+      "metrics": {
+        "visual_quality": 22.98,
+        "stability": 13.93,
+        "following": 72.1,
+        "edit_success": 57.2,
+        "preservation": 60.93,
+        "overall": 45.43
+      }
+    },
+    {
+      "systemId": "xmax_x2_instruction",
+      "modelId": "xmax_x2_realtime",
+      "reportedModelId": "xmax_x2_realtime",
+      "group": "instruction_edit",
+      "population": "core",
+      "inputProfile": "edit_instruction",
+      "portraitPolicy": null,
+      "systemKind": "native",
+      "name": "XMax X2.0",
+      "metrics": {
+        "visual_quality": 5.14,
+        "stability": 0.97,
+        "following": 11.3,
+        "edit_success": 2.59,
+        "preservation": 28.52,
+        "overall": 9.7
+      }
+    },
+    {
+      "systemId": "joyai_video_edit_reference",
+      "modelId": "joyai_video_edit",
+      "reportedModelId": "joyai_video_edit",
+      "group": "reference_edit",
+      "population": "core",
+      "inputProfile": "edit_reference_v1_preloaded_a",
+      "portraitPolicy": null,
+      "systemKind": "native",
+      "name": "JoyAI-Video-Edit",
+      "metrics": {
+        "visual_quality": 6.54,
+        "stability": 3.46,
+        "reference": 26.11,
+        "edit_success": 8.89,
+        "preservation": 26.67,
+        "overall": 14.33
+      }
+    },
+    {
+      "systemId": "scope_longlive_vace_reference",
+      "modelId": "scope_longlive_vace",
+      "reportedModelId": "scope_longlive_vace",
+      "group": "reference_edit",
+      "population": "core",
+      "inputProfile": "edit_reference_v1_preloaded_a",
+      "portraitPolicy": null,
+      "systemKind": "native",
+      "name": "Scope (LongLive 1.3B + VACE)",
+      "metrics": {
+        "visual_quality": 2.11,
+        "stability": 2.19,
+        "reference": 0.0,
+        "edit_success": 0.0,
+        "preservation": 2.78,
+        "overall": 1.42
+      }
+    },
+    {
+      "systemId": "scope_sdv2_vace_reference",
+      "modelId": "scope_sdv2_vace",
+      "reportedModelId": "scope_sdv2_vace",
+      "group": "reference_edit",
+      "population": "core",
+      "inputProfile": "edit_reference_v1_preloaded_a",
+      "portraitPolicy": null,
+      "systemKind": "native",
+      "name": "Scope (StreamDiffusionV2 + VACE)",
+      "metrics": {
+        "visual_quality": 0.0,
+        "stability": 0.0,
+        "reference": 0.28,
+        "edit_success": 0.0,
+        "preservation": 0.0,
+        "overall": 0.05
+      }
+    },
+    {
+      "systemId": "vidu_s2_editing_all",
+      "modelId": "vidu_s2_editing",
+      "reportedModelId": "vidu_s2_editing",
+      "group": "reference_edit",
+      "population": "core",
+      "inputProfile": "edit_reference_v1_preloaded_a",
+      "portraitPolicy": null,
+      "systemKind": "native",
+      "name": "Vidu S2 Editing",
+      "metrics": {
+        "visual_quality": 37.71,
+        "stability": 46.74,
+        "reference": 19.72,
+        "edit_success": 15.0,
+        "preservation": 64.44,
+        "overall": 36.72
+      }
+    },
+    {
+      "systemId": "xmax_x2_reference",
+      "modelId": "xmax_x2_realtime",
+      "reportedModelId": "xmax_x2_realtime",
+      "group": "reference_edit",
+      "population": "core",
+      "inputProfile": "edit_reference_v1_preloaded_a",
+      "portraitPolicy": null,
+      "systemKind": "native",
+      "name": "XMax X2.0",
+      "metrics": {
+        "visual_quality": 8.2,
+        "stability": 7.51,
+        "reference": 20.56,
+        "edit_success": 1.11,
+        "preservation": 10.0,
+        "overall": 9.47
+      }
+    }
+  ]
+}

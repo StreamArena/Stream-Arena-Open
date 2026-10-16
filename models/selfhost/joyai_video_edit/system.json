@@ -1,0 +1,72 @@
+{
+  "model": "joyai_video_edit",
+  "system_id": "joyai_video_edit",
+  "model_id": "joyai_video_edit",
+  "name": "JoyAI-Video-Edit",
+  "provider": "self-hosted (JD / jd-opensource)",
+  "system_kind": "native",
+  "tracks": [
+    "instruction_edit",
+    "reference_edit"
+  ],
+  "server": {
+    "cmd": "{env}/bin/python {model_dir}/server.py --port {port}",
+    "port": 8774,
+    "health_timeout_s": 1800
+  },
+  "portrait_policy": null,
+  "gpu": {
+    "count": 1
+  },
+  "output": {
+    "width": 840,
+    "height": 480,
+    "fps": 24
+  },
+  "push": {
+    "max_side": 1280,
+    "max_fps": 24
+  },
+  "model_version": "dit_0811@ca17e1d1030f",
+  "weights": {
+    "repo": "jdopensource/JoyAI-Video-Edit",
+    "revision": "39491dda89fd2b535777fd8644a6631ea89b857c",
+    "dit": "dit/joyai_video_edit_dit_0811.pth",
+    "sha256": "b3904b6fda53d13b230918bb616f322d12cfb2337b0e8d9dc203cdabc36605ba",
+    "vae_sha256": "150315748d7c3307cdae2819ee651b32d58385668ca0c4db3d3dcd6e63b77e86",
+    "text_encoder": "XiaomiMiMo/MiMo-VL-7B-RL-2508",
+    "upstream": "https://github.com/jd-opensource/JoyAI-Video-Edit@ca17e1d1030f454cb98b0ed549b4d31a60139ceb"
+  },
+  "license": "code and weights Apache-2.0; text encoder MiMo-VL-7B-RL-2508 MIT",
+  "steps": 2,
+  "seed": 42,
+  "notes": "Causal streaming V2V (instruction) and RV2V (one reference image). One prompt per causal KV session: every applied text/reference event restarts the session on the next live frame. Reference state is single-slot: set/patch/remove/reset are applied when the resulting state has exactly one slot, otherwise acked unsupported (2+ slots, or empty state). Source passed through before the first edit. Output 840x480 (480x840 portrait) at up to 24 fps; source frames dropped when the model falls behind (max 2 chunks in flight). Reference prompt: 'Replace the <slot scope target> in the video with the one from the reference image, ...' (upstream RV2V phrasing). Presence gates and prompt enhancement off.",
+  "input_adapters": {
+    "instruction_edit": {
+      "mode": "normalized",
+      "transforms": [
+        {
+          "operation": "source_video_normalization",
+          "parameters": {
+            "max_side": 1280,
+            "max_fps": 24,
+            "upscale": false
+          }
+        }
+      ]
+    },
+    "reference_edit": {
+      "mode": "normalized",
+      "transforms": [
+        {
+          "operation": "source_video_normalization",
+          "parameters": {
+            "max_side": 1280,
+            "max_fps": 24,
+            "upscale": false
+          }
+        }
+      ]
+    }
+  }
+}

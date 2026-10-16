@@ -1,0 +1,101 @@
+{
+  "excluded_conditions": [
+    {
+      "case_id": "sa.v1.151.avatar_performance",
+      "decided": "2026-09-30",
+      "population": "core",
+      "reason": "provider content-moderation refusal on all repeats",
+      "rule": "Removed from the core performance roster for every system; its 30-second stratum keeps five conditions and its original weight. The condition is distributed in benchmark/v1/excluded."
+    }
+  ],
+  "oracle_corrections": {
+    "corrections": [
+      {
+        "after": [
+          "Right hand drops to side while left remains raised."
+        ],
+        "basis": "oracle row v2 describes this instruction (rows shifted by one); row v1 describes the starting pose",
+        "before": [
+          "Both hands raised in open-palm greeting pose."
+        ],
+        "case_id": "sa.v1.144.avatar_performance",
+        "event_id": "v1",
+        "field": "expected"
+      },
+      {
+        "after": [
+          "Hold left hand raised steadily at shoulder height."
+        ],
+        "basis": "no oracle row describes this instruction (its own row describes instruction v1); the released instruction is the expected outcome",
+        "before": [
+          "Right hand drops to side while left remains raised."
+        ],
+        "case_id": "sa.v1.144.avatar_performance",
+        "event_id": "v2",
+        "field": "expected"
+      },
+      {
+        "after": [
+          "Right arm sweeps outward in slow arc."
+        ],
+        "basis": "oracle row v2 describes this instruction (rows shifted by one); row v1 describes the starting pose",
+        "before": [
+          "Instructor begins in asymmetric guard stance."
+        ],
+        "case_id": "sa.v1.145.avatar_performance",
+        "event_id": "v1",
+        "field": "expected"
+      },
+      {
+        "after": [
+          "Sweep halts at shoulder height, palm stays open."
+        ],
+        "basis": "oracle row v3 describes this instruction (rows shifted by one); row v2 describes v1",
+        "before": [
+          "Right arm sweeps outward in slow arc."
+        ],
+        "case_id": "sa.v1.145.avatar_performance",
+        "event_id": "v2",
+        "field": "expected"
+      },
+      {
+        "after": [
+          "Keep the right palm fully open and fingers extended while holding position."
+        ],
+        "basis": "no oracle row describes this instruction (its own row describes instruction v2); the released instruction is the expected outcome",
+        "before": [
+          "Sweep halts at shoulder height, palm stays open."
+        ],
+        "case_id": "sa.v1.145.avatar_performance",
+        "event_id": "v3",
+        "field": "expected"
+      },
+      {
+        "after": [
+          "Arm smoothly extends outward until fully straight without any positional jump."
+        ],
+        "basis": "oracle row v2 describes this instruction (rows shifted by one); row v1 describes the starting pose",
+        "before": [
+          "Instructor begins with elbow sharply bent, forearm angled upward near the chest."
+        ],
+        "case_id": "sa.v1.169.avatar_performance",
+        "event_id": "v1",
+        "field": "expected"
+      },
+      {
+        "after": [
+          "Tilt the extended right wrist downward by forty degrees."
+        ],
+        "basis": "no oracle row describes this instruction (its own row describes instruction v1); the released instruction is the expected outcome",
+        "before": [
+          "Arm smoothly extends outward until fully straight without any positional jump."
+        ],
+        "case_id": "sa.v1.169.avatar_performance",
+        "event_id": "v2",
+        "field": "expected"
+      }
+    ],
+    "note": "Applied in oracles.jsonl. These avatar-performance checkpoints were shifted by one event in the frozen release; the corrected `expected` text is what the judge used for every system."
+  },
+  "schema_version": "stream-arena.v1-errata/1"
+}

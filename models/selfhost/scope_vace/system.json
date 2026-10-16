@@ -1,0 +1,58 @@
+{
+  "model": "scope_vace",
+  "system_id": "scope_sdv2_vace",
+  "model_id": "scope_sdv2_vace",
+  "name": "Daydream Scope (StreamDiffusionV2 + VACE)",
+  "provider": "self-hosted (Daydream)",
+  "system_kind": "native",
+  "tracks": [
+    "reference_edit"
+  ],
+  "server": {
+    "cmd": "{env}/bin/python {model_dir}/server.py --port {port}",
+    "port": 8767,
+    "health_timeout_s": 1800
+  },
+  "portrait_policy": null,
+  "gpu": {
+    "count": 1
+  },
+  "output": {
+    "width": 832,
+    "height": 480,
+    "fps": 16
+  },
+  "push": {
+    "max_side": 1280,
+    "max_fps": 16
+  },
+  "model_version": "scope@2aced4ded351 (v0.2.5) streamdiffusionv2 + VACE 1.3B",
+  "weights": {
+    "repo": "daydreamlive/StreamDiffusionV2 @76bb3e6 (wan_causal_dmd_v2v) + daydreamlive/WanVideo_comfy @441f3d5 (Wan2_1-VACE_module_1_3B_bf16, umt5-xxl-enc-fp8_e4m3fn) + daydreamlive/Wan2.1-T2V-1.3B @d19e446 (Wan2.1_VAE, tokenizer)",
+    "sha256": {
+      "StreamDiffusionV2/wan_causal_dmd_v2v/model.pt": "7fab9eca93eb73d672ee77061d1485580acf0897ab059f6d4c0b8318b43a8930",
+      "WanVideo_comfy/Wan2_1-VACE_module_1_3B_bf16.safetensors": "cbcab35a0fbececa5d0b64af7f1ac1101c3fc61191c407f0d67301ac56fb0574",
+      "WanVideo_comfy/umt5-xxl-enc-fp8_e4m3fn.safetensors": "3fe5173588270c22505d4f9158bb1644b78331b8614206a97e92760b960c9ffa",
+      "Wan2.1-T2V-1.3B/Wan2.1_VAE.pth": "38071ab59bd94681c686fa51d75a1968f64e470262043be31f7a094e442fd981"
+    }
+  },
+  "license": "CC BY-NC-SA 4.0 (Scope code); weights Apache-2.0",
+  "steps": 2,
+  "seed": 42,
+  "notes": "Daydream Scope's streamdiffusionv2 pipeline with VACE enabled, driven as Scope's Video input mode with 'Use Input Video' off (frontend default): 4 live source frames per call as latent initialisation (noise_scale 0.7, noise controller, denoising steps [750, 250]); the reference image as VACE R2V conditioning (context scale 1.0). One reference slot: set/patch/remove/reset applied when the resulting state has exactly one slot, otherwise acked unsupported (2+ slots or an empty state). Reference prompt: 'Replace the <slot scope target> in the video with the one from the reference image, ...' (same template as JoyAI-Video-Edit). Output 832x480 (480x832 portrait, center crop) at 16 fps.",
+  "input_adapters": {
+    "reference_edit": {
+      "mode": "normalized",
+      "transforms": [
+        {
+          "operation": "source_video_normalization",
+          "parameters": {
+            "max_side": 1280,
+            "max_fps": 16,
+            "upscale": false
+          }
+        }
+      ]
+    }
+  }
+}

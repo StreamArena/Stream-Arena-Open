@@ -1,0 +1,53 @@
+{
+  "model": "editalive",
+  "system_id": "editalive_14b",
+  "model_id": "editalive_14b",
+  "name": "EditaLive (14B)",
+  "provider": "self-hosted (vivo BlueImage Lab, University of Macau)",
+  "system_kind": "native",
+  "tracks": [
+    "instruction_edit"
+  ],
+  "server": {
+    "cmd": "{env}/bin/python {model_dir}/server.py --port {port}",
+    "port": 8772,
+    "health_timeout_s": 3600
+  },
+  "portrait_policy": null,
+  "gpu": {
+    "count": 1
+  },
+  "output": {
+    "width": 672,
+    "height": 384,
+    "fps": 16
+  },
+  "push": {
+    "max_side": 1280,
+    "max_fps": 16
+  },
+  "model_version": "EditaLive (Wan2.2-Animate-14B + editalive_edit / lightx2v / editalive_streaming LoRAs, 2-step causal); code GVCLab/EditaLive@9fe7fdb4ce3f",
+  "weights": {
+    "repo": "huaichang/EditaLive@main, revision not pinned (weights/editalive_edit, lightx2v, editalive_streaming .safetensors) + Wan-AI/Wan2.2-Animate-14B@cb93a225 (DiT, Wan2.1 VAE, umT5-XXL, CLIP, YOLOv10m + ViTPose-H ONNX) + Aoko955/Flash-VAED@4e329b3b (Flash_VAED_Wan.pth)",
+    "sha256": "recorded per session in ready.system_config.weights_sha256"
+  },
+  "license": "EditaLive code and LoRAs Apache-2.0, but the upstream README restricts use to academic research only; Wan2.2-Animate-14B Apache-2.0; Flash-VAED: no licence stated",
+  "steps": 2,
+  "seed": 0,
+  "notes": "Upstream's live webcam path with the benchmark source as the camera: per chunk (9 source frames for the first chunk of a session, then 12) the upstream OnlineExtractor (YOLOv10m + ViTPose-H, ONNX Runtime TensorRT provider FP32) renders the pose skeleton and a 512x512 face crop from exactly those frames, and StreamingSession.push generates 3 latent frames (2 steps, timesteps [1000, 250], UniPC, shift 5, FP8 transformer, Flash-VAED decoder, dense attention = upstream's vsa_sparsity 0, torch.compile); extraction of the next chunk overlaps generation. The character is re-rendered from a reference frame: as upstream's Start editing, the first live frame of each session is the reference. Each text_control instruction is the prompt verbatim and starts a new session (upstream Reset + Prepare prompt + Start editing) on the next live frames. Source passed through until the first instruction. Landscape output only (upstream webcam): 672x384 (webcam default), centre crop of every source. Edits a person (accessories, garment / hair colour, styles); person-less frames are processed as upstream does (detector falls back to the whole frame). Text instructions only: reference_edit not registered.",
+  "input_adapters": {
+    "instruction_edit": {
+      "mode": "normalized",
+      "transforms": [
+        {
+          "operation": "source_video_normalization",
+          "parameters": {
+            "max_side": 1280,
+            "max_fps": 16,
+            "upscale": false
+          }
+        }
+      ]
+    }
+  }
+}

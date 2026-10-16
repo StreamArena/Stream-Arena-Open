@@ -1,0 +1,12 @@
+[
+ {"system_id": "my_model", "model_id": "my_model", "name": "My Model (template)", "provider": "My Lab",
+  "system_kind": "native", "tracks": ["instruction_edit"], "portrait_policy": null,
+  "python": "model.py:MyModel", "kwargs": {"device": "cpu"},
+  "push": {"max_side": 640, "max_fps": 25}, "model_version": "0.1",
+  "notes": "template (examples/my_model): grayscale on a black-and-white instruction, else the source unchanged"},
+ {"model": "my_model", "system_id": "my_model_ws", "model_id": "my_model", "name": "My Model (template, WebSocket)",
+  "provider": "My Lab", "system_kind": "native", "tracks": ["instruction_edit"], "portrait_policy": null,
+  "server": {"cmd": "python {model_dir}/server.py --port {port}", "port": 18760, "health_timeout_s": 60},
+  "push": {"max_side": 640, "max_fps": 25}, "model_version": "0.1",
+  "notes": "the same template served over the WebSocket protocol"}
+]

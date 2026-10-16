@@ -1,0 +1,2259 @@
+{
+  "schemaVersion": "stream-arena.leaderboard/2",
+  "source": {
+    "kind": "paper",
+    "title": "Stream-Arena: Evaluating Interactive Streaming Video Generation Systems",
+    "section": "System Evaluation",
+    "primaryPopulation": "core",
+    "coreRuns": 4389,
+    "coreConfigurations": 49,
+    "coreReportedModels": 39,
+    "coreModelIdentifiers": 45,
+    "coreConfigurationsByTask": {
+      "avatar_performance": 7,
+      "digital_human": 15,
+      "general_interaction": 12,
+      "instruction_edit": 10,
+      "reference_edit": 5
+    }
+  },
+  "display": {
+    "content_decimals": 2,
+    "unresolved": "lower_bound",
+    "order": "alphabetical_within_comparison_group"
+  },
+  "entries": [
+    {
+      "systemId": "aptavatar_performance",
+      "modelId": "aptavatar",
+      "name": "AptAvatar 14B",
+      "provider": "self-hosted (Taobao Live, Alibaba)",
+      "group": "avatar_performance",
+      "inputProfile": "avatar_performance_audio",
+      "portraitPolicy": "benchmark_portrait",
+      "systemKind": "native",
+      "population": "core",
+      "comparisonGroup": "Supplied audio",
+      "reportedModelId": "aptavatar",
+      "metrics": {
+        "visual_quality": {
+          "status": "complete",
+          "value": 55.55,
+          "provisional": false
+        },
+        "av_sync": {
+          "status": "complete",
+          "value": 98.89,
+          "provisional": true
+        },
+        "stability": {
+          "status": "complete",
+          "value": 78.06,
+          "provisional": false
+        },
+        "following": {
+          "status": "lower_bound",
+          "value": 13.03,
+          "provisional": false
+        },
+        "identity": {
+          "status": "complete",
+          "value": 81.33,
+          "provisional": false
+        },
+        "overall": {
+          "status": "lower_bound",
+          "value": 65.37,
+          "provisional": true
+        }
+      }
+    },
+    {
+      "systemId": "avatar_forever_performance",
+      "modelId": "avatar_forever",
+      "name": "Avatar-Forever 22B",
+      "provider": "self-hosted (PolyU / ByteDance)",
+      "group": "avatar_performance",
+      "inputProfile": "avatar_performance_audio",
+      "portraitPolicy": "benchmark_portrait",
+      "systemKind": "native",
+      "population": "core",
+      "comparisonGroup": "Supplied audio",
+      "reportedModelId": "avatar_forever",
+      "metrics": {
+        "visual_quality": {
+          "status": "complete",
+          "value": 34.73,
+          "provisional": false
+        },
+        "av_sync": {
+          "status": "lower_bound",
+          "value": 34.66,
+          "provisional": true
+        },
+        "stability": {
+          "status": "complete",
+          "value": 45.31,
+          "provisional": false
+        },
+        "following": {
+          "status": "lower_bound",
+          "value": 6.37,
+          "provisional": false
+        },
+        "identity": {
+          "status": "complete",
+          "value": 74.82,
+          "provisional": false
+        },
+        "overall": {
+          "status": "lower_bound",
+          "value": 39.17,
+          "provisional": true
+        }
+      }
+    },
+    {
+      "systemId": "avatarforcing_performance",
+      "modelId": "avatarforcing",
+      "name": "AvatarForcing 1.3B",
+      "provider": "self-hosted (Kling Team, Kuaishou)",
+      "group": "avatar_performance",
+      "inputProfile": "avatar_performance_audio",
+      "portraitPolicy": "benchmark_portrait",
+      "systemKind": "native",
+      "population": "core",
+      "comparisonGroup": "Supplied audio",
+      "reportedModelId": "avatarforcing",
+      "metrics": {
+        "visual_quality": {
+          "status": "complete",
+          "value": 54.32,
+          "provisional": false
+        },
+        "av_sync": {
+          "status": "complete",
+          "value": 18.44,
+          "provisional": true
+        },
+        "stability": {
+          "status": "complete",
+          "value": 71.6,
+          "provisional": false
+        },
+        "following": {
+          "status": "lower_bound",
+          "value": 8.44,
+          "provisional": false
+        },
+        "identity": {
+          "status": "complete",
+          "value": 68.5,
+          "provisional": false
+        },
+        "overall": {
+          "status": "lower_bound",
+          "value": 44.26,
+          "provisional": true
+        }
+      }
+    },
+    {
+      "systemId": "livetalk_performance",
+      "modelId": "livetalk",
+      "name": "LiveTalk 1.3B",
+      "provider": "self-hosted (GAIR, Shanghai Jiao Tong University)",
+      "group": "avatar_performance",
+      "inputProfile": "avatar_performance_audio",
+      "portraitPolicy": "benchmark_portrait",
+      "systemKind": "native",
+      "population": "core",
+      "comparisonGroup": "Supplied audio",
+      "reportedModelId": "livetalk",
+      "metrics": {
+        "visual_quality": {
+          "status": "complete",
+          "value": 71.27,
+          "provisional": false
+        },
+        "av_sync": {
+          "status": "lower_bound",
+          "value": 86.44,
+          "provisional": true
+        },
+        "stability": {
+          "status": "complete",
+          "value": 96.06,
+          "provisional": false
+        },
+        "following": {
+          "status": "lower_bound",
+          "value": 16.59,
+          "provisional": false
+        },
+        "identity": {
+          "status": "complete",
+          "value": 83.89,
+          "provisional": false
+        },
+        "overall": {
+          "status": "lower_bound",
+          "value": 70.85,
+          "provisional": true
+        }
+      }
+    },
+    {
+      "systemId": "quark_liveavatar_performance",
+      "modelId": "quark_liveavatar",
+      "name": "Quark Live Avatar 14B",
+      "provider": "self-hosted (Alibaba Quark)",
+      "group": "avatar_performance",
+      "inputProfile": "avatar_performance_audio",
+      "portraitPolicy": "benchmark_portrait",
+      "systemKind": "native",
+      "population": "core",
+      "comparisonGroup": "Supplied audio",
+      "reportedModelId": "quark_liveavatar",
+      "metrics": {
+        "visual_quality": {
+          "status": "complete",
+          "value": 43.51,
+          "provisional": false
+        },
+        "av_sync": {
+          "status": "complete",
+          "value": 98.89,
+          "provisional": true
+        },
+        "stability": {
+          "status": "complete",
+          "value": 55.3,
+          "provisional": false
+        },
+        "following": {
+          "status": "lower_bound",
+          "value": 11.7,
+          "provisional": false
+        },
+        "identity": {
+          "status": "complete",
+          "value": 79.75,
+          "provisional": false
+        },
+        "overall": {
+          "status": "lower_bound",
+          "value": 57.82,
+          "provisional": true
+        }
+      }
+    },
+    {
+      "systemId": "soulx_liveact_performance",
+      "modelId": "soulx_liveact",
+      "name": "SoulX-LiveAct 18B",
+      "provider": "self-hosted (Soul AI Lab)",
+      "group": "avatar_performance",
+      "inputProfile": "avatar_performance_audio",
+      "portraitPolicy": "benchmark_portrait",
+      "systemKind": "native",
+      "population": "core",
+      "comparisonGroup": "Supplied audio",
+      "reportedModelId": "soulx_liveact",
+      "metrics": {
+        "visual_quality": {
+          "status": "complete",
+          "value": 48.39,
+          "provisional": false
+        },
+        "av_sync": {
+          "status": "complete",
+          "value": 48.67,
+          "provisional": true
+        },
+        "stability": {
+          "status": "complete",
+          "value": 64.94,
+          "provisional": false
+        },
+        "following": {
+          "status": "complete",
+          "value": 10.74,
+          "provisional": false
+        },
+        "identity": {
+          "status": "complete",
+          "value": 69.83,
+          "provisional": false
+        },
+        "overall": {
+          "status": "complete",
+          "value": 48.51,
+          "provisional": true
+        }
+      }
+    },
+    {
+      "systemId": "vidu_s2_avatar_performance_text",
+      "modelId": "vidu_s2_avatar",
+      "name": "Vidu S2 Avatar",
+      "provider": "Vidu",
+      "group": "avatar_performance",
+      "inputProfile": "avatar_performance_audio",
+      "portraitPolicy": "benchmark_portrait",
+      "systemKind": "native",
+      "population": "core",
+      "inputRoute": "text_derived",
+      "comparisonGroup": "Text-derived line and action inputs",
+      "reportedModelId": "vidu_s2_avatar",
+      "metrics": {
+        "visual_quality": {
+          "status": "complete",
+          "value": 63.68,
+          "provisional": false
+        },
+        "av_sync": {
+          "status": "complete",
+          "value": 99.6,
+          "provisional": true
+        },
+        "stability": {
+          "status": "complete",
+          "value": 97.25,
+          "provisional": false
+        },
+        "following": {
+          "status": "lower_bound",
+          "value": 16.37,
+          "provisional": false
+        },
+        "identity": {
+          "status": "complete",
+          "value": 86.12,
+          "provisional": false
+        },
+        "overall": {
+          "status": "lower_bound",
+          "value": 72.6,
+          "provisional": true
+        }
+      }
+    },
+    {
+      "systemId": "aptavatar_comp_audio",
+      "modelId": "aptavatar_comp",
+      "name": "AptAvatar 14B",
+      "provider": "self-hosted (Taobao Live, Alibaba)",
+      "group": "digital_human",
+      "inputProfile": "conversation_audio",
+      "portraitPolicy": "benchmark_portrait",
+      "systemKind": "composition",
+      "population": "core",
+      "inputRoute": "shared_dialogue_stack",
+      "comparisonGroup": "Benchmark portrait",
+      "reportedModelId": "aptavatar",
+      "metrics": {
+        "visual_quality": {
+          "status": "complete",
+          "value": 68.03,
+          "provisional": false
+        },
+        "av_sync": {
+          "status": "lower_bound",
+          "value": 70.32,
+          "provisional": true
+        },
+        "stability": {
+          "status": "complete",
+          "value": 94.74,
+          "provisional": false
+        },
+        "dialogue": {
+          "status": "complete",
+          "value": 35.98,
+          "provisional": false
+        },
+        "identity": {
+          "status": "complete",
+          "value": 81.0,
+          "provisional": false
+        },
+        "overall": {
+          "status": "lower_bound",
+          "value": 70.01,
+          "provisional": true
+        },
+        "overall_common4": {
+          "value": 67.26,
+          "status": "descriptive_lower_mean",
+          "provisional": true
+        }
+      }
+    },
+    {
+      "systemId": "avatar_forever_comp_audio",
+      "modelId": "avatar_forever_comp",
+      "name": "Avatar-Forever 22B",
+      "provider": "self-hosted (PolyU / ByteDance)",
+      "group": "digital_human",
+      "inputProfile": "conversation_audio",
+      "portraitPolicy": "benchmark_portrait",
+      "systemKind": "composition",
+      "population": "core",
+      "inputRoute": "shared_dialogue_stack",
+      "comparisonGroup": "Benchmark portrait",
+      "reportedModelId": "avatar_forever",
+      "metrics": {
+        "visual_quality": {
+          "status": "complete",
+          "value": 50.86,
+          "provisional": false
+        },
+        "av_sync": {
+          "status": "lower_bound",
+          "value": 48.16,
+          "provisional": true
+        },
+        "stability": {
+          "status": "complete",
+          "value": 68.48,
+          "provisional": false
+        },
+        "dialogue": {
+          "status": "lower_bound",
+          "value": 54.92,
+          "provisional": false
+        },
+        "identity": {
+          "status": "complete",
+          "value": 75.23,
+          "provisional": false
+        },
+        "overall": {
+          "status": "lower_bound",
+          "value": 59.53,
+          "provisional": true
+        },
+        "overall_common4": {
+          "value": 55.6,
+          "status": "descriptive_lower_mean",
+          "provisional": true
+        }
+      }
+    },
+    {
+      "systemId": "avatarforcing_comp_audio",
+      "modelId": "avatarforcing_comp",
+      "name": "AvatarForcing 1.3B",
+      "provider": "self-hosted (Kling Team, Kuaishou)",
+      "group": "digital_human",
+      "inputProfile": "conversation_audio",
+      "portraitPolicy": "benchmark_portrait",
+      "systemKind": "composition",
+      "population": "core",
+      "inputRoute": "shared_dialogue_stack",
+      "comparisonGroup": "Benchmark portrait",
+      "reportedModelId": "avatarforcing",
+      "metrics": {
+        "visual_quality": {
+          "status": "complete",
+          "value": 57.17,
+          "provisional": false
+        },
+        "av_sync": {
+          "status": "lower_bound",
+          "value": 0.0,
+          "provisional": true
+        },
+        "stability": {
+          "status": "complete",
+          "value": 87.3,
+          "provisional": false
+        },
+        "dialogue": {
+          "status": "complete",
+          "value": 8.93,
+          "provisional": false
+        },
+        "identity": {
+          "status": "complete",
+          "value": 66.85,
+          "provisional": false
+        },
+        "overall": {
+          "status": "lower_bound",
+          "value": 44.04,
+          "provisional": true
+        },
+        "overall_common4": {
+          "value": 38.35,
+          "status": "descriptive_lower_mean",
+          "provisional": true
+        }
+      }
+    },
+    {
+      "systemId": "avtr1_audio",
+      "modelId": "avtr1",
+      "name": "AVTR-1",
+      "provider": "self-hosted (Avaturn / Goodsize Inc.)",
+      "group": "digital_human",
+      "inputProfile": "conversation_audio",
+      "portraitPolicy": "benchmark_portrait",
+      "systemKind": "composition",
+      "population": "core",
+      "inputRoute": "shared_dialogue_stack",
+      "comparisonGroup": "Benchmark portrait",
+      "reportedModelId": "avtr1",
+      "metrics": {
+        "visual_quality": {
+          "status": "complete",
+          "value": 82.97,
+          "provisional": false
+        },
+        "av_sync": {
+          "status": "lower_bound",
+          "value": 69.37,
+          "provisional": true
+        },
+        "stability": {
+          "status": "complete",
+          "value": 99.87,
+          "provisional": false
+        },
+        "dialogue": {
+          "status": "complete",
+          "value": 54.97,
+          "provisional": false
+        },
+        "identity": {
+          "status": "complete",
+          "value": 88.54,
+          "provisional": false
+        },
+        "overall": {
+          "status": "lower_bound",
+          "value": 79.14,
+          "provisional": true
+        },
+        "overall_common4": {
+          "value": 76.79,
+          "status": "descriptive_lower_mean",
+          "provisional": true
+        }
+      }
+    },
+    {
+      "systemId": "liveavatar_full_audio",
+      "modelId": "liveavatar_full",
+      "name": "LiveAvatar FULL",
+      "provider": "HeyGen",
+      "group": "digital_human",
+      "inputProfile": "conversation_audio",
+      "portraitPolicy": "provider_stock",
+      "systemKind": "native",
+      "population": "core",
+      "comparisonGroup": "Provider stock portrait",
+      "reportedModelId": "liveavatar_full",
+      "metrics": {
+        "visual_quality": {
+          "status": "complete",
+          "value": 76.27,
+          "provisional": false
+        },
+        "av_sync": {
+          "status": "lower_bound",
+          "value": 0.0,
+          "provisional": true
+        },
+        "stability": {
+          "status": "complete",
+          "value": 100.0,
+          "provisional": false
+        },
+        "dialogue": {
+          "status": "lower_bound",
+          "value": 61.36,
+          "provisional": false
+        },
+        "identity": {
+          "status": "not_applicable",
+          "value": null,
+          "provisional": false
+        },
+        "overall": {
+          "status": "lower_bound",
+          "value": 59.4,
+          "provisional": true
+        },
+        "overall_common4": {
+          "value": 59.4,
+          "status": "descriptive_lower_mean",
+          "provisional": true
+        }
+      }
+    },
+    {
+      "systemId": "livetalk_comp_audio",
+      "modelId": "livetalk_comp",
+      "name": "LiveTalk 1.3B",
+      "provider": "self-hosted (GAIR, Shanghai Jiao Tong University)",
+      "group": "digital_human",
+      "inputProfile": "conversation_audio",
+      "portraitPolicy": "benchmark_portrait",
+      "systemKind": "composition",
+      "population": "core",
+      "inputRoute": "shared_dialogue_stack",
+      "comparisonGroup": "Benchmark portrait",
+      "reportedModelId": "livetalk",
+      "metrics": {
+        "visual_quality": {
+          "status": "complete",
+          "value": 61.75,
+          "provisional": false
+        },
+        "av_sync": {
+          "status": "lower_bound",
+          "value": 62.79,
+          "provisional": true
+        },
+        "stability": {
+          "status": "complete",
+          "value": 86.51,
+          "provisional": false
+        },
+        "dialogue": {
+          "status": "complete",
+          "value": 54.4,
+          "provisional": false
+        },
+        "identity": {
+          "status": "complete",
+          "value": 77.51,
+          "provisional": false
+        },
+        "overall": {
+          "status": "lower_bound",
+          "value": 68.59,
+          "provisional": true
+        },
+        "overall_common4": {
+          "value": 66.36,
+          "status": "descriptive_lower_mean",
+          "provisional": true
+        }
+      }
+    },
+    {
+      "systemId": "musetalk_audio",
+      "modelId": "musetalk",
+      "name": "MuseTalk 1.5",
+      "provider": "self-hosted (Tencent Music / TMElyralab)",
+      "group": "digital_human",
+      "inputProfile": "conversation_audio",
+      "portraitPolicy": "benchmark_portrait",
+      "systemKind": "composition",
+      "population": "core",
+      "inputRoute": "shared_dialogue_stack",
+      "comparisonGroup": "Benchmark portrait",
+      "reportedModelId": "musetalk",
+      "metrics": {
+        "visual_quality": {
+          "status": "complete",
+          "value": 95.34,
+          "provisional": false
+        },
+        "av_sync": {
+          "status": "lower_bound",
+          "value": 38.09,
+          "provisional": true
+        },
+        "stability": {
+          "status": "complete",
+          "value": 97.11,
+          "provisional": false
+        },
+        "dialogue": {
+          "status": "lower_bound",
+          "value": 54.34,
+          "provisional": false
+        },
+        "identity": {
+          "status": "complete",
+          "value": 88.44,
+          "provisional": false
+        },
+        "overall": {
+          "status": "lower_bound",
+          "value": 74.66,
+          "provisional": true
+        },
+        "overall_common4": {
+          "value": 71.22,
+          "status": "descriptive_lower_mean",
+          "provisional": true
+        }
+      }
+    },
+    {
+      "systemId": "quark_liveavatar_comp_audio",
+      "modelId": "quark_liveavatar_comp",
+      "name": "Quark Live Avatar 14B",
+      "provider": "self-hosted (Alibaba Quark)",
+      "group": "digital_human",
+      "inputProfile": "conversation_audio",
+      "portraitPolicy": "benchmark_portrait",
+      "systemKind": "composition",
+      "population": "core",
+      "inputRoute": "shared_dialogue_stack",
+      "comparisonGroup": "Benchmark portrait",
+      "reportedModelId": "quark_liveavatar",
+      "metrics": {
+        "visual_quality": {
+          "status": "complete",
+          "value": 56.0,
+          "provisional": false
+        },
+        "av_sync": {
+          "status": "lower_bound",
+          "value": 64.91,
+          "provisional": true
+        },
+        "stability": {
+          "status": "complete",
+          "value": 70.9,
+          "provisional": false
+        },
+        "dialogue": {
+          "status": "lower_bound",
+          "value": 55.01,
+          "provisional": false
+        },
+        "identity": {
+          "status": "complete",
+          "value": 78.1,
+          "provisional": false
+        },
+        "overall": {
+          "status": "lower_bound",
+          "value": 64.98,
+          "provisional": true
+        },
+        "overall_common4": {
+          "value": 61.7,
+          "status": "descriptive_lower_mean",
+          "provisional": true
+        }
+      }
+    },
+    {
+      "systemId": "runway_characters_audio",
+      "modelId": "runway_characters",
+      "name": "Runway Characters",
+      "provider": "Runway",
+      "group": "digital_human",
+      "inputProfile": "conversation_audio",
+      "portraitPolicy": "benchmark_portrait",
+      "systemKind": "native",
+      "population": "core",
+      "comparisonGroup": "Benchmark portrait",
+      "reportedModelId": "runway_characters",
+      "metrics": {
+        "visual_quality": {
+          "status": "complete",
+          "value": 57.81,
+          "provisional": false
+        },
+        "av_sync": {
+          "status": "lower_bound",
+          "value": 49.82,
+          "provisional": true
+        },
+        "stability": {
+          "status": "complete",
+          "value": 75.94,
+          "provisional": false
+        },
+        "dialogue": {
+          "status": "complete",
+          "value": 43.53,
+          "provisional": false
+        },
+        "identity": {
+          "status": "complete",
+          "value": 60.4,
+          "provisional": false
+        },
+        "overall": {
+          "status": "lower_bound",
+          "value": 57.49,
+          "provisional": true
+        },
+        "overall_common4": {
+          "value": 56.77,
+          "status": "descriptive_lower_mean",
+          "provisional": true
+        }
+      }
+    },
+    {
+      "systemId": "soulx_flashhead_audio",
+      "modelId": "soulx_flashhead",
+      "name": "SoulX-FlashHead (Lite)",
+      "provider": "self-hosted (Soul AI Lab)",
+      "group": "digital_human",
+      "inputProfile": "conversation_audio",
+      "portraitPolicy": "benchmark_portrait",
+      "systemKind": "composition",
+      "population": "core",
+      "inputRoute": "shared_dialogue_stack",
+      "comparisonGroup": "Benchmark portrait",
+      "reportedModelId": "soulx_flashhead",
+      "metrics": {
+        "visual_quality": {
+          "status": "complete",
+          "value": 68.43,
+          "provisional": false
+        },
+        "av_sync": {
+          "status": "lower_bound",
+          "value": 29.76,
+          "provisional": true
+        },
+        "stability": {
+          "status": "complete",
+          "value": 91.61,
+          "provisional": false
+        },
+        "dialogue": {
+          "status": "complete",
+          "value": 56.65,
+          "provisional": false
+        },
+        "identity": {
+          "status": "complete",
+          "value": 79.69,
+          "provisional": false
+        },
+        "overall": {
+          "status": "lower_bound",
+          "value": 65.23,
+          "provisional": true
+        },
+        "overall_common4": {
+          "value": 61.61,
+          "status": "descriptive_lower_mean",
+          "provisional": true
+        }
+      }
+    },
+    {
+      "systemId": "soulx_flashtalk_audio",
+      "modelId": "soulx_flashtalk",
+      "name": "SoulX-FlashTalk 14B",
+      "provider": "self-hosted (Soul AI Lab)",
+      "group": "digital_human",
+      "inputProfile": "conversation_audio",
+      "portraitPolicy": "benchmark_portrait",
+      "systemKind": "composition",
+      "population": "core",
+      "inputRoute": "shared_dialogue_stack",
+      "comparisonGroup": "Benchmark portrait",
+      "reportedModelId": "soulx_flashtalk",
+      "metrics": {
+        "visual_quality": {
+          "status": "complete",
+          "value": 68.9,
+          "provisional": false
+        },
+        "av_sync": {
+          "status": "lower_bound",
+          "value": 66.26,
+          "provisional": true
+        },
+        "stability": {
+          "status": "complete",
+          "value": 95.45,
+          "provisional": false
+        },
+        "dialogue": {
+          "status": "lower_bound",
+          "value": 50.57,
+          "provisional": false
+        },
+        "identity": {
+          "status": "complete",
+          "value": 83.31,
+          "provisional": false
+        },
+        "overall": {
+          "status": "lower_bound",
+          "value": 72.9,
+          "provisional": true
+        },
+        "overall_common4": {
+          "value": 70.29,
+          "status": "descriptive_lower_mean",
+          "provisional": true
+        }
+      }
+    },
+    {
+      "systemId": "soulx_liveact_comp_audio",
+      "modelId": "soulx_liveact_comp",
+      "name": "SoulX-LiveAct 18B",
+      "provider": "self-hosted (Soul AI Lab)",
+      "group": "digital_human",
+      "inputProfile": "conversation_audio",
+      "portraitPolicy": "benchmark_portrait",
+      "systemKind": "composition",
+      "population": "core",
+      "inputRoute": "shared_dialogue_stack",
+      "comparisonGroup": "Benchmark portrait",
+      "reportedModelId": "soulx_liveact",
+      "metrics": {
+        "visual_quality": {
+          "status": "complete",
+          "value": 64.93,
+          "provisional": false
+        },
+        "av_sync": {
+          "status": "lower_bound",
+          "value": 50.29,
+          "provisional": true
+        },
+        "stability": {
+          "status": "complete",
+          "value": 91.54,
+          "provisional": false
+        },
+        "dialogue": {
+          "status": "complete",
+          "value": 54.98,
+          "provisional": false
+        },
+        "identity": {
+          "status": "complete",
+          "value": 75.09,
+          "provisional": false
+        },
+        "overall": {
+          "status": "lower_bound",
+          "value": 67.36,
+          "provisional": true
+        },
+        "overall_common4": {
+          "value": 65.43,
+          "status": "descriptive_lower_mean",
+          "provisional": true
+        }
+      }
+    },
+    {
+      "systemId": "tavus_cvi_full_audio",
+      "modelId": "tavus_cvi_full",
+      "name": "Tavus CVI Full",
+      "provider": "Tavus",
+      "group": "digital_human",
+      "inputProfile": "conversation_audio",
+      "portraitPolicy": "provider_stock",
+      "systemKind": "native",
+      "population": "core",
+      "comparisonGroup": "Provider stock portrait",
+      "reportedModelId": "tavus_cvi_full",
+      "metrics": {
+        "visual_quality": {
+          "status": "complete",
+          "value": 75.04,
+          "provisional": false
+        },
+        "av_sync": {
+          "status": "lower_bound",
+          "value": 94.44,
+          "provisional": true
+        },
+        "stability": {
+          "status": "complete",
+          "value": 99.95,
+          "provisional": false
+        },
+        "dialogue": {
+          "status": "complete",
+          "value": 73.91,
+          "provisional": false
+        },
+        "identity": {
+          "status": "not_applicable",
+          "value": null,
+          "provisional": false
+        },
+        "overall": {
+          "status": "lower_bound",
+          "value": 85.83,
+          "provisional": true
+        },
+        "overall_common4": {
+          "value": 85.83,
+          "status": "descriptive_lower_mean",
+          "provisional": true
+        }
+      }
+    },
+    {
+      "systemId": "vidu_s2_avatar_audio",
+      "modelId": "vidu_s2_avatar",
+      "name": "Vidu S2 Avatar",
+      "provider": "Vidu",
+      "group": "digital_human",
+      "inputProfile": "conversation_audio",
+      "portraitPolicy": "benchmark_portrait",
+      "systemKind": "native",
+      "population": "core",
+      "comparisonGroup": "Benchmark portrait",
+      "reportedModelId": "vidu_s2_avatar",
+      "metrics": {
+        "visual_quality": {
+          "status": "complete",
+          "value": 96.78,
+          "provisional": false
+        },
+        "av_sync": {
+          "status": "lower_bound",
+          "value": 84.87,
+          "provisional": true
+        },
+        "stability": {
+          "status": "complete",
+          "value": 97.83,
+          "provisional": false
+        },
+        "dialogue": {
+          "status": "complete",
+          "value": 60.57,
+          "provisional": false
+        },
+        "identity": {
+          "status": "complete",
+          "value": 90.12,
+          "provisional": false
+        },
+        "overall": {
+          "status": "lower_bound",
+          "value": 86.03,
+          "provisional": true
+        },
+        "overall_common4": {
+          "value": 85.01,
+          "status": "descriptive_lower_mean",
+          "provisional": true
+        }
+      }
+    },
+    {
+      "systemId": "vivix_a1_audio",
+      "modelId": "vivix_a1",
+      "name": "Vivix A1",
+      "provider": "Vivix",
+      "group": "digital_human",
+      "inputProfile": "conversation_audio",
+      "portraitPolicy": "benchmark_portrait",
+      "systemKind": "native",
+      "population": "core",
+      "comparisonGroup": "Benchmark portrait",
+      "reportedModelId": "vivix_a1",
+      "metrics": {
+        "visual_quality": {
+          "status": "complete",
+          "value": 45.78,
+          "provisional": false
+        },
+        "av_sync": {
+          "status": "lower_bound",
+          "value": 69.15,
+          "provisional": true
+        },
+        "stability": {
+          "status": "complete",
+          "value": 66.83,
+          "provisional": false
+        },
+        "dialogue": {
+          "status": "lower_bound",
+          "value": 50.38,
+          "provisional": false
+        },
+        "identity": {
+          "status": "complete",
+          "value": 75.19,
+          "provisional": false
+        },
+        "overall": {
+          "status": "lower_bound",
+          "value": 61.46,
+          "provisional": true
+        },
+        "overall_common4": {
+          "value": 58.03,
+          "status": "descriptive_lower_mean",
+          "provisional": true
+        }
+      }
+    },
+    {
+      "systemId": "causal_forcing_1p3b_t2v",
+      "modelId": "causal_forcing_1p3b",
+      "name": "Causal Forcing++",
+      "provider": "self-hosted (Tsinghua University)",
+      "group": "general_interaction",
+      "inputProfile": "general_text_to_video",
+      "portraitPolicy": null,
+      "systemKind": "native",
+      "population": "core",
+      "comparisonGroup": "",
+      "reportedModelId": "causal_forcing_1p3b",
+      "metrics": {
+        "visual_quality": {
+          "status": "complete",
+          "value": 16.02,
+          "provisional": false
+        },
+        "stability": {
+          "status": "complete",
+          "value": 15.83,
+          "provisional": false
+        },
+        "following": {
+          "status": "lower_bound",
+          "value": 3.7,
+          "provisional": false
+        },
+        "continuity": {
+          "status": "complete",
+          "value": 9.04,
+          "provisional": false
+        },
+        "overall": {
+          "status": "lower_bound",
+          "value": 11.14,
+          "provisional": false
+        }
+      }
+    },
+    {
+      "systemId": "context_forcing_1p3b_t2v",
+      "modelId": "context_forcing_1p3b",
+      "name": "Context Forcing",
+      "provider": "self-hosted (UC Merced, University of Waterloo)",
+      "group": "general_interaction",
+      "inputProfile": "general_text_to_video",
+      "portraitPolicy": null,
+      "systemKind": "native",
+      "population": "core",
+      "comparisonGroup": "",
+      "reportedModelId": "context_forcing_1p3b",
+      "metrics": {
+        "visual_quality": {
+          "status": "lower_bound",
+          "value": 35.7,
+          "provisional": false
+        },
+        "stability": {
+          "status": "lower_bound",
+          "value": 31.03,
+          "provisional": false
+        },
+        "following": {
+          "status": "lower_bound",
+          "value": 7.77,
+          "provisional": false
+        },
+        "continuity": {
+          "status": "lower_bound",
+          "value": 16.49,
+          "provisional": false
+        },
+        "overall": {
+          "status": "lower_bound",
+          "value": 22.75,
+          "provisional": false
+        }
+      }
+    },
+    {
+      "systemId": "helios_t2v",
+      "modelId": "helios",
+      "name": "Helios (Distilled)",
+      "provider": "self-hosted (PKU-YuanGroup)",
+      "group": "general_interaction",
+      "inputProfile": "general_text_to_video",
+      "portraitPolicy": null,
+      "systemKind": "native",
+      "population": "core",
+      "comparisonGroup": "",
+      "reportedModelId": "helios",
+      "metrics": {
+        "visual_quality": {
+          "status": "lower_bound",
+          "value": 28.79,
+          "provisional": false
+        },
+        "stability": {
+          "status": "lower_bound",
+          "value": 28.03,
+          "provisional": false
+        },
+        "following": {
+          "status": "lower_bound",
+          "value": 4.44,
+          "provisional": false
+        },
+        "continuity": {
+          "status": "lower_bound",
+          "value": 19.89,
+          "provisional": false
+        },
+        "overall": {
+          "status": "lower_bound",
+          "value": 20.29,
+          "provisional": false
+        }
+      }
+    },
+    {
+      "systemId": "krea_realtime_14b_t2v",
+      "modelId": "krea_realtime_14b",
+      "name": "Krea Realtime",
+      "provider": "self-hosted (Krea AI)",
+      "group": "general_interaction",
+      "inputProfile": "general_text_to_video",
+      "portraitPolicy": null,
+      "systemKind": "native",
+      "population": "core",
+      "comparisonGroup": "",
+      "reportedModelId": "krea_realtime_14b",
+      "metrics": {
+        "visual_quality": {
+          "status": "complete",
+          "value": 35.61,
+          "provisional": false
+        },
+        "stability": {
+          "status": "complete",
+          "value": 42.79,
+          "provisional": false
+        },
+        "following": {
+          "status": "lower_bound",
+          "value": 9.62,
+          "provisional": false
+        },
+        "continuity": {
+          "status": "complete",
+          "value": 22.12,
+          "provisional": false
+        },
+        "overall": {
+          "status": "lower_bound",
+          "value": 27.53,
+          "provisional": false
+        }
+      }
+    },
+    {
+      "systemId": "longlive2_5b_t2v",
+      "modelId": "longlive2_5b",
+      "name": "LongLive 2.0",
+      "provider": "self-hosted (NVIDIA)",
+      "group": "general_interaction",
+      "inputProfile": "general_text_to_video",
+      "portraitPolicy": null,
+      "systemKind": "native",
+      "population": "core",
+      "comparisonGroup": "",
+      "reportedModelId": "longlive2_5b",
+      "metrics": {
+        "visual_quality": {
+          "status": "complete",
+          "value": 30.08,
+          "provisional": false
+        },
+        "stability": {
+          "status": "complete",
+          "value": 31.84,
+          "provisional": false
+        },
+        "following": {
+          "status": "lower_bound",
+          "value": 9.25,
+          "provisional": false
+        },
+        "continuity": {
+          "status": "complete",
+          "value": 20.74,
+          "provisional": false
+        },
+        "overall": {
+          "status": "lower_bound",
+          "value": 22.98,
+          "provisional": false
+        }
+      }
+    },
+    {
+      "systemId": "memflow_1p3b_t2v",
+      "modelId": "memflow_1p3b",
+      "name": "MemFlow",
+      "provider": "self-hosted (The University of Hong Kong, Kling Team)",
+      "group": "general_interaction",
+      "inputProfile": "general_text_to_video",
+      "portraitPolicy": null,
+      "systemKind": "native",
+      "population": "core",
+      "comparisonGroup": "",
+      "reportedModelId": "memflow_1p3b",
+      "metrics": {
+        "visual_quality": {
+          "status": "complete",
+          "value": 40.93,
+          "provisional": false
+        },
+        "stability": {
+          "status": "complete",
+          "value": 40.38,
+          "provisional": false
+        },
+        "following": {
+          "status": "lower_bound",
+          "value": 9.25,
+          "provisional": false
+        },
+        "continuity": {
+          "status": "complete",
+          "value": 29.54,
+          "provisional": false
+        },
+        "overall": {
+          "status": "lower_bound",
+          "value": 30.02,
+          "provisional": false
+        }
+      }
+    },
+    {
+      "systemId": "reward_forcing_1p3b_t2v",
+      "modelId": "reward_forcing_1p3b",
+      "name": "Reward Forcing",
+      "provider": "self-hosted (Zhejiang University, Ant Group)",
+      "group": "general_interaction",
+      "inputProfile": "general_text_to_video",
+      "portraitPolicy": null,
+      "systemKind": "native",
+      "population": "core",
+      "comparisonGroup": "",
+      "reportedModelId": "reward_forcing_1p3b",
+      "metrics": {
+        "visual_quality": {
+          "status": "lower_bound",
+          "value": 21.72,
+          "provisional": false
+        },
+        "stability": {
+          "status": "lower_bound",
+          "value": 16.05,
+          "provisional": false
+        },
+        "following": {
+          "status": "lower_bound",
+          "value": 4.07,
+          "provisional": false
+        },
+        "continuity": {
+          "status": "lower_bound",
+          "value": 21.4,
+          "provisional": false
+        },
+        "overall": {
+          "status": "lower_bound",
+          "value": 15.81,
+          "provisional": false
+        }
+      }
+    },
+    {
+      "systemId": "rolling_forcing_1p3b_t2v",
+      "modelId": "rolling_forcing_1p3b",
+      "name": "Rolling Forcing",
+      "provider": "self-hosted (Nanyang Technological University, Tencent ARC Lab)",
+      "group": "general_interaction",
+      "inputProfile": "general_text_to_video",
+      "portraitPolicy": null,
+      "systemKind": "native",
+      "population": "core",
+      "comparisonGroup": "",
+      "reportedModelId": "rolling_forcing_1p3b",
+      "metrics": {
+        "visual_quality": {
+          "status": "complete",
+          "value": 45.19,
+          "provisional": false
+        },
+        "stability": {
+          "status": "complete",
+          "value": 44.47,
+          "provisional": false
+        },
+        "following": {
+          "status": "lower_bound",
+          "value": 6.66,
+          "provisional": false
+        },
+        "continuity": {
+          "status": "complete",
+          "value": 24.61,
+          "provisional": false
+        },
+        "overall": {
+          "status": "lower_bound",
+          "value": 30.23,
+          "provisional": false
+        }
+      }
+    },
+    {
+      "systemId": "self_forcing_1p3b_t2v",
+      "modelId": "self_forcing_1p3b",
+      "name": "Self-Forcing",
+      "provider": "self-hosted (Adobe Research, UT Austin)",
+      "group": "general_interaction",
+      "inputProfile": "general_text_to_video",
+      "portraitPolicy": null,
+      "systemKind": "native",
+      "population": "core",
+      "comparisonGroup": "",
+      "reportedModelId": "self_forcing_1p3b",
+      "metrics": {
+        "visual_quality": {
+          "status": "lower_bound",
+          "value": 16.28,
+          "provisional": false
+        },
+        "stability": {
+          "status": "lower_bound",
+          "value": 17.05,
+          "provisional": false
+        },
+        "following": {
+          "status": "lower_bound",
+          "value": 5.92,
+          "provisional": false
+        },
+        "continuity": {
+          "status": "lower_bound",
+          "value": 13.62,
+          "provisional": false
+        },
+        "overall": {
+          "status": "lower_bound",
+          "value": 13.22,
+          "provisional": false
+        }
+      }
+    },
+    {
+      "systemId": "shotstream_1p3b_t2v",
+      "modelId": "shotstream_1p3b",
+      "name": "ShotStream",
+      "provider": "self-hosted (CUHK MMLab, Kling Team)",
+      "group": "general_interaction",
+      "inputProfile": "general_text_to_video",
+      "portraitPolicy": null,
+      "systemKind": "native",
+      "population": "core",
+      "comparisonGroup": "",
+      "reportedModelId": "shotstream_1p3b",
+      "metrics": {
+        "visual_quality": {
+          "status": "lower_bound",
+          "value": 33.8,
+          "provisional": false
+        },
+        "stability": {
+          "status": "lower_bound",
+          "value": 20.54,
+          "provisional": false
+        },
+        "following": {
+          "status": "lower_bound",
+          "value": 6.66,
+          "provisional": false
+        },
+        "continuity": {
+          "status": "lower_bound",
+          "value": 9.34,
+          "provisional": false
+        },
+        "overall": {
+          "status": "lower_bound",
+          "value": 17.58,
+          "provisional": false
+        }
+      }
+    },
+    {
+      "systemId": "yume_5b_t2v",
+      "modelId": "yume_5b",
+      "name": "Yume 1.5 (720p)",
+      "provider": "self-hosted (Shanghai AI Lab)",
+      "group": "general_interaction",
+      "inputProfile": "general_text_to_video",
+      "portraitPolicy": null,
+      "systemKind": "native",
+      "population": "core",
+      "comparisonGroup": "",
+      "reportedModelId": "yume_5b",
+      "metrics": {
+        "visual_quality": {
+          "status": "lower_bound",
+          "value": 25.96,
+          "provisional": false
+        },
+        "stability": {
+          "status": "lower_bound",
+          "value": 27.67,
+          "provisional": false
+        },
+        "following": {
+          "status": "lower_bound",
+          "value": 5.18,
+          "provisional": false
+        },
+        "continuity": {
+          "status": "lower_bound",
+          "value": 26.22,
+          "provisional": false
+        },
+        "overall": {
+          "status": "lower_bound",
+          "value": 21.26,
+          "provisional": false
+        }
+      }
+    },
+    {
+      "systemId": "zing_0p5_5b_t2v",
+      "modelId": "zing_0p5_5b",
+      "name": "Zing-0.5",
+      "provider": "self-hosted (Seedleap.ai)",
+      "group": "general_interaction",
+      "inputProfile": "general_text_to_video",
+      "portraitPolicy": null,
+      "systemKind": "native",
+      "population": "core",
+      "comparisonGroup": "",
+      "reportedModelId": "zing_0p5_5b",
+      "metrics": {
+        "visual_quality": {
+          "status": "lower_bound",
+          "value": 35.6,
+          "provisional": false
+        },
+        "stability": {
+          "status": "lower_bound",
+          "value": 39.14,
+          "provisional": false
+        },
+        "following": {
+          "status": "lower_bound",
+          "value": 2.96,
+          "provisional": false
+        },
+        "continuity": {
+          "status": "lower_bound",
+          "value": 23.65,
+          "provisional": false
+        },
+        "overall": {
+          "status": "lower_bound",
+          "value": 25.34,
+          "provisional": false
+        }
+      }
+    },
+    {
+      "systemId": "editalive_14b_instruction",
+      "modelId": "editalive_14b",
+      "name": "EditaLive (14B)",
+      "provider": "self-hosted (vivo BlueImage Lab, University of Macau)",
+      "group": "instruction_edit",
+      "inputProfile": "edit_instruction",
+      "portraitPolicy": null,
+      "systemKind": "native",
+      "population": "core",
+      "comparisonGroup": "",
+      "reportedModelId": "editalive_14b",
+      "metrics": {
+        "visual_quality": {
+          "status": "lower_bound",
+          "value": 7.86,
+          "provisional": false
+        },
+        "stability": {
+          "status": "lower_bound",
+          "value": 4.12,
+          "provisional": false
+        },
+        "following": {
+          "status": "lower_bound",
+          "value": 12.03,
+          "provisional": false
+        },
+        "edit_success": {
+          "status": "complete",
+          "value": 4.26,
+          "provisional": true
+        },
+        "preservation": {
+          "status": "complete",
+          "value": 23.15,
+          "provisional": false
+        },
+        "overall": {
+          "status": "lower_bound",
+          "value": 10.28,
+          "provisional": true
+        }
+      }
+    },
+    {
+      "systemId": "joyai_video_edit_instruction",
+      "modelId": "joyai_video_edit",
+      "name": "JoyAI-Video-Edit",
+      "provider": "self-hosted (JD / jd-opensource)",
+      "group": "instruction_edit",
+      "inputProfile": "edit_instruction",
+      "portraitPolicy": null,
+      "systemKind": "native",
+      "population": "core",
+      "comparisonGroup": "",
+      "reportedModelId": "joyai_video_edit",
+      "metrics": {
+        "visual_quality": {
+          "status": "complete",
+          "value": 11.62,
+          "provisional": false
+        },
+        "stability": {
+          "status": "complete",
+          "value": 9.57,
+          "provisional": false
+        },
+        "following": {
+          "status": "complete",
+          "value": 63.89,
+          "provisional": false
+        },
+        "edit_success": {
+          "status": "complete",
+          "value": 43.52,
+          "provisional": true
+        },
+        "preservation": {
+          "status": "complete",
+          "value": 83.33,
+          "provisional": false
+        },
+        "overall": {
+          "status": "complete",
+          "value": 42.39,
+          "provisional": true
+        }
+      }
+    },
+    {
+      "systemId": "krea_realtime_14b_v2v_instruction",
+      "modelId": "krea_realtime_14b_v2v",
+      "name": "Krea Realtime 14B V2V",
+      "provider": "self-hosted (Krea AI)",
+      "group": "instruction_edit",
+      "inputProfile": "edit_instruction",
+      "portraitPolicy": null,
+      "systemKind": "native",
+      "population": "core",
+      "comparisonGroup": "",
+      "reportedModelId": "krea_realtime_14b_v2v",
+      "metrics": {
+        "visual_quality": {
+          "status": "complete",
+          "value": 1.13,
+          "provisional": false
+        },
+        "stability": {
+          "status": "complete",
+          "value": 0.06,
+          "provisional": false
+        },
+        "following": {
+          "status": "lower_bound",
+          "value": 0.0,
+          "provisional": false
+        },
+        "edit_success": {
+          "status": "lower_bound",
+          "value": 0.0,
+          "provisional": true
+        },
+        "preservation": {
+          "status": "lower_bound",
+          "value": 0.0,
+          "provisional": false
+        },
+        "overall": {
+          "status": "lower_bound",
+          "value": 0.23,
+          "provisional": true
+        }
+      }
+    },
+    {
+      "systemId": "liveedit_1p3b_instruction",
+      "modelId": "liveedit_1p3b",
+      "name": "LiveEdit (1.3B)",
+      "provider": "self-hosted (Tsinghua University, HKUST)",
+      "group": "instruction_edit",
+      "inputProfile": "edit_instruction",
+      "portraitPolicy": null,
+      "systemKind": "native",
+      "population": "core",
+      "comparisonGroup": "",
+      "reportedModelId": "liveedit_1p3b",
+      "metrics": {
+        "visual_quality": {
+          "status": "complete",
+          "value": 3.22,
+          "provisional": false
+        },
+        "stability": {
+          "status": "complete",
+          "value": 0.62,
+          "provisional": false
+        },
+        "following": {
+          "status": "complete",
+          "value": 5.37,
+          "provisional": false
+        },
+        "edit_success": {
+          "status": "complete",
+          "value": 1.67,
+          "provisional": true
+        },
+        "preservation": {
+          "status": "complete",
+          "value": 7.04,
+          "provisional": false
+        },
+        "overall": {
+          "status": "complete",
+          "value": 3.58,
+          "provisional": true
+        }
+      }
+    },
+    {
+      "systemId": "sana_streaming_2b_instruction",
+      "modelId": "sana_streaming_2b",
+      "name": "SANA-Streaming 2B",
+      "provider": "self-hosted (NVIDIA)",
+      "group": "instruction_edit",
+      "inputProfile": "edit_instruction",
+      "portraitPolicy": null,
+      "systemKind": "native",
+      "population": "core",
+      "comparisonGroup": "",
+      "reportedModelId": "sana_streaming_2b",
+      "metrics": {
+        "visual_quality": {
+          "status": "lower_bound",
+          "value": 15.15,
+          "provisional": false
+        },
+        "stability": {
+          "status": "lower_bound",
+          "value": 9.22,
+          "provisional": false
+        },
+        "following": {
+          "status": "complete",
+          "value": 11.48,
+          "provisional": false
+        },
+        "edit_success": {
+          "status": "complete",
+          "value": 4.63,
+          "provisional": true
+        },
+        "preservation": {
+          "status": "complete",
+          "value": 44.26,
+          "provisional": false
+        },
+        "overall": {
+          "status": "lower_bound",
+          "value": 16.94,
+          "provisional": true
+        }
+      }
+    },
+    {
+      "systemId": "streamdiffusion_sdturbo_instruction",
+      "modelId": "streamdiffusion_sdturbo",
+      "name": "StreamDiffusion",
+      "provider": "self-hosted (StreamDiffusion team)",
+      "group": "instruction_edit",
+      "inputProfile": "edit_instruction",
+      "portraitPolicy": null,
+      "systemKind": "native",
+      "population": "core",
+      "comparisonGroup": "",
+      "reportedModelId": "streamdiffusion_sdturbo",
+      "metrics": {
+        "visual_quality": {
+          "status": "lower_bound",
+          "value": 0.04,
+          "provisional": false
+        },
+        "stability": {
+          "status": "lower_bound",
+          "value": 0.0,
+          "provisional": false
+        },
+        "following": {
+          "status": "complete",
+          "value": 0.0,
+          "provisional": false
+        },
+        "edit_success": {
+          "status": "complete",
+          "value": 0.0,
+          "provisional": true
+        },
+        "preservation": {
+          "status": "complete",
+          "value": 1.3,
+          "provisional": false
+        },
+        "overall": {
+          "status": "lower_bound",
+          "value": 0.26,
+          "provisional": true
+        }
+      }
+    },
+    {
+      "systemId": "streamdiffusionv2_1p3b_instruction",
+      "modelId": "streamdiffusionv2_1p3b",
+      "name": "StreamDiffusionV2 1.3B",
+      "provider": "self-hosted (StreamDiffusionV2 team, UT Austin)",
+      "group": "instruction_edit",
+      "inputProfile": "edit_instruction",
+      "portraitPolicy": null,
+      "systemKind": "native",
+      "population": "core",
+      "comparisonGroup": "",
+      "reportedModelId": "streamdiffusionv2_1p3b",
+      "metrics": {
+        "visual_quality": {
+          "status": "lower_bound",
+          "value": 0.01,
+          "provisional": false
+        },
+        "stability": {
+          "status": "lower_bound",
+          "value": 0.0,
+          "provisional": false
+        },
+        "following": {
+          "status": "complete",
+          "value": 0.0,
+          "provisional": false
+        },
+        "edit_success": {
+          "status": "complete",
+          "value": 0.0,
+          "provisional": true
+        },
+        "preservation": {
+          "status": "complete",
+          "value": 0.0,
+          "provisional": false
+        },
+        "overall": {
+          "status": "lower_bound",
+          "value": 0.0,
+          "provisional": true
+        }
+      }
+    },
+    {
+      "systemId": "streamv2v_sd15_instruction",
+      "modelId": "streamv2v_sd15",
+      "name": "StreamV2V",
+      "provider": "self-hosted (UT Austin)",
+      "group": "instruction_edit",
+      "inputProfile": "edit_instruction",
+      "portraitPolicy": null,
+      "systemKind": "native",
+      "population": "core",
+      "comparisonGroup": "",
+      "reportedModelId": "streamv2v_sd15",
+      "metrics": {
+        "visual_quality": {
+          "status": "complete",
+          "value": 0.0,
+          "provisional": false
+        },
+        "stability": {
+          "status": "complete",
+          "value": 0.0,
+          "provisional": false
+        },
+        "following": {
+          "status": "complete",
+          "value": 0.0,
+          "provisional": false
+        },
+        "edit_success": {
+          "status": "complete",
+          "value": 0.0,
+          "provisional": true
+        },
+        "preservation": {
+          "status": "complete",
+          "value": 0.56,
+          "provisional": false
+        },
+        "overall": {
+          "status": "complete",
+          "value": 0.11,
+          "provisional": true
+        }
+      }
+    },
+    {
+      "systemId": "vidu_s2_editing_t2i",
+      "modelId": "vidu_s2_editing",
+      "name": "Vidu S2 Editing",
+      "provider": "Vidu",
+      "group": "instruction_edit",
+      "inputProfile": "edit_instruction",
+      "portraitPolicy": null,
+      "systemKind": "composition",
+      "population": "core",
+      "inputRoute": "instruction_to_reference",
+      "comparisonGroup": "",
+      "reportedModelId": "vidu_s2_editing",
+      "metrics": {
+        "visual_quality": {
+          "status": "lower_bound",
+          "value": 22.98,
+          "provisional": false
+        },
+        "stability": {
+          "status": "lower_bound",
+          "value": 13.93,
+          "provisional": false
+        },
+        "following": {
+          "status": "complete",
+          "value": 72.1,
+          "provisional": false
+        },
+        "edit_success": {
+          "status": "complete",
+          "value": 57.2,
+          "provisional": true
+        },
+        "preservation": {
+          "status": "complete",
+          "value": 60.93,
+          "provisional": false
+        },
+        "overall": {
+          "status": "lower_bound",
+          "value": 45.43,
+          "provisional": true
+        }
+      }
+    },
+    {
+      "systemId": "xmax_x2_instruction",
+      "modelId": "xmax_x2_realtime",
+      "name": "XMax X2.0",
+      "provider": "XMax",
+      "group": "instruction_edit",
+      "inputProfile": "edit_instruction",
+      "portraitPolicy": null,
+      "systemKind": "native",
+      "population": "core",
+      "comparisonGroup": "",
+      "reportedModelId": "xmax_x2_realtime",
+      "metrics": {
+        "visual_quality": {
+          "status": "complete",
+          "value": 5.14,
+          "provisional": false
+        },
+        "stability": {
+          "status": "complete",
+          "value": 0.97,
+          "provisional": false
+        },
+        "following": {
+          "status": "complete",
+          "value": 11.3,
+          "provisional": false
+        },
+        "edit_success": {
+          "status": "lower_bound",
+          "value": 2.59,
+          "provisional": true
+        },
+        "preservation": {
+          "status": "complete",
+          "value": 28.52,
+          "provisional": false
+        },
+        "overall": {
+          "status": "lower_bound",
+          "value": 9.7,
+          "provisional": true
+        }
+      }
+    },
+    {
+      "systemId": "joyai_video_edit_reference",
+      "modelId": "joyai_video_edit",
+      "name": "JoyAI-Video-Edit",
+      "provider": "self-hosted (JD / jd-opensource)",
+      "group": "reference_edit",
+      "inputProfile": "edit_reference_v1_preloaded_a",
+      "portraitPolicy": null,
+      "systemKind": "native",
+      "population": "core",
+      "comparisonGroup": "",
+      "reportedModelId": "joyai_video_edit",
+      "metrics": {
+        "visual_quality": {
+          "status": "complete",
+          "value": 6.54,
+          "provisional": false
+        },
+        "stability": {
+          "status": "complete",
+          "value": 3.46,
+          "provisional": false
+        },
+        "reference": {
+          "status": "complete",
+          "value": 26.11,
+          "provisional": false
+        },
+        "edit_success": {
+          "status": "complete",
+          "value": 8.89,
+          "provisional": true
+        },
+        "preservation": {
+          "status": "complete",
+          "value": 26.67,
+          "provisional": false
+        },
+        "overall": {
+          "status": "complete",
+          "value": 14.33,
+          "provisional": true
+        }
+      }
+    },
+    {
+      "systemId": "scope_longlive_vace_reference",
+      "modelId": "scope_longlive_vace",
+      "name": "Scope (LongLive 1.3B + VACE)",
+      "provider": "self-hosted (Daydream)",
+      "group": "reference_edit",
+      "inputProfile": "edit_reference_v1_preloaded_a",
+      "portraitPolicy": null,
+      "systemKind": "native",
+      "population": "core",
+      "comparisonGroup": "",
+      "reportedModelId": "scope_longlive_vace",
+      "metrics": {
+        "visual_quality": {
+          "status": "complete",
+          "value": 2.11,
+          "provisional": false
+        },
+        "stability": {
+          "status": "complete",
+          "value": 2.19,
+          "provisional": false
+        },
+        "reference": {
+          "status": "complete",
+          "value": 0.0,
+          "provisional": false
+        },
+        "edit_success": {
+          "status": "complete",
+          "value": 0.0,
+          "provisional": true
+        },
+        "preservation": {
+          "status": "complete",
+          "value": 2.78,
+          "provisional": false
+        },
+        "overall": {
+          "status": "complete",
+          "value": 1.42,
+          "provisional": true
+        }
+      }
+    },
+    {
+      "systemId": "scope_sdv2_vace_reference",
+      "modelId": "scope_sdv2_vace",
+      "name": "Scope (StreamDiffusionV2 + VACE)",
+      "provider": "self-hosted (Daydream)",
+      "group": "reference_edit",
+      "inputProfile": "edit_reference_v1_preloaded_a",
+      "portraitPolicy": null,
+      "systemKind": "native",
+      "population": "core",
+      "comparisonGroup": "",
+      "reportedModelId": "scope_sdv2_vace",
+      "metrics": {
+        "visual_quality": {
+          "status": "lower_bound",
+          "value": 0.0,
+          "provisional": false
+        },
+        "stability": {
+          "status": "lower_bound",
+          "value": 0.0,
+          "provisional": false
+        },
+        "reference": {
+          "status": "complete",
+          "value": 0.28,
+          "provisional": false
+        },
+        "edit_success": {
+          "status": "complete",
+          "value": 0.0,
+          "provisional": true
+        },
+        "preservation": {
+          "status": "complete",
+          "value": 0.0,
+          "provisional": false
+        },
+        "overall": {
+          "status": "lower_bound",
+          "value": 0.05,
+          "provisional": true
+        }
+      }
+    },
+    {
+      "systemId": "vidu_s2_editing_all",
+      "modelId": "vidu_s2_editing",
+      "name": "Vidu S2 Editing",
+      "provider": "Vidu",
+      "group": "reference_edit",
+      "inputProfile": "edit_reference_v1_preloaded_a",
+      "portraitPolicy": null,
+      "systemKind": "native",
+      "population": "core",
+      "comparisonGroup": "",
+      "reportedModelId": "vidu_s2_editing",
+      "metrics": {
+        "visual_quality": {
+          "status": "lower_bound",
+          "value": 37.71,
+          "provisional": false
+        },
+        "stability": {
+          "status": "lower_bound",
+          "value": 46.74,
+          "provisional": false
+        },
+        "reference": {
+          "status": "complete",
+          "value": 19.72,
+          "provisional": false
+        },
+        "edit_success": {
+          "status": "complete",
+          "value": 15.0,
+          "provisional": true
+        },
+        "preservation": {
+          "status": "complete",
+          "value": 64.44,
+          "provisional": false
+        },
+        "overall": {
+          "status": "lower_bound",
+          "value": 36.72,
+          "provisional": true
+        }
+      }
+    },
+    {
+      "systemId": "xmax_x2_reference",
+      "modelId": "xmax_x2_realtime",
+      "name": "XMax X2.0",
+      "provider": "XMax",
+      "group": "reference_edit",
+      "inputProfile": "edit_reference_v1_preloaded_a",
+      "portraitPolicy": null,
+      "systemKind": "native",
+      "population": "core",
+      "comparisonGroup": "",
+      "reportedModelId": "xmax_x2_realtime",
+      "metrics": {
+        "visual_quality": {
+          "status": "complete",
+          "value": 8.2,
+          "provisional": false
+        },
+        "stability": {
+          "status": "complete",
+          "value": 7.51,
+          "provisional": false
+        },
+        "reference": {
+          "status": "complete",
+          "value": 20.56,
+          "provisional": false
+        },
+        "edit_success": {
+          "status": "complete",
+          "value": 1.11,
+          "provisional": true
+        },
+        "preservation": {
+          "status": "complete",
+          "value": 10.0,
+          "provisional": false
+        },
+        "overall": {
+          "status": "complete",
+          "value": 9.47,
+          "provisional": true
+        }
+      }
+    }
+  ]
+}

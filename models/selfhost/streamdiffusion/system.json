@@ -1,0 +1,58 @@
+{
+  "model": "streamdiffusion",
+  "system_id": "streamdiffusion_sdturbo",
+  "model_id": "streamdiffusion_sdturbo",
+  "name": "StreamDiffusion",
+  "provider": "self-hosted (StreamDiffusion team)",
+  "system_kind": "native",
+  "tracks": [
+    "instruction_edit"
+  ],
+  "server": {
+    "cmd": "{env}/bin/python {model_dir}/server.py --port {port}",
+    "port": 8776,
+    "health_timeout_s": 1800
+  },
+  "portrait_policy": null,
+  "gpu": {
+    "count": 1
+  },
+  "output": {
+    "width": 640,
+    "height": 384,
+    "fps": 30
+  },
+  "push": {
+    "max_side": 1280,
+    "max_fps": 30
+  },
+  "model_version": "streamdiffusion@b623251dc055 + stabilityai/sd-turbo @b261bac + madebyollin/taesd @614f768",
+  "weights": {
+    "repo": "stabilityai/sd-turbo @b261bac (diffusers fp32 files) + madebyollin/taesd @614f768",
+    "sha256": {
+      "sd-turbo/unet/diffusion_pytorch_model.safetensors": "438da6db739c8651ec4152341b8133d6896db452ea27afdb6b9b0344f0c40532",
+      "sd-turbo/text_encoder/model.safetensors": "67e013543d4fac905c882e2993d86a2d454ee69dc9e8f37c0c23d33a48959d15",
+      "sd-turbo/vae/diffusion_pytorch_model.safetensors": "2aa1f43011b553a4cba7f37456465cdbd48aab7b54b9348b890e8058ea7683ec",
+      "taesd/diffusion_pytorch_model.safetensors": "db169d69145ec4ff064e49d99c95fa05d3eb04ee453de35824a6d0f325513549"
+    }
+  },
+  "license": "Apache-2.0 (code); sd-turbo: Stability AI Community License (free for research and non-commercial use; commercial use free only below USD 1M annual revenue); TAESD: MIT",
+  "steps": 2,
+  "seed": 2,
+  "notes": "Classic per-frame img2img baseline, configured as the upstream realtime-img2img demo: SD-Turbo, TAESD, t_index_list [35, 45], denoising batch, cfg none, demo negative prompt; acceleration none (SDPA) instead of TensorRT. Each text_control instruction is sent verbatim as the new prompt (update_prompt from the next frame; no rewriting or accumulation; CLIP truncates at 77 tokens). Output 640x384 (384x640 portrait, center crop; 512x512-class budget, UNet needs multiples of 64) at up to 30 fps. Source frames are passed through until the first instruction. No reference path.",
+  "input_adapters": {
+    "instruction_edit": {
+      "mode": "normalized",
+      "transforms": [
+        {
+          "operation": "source_video_normalization",
+          "parameters": {
+            "max_side": 1280,
+            "max_fps": 30,
+            "upscale": false
+          }
+        }
+      ]
+    }
+  }
+}
