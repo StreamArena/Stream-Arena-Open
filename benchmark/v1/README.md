@@ -40,7 +40,8 @@ The other 683 assets were generated for this benchmark.
 
 ## Running it
 
-Download the media (`data/v1/`) from [Hugging Face or ModelScope](../../README.md#data), then:
+Download the media (`data/v1/`) from [Hugging Face](https://huggingface.co/datasets/StreamArena/Stream-Arena-Open) or
+[ModelScope](https://www.modelscope.ai/datasets/StreamArena/Stream-Arena-Open) and install the code from [GitHub](https://github.com/StreamArena/Stream-Arena-Open), then:
 
 ```bash
 export STREAM_ARENA_DATA=<path>/data
