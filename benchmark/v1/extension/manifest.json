@@ -1,0 +1,880 @@
+{
+ "assets": {
+  "sa.clean_reference_image.v1_227.a": {
+   "bytes": 1468036,
+   "kind": "image",
+   "path": "v1/images/013.png",
+   "role": "clean_reference_image",
+   "sha256": "64ed660af009bcfe742e511c91dc7ccb30a4e20ed67a0ddbfc2c973bdb65ca1c"
+  },
+  "sa.clean_reference_image.v1_227.b": {
+   "bytes": 1915980,
+   "kind": "image",
+   "path": "v1/images/014.png",
+   "role": "clean_reference_image",
+   "sha256": "e17fc7bc73e718c072541c3214631c4eb4bcd1f36d43d0990416cf19b8856b65"
+  },
+  "sa.clean_reference_image.v1_227.c": {
+   "bytes": 1516621,
+   "kind": "image",
+   "path": "v1/images/015.png",
+   "role": "clean_reference_image",
+   "sha256": "3f77758a33c131f2462979d60156a344d4c35659d8eb41665f0175577cbfcd75"
+  },
+  "sa.clean_reference_image.v1_228.a": {
+   "bytes": 1602906,
+   "kind": "image",
+   "path": "v1/images/016.png",
+   "role": "clean_reference_image",
+   "sha256": "1788eb4ccaea869d347fd61bb78f056f641d3597bbcd4c36851ac8cf92d6d9d0"
+  },
+  "sa.clean_reference_image.v1_228.b": {
+   "bytes": 1508940,
+   "kind": "image",
+   "path": "v1/images/017.png",
+   "role": "clean_reference_image",
+   "sha256": "26977e4a2c1b77f18e5997171f75d1f44b958a05b52dda5d826f0053417aa7de"
+  },
+  "sa.clean_reference_image.v1_228.c": {
+   "bytes": 1530191,
+   "kind": "image",
+   "path": "v1/images/018.png",
+   "role": "clean_reference_image",
+   "sha256": "4396e51fb0f4d92a29e3d6976eeb93ed96de4335927511222ac5aa90564d44c9"
+  },
+  "sa.clean_reference_image.v1_235.a": {
+   "bytes": 1547325,
+   "kind": "image",
+   "path": "v1/images/031.png",
+   "role": "clean_reference_image",
+   "sha256": "d62af4e923e1ce5f2da60f95cb4983cc89a11fe8f7b20ddb822889dd87af1960"
+  },
+  "sa.clean_reference_image.v1_235.b": {
+   "bytes": 1540350,
+   "kind": "image",
+   "path": "v1/images/032.png",
+   "role": "clean_reference_image",
+   "sha256": "2e239d356c5e2c32ad36bf9a05d00e82dfc0c34063cc38e1a599a349563273b0"
+  },
+  "sa.clean_reference_image.v1_235.c": {
+   "bytes": 1595704,
+   "kind": "image",
+   "path": "v1/images/033.png",
+   "role": "clean_reference_image",
+   "sha256": "ea0d4e51eacc5db9bf72a6d65866f995306c9dbb161bb3f2148d6e8cf998d1cd"
+  },
+  "sa.clean_reference_image.v1_236.a": {
+   "bytes": 1732107,
+   "kind": "image",
+   "path": "v1/images/034.png",
+   "role": "clean_reference_image",
+   "sha256": "16bf1d6e9d2265e8cf6eb527ef7c95cf4049c8534007e81e333f3960d6304cac"
+  },
+  "sa.clean_reference_image.v1_236.b": {
+   "bytes": 1884034,
+   "kind": "image",
+   "path": "v1/images/035.png",
+   "role": "clean_reference_image",
+   "sha256": "beeda559ea080b9e26211febb56d4db20f33041c3727b8cd472334b6a86d7782"
+  },
+  "sa.clean_reference_image.v1_236.c": {
+   "bytes": 1464259,
+   "kind": "image",
+   "path": "v1/images/036.png",
+   "role": "clean_reference_image",
+   "sha256": "0664ac437984ec86edc03a3c69c42059ed8d4d4d26c722bfff522d2358580b7b"
+  },
+  "sa.clean_reference_image.v1_243.a": {
+   "bytes": 1565984,
+   "kind": "image",
+   "path": "v1/images/049.png",
+   "role": "clean_reference_image",
+   "sha256": "176cf981312d548ee95420693f76b19bacc17e0f520f58bb47b244725ab4389a"
+  },
+  "sa.clean_reference_image.v1_243.b": {
+   "bytes": 1663337,
+   "kind": "image",
+   "path": "v1/images/050.png",
+   "role": "clean_reference_image",
+   "sha256": "56a3893a798d2c80060eaba8e8096bbae609e044b27db3786bf6943dd640e853"
+  },
+  "sa.clean_reference_image.v1_243.c": {
+   "bytes": 1697021,
+   "kind": "image",
+   "path": "v1/images/051.png",
+   "role": "clean_reference_image",
+   "sha256": "fee7b9be37a16c14f7fa0edf838473fff9c250d4b8976db7ff694a8e5c4e4bc9"
+  },
+  "sa.clean_reference_image.v1_244.a": {
+   "bytes": 1718271,
+   "kind": "image",
+   "path": "v1/images/052.png",
+   "role": "clean_reference_image",
+   "sha256": "5ab9098b38f51c68a0a3771302228a657c6f65fc6cc82996cb7c517eb4eba9ca"
+  },
+  "sa.clean_reference_image.v1_244.b": {
+   "bytes": 1869644,
+   "kind": "image",
+   "path": "v1/images/053.png",
+   "role": "clean_reference_image",
+   "sha256": "1c772eb71f61cc8f48d3d4c18185a7820cd6f391de5e5bef47bffe34cddeeda8"
+  },
+  "sa.clean_reference_image.v1_244.c": {
+   "bytes": 1447182,
+   "kind": "image",
+   "path": "v1/images/054.png",
+   "role": "clean_reference_image",
+   "sha256": "4c908a6ecc74c35eab2b666c9f46c79bac6480462c7a5428ddd7b7cadc4502b6"
+  },
+  "sa.clean_reference_image.v1_251.a": {
+   "bytes": 1580136,
+   "kind": "image",
+   "path": "v1/images/067.png",
+   "role": "clean_reference_image",
+   "sha256": "4e037311b14b5d41152f6fdad2102167c9bd1674564a900cb0415e497d808a80"
+  },
+  "sa.clean_reference_image.v1_251.b": {
+   "bytes": 2027663,
+   "kind": "image",
+   "path": "v1/images/068.png",
+   "role": "clean_reference_image",
+   "sha256": "c25db14263e8b9d2093f28b702048a494a246b0d5c4e6489f08e1884c2363774"
+  },
+  "sa.clean_reference_image.v1_251.c": {
+   "bytes": 1481355,
+   "kind": "image",
+   "path": "v1/images/069.png",
+   "role": "clean_reference_image",
+   "sha256": "150b2597c1413c316c3d8a0f0daee93fa7d135b495de33dfe0c590eefdbb3379"
+  },
+  "sa.clean_reference_image.v1_252.a": {
+   "bytes": 1422042,
+   "kind": "image",
+   "path": "v1/images/070.png",
+   "role": "clean_reference_image",
+   "sha256": "6d767e64828c2070657cc24aa02d359cfd45ad39082b3a9506161b9098007135"
+  },
+  "sa.clean_reference_image.v1_252.b": {
+   "bytes": 1500351,
+   "kind": "image",
+   "path": "v1/images/071.png",
+   "role": "clean_reference_image",
+   "sha256": "9b6dc64e3a1de193a39c7cf04112f5b650e32b5fa4210e7132cbd452e2459913"
+  },
+  "sa.clean_reference_image.v1_252.c": {
+   "bytes": 1422049,
+   "kind": "image",
+   "path": "v1/images/072.png",
+   "role": "clean_reference_image",
+   "sha256": "50f7de397711c566bc1924ffc9fa6fddf35a6637ed8e865c1afa6ea1a1d725db"
+  },
+  "sa.clean_reference_image.v1_259.a": {
+   "bytes": 1518126,
+   "kind": "image",
+   "path": "v1/images/085.png",
+   "role": "clean_reference_image",
+   "sha256": "dfa4241b5c144b2a0e919b54b0a5555d3d0fdc88634fe99f3977f9d3ce9d44ce"
+  },
+  "sa.clean_reference_image.v1_259.b": {
+   "bytes": 1666084,
+   "kind": "image",
+   "path": "v1/images/086.png",
+   "role": "clean_reference_image",
+   "sha256": "e1538a4a462bd5130cc25f3368b6e6ff8ae81e3fb077e1c7d75a8a51b9f76e85"
+  },
+  "sa.clean_reference_image.v1_259.c": {
+   "bytes": 1532506,
+   "kind": "image",
+   "path": "v1/images/087.png",
+   "role": "clean_reference_image",
+   "sha256": "4f4e8e018de989dc4a4dd2d9e3ab2b80445b24309c6a24ef69b4563eba1b5ef2"
+  },
+  "sa.clean_reference_image.v1_260.a": {
+   "bytes": 1582639,
+   "kind": "image",
+   "path": "v1/images/088.png",
+   "role": "clean_reference_image",
+   "sha256": "ca3e1898c9b9426b1c387f1defd1e23c227b2443607f1761e03fea241949e639"
+  },
+  "sa.clean_reference_image.v1_260.b": {
+   "bytes": 1568746,
+   "kind": "image",
+   "path": "v1/images/089.png",
+   "role": "clean_reference_image",
+   "sha256": "85086998dbee43bf3affddc1bfa509b0fd06448027b2d39c0ba5dbec97cafca1"
+  },
+  "sa.clean_reference_image.v1_260.c": {
+   "bytes": 1486367,
+   "kind": "image",
+   "path": "v1/images/090.png",
+   "role": "clean_reference_image",
+   "sha256": "6d96fb84cf16e86d14c9a2bf8964bdc7a01094b858d3565af59c01f612d00a4e"
+  },
+  "sa.source_video.v1_227": {
+   "bytes": 15534212,
+   "kind": "video",
+   "path": "v1/videos/007.mp4",
+   "role": "source_video",
+   "sha256": "19aabafc2d54e326d6bc73dccf63bdd0f559f5f4a49ef825719c94636eef97a7"
+  },
+  "sa.source_video.v1_228": {
+   "bytes": 1760279,
+   "kind": "video",
+   "path": "v1/videos/008.mp4",
+   "role": "source_video",
+   "sha256": "81a97d726e47a773d0b76678aaf59ffba78e1c71d9b850224ad379d050eaceeb"
+  },
+  "sa.source_video.v1_235": {
+   "bytes": 21701603,
+   "kind": "video",
+   "path": "v1/videos/015.mp4",
+   "role": "source_video",
+   "sha256": "fca41eb718e18eb6f613b775cfefcb4379d300f461b6d1c45d59f92c1213066e"
+  },
+  "sa.source_video.v1_236": {
+   "bytes": 7223522,
+   "kind": "video",
+   "path": "v1/videos/016.mp4",
+   "role": "source_video",
+   "sha256": "ff18d967fc6379bfb7256330fcbaa6b5bf28565bb3b84ad658fdc989d41fed73"
+  },
+  "sa.source_video.v1_243": {
+   "bytes": 10378430,
+   "kind": "video",
+   "path": "v1/videos/023.mp4",
+   "role": "source_video",
+   "sha256": "21f667ee14b5624b024351022e908c00de59ab87e5c03d65cce760b777ab0aa8"
+  },
+  "sa.source_video.v1_244": {
+   "bytes": 21971767,
+   "kind": "video",
+   "path": "v1/videos/024.mp4",
+   "role": "source_video",
+   "sha256": "a59c06385da02838a9af9e4efaeaff47bec82dc815aede0a55b6d85a17c293f6"
+  },
+  "sa.source_video.v1_251": {
+   "bytes": 52037212,
+   "kind": "video",
+   "path": "v1/videos/031.mp4",
+   "role": "source_video",
+   "sha256": "2245c66c1bb5f385ed1ea440f2a1811ba60cf3f5565a17e97b436e2210a35446"
+  },
+  "sa.source_video.v1_252": {
+   "bytes": 167594282,
+   "kind": "video",
+   "path": "v1/videos/032.mp4",
+   "role": "source_video",
+   "sha256": "132f8ffb0905df272ebc48b8344e823ed5a74db160ea6f1850daa2771f1db7e6"
+  },
+  "sa.source_video.v1_259": {
+   "bytes": 87203262,
+   "kind": "video",
+   "path": "v1/videos/039.mp4",
+   "role": "source_video",
+   "sha256": "4dd0271b62d31b0046a7e963a49a0e273a5e1de835a85404700110418695d30d"
+  },
+  "sa.source_video.v1_260": {
+   "bytes": 32917721,
+   "kind": "video",
+   "path": "v1/videos/040.mp4",
+   "role": "source_video",
+   "sha256": "df067d75b1d533e504d3d9ecd7ace1405a2ab857265a6ddf850ce0639c9bcb7c"
+  },
+  "sa.v1.107.portrait": {
+   "bytes": 1465503,
+   "kind": "image",
+   "path": "v1/images/099.png",
+   "role": "portrait",
+   "sha256": "e690b5a728e697c504166945d5e5736ec437ea19fbb035c5d99d953d973bff57"
+  },
+  "sa.v1.107.user_audio.u1": {
+   "bytes": 84524,
+   "kind": "audio",
+   "path": "v1/audio/011.wav",
+   "role": "user_audio",
+   "script": "How many cots are in Zone Three?",
+   "sha256": "9c610fced3f1305af3a5171eab1cbe3388caa3a3643381cf520c47f3df499f97"
+  },
+  "sa.v1.107.user_audio.u2": {
+   "bytes": 161324,
+   "kind": "audio",
+   "path": "v1/audio/012.wav",
+   "role": "user_audio",
+   "script": "Wait, I meant Zone Five, not Three.",
+   "sha256": "99e97b2fa971befd9f876e4ecf52e861702af13850bb7d232729960ad6ced88f"
+  },
+  "sa.v1.108.portrait": {
+   "bytes": 1580869,
+   "kind": "image",
+   "path": "v1/images/100.png",
+   "role": "portrait",
+   "sha256": "28689fa4f71967a1368d18a1e86ed18843020cd93824c17114893055039a3ec9"
+  },
+  "sa.v1.108.user_audio.u1": {
+   "bytes": 145964,
+   "kind": "audio",
+   "path": "v1/audio/013.wav",
+   "role": "user_audio",
+   "script": "Route thermal blankets to Bleached Atoll and Deep Shelf.",
+   "sha256": "db8d60c6097265310445d2c249c0c47b20a24e7c737b71f694bdd6dc26af87c9"
+  },
+  "sa.v1.108.user_audio.u2": {
+   "bytes": 153644,
+   "kind": "audio",
+   "path": "v1/audio/014.wav",
+   "role": "user_audio",
+   "script": "Wait, Bleached Atoll is evacuated, drop it.",
+   "sha256": "baf1e9ee8fc2dfc51cd8ef0ddb3ea7e8993ddc56a6cd55ace1f71f2a09d32762"
+  },
+  "sa.v1.115.portrait": {
+   "bytes": 1324983,
+   "kind": "image",
+   "path": "v1/images/107.png",
+   "role": "portrait",
+   "sha256": "899f9bb5258a61cf15c2e0fed97f9d5bf252ad63cdbcfe752763f1836a7cf336"
+  },
+  "sa.v1.115.user_audio.u1": {
+   "bytes": 90284,
+   "kind": "audio",
+   "path": "v1/audio/027.wav",
+   "role": "user_audio",
+   "script": "Could you put my duffel bag in the—",
+   "sha256": "9a7a7e1303a0fafb1a3de040a93eac40769cff07a04e7712db6529dccab8c0e9"
+  },
+  "sa.v1.115.user_audio.u2": {
+   "bytes": 117164,
+   "kind": "audio",
+   "path": "v1/audio/028.wav",
+   "role": "user_audio",
+   "script": "Actually no, it is my cello case.",
+   "sha256": "298f6f31011d8b3823e34797b36df46efe27c20d7af163b9c8cf44dca0342702"
+  },
+  "sa.v1.116.portrait": {
+   "bytes": 1827569,
+   "kind": "image",
+   "path": "v1/images/108.png",
+   "role": "portrait",
+   "sha256": "893f8d3945c0393a1f6202158d831279538c6be667943abb50ee1e2af0eb7826"
+  },
+  "sa.v1.116.user_audio.u1": {
+   "bytes": 111404,
+   "kind": "audio",
+   "path": "v1/audio/029.wav",
+   "role": "user_audio",
+   "script": "Are the dinosaur hall sensors off for maintenance?",
+   "sha256": "4203f5c0ff6788c497f8078fe5b9cfb38e9a79814ad1cbaa53ba6b92e2e418de"
+  },
+  "sa.v1.116.user_audio.u2": {
+   "bytes": 161324,
+   "kind": "audio",
+   "path": "v1/audio/030.wav",
+   "role": "user_audio",
+   "script": "Wait, the status update says those sensors are fully armed.",
+   "sha256": "72267714efe8e4eabf5b97c08a628fe36aae25355b0b83cffe41dd1946d44bbd"
+  },
+  "sa.v1.123.portrait": {
+   "bytes": 1551766,
+   "kind": "image",
+   "path": "v1/images/115.png",
+   "role": "portrait",
+   "sha256": "48672c78d5c4bf090f181712f9887b8d37b0466a84d9d76ed218efef749fbd74"
+  },
+  "sa.v1.123.user_audio.u1": {
+   "bytes": 238124,
+   "kind": "audio",
+   "path": "v1/audio/047.wav",
+   "role": "user_audio",
+   "script": "I need a floodplain planting plan for our south field, but everything has to be organic.",
+   "sha256": "476b5e9726cd8b99b6945aeda30a087583303dcdcb4c314aca638246da620b81"
+  },
+  "sa.v1.123.user_audio.u2": {
+   "bytes": 222764,
+   "kind": "audio",
+   "path": "v1/audio/048.wav",
+   "role": "user_audio",
+   "script": "Wait, skip the rice—let's do sorghum instead, still organic though.",
+   "sha256": "c5b497ba9803f3d5e2cd5b7f7ee28d55789d6d02ee0d8bbd409dd4500a9e6a4e"
+  },
+  "sa.v1.124.portrait": {
+   "bytes": 1508019,
+   "kind": "image",
+   "path": "v1/images/116.png",
+   "role": "portrait",
+   "sha256": "0f7a77d71ef5ab18131780a4ddc1d0cb0b797ae360ea2dfd229a244c2d3f7402"
+  },
+  "sa.v1.124.user_audio.u1": {
+   "bytes": 130604,
+   "kind": "audio",
+   "path": "v1/audio/049.wav",
+   "role": "user_audio",
+   "script": "Which mapped route might suit our survey?",
+   "sha256": "33092421460c5a30924045d5c1f948a32cca5b9cf6099f5b2449fb819872d432"
+  },
+  "sa.v1.124.user_audio.u2": {
+   "bytes": 203564,
+   "kind": "audio",
+   "path": "v1/audio/050.wav",
+   "role": "user_audio",
+   "script": "Wait, hold on—our hull is rated to only two thousand meters.",
+   "sha256": "afe9ee5a9548c34e5afb6fcc0894a1142655f3a1d469bfeee729133eb33732a4"
+  },
+  "sa.v1.131.portrait": {
+   "bytes": 1456108,
+   "kind": "image",
+   "path": "v1/images/123.png",
+   "role": "portrait",
+   "sha256": "75a0a4531f0a1f2fd0b606a8e72eacfe2fba67378bea7c4924c03c8e333ae601"
+  },
+  "sa.v1.131.user_audio.u1": {
+   "bytes": 190124,
+   "kind": "audio",
+   "path": "v1/audio/070.wav",
+   "role": "user_audio",
+   "script": "Book the north array for Dr. Lorn at twenty-two hundred hours.",
+   "sha256": "236208ad7f6f75ebd26bc6677c20c286714f3eb23d52d2ae9df763e7ab3cb99a"
+  },
+  "sa.v1.131.user_audio.u2": {
+   "bytes": 105644,
+   "kind": "audio",
+   "path": "v1/audio/071.wav",
+   "role": "user_audio",
+   "script": "Wait no make it twenty-three hundred.",
+   "sha256": "a3aa727be3c13e44e9a62e294edf28b780eba6a804e495a6083736ce47be349b"
+  },
+  "sa.v1.131.user_audio.u3": {
+   "bytes": 147884,
+   "kind": "audio",
+   "path": "v1/audio/072.wav",
+   "role": "user_audio",
+   "script": "Actually scratch that lock it in at midnight instead.",
+   "sha256": "e88527364a2915a803a5dc668ef3d9dd72a10ce5459ac79b2b86222ae2cc71f7"
+  },
+  "sa.v1.132.portrait": {
+   "bytes": 1957770,
+   "kind": "image",
+   "path": "v1/images/124.png",
+   "role": "portrait",
+   "sha256": "bb71be42845173c18f99885225f206ef923fc9ebe443c3cd3437574165492ad1"
+  },
+  "sa.v1.132.user_audio.u1": {
+   "bytes": 165164,
+   "kind": "audio",
+   "path": "v1/audio/073.wav",
+   "role": "user_audio",
+   "script": "Walk me through the three-step storm protocol for the north ridge.",
+   "sha256": "234a03b68d3e6026a44901dbf9617950da8e65daeee206b03055bb16032594a0"
+  },
+  "sa.v1.132.user_audio.u2": {
+   "bytes": 268844,
+   "kind": "audio",
+   "path": "v1/audio/074.wav",
+   "role": "user_audio",
+   "script": "Wait, the north ridge shelter is Bunker Seven now, not Bunker Four. Go on.",
+   "sha256": "f44af3e3f10faf0974c78660fd35415a541aa4571605eab4537c3aad8b9d6d53"
+  },
+  "sa.v1.139.portrait": {
+   "bytes": 1509228,
+   "kind": "image",
+   "path": "v1/images/131.png",
+   "role": "portrait",
+   "sha256": "60f0ecaeab3304dcee340920b1c50f2051716c859cba74daa066ec5184317cda"
+  },
+  "sa.v1.139.user_audio.u1": {
+   "bytes": 157484,
+   "kind": "audio",
+   "path": "v1/audio/110.wav",
+   "role": "user_audio",
+   "script": "Go ahead and read the outgoing shift summary for Ridge Station.",
+   "sha256": "f0b0f36bd5c488d7a64a145b324b855be6a06e621219d3f37eca2787d8645058"
+  },
+  "sa.v1.139.user_audio.u2": {
+   "bytes": 311084,
+   "kind": "audio",
+   "path": "v1/audio/111.wav",
+   "role": "user_audio",
+   "script": "Wait, stop. The wind speed is actually forty knots from the southwest, not twenty from the north.",
+   "sha256": "04a04d85666ccd57fa22c565c721e7e9230945eadd201952e2b9accee384093a"
+  },
+  "sa.v1.139.user_audio.u3": {
+   "bytes": 238124,
+   "kind": "audio",
+   "path": "v1/audio/112.wav",
+   "role": "user_audio",
+   "script": "Okay, given that change, which version of the evening log should I file?",
+   "sha256": "e065962c0caa73e565863042679bf02c7db75e6c1fbbf9ba2e7247955edecd61"
+  },
+  "sa.v1.139.user_audio.u4": {
+   "bytes": 172844,
+   "kind": "audio",
+   "path": "v1/audio/113.wav",
+   "role": "user_audio",
+   "script": "Also note the humidity dropped to eight percent ten minutes ago.",
+   "sha256": "0acd6799e13e56db8ffbf004438f2f3ed1fcb0da1ece92a91c3a70de626413ae"
+  },
+  "sa.v1.139.user_audio.u5": {
+   "bytes": 203564,
+   "kind": "audio",
+   "path": "v1/audio/114.wav",
+   "role": "user_audio",
+   "script": "And the access road is closed due to a fallen oak near marker six.",
+   "sha256": "365dd1954a2557b66a74fa19e24bf046e09247b1b07a14f000c4997e252f0e87"
+  },
+  "sa.v1.139.user_audio.u6": {
+   "bytes": 222764,
+   "kind": "audio",
+   "path": "v1/audio/115.wav",
+   "role": "user_audio",
+   "script": "One more thing: the relief driver is now Tomas, not Elena.",
+   "sha256": "b46d03c648025eaa28db7bf94fe5965fb041f123b68a626cd53ed4f2c829f3b3"
+  },
+  "sa.v1.139.user_audio.u7": {
+   "bytes": 184364,
+   "kind": "audio",
+   "path": "v1/audio/116.wav",
+   "role": "user_audio",
+   "script": "So confirm everything you have for the final handover packet.",
+   "sha256": "824144450ca2702a34536b2ad11e987a3aa08404e882ee75f1958301bdc2d8bc"
+  },
+  "sa.v1.140.portrait": {
+   "bytes": 1477515,
+   "kind": "image",
+   "path": "v1/images/132.png",
+   "role": "portrait",
+   "sha256": "2f604584ea54f44338cc674aeb860895f7ecdd18e620a51479408030b9f537a2"
+  },
+  "sa.v1.140.user_audio.u1": {
+   "bytes": 126764,
+   "kind": "audio",
+   "path": "v1/audio/117.wav",
+   "role": "user_audio",
+   "script": "What barrier method should we use for the north bank?",
+   "sha256": "ff7164dfb27b0a2f9fa5cbb2ef08952cd22fa28be5068b2a095a586c44693ced"
+  },
+  "sa.v1.140.user_audio.u2": {
+   "bytes": 265004,
+   "kind": "audio",
+   "path": "v1/audio/118.wav",
+   "role": "user_audio",
+   "script": "Hold on, archived directive seven says we must use permeable barriers there, not silt fences.",
+   "sha256": "b2c1ae78396d480cdc590329bf414738b7744760ad9616eadb0f2484a1619057"
+  },
+  "sa.v1.140.user_audio.u3": {
+   "bytes": 195884,
+   "kind": "audio",
+   "path": "v1/audio/119.wav",
+   "role": "user_audio",
+   "script": "Okay, so what about the south bank vegetation stabilization?",
+   "sha256": "844dd8feb8252f9c2857d92a8be475193924dd6192a422f135432f2c57bcd6e9"
+  },
+  "sa.v1.140.user_audio.u4": {
+   "bytes": 249644,
+   "kind": "audio",
+   "path": "v1/audio/120.wav",
+   "role": "user_audio",
+   "script": "Wait, doesn't archived directive seven also require native willow stakes instead of coir logs?",
+   "sha256": "a0db84e9b6e943b28b30bee6b804b5fc6f0950234820555bd140a23a95e5d5ef"
+  },
+  "sa.v1.140.user_audio.u5": {
+   "bytes": 161324,
+   "kind": "audio",
+   "path": "v1/audio/121.wav",
+   "role": "user_audio",
+   "script": "Got it. Summarize the final plan for both banks then.",
+   "sha256": "72cccef859dc1de6e886191cfdf8e226c33390b7a2756a11475fe22d16d97ace"
+  },
+  "sa.v1.140.user_audio.u6": {
+   "bytes": 195884,
+   "kind": "audio",
+   "path": "v1/audio/122.wav",
+   "role": "user_audio",
+   "script": "Just confirming, are we ignoring current municipal protocols entirely now?",
+   "sha256": "af47c5144f852cb917342b7949c8d23177d235560db8b57583f514c0321865b3"
+  },
+  "sa.v1.147.performance_portrait": {
+   "bytes": 1454485,
+   "kind": "image",
+   "path": "v1/images/139.png",
+   "role": "performance_portrait",
+   "sha256": "1a5bd5da429d20f02fc57ac09f5c05f9dff3ae96d0d7c53ba18aff51f2c9998d"
+  },
+  "sa.v1.147.speech_audio.s1": {
+   "bytes": 49964,
+   "kind": "audio",
+   "path": "v1/audio/129.wav",
+   "role": "speech_audio",
+   "script": "Signal received.",
+   "sha256": "dbcaf22466ea1393571cf19e412c2512bce5cf76db02c995da23cbb4f4832112"
+  },
+  "sa.v1.148.performance_portrait": {
+   "bytes": 1454076,
+   "kind": "image",
+   "path": "v1/images/140.png",
+   "role": "performance_portrait",
+   "sha256": "9bfba2326589463410ede429fbe20c58de265d71f46a6799331bd3868578cc46"
+  },
+  "sa.v1.148.speech_audio.s1": {
+   "bytes": 38444,
+   "kind": "audio",
+   "path": "v1/audio/130.wav",
+   "role": "speech_audio",
+   "script": "Watch me.",
+   "sha256": "8d267e1115dc0314278a4aa2c9eb6790867fd57ad27165175a0ad3dcb6a02a4f"
+  },
+  "sa.v1.155.performance_portrait": {
+   "bytes": 1183525,
+   "kind": "image",
+   "path": "v1/images/147.png",
+   "role": "performance_portrait",
+   "sha256": "e1293db30cc872f320e683e89c9a380e4a293bfbb2ccf9b154150e6bf52aab22"
+  },
+  "sa.v1.155.speech_audio.s1": {
+   "bytes": 138284,
+   "kind": "audio",
+   "path": "v1/audio/137.wav",
+   "role": "speech_audio",
+   "script": "Silence speaks louder than words ever could.",
+   "sha256": "09b63b5fd835f33663df1d2de59c25f71b1b9398b669c2aac19d684386f288c0"
+  },
+  "sa.v1.156.performance_portrait": {
+   "bytes": 1158185,
+   "kind": "image",
+   "path": "v1/images/148.png",
+   "role": "performance_portrait",
+   "sha256": "706587640b5eec5b0b4e70b763e10810430afc6fc09fbe31f1acebff5d943150"
+  },
+  "sa.v1.156.speech_audio.s1": {
+   "bytes": 73004,
+   "kind": "audio",
+   "path": "v1/audio/138.wav",
+   "role": "speech_audio",
+   "script": "The curtain rises once more.",
+   "sha256": "2d04df960a7acb92d598e8b4ace417eba3156767a4d47c16759e55f950418a25"
+  },
+  "sa.v1.163.performance_portrait": {
+   "bytes": 1265553,
+   "kind": "image",
+   "path": "v1/images/155.png",
+   "role": "performance_portrait",
+   "sha256": "26b05966b7f29bcbca2876905bad489d2a11fb431263e07e701345efa681ed6c"
+  },
+  "sa.v1.163.speech_audio.s1": {
+   "bytes": 115244,
+   "kind": "audio",
+   "path": "v1/audio/145.wav",
+   "role": "speech_audio",
+   "script": "Breathe in, breathe out, now hold steady.",
+   "sha256": "8726a4e07cbe14bcf06ceedfd99a5803e4606a9a5fbea8baafd2272f7ab7745b"
+  },
+  "sa.v1.164.performance_portrait": {
+   "bytes": 1374261,
+   "kind": "image",
+   "path": "v1/images/156.png",
+   "role": "performance_portrait",
+   "sha256": "b20b8dde504737a4e30b0fd40019f647b18d79c495c07c69b33847a48bb8af31"
+  },
+  "sa.v1.164.speech_audio.s1": {
+   "bytes": 103724,
+   "kind": "audio",
+   "path": "v1/audio/146.wav",
+   "role": "speech_audio",
+   "script": "Watch the ridge quietly now.",
+   "sha256": "446080cb17aadb12e9b995a754fe918dd0b5c467b8f949fc36e7709c619e0a8c"
+  },
+  "sa.v1.171.performance_portrait": {
+   "bytes": 1373890,
+   "kind": "image",
+   "path": "v1/images/163.png",
+   "role": "performance_portrait",
+   "sha256": "ce01364d8af507c7ae1b3e2b47afbd5b61a7d2c6d6f25fc7143636b2ee6c81ac"
+  },
+  "sa.v1.171.speech_audio.s1": {
+   "bytes": 138284,
+   "kind": "audio",
+   "path": "v1/audio/153.wav",
+   "role": "speech_audio",
+   "script": "The eastern records detail our oldest findings.",
+   "sha256": "4e78f66f818d155d96a5269ba7e24cf7b5bd64951cb55e1e8382bc2c03617d8c"
+  },
+  "sa.v1.172.performance_portrait": {
+   "bytes": 1359600,
+   "kind": "image",
+   "path": "v1/images/164.png",
+   "role": "performance_portrait",
+   "sha256": "cd031924ab0576ac1fc2229b62ddad493a2fc7f35a6987b220b5989efa32f00e"
+  },
+  "sa.v1.172.speech_audio.s1": {
+   "bytes": 73004,
+   "kind": "audio",
+   "path": "v1/audio/154.wav",
+   "role": "speech_audio",
+   "script": "Silence holds the shape.",
+   "sha256": "8826a1bf4a8c15d6b8bcef3186dc180feaff593a37d65b6dd2cb504773dd493f"
+  },
+  "sa.v1.179.performance_portrait": {
+   "bytes": 1675471,
+   "kind": "image",
+   "path": "v1/images/171.png",
+   "role": "performance_portrait",
+   "sha256": "3a579b4c98472a82d7606b97aea77f1b135f42391010fe985d2873e3c6cbe0e5"
+  },
+  "sa.v1.179.speech_audio.s1": {
+   "bytes": 107564,
+   "kind": "audio",
+   "path": "v1/audio/161.wav",
+   "role": "speech_audio",
+   "script": "Compost needs air to break down properly.",
+   "sha256": "300ce2d93d5af07cf98d6c6611d3ca289a2befa5e82e8373944fe85748a2cfc9"
+  },
+  "sa.v1.180.performance_portrait": {
+   "bytes": 1286561,
+   "kind": "image",
+   "path": "v1/images/172.png",
+   "role": "performance_portrait",
+   "sha256": "d4ba9a41ace6e6bf448dec5d87871728eecaaec7482967b9a15d54bf3887f40e"
+  },
+  "sa.v1.180.speech_audio.s1": {
+   "bytes": 57644,
+   "kind": "audio",
+   "path": "v1/audio/162.wav",
+   "role": "speech_audio",
+   "script": "Behold the silent art.",
+   "sha256": "a1b60ac672c80ad558385f9787e8d4b7024fd2db86737ef7bfb6dbdf3e6e8fa1"
+  },
+  "sa.v1.187.general_reference_image.a": {
+   "bytes": 1502308,
+   "kind": "image",
+   "path": "v1/images/173.png",
+   "role": "general_reference_image",
+   "sha256": "3589b3e901049b0e4c7a95f9a12e219e39b38edad71c8c0b57989b523349739a"
+  },
+  "sa.v1.188.general_reference_image.a": {
+   "bytes": 1690131,
+   "kind": "image",
+   "path": "v1/images/174.png",
+   "role": "general_reference_image",
+   "sha256": "40f79baa09716b0eafb35b8483e94c46d31041d0ae77b9bfc37ae4ae5cfc8abf"
+  },
+  "sa.v1.188.general_reference_image.b": {
+   "bytes": 1493883,
+   "kind": "image",
+   "path": "v1/images/175.png",
+   "role": "general_reference_image",
+   "sha256": "b9c3173f039d7fb9548ad34d6985ccf298dcd25d7be6e9e005c05874b70c0361"
+  },
+  "sa.v1.195.general_reference_image.a": {
+   "bytes": 1755809,
+   "kind": "image",
+   "path": "v1/images/176.png",
+   "role": "general_reference_image",
+   "sha256": "b2468fbcf7f422ea9e5ba4b525ef1288e94870e57c098a179ae736f3ce83b668"
+  },
+  "sa.v1.195.general_reference_image.b": {
+   "bytes": 1337320,
+   "kind": "image",
+   "path": "v1/images/177.png",
+   "role": "general_reference_image",
+   "sha256": "c7ee99610841d6f4c3462723e849fd5cd8c0b85c03c31ae30120db0ee1fd0a53"
+  },
+  "sa.v1.196.general_reference_image.a": {
+   "bytes": 1113826,
+   "kind": "image",
+   "path": "v1/images/178.png",
+   "role": "general_reference_image",
+   "sha256": "69e03dbe999071e9eab5741a1147042abb793d6fe85dab18d605f2ee1733e84c"
+  },
+  "sa.v1.196.general_reference_image.b": {
+   "bytes": 1224635,
+   "kind": "image",
+   "path": "v1/images/179.png",
+   "role": "general_reference_image",
+   "sha256": "4c3179c666fe5a1ed6519f98c3d618b40b1ac3f741e5102f72ba94f29cd732b4"
+  },
+  "sa.v1.203.general_reference_image.a": {
+   "bytes": 1230614,
+   "kind": "image",
+   "path": "v1/images/180.png",
+   "role": "general_reference_image",
+   "sha256": "b80b42bbff6fb23e2c35a386f0c445fdf81285a15308bd0d91c0226bb1b21cfd"
+  },
+  "sa.v1.203.general_reference_image.b": {
+   "bytes": 1265082,
+   "kind": "image",
+   "path": "v1/images/181.png",
+   "role": "general_reference_image",
+   "sha256": "7281283f4763088c5c2cb79f46d6cde33bf0aaf02b31c21803346dce45724b27"
+  },
+  "sa.v1.204.general_reference_image.a": {
+   "bytes": 1133937,
+   "kind": "image",
+   "path": "v1/images/182.png",
+   "role": "general_reference_image",
+   "sha256": "225824fb37651c1e4defaa32f9574a17241f67e41ee0d1f0474015d8ca0adbc3"
+  },
+  "sa.v1.204.general_reference_image.b": {
+   "bytes": 1269550,
+   "kind": "image",
+   "path": "v1/images/183.png",
+   "role": "general_reference_image",
+   "sha256": "19b7cc37147c2dd21c02e2d7f55debf2f80475a8eed8dcfb693bbb61dab12531"
+  },
+  "sa.v1.211.general_reference_image.a": {
+   "bytes": 1232710,
+   "kind": "image",
+   "path": "v1/images/184.png",
+   "role": "general_reference_image",
+   "sha256": "82258e41a5d42380ae9a270167278acc0bc7fa93bbd8bc3a82bd592fb57c565e"
+  },
+  "sa.v1.211.general_reference_image.b": {
+   "bytes": 1267070,
+   "kind": "image",
+   "path": "v1/images/185.png",
+   "role": "general_reference_image",
+   "sha256": "2a756bd8e38381621813ed0e01602dca0bfe6a733d5913dcf3db2c6d71dec4d7"
+  },
+  "sa.v1.212.general_reference_image.a": {
+   "bytes": 1501658,
+   "kind": "image",
+   "path": "v1/images/186.png",
+   "role": "general_reference_image",
+   "sha256": "0d2960f5c07cb488c75afc577c83ca5a4b78ae81124a4a889c7d9ef57933d311"
+  },
+  "sa.v1.212.general_reference_image.b": {
+   "bytes": 1463259,
+   "kind": "image",
+   "path": "v1/images/187.png",
+   "role": "general_reference_image",
+   "sha256": "19ce55b7ea1d6e2bcc7cf87a56e339206ab193a7dc20eec46244d6eac3c8f5bb"
+  },
+  "sa.v1.219.general_reference_image.a": {
+   "bytes": 1205667,
+   "kind": "image",
+   "path": "v1/images/188.png",
+   "role": "general_reference_image",
+   "sha256": "913bf793dd1287a0d06bdf4b82ddfdad8cf2ee5c44d6793eafb8c7251225c858"
+  },
+  "sa.v1.219.general_reference_image.b": {
+   "bytes": 1344882,
+   "kind": "image",
+   "path": "v1/images/189.png",
+   "role": "general_reference_image",
+   "sha256": "b70d064498ee048031dd939eab41cade5a3d941ab43d52d4a355de09cf882ed8"
+  },
+  "sa.v1.220.general_reference_image.a": {
+   "bytes": 1266169,
+   "kind": "image",
+   "path": "v1/images/190.png",
+   "role": "general_reference_image",
+   "sha256": "0d17d7d7a4f439d9ebb9cf2ad4edcf6acb066b4656a2e5e2ea2e5d91dab5fe0a"
+  },
+  "sa.v1.220.general_reference_image.b": {
+   "bytes": 1274131,
+   "kind": "image",
+   "path": "v1/images/191.png",
+   "role": "general_reference_image",
+   "sha256": "5eed5315e6c017c080d1add756757e91c0de4f463182b2f80f4a8031d46c73b1"
+  }
+ },
+ "dataset_version": "streameval_v1.0",
+ "note": "Asset paths are relative to the data root (STREAMEVAL_DATA).",
+ "population": "extension"
+}

@@ -1,0 +1,13 @@
+{
+  "name": "streameval-browser-runtime",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Pinned browser runtime of the StreamEval provider backends (headless Chromium via Playwright, esbuild, vendor JS SDKs). Install with npm ci; then npx playwright install chromium.",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@xmaxai/sdk": "1.1.13",
+    "@xmaxai/sdk-global": "1.1.13",
+    "esbuild": "0.28.2",
+    "playwright": "1.63.0"
+  }
+}

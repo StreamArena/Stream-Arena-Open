@@ -1,0 +1,60 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "streameval"
+version = "1.0.0"
+description = "StreamEval: a benchmark of interactive streaming video generation (benchmark, session harness, judge, scoring)"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "Apache-2.0"
+license-files = ["LICENSE", "NOTICE"]
+keywords = ["benchmark", "streaming video", "real-time", "video generation", "talking avatar", "video editing"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+    "jsonschema>=4.18",
+    "numpy>=1.24",
+]
+
+[project.optional-dependencies]
+# session harness: media capture, frame/audio handling, the composition dialogue stack (requests)
+# (the WebSocket protocol itself is standard library only)
+runtime = ["pillow>=10", "imageio-ffmpeg>=0.4.9", "requests>=2.31"]
+# judge: OpenAI-compatible chat endpoint, frame extraction
+judge = ["requests>=2.31", "pillow>=10", "imageio-ffmpeg>=0.4.9"]
+# vendor session backends (models/providers/); the browser ones also need the Node runtime of
+# streameval/providers/js (npm ci && npx playwright install chromium)
+providers = ["requests>=2.31", "pillow>=10", "imageio-ffmpeg>=0.4.9", "websocket-client>=1.6"]
+# the RTC avatars (models/providers/{runway,liveavatar,tavus}): in-process LiveKit and Daily clients; the
+# pinned runtime dependencies
+rtc = ["requests>=2.31", "pillow>=10", "imageio-ffmpeg>=0.4.9", "livekit==1.1.19", "daily-python==0.32.0"]
+vivix = ["requests>=2.31", "pillow>=10", "imageio-ffmpeg>=0.4.9", "agora_python_server_sdk==2.4.9", "websockets>=15,<16"]
+analysis = ["matplotlib>=3.7"]
+dev = ["pytest>=8", "ruff>=0.6", "build>=1"]
+
+[project.scripts]
+streameval = "streameval.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["streameval*"]
+
+[tool.setuptools.package-data]
+streameval = ["benchmark/*.json", "providers/js/*.mjs", "providers/js/*.js", "providers/js/package*.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["slow: runs a real session (tens of seconds); deselect with -m 'not slow'"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py310"
+
+[tool.ruff.lint]
+# pyflakes and syntax errors; the code base is not auto-formatted
+select = ["F", "E9"]

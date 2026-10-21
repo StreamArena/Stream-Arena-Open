@@ -1,0 +1,30 @@
+{
+  "system_id": "liveavatar_full",
+  "model_id": "liveavatar_full",
+  "name": "LiveAvatar FULL",
+  "provider": "HeyGen",
+  "system_kind": "native",
+  "tracks": [
+    "digital_human_audio",
+    "digital_human_text"
+  ],
+  "portrait_policy": "provider_stock",
+  "python": "model.py:LiveAvatarFull",
+  "model_version": "liveavatar-full",
+  "notes": "vendor API; REST session + LiveKit room in-process (streameval.providers.rtc, pip install -e .[rtc]). Needs LIVEAVATAR_API_KEY. Pinned public stock avatar; session cap = the account plan's maximum session length (1200 s on Essential).",
+  "input_adapters": {
+    "digital_human_audio": {
+      "mode": "normalized",
+      "transforms": [
+        {
+          "operation": "audio_resample",
+          "parameters": {
+            "input_rate": 16000,
+            "output_rate": 48000,
+            "method": "linear_continuous"
+          }
+        }
+      ]
+    }
+  }
+}

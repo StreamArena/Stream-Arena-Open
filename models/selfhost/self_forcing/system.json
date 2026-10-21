@@ -1,0 +1,48 @@
+{
+  "model": "self_forcing",
+  "system_id": "self_forcing_1p3b",
+  "model_id": "self_forcing_1p3b",
+  "name": "Self-Forcing",
+  "provider": "self-hosted (Adobe Research, UT Austin)",
+  "system_kind": "native",
+  "tracks": [
+    "general_interaction"
+  ],
+  "server": {
+    "cmd": "{env}/bin/python {model_dir}/server.py --port {port}",
+    "port": 18813,
+    "health_timeout_s": 1800
+  },
+  "unsupported_ops": [],
+  "portrait_policy": null,
+  "gpu": {
+    "count": 1
+  },
+  "output": {
+    "width": 832,
+    "height": 480,
+    "fps": 16
+  },
+  "model_version": "Self-Forcing self_forcing_dmd.pt (generator_ema; chunk-wise AR, 4-step DMD, no CFG) on Wan2.1-T2V-1.3B; code guandeh17/Self-Forcing@33593df3e81f",
+  "weights": {
+    "repo": "gdhe17/Self-Forcing@2f8b7792 (checkpoints/self_forcing_dmd.pt) + Wan-AI/Wan2.1-T2V-1.3B (umT5-XXL text encoder, Wan2.1 VAE, DiT config)",
+    "sha256": {
+      "checkpoints/self_forcing_dmd.pt": "a0413986d9734e02c09504e1520f5697ba6df731bb2f0f35577485e9cc8f56a3",
+      "wan_models/Wan2.1-T2V-1.3B/models_t5_umt5-xxl-enc-bf16.pth": "7cace0da2b446bbbbc57d031ab6cf163a3d59b366da94e5afe36745b746fd81d",
+      "wan_models/Wan2.1-T2V-1.3B/Wan2.1_VAE.pth": "38071ab59bd94681c686fa51d75a1968f64e470262043be31f7a094e442fd981"
+    }
+  },
+  "license": "code Apache-2.0; weights Apache-2.0",
+  "steps": 4,
+  "notes": "Text-to-video only: an opening image cannot be given, so the image + text (i2v) track is not registered. 832x480 at 16 fps, 3-latent (12-frame) causal blocks generated live (4 DMD steps 1000/750/500/250, shift 5.0). The released checkpoint is a 5-second model: sessions continue past 21 latent frames with upstream's rolling KV cache (local attention 21 latents), which the checkpoint was not trained for. It has no prompt-switch mechanism: the block prompt '<init prompt>\\n<latest instruction>' is re-encoded and the cross-attention cache reset at the next block; camera_control text is given as prompt text because the model has no camera input.",
+  "input_adapters": {
+    "general_interaction": {
+      "mode": "derived",
+      "transforms": [
+        {
+          "operation": "camera_control_as_prompt_text"
+        }
+      ]
+    }
+  }
+}

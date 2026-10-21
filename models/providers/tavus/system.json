@@ -1,0 +1,30 @@
+{
+  "system_id": "tavus_cvi_full",
+  "model_id": "tavus_cvi_full",
+  "name": "Tavus CVI Full",
+  "provider": "Tavus",
+  "system_kind": "native",
+  "tracks": [
+    "digital_human_audio",
+    "digital_human_text"
+  ],
+  "portrait_policy": "provider_stock",
+  "python": "model.py:TavusCviFull",
+  "model_version": "cvi-full (phoenix-4.5 stock replica)",
+  "notes": "vendor API; REST conversation + Daily call in-process (streameval.providers.rtc, pip install -e .[rtc]). Needs TAVUS_API_KEY and TAVUS_PAL_ID (a persona you create from pal_v1.json). Pinned stock replica.",
+  "input_adapters": {
+    "digital_human_audio": {
+      "mode": "normalized",
+      "transforms": [
+        {
+          "operation": "audio_resample",
+          "parameters": {
+            "input_rate": 16000,
+            "output_rate": 48000,
+            "method": "linear_continuous"
+          }
+        }
+      ]
+    }
+  }
+}

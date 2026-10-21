@@ -1,0 +1,58 @@
+{
+  "model": "krea_realtime",
+  "system_id": "krea_realtime_14b",
+  "model_id": "krea_realtime_14b",
+  "name": "Krea Realtime",
+  "provider": "self-hosted (Krea AI)",
+  "system_kind": "native",
+  "tracks": [
+    "general_interaction",
+    "general_interaction_image"
+  ],
+  "server": {
+    "cmd": "{env}/bin/python {model_dir}/server.py --port {port} --weights {weights}",
+    "port": 18820,
+    "health_timeout_s": 3000
+  },
+  "unsupported_ops": [
+    "reference_update"
+  ],
+  "portrait_policy": null,
+  "gpu": {
+    "count": 1
+  },
+  "output": {
+    "width": 832,
+    "height": 480,
+    "fps": 16
+  },
+  "model_version": "Krea Realtime 14B: krea-realtime-video-14b.safetensors (Self-Forcing distilled Wan2.1-T2V-14B, causal 3-latent blocks, KV-cache recomputation, 4 steps, no CFG); code krea-ai/realtime-video@acf4b7b4e1a3",
+  "weights": {
+    "repo": "krea/krea-realtime-video@9a2ceea2 (krea-realtime-video-14b.safetensors) + Wan-AI/Wan2.1-T2V-1.3B@37ec5126 (umT5-XXL text encoder, Wan2.1 VAE) + Wan-AI/Wan2.1-T2V-14B config.json",
+    "sha256": "recorded per session in ready.system_config.weights_sha256"
+  },
+  "license": {
+    "code": "CC BY-NC-SA 4.0 (krea-ai/realtime-video LICENSE.md)",
+    "weights": "Apache-2.0 (krea/krea-realtime-video model card)"
+  },
+  "steps": 4,
+  "notes": "Text OR image start (t2v and i2v tracks). 832x480 at 16 fps, 3-latent (12-frame) causal blocks generated live with upstream release_server.GenerationSession (Krea's own streaming server code): KV-cache recomputation over 3 context latents every block, 4 denoising steps, torch.compile, torch SDPA attention. Prompt changes use upstream's live prompt blending over 4 blocks; the block prompt is '<init prompt>\\n<latest instruction>' and camera_control text is given as prompt text (no camera input). Image start = upstream start_frame. Mid-session reference images have no model input (reference_update unsupported). Code and weights licences differ (code CC BY-NC-SA 4.0, weights Apache-2.0).",
+  "input_adapters": {
+    "general_interaction": {
+      "mode": "derived",
+      "transforms": [
+        {
+          "operation": "camera_control_as_prompt_text"
+        }
+      ]
+    },
+    "general_interaction_image": {
+      "mode": "derived",
+      "transforms": [
+        {
+          "operation": "camera_control_as_prompt_text"
+        }
+      ]
+    }
+  }
+}

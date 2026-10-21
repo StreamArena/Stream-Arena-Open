@@ -1,0 +1,217 @@
+{
+ "assets": {
+  "sa.v1.101.portrait": {
+   "bytes": 1854486,
+   "kind": "image",
+   "path": "v1/images/093.png",
+   "role": "portrait",
+   "sha256": "fdc86ac3e389b2c2963d1d2cf5fa787adba5d351fe63309340ede99a600ea929"
+  },
+  "sa.v1.102.portrait": {
+   "bytes": 1572351,
+   "kind": "image",
+   "path": "v1/images/094.png",
+   "role": "portrait",
+   "sha256": "7be1c3612af6ec7f2ce5e1e9f186c271e3642ed8401e38b971a001f6d4bd4369"
+  },
+  "sa.v1.103.portrait": {
+   "bytes": 1761806,
+   "kind": "image",
+   "path": "v1/images/095.png",
+   "role": "portrait",
+   "sha256": "e42ce3a91920f138c9009da1704a766f37a30968962c7af493a294d7c8d3593e"
+  },
+  "sa.v1.104.portrait": {
+   "bytes": 2115501,
+   "kind": "image",
+   "path": "v1/images/096.png",
+   "role": "portrait",
+   "sha256": "b1a559896e46c3c2684e0bdd7429f8c64766fbfa979bb1487b89e344f7769677"
+  },
+  "sa.v1.105.portrait": {
+   "bytes": 1507082,
+   "kind": "image",
+   "path": "v1/images/097.png",
+   "role": "portrait",
+   "sha256": "7973b4d7eabe7e2c62cabf0138578e76de4009f4f692679588d0bc50e40c6064"
+  },
+  "sa.v1.106.portrait": {
+   "bytes": 1638108,
+   "kind": "image",
+   "path": "v1/images/098.png",
+   "role": "portrait",
+   "sha256": "1a7f8cfdbb0ba5969c30b844ddcb8bf9d36cd6a4ae2e1ae9e274f289dc5d4597"
+  },
+  "sa.v1.109.portrait": {
+   "bytes": 1617041,
+   "kind": "image",
+   "path": "v1/images/101.png",
+   "role": "portrait",
+   "sha256": "3ce3b000643251e13166e84f69c0264381d8467ac1a148c210d9aff31db6599d"
+  },
+  "sa.v1.110.portrait": {
+   "bytes": 1340481,
+   "kind": "image",
+   "path": "v1/images/102.png",
+   "role": "portrait",
+   "sha256": "39fc772204c306855173e26e2a79173167207b99fd5751103656a3546102873c"
+  },
+  "sa.v1.111.portrait": {
+   "bytes": 1394130,
+   "kind": "image",
+   "path": "v1/images/103.png",
+   "role": "portrait",
+   "sha256": "750bd7f9f4d01bdbb9c6c6a0567804cd718580b593297b93b368a237d19c5112"
+  },
+  "sa.v1.112.portrait": {
+   "bytes": 1519977,
+   "kind": "image",
+   "path": "v1/images/104.png",
+   "role": "portrait",
+   "sha256": "cd44d496340a4c377ec0ab00df6d41edaf726f0f1b4c97976b087c2154f49e53"
+  },
+  "sa.v1.113.portrait": {
+   "bytes": 1766372,
+   "kind": "image",
+   "path": "v1/images/105.png",
+   "role": "portrait",
+   "sha256": "453efacd0e24cdc1a6827f38e8c5935d6b653b3eb23335227c2199e845318dfe"
+  },
+  "sa.v1.114.portrait": {
+   "bytes": 1607967,
+   "kind": "image",
+   "path": "v1/images/106.png",
+   "role": "portrait",
+   "sha256": "919b7d8d00859c638c8e9c60abd1ea04bfd839245c3723cc91a508a2806340b9"
+  },
+  "sa.v1.117.portrait": {
+   "bytes": 1527749,
+   "kind": "image",
+   "path": "v1/images/109.png",
+   "role": "portrait",
+   "sha256": "0ea92def4f8bf8d93384395d5d5bcb4d5ce5ddfda45efec5e5e20d865023b19e"
+  },
+  "sa.v1.118.portrait": {
+   "bytes": 1356279,
+   "kind": "image",
+   "path": "v1/images/110.png",
+   "role": "portrait",
+   "sha256": "70b5c268a9a48e903d855d8cbc185a32efdf98682e884641b666d56eb9080547"
+  },
+  "sa.v1.119.portrait": {
+   "bytes": 1591055,
+   "kind": "image",
+   "path": "v1/images/111.png",
+   "role": "portrait",
+   "sha256": "a71059a7a7822184dd90aa7098b2caff65b05b53692677516c58e501e04fcc91"
+  },
+  "sa.v1.120.portrait": {
+   "bytes": 1489749,
+   "kind": "image",
+   "path": "v1/images/112.png",
+   "role": "portrait",
+   "sha256": "549bae20dc72fe9247c3ed54b46c2cc384274580048d28e8cacc0c960e49ecfd"
+  },
+  "sa.v1.121.portrait": {
+   "bytes": 1645838,
+   "kind": "image",
+   "path": "v1/images/113.png",
+   "role": "portrait",
+   "sha256": "4d240893bf282dbad66240c95a0bef057870218ce4f8455a3a0c879e9004f368"
+  },
+  "sa.v1.122.portrait": {
+   "bytes": 1924604,
+   "kind": "image",
+   "path": "v1/images/114.png",
+   "role": "portrait",
+   "sha256": "5aa79fa1d57008700e2eb07bd36e7ac894a61ef62b2fb0713c7b79f6c0899d64"
+  },
+  "sa.v1.125.portrait": {
+   "bytes": 1543982,
+   "kind": "image",
+   "path": "v1/images/117.png",
+   "role": "portrait",
+   "sha256": "50e27b2964d3e272757fd46d32ad448116a6eaf73ff67de80ec7a9a5ff00c92e"
+  },
+  "sa.v1.126.portrait": {
+   "bytes": 1552964,
+   "kind": "image",
+   "path": "v1/images/118.png",
+   "role": "portrait",
+   "sha256": "08c261405e488fc0bd5b892830ec0f226178c9c689b22e2ff4550d9b2d95203d"
+  },
+  "sa.v1.127.portrait": {
+   "bytes": 1458636,
+   "kind": "image",
+   "path": "v1/images/119.png",
+   "role": "portrait",
+   "sha256": "34eb3778fd0a453d1e41a9497607e4ace24d1707598d81ba70b237d051cffa12"
+  },
+  "sa.v1.128.portrait": {
+   "bytes": 1631544,
+   "kind": "image",
+   "path": "v1/images/120.png",
+   "role": "portrait",
+   "sha256": "ee0a56da41848e8266474048d0a396d7d0997f16f1a7d403305c32b6c78ce927"
+  },
+  "sa.v1.129.portrait": {
+   "bytes": 1506109,
+   "kind": "image",
+   "path": "v1/images/121.png",
+   "role": "portrait",
+   "sha256": "e3e5d92b2777c153acbe3ae365a838e78d1fa75e4c7581d1d0e73ebde43f1082"
+  },
+  "sa.v1.130.portrait": {
+   "bytes": 1756442,
+   "kind": "image",
+   "path": "v1/images/122.png",
+   "role": "portrait",
+   "sha256": "90652233826caa700947fcb57356f4886d95334ad5579be66b060610a24899f8"
+  },
+  "sa.v1.133.portrait": {
+   "bytes": 1411416,
+   "kind": "image",
+   "path": "v1/images/125.png",
+   "role": "portrait",
+   "sha256": "ac21fdff1d30b106fb9cf4acffdc0ac458a863c52f10a256238d3dfa60c21299"
+  },
+  "sa.v1.134.portrait": {
+   "bytes": 1615083,
+   "kind": "image",
+   "path": "v1/images/126.png",
+   "role": "portrait",
+   "sha256": "3cb497a83a0be58cd6c2d4c5a4a00153de06f745995d6211821a10a6f5253e5b"
+  },
+  "sa.v1.135.portrait": {
+   "bytes": 1433105,
+   "kind": "image",
+   "path": "v1/images/127.png",
+   "role": "portrait",
+   "sha256": "367ce3881387afa5103fb0670dae4a1b37d82640fe795db09757d95c63b40662"
+  },
+  "sa.v1.136.portrait": {
+   "bytes": 2041413,
+   "kind": "image",
+   "path": "v1/images/128.png",
+   "role": "portrait",
+   "sha256": "029a5ee0939f66c6c1570136469f0eb1778402622e9e08e6e82d938b20719420"
+  },
+  "sa.v1.137.portrait": {
+   "bytes": 1290018,
+   "kind": "image",
+   "path": "v1/images/129.png",
+   "role": "portrait",
+   "sha256": "a84d3ebf486a846c7f2935e10933956aad7f2a57f270e8b01d625754d0800672"
+  },
+  "sa.v1.138.portrait": {
+   "bytes": 2032768,
+   "kind": "image",
+   "path": "v1/images/130.png",
+   "role": "portrait",
+   "sha256": "6778948057b4e18d8760a81980deb6b68865452a58523a57af0b41b09a342da4"
+  }
+ },
+ "dataset_version": "streameval_v1.0",
+ "note": "Asset paths are relative to the data root (STREAMEVAL_DATA).",
+ "population": "text"
+}

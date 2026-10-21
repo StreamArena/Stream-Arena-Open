@@ -1,0 +1,64 @@
+{
+  "model": "zing",
+  "system_id": "zing_0p5_5b",
+  "model_id": "zing_0p5_5b",
+  "name": "Zing-0.5",
+  "provider": "self-hosted (Seedleap.ai)",
+  "system_kind": "native",
+  "tracks": [
+    "general_interaction",
+    "general_interaction_image"
+  ],
+  "server": {
+    "cmd": "{env}/bin/python {model_dir}/server.py --port {port}",
+    "port": 18876,
+    "health_timeout_s": 2400
+  },
+  "unsupported_ops": [
+    "reference_update"
+  ],
+  "portrait_policy": null,
+  "gpu": {
+    "count": 1
+  },
+  "output": {
+    "width": 832,
+    "height": 480,
+    "fps": 24
+  },
+  "model_version": "Zing-0.5 generator/model.pt (5B causal world model, 4-step DMD, no CFG) on Wan2.2-TI2V-5B; code seedleap/zing-world-model@11212da06f63",
+  "weights": {
+    "repo": "seedleap/zing-0.5@b9ca1ed1 (generator/model.pt, pretrained/text_encoder UMT5-XXL, pretrained/vae Wan2.2 VAE)",
+    "sha256": {
+      "Zing-0.5/generator/model.pt": "e14ca90b64b3cec82be863b0459be2cb24558f9dc615a8a29ad6f51a8f3e85e4",
+      "Zing-0.5/pretrained/text_encoder/model-00001-of-00003.safetensors": "a8e861969c7433e707cc5a74065d795d36cca07ec96eb6763eb4083df7248f58",
+      "Zing-0.5/pretrained/text_encoder/model-00002-of-00003.safetensors": "d57d948ece4837d850b7a859a4415121d57cacf8b9ee1d4db200c67f592902d7",
+      "Zing-0.5/pretrained/text_encoder/model-00003-of-00003.safetensors": "0da9ee284e21d1406df708788db1d502d95d75f69faa25cd26151bf8829b7c5f",
+      "Zing-0.5/pretrained/vae/diffusion_pytorch_model.safetensors": "62cd18f19438e35b32ac63020e2852f566e9b02f46b6cdbd87972a356e3c6f4b"
+    }
+  },
+  "license": {
+    "code": "Apache-2.0",
+    "weights": "Apache-2.0"
+  },
+  "steps": 4,
+  "notes": "Text or image start (t2v and i2v tracks). 832x480 at 24 fps (the paper's real-time setting), causal blocks of 4 latent frames (16 frames) after a separate first latent, generated live with upstream's per-chunk loop (4 DMD steps, clean-context pass). Online prompt change uses the model's own mechanism (text_prompt_interval semantics: text K/V cache replaced at the next block, visual K/V cache kept, the first block of the new prompt pinned); the block prompt is '<init prompt>\\n<latest instruction>'. No keyboard input is invented: camera_control text is given as prompt text and the action input is absent (as in upstream's text-only rollouts). Cache: upstream README's online window (33 latents incl. a 5-latent sink) with Seedleap's realtime-server RoPE (block_relative, gap 12) so sessions are not limited by the 1024-position table. Image start: the image is center-cropped to 832:480 and encoded as latent 0 (upstream TI2V). Mid-session reference images have no model input (reference_update unsupported).",
+  "input_adapters": {
+    "general_interaction": {
+      "mode": "derived",
+      "transforms": [
+        {
+          "operation": "camera_control_as_prompt_text"
+        }
+      ]
+    },
+    "general_interaction_image": {
+      "mode": "derived",
+      "transforms": [
+        {
+          "operation": "camera_control_as_prompt_text"
+        }
+      ]
+    }
+  }
+}

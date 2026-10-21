@@ -1,0 +1,48 @@
+{
+  "model": "longlive",
+  "system_id": "longlive2_5b",
+  "model_id": "longlive2_5b",
+  "name": "LongLive 2.0",
+  "provider": "self-hosted (NVIDIA)",
+  "system_kind": "native",
+  "tracks": [
+    "general_interaction"
+  ],
+  "server": {
+    "cmd": "{env}/bin/python {model_dir}/server.py --port {port} --weights {weights}",
+    "port": 18810,
+    "health_timeout_s": 2400
+  },
+  "unsupported_ops": [],
+  "portrait_policy": null,
+  "gpu": {
+    "count": 1
+  },
+  "output": {
+    "width": 1280,
+    "height": 704,
+    "fps": 24
+  },
+  "model_version": "LongLive 2.0: LongLive-2.0-5B model_bf16.pt (merged AR generator + DMD LoRA, 4-step, no CFG) on Wan2.2-TI2V-5B; code NVlabs/LongLive@fb16a879f46e (LongLive2.0/)",
+  "weights": {
+    "repo": "Efficient-Large-Model/LongLive-2.0-5B@8521079b (model_bf16.pt) + Wan-AI/Wan2.2-TI2V-5B@921dbaf3 (umT5-XXL text encoder, Wan2.2 VAE, DiT config)",
+    "sha256": {
+      "LongLive-2.0-5B/model_bf16.pt": "ec9063a44ea3c91e8ff55edcdd58dba3f1bcf6ac9091249629cb57fcebe35fd8",
+      "wan_models/Wan2.2-TI2V-5B/models_t5_umt5-xxl-enc-bf16.pth": "7cace0da2b446bbbbc57d031ab6cf163a3d59b366da94e5afe36745b746fd81d",
+      "wan_models/Wan2.2-TI2V-5B/Wan2.2_VAE.pth": "20eb789667fa5e60e7516bf509512f6cb61f01b0aa0695eadaea930c13892b36"
+    }
+  },
+  "license": "code Apache-2.0; weights NVIDIA Open Model License (LongLive-2.0-5B) and Apache-2.0 (Wan2.2-TI2V-5B)",
+  "steps": 4,
+  "notes": "This adapter uses the LongLive 2.0 BF16 weights. Text-to-video only: an opening image cannot be given, so the image + text (i2v) track is not registered. 1280x704 at 24 fps, 8-latent (32-frame) causal blocks generated live with the upstream inference.yaml settings (4 UniPC steps, local attention 32 latents, sink 8, multi-shot sink). The block prompt is '<init prompt>\\n<latest instruction>' through upstream's per-block prompt input (no scene-cut prefix, no KV-recache); camera_control text is given as prompt text because the model has no camera input.",
+  "input_adapters": {
+    "general_interaction": {
+      "mode": "derived",
+      "transforms": [
+        {
+          "operation": "camera_control_as_prompt_text"
+        }
+      ]
+    }
+  }
+}

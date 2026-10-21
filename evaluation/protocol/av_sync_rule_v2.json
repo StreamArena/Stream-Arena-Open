@@ -1,0 +1,83 @@
+{
+  "schema_version": "streameval.av-sync-rule/1",
+  "judge_version": "streameval.av-sync/2",
+  "applies_to": [
+    "digital_human",
+    "avatar_performance"
+  ],
+  "unit": {
+    "definition": "one unit per applicable av_sync unit of the frozen metric plan (every substantive dialogue turn; every supplied-speech event of a performance)",
+    "window": {
+      "digital_human": "from the end of the user's input (audio condition: presented end of the user audio; text condition: release) to the next user input, the session deadline or the session end",
+      "avatar_performance": "the speech event's frozen check window"
+    },
+    "min_required_speech_ms": 300,
+    "missing_required_speech": "known failure (0): event not released, no output audio, less than min_required_speech_ms of speech in the window, or no presented frame in the window"
+  },
+  "audio": {
+    "source": "the captured OUTPUT audio (browser/remote_audio.s16le + remote_audio_blocks.jsonl) on its presentation clock",
+    "hop_ms": 10,
+    "active_floor_dbfs": -70.0,
+    "reference": "95th percentile of the session's 10 ms levels above active_floor_dbfs",
+    "threshold": "max(floor_dbfs, reference - relative_db)",
+    "floor_dbfs": -55.0,
+    "relative_db": 35.0,
+    "speech": "levels above threshold; pauses shorter than bridge_pause_ms are bridged; runs shorter than min_speech_ms dropped",
+    "bridge_pause_ms": 300,
+    "min_speech_ms": 100,
+    "envelope": "clip((level - threshold) / (reference - threshold), 0, 1), 50 ms moving average"
+  },
+  "frames": {
+    "source": "browser/frame_samples.jsonl: client-timed output frames; 500 ms digital human, 250 ms performance",
+    "selection": "independent of the audio: every sampled frame in the first dense_s seconds of the unit window, then the first frame of every sparse_step_ms cell; above max_frames_per_unit the sparse frames are thinned evenly, then the dense ones",
+    "dense_s": 30,
+    "sparse_step_ms": 2000,
+    "max_frames_per_unit": 200,
+    "crop": "face box from the judge (one grounding request per <=8 frames: the unit's first and last selected frame and one every ground_step_ms), union of the nearest grounding boxes before and after the frame, expanded by crop_margin on every side, cut from the frame at native resolution",
+    "ground_step_ms": 10000,
+    "ground_max_side": 768,
+    "crop_margin": 0.15
+  },
+  "judge": {
+    "model": "gpt-6-astra",
+    "endpoint": "configured via STREAMEVAL_AV_JUDGE_BASE_URL",
+    "api": "OpenAI Responses API, input_text + input_image (JPEG data URLs); key STREAMEVAL_AV_JUDGE_API_KEY",
+    "task": "lip opening per face crop: 0 closed, 1 slightly parted, 2 clearly open, 3 wide open, n not visible",
+    "blind_to_audio": true,
+    "order": "crops shuffled with a seed derived from job and unit id, at most batch per request",
+    "batch": 40,
+    "prompts_sha256": "recorded with each request"
+  },
+  "offset": {
+    "pooling": "one A/V offset per system_id: every visible judged frame of every judged session of that system, Pearson correlation with each session's frames and envelope centred on their session means",
+    "feature": "speech envelope at t - tau",
+    "search_ms": [
+      -1000,
+      1000
+    ],
+    "step_ms": 10,
+    "estimate": "tau maximising the pooled correlation; a flat maximum resolves to the midpoint of its widest block (ties: nearest to 0)",
+    "sign": "tau > 0: the lips move after the sound (audio leads video)",
+    "ci": "95% percentile bootstrap over sessions (2000 draws, seed 20260930)",
+    "min_sessions": 10,
+    "tolerance_ms": 200,
+    "condition": "pass when the whole CI lies within [-tolerance_ms, tolerance_ms]; fail when it lies entirely outside; undetermined otherwise (and with fewer than min_sessions judged sessions)"
+  },
+  "decision": {
+    "min_speech_frames": 3,
+    "min_silence_frames": 3,
+    "frame_split": "speech / silence of a frame from the speech activity at its presentation time",
+    "max_not_visible_fraction": 0.5,
+    "min_correlation": 0.3,
+    "order": [
+      "known failure (0): missing required speech or no presented frame (see unit)",
+      "undetermined: no face found, a judge request failed, the mouth not visible in more than max_not_visible_fraction of the judged frames, or fewer than min_speech_frames speech / min_silence_frames silence frames",
+      "fail: the lip opening never changes over the event",
+      "undetermined: the system offset is not estimable (fewer than min_sessions judged sessions)",
+      "fail: the event's own correlation of lip opening with its speech envelope at the system offset is below min_correlation",
+      "fail / undetermined / pass: the system offset condition"
+    ],
+    "value": "pass 100; fail and known failure 0; insufficient evidence undetermined"
+  },
+  "provisional": true
+}

@@ -1,0 +1,51 @@
+{
+  "model": "rolling_forcing",
+  "system_id": "rolling_forcing_1p3b",
+  "model_id": "rolling_forcing_1p3b",
+  "name": "Rolling Forcing",
+  "provider": "self-hosted (Nanyang Technological University, Tencent ARC Lab)",
+  "system_kind": "native",
+  "tracks": [
+    "general_interaction"
+  ],
+  "server": {
+    "cmd": "{env}/bin/python {model_dir}/server.py --port {port}",
+    "port": 18873,
+    "health_timeout_s": 1800
+  },
+  "unsupported_ops": [],
+  "portrait_policy": null,
+  "gpu": {
+    "count": 1
+  },
+  "output": {
+    "width": 832,
+    "height": 480,
+    "fps": 16
+  },
+  "model_version": "Rolling Forcing rolling_forcing_dmd.pt (generator_ema; rolling-window joint denoising over 5 blocks of 3 latents, 5-step DMD, attention sink, no CFG) on Wan2.1-T2V-1.3B; code TencentARC/RollingForcing@a1477d09e85d",
+  "weights": {
+    "repo": "TencentARC/RollingForcing@20edee70 (checkpoints/rolling_forcing_dmd.pt) + Wan-AI/Wan2.1-T2V-1.3B (umT5-XXL text encoder, Wan2.1 VAE, DiT config)",
+    "sha256": {
+      "checkpoints/rolling_forcing_dmd.pt": "08448992460d85ef1b992dd30585d5724d098d805a48399730c8e717027a6d9d",
+      "wan_models/Wan2.1-T2V-1.3B/models_t5_umt5-xxl-enc-bf16.pth": "7cace0da2b446bbbbc57d031ab6cf163a3d59b366da94e5afe36745b746fd81d",
+      "wan_models/Wan2.1-T2V-1.3B/Wan2.1_VAE.pth": "38071ab59bd94681c686fa51d75a1968f64e470262043be31f7a094e442fd981"
+    }
+  },
+  "license": {
+    "code": "MIT",
+    "weights": "MIT"
+  },
+  "steps": 5,
+  "notes": "Text-to-video only: an opening image cannot be given, so the image + text (i2v) track is not registered. 832x480 at 16 fps. Upstream rolling forcing: a window of 5 blocks (3 latents = 12 frames each) at staggered noise levels (warped 1000/800/600/400/200, shift 5.0) is denoised by one DiT call per window; the oldest block is then final and is decoded and sent live, so one block of 12 frames per window (the first output after 5 start-up windows). Long sessions use upstream's rolling clean KV cache with the first block kept as an attention-sink anchor; the temporal RoPE table is extended from 1024 to 4096 positions with the same formula. It has no prompt-switch mechanism: the block prompt '<init prompt>\\n<latest instruction>' is re-encoded and the cross-attention cache reset at the next window, so it conditions the remaining steps of the 5 blocks in flight; camera_control text is given as prompt text because the model has no camera input.",
+  "input_adapters": {
+    "general_interaction": {
+      "mode": "derived",
+      "transforms": [
+        {
+          "operation": "camera_control_as_prompt_text"
+        }
+      ]
+    }
+  }
+}

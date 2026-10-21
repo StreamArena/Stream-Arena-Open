@@ -1,0 +1,44 @@
+{
+  "model": "avtr1",
+  "system_id": "avtr1",
+  "model_id": "avtr1",
+  "name": "AVTR-1",
+  "provider": "self-hosted (Avaturn / Goodsize Inc.)",
+  "system_kind": "composition",
+  "tracks": [
+    "digital_human_audio",
+    "digital_human_text"
+  ],
+  "server": {
+    "cmd": "{env}/bin/python {model_dir}/server.py --port {port} --weights {weights}",
+    "port": 18791,
+    "health_timeout_s": 1800
+  },
+  "composition": {
+    "input": "audio",
+    "audio_out": "server"
+  },
+  "portrait_policy": "benchmark_portrait",
+  "gpu": {
+    "count": 1
+  },
+  "output": {
+    "width": 720,
+    "height": 720,
+    "fps": 25
+  },
+  "model_version": "AVTR-1 v1 (HF revision main) @ code eb1e5a89ed7bec3debe712b090efd676b3a420bd",
+  "weights": {
+    "repo": "avaturn-live/avtr-1 + digital-avatar/ditto-talkinghead/ditto_onnx",
+    "sha256": {
+      "build_artifacts/avtr1.scripted.pt": "c345fb1e84eabee3c247533b74e020f918eeec86febe5928fe16f8935572aed3",
+      "build_artifacts/hubert-lbs-avtr1.onnx": "c6c44581d52a4b67a535a48f2df8db014179c29ec915a6d429a497780c2b968d",
+      "build_artifacts/modnet.onnx": "244c7acc130c28414c878dd710f44cc945ce41eb5702784f3b2e193a1b876bbd",
+      "ditto_onnx/decoder.onnx": "94fca15fe5b67885edebfacbcadcac29e79238ac0d9ffbf0d688391cefb890be",
+      "ditto_onnx/warp_network.onnx": "88f829070c6f5671f809e5ac4825320a8096fb0484fe72a67038d5515e52dba9"
+    }
+  },
+  "seed": 42,
+  "license": "AVTR-1 Community License (weights, scripts) + PolyForm Noncommercial 1.0.0 (renderer, streamer); InsightFace detector non-commercial research only",
+  "notes": "renderer-only (720x720, 25 fps, 5-frame / 200 ms chunks with 205 ms model look-ahead); TTS speech arrives as audio_in and is passed through as audio_out in sync; listen track = silence; noncommercial benchmark use only"
+}

@@ -1,0 +1,103 @@
+[
+  {
+    "model": "aptavatar",
+    "system_id": "aptavatar",
+    "model_id": "aptavatar",
+    "name": "AptAvatar 14B",
+    "provider": "self-hosted (Taobao Live, Alibaba)",
+    "system_kind": "native",
+    "tracks": [
+      "avatar_performance"
+    ],
+    "server": {
+      "cmd": "{env}/bin/python -m torch.distributed.run --nproc_per_node=4 --master_port=29681 {model_dir}/server.py --port {port} --size 512*512",
+      "port": 18881,
+      "health_timeout_s": 2700
+    },
+    "portrait_policy": "benchmark_portrait",
+    "gpu": {
+      "count": 4
+    },
+    "output": {
+      "width": 512,
+      "height": 512,
+      "fps": 25
+    },
+    "model_version": "TaoLiveAIGC/AptAvatar@c3cc19ca4481d0aafa35998fe6a538003e5cef61",
+    "weights": {
+      "repo": "TaoLiveAIGC/AptAvatar@e5ae7ce74e1766693ed19473c3b51247351a0c78",
+      "audio_encoder": "TencentGameMate/chinese-wav2vec2-base@3991242c806928916fff4a8c0e4f76acf661b743",
+      "sha256": {
+        "Wan2.1_VAE.pth": "38071ab59bd94681c686fa51d75a1968f64e470262043be31f7a094e442fd981",
+        "diffusion_pytorch_model-00001-of-00008.safetensors": "9e6a5df940bb662c4376eb55d54804c1516c2c25a7d5e3e31f38637e8b42c8d5",
+        "diffusion_pytorch_model-00002-of-00008.safetensors": "f843bd7bed64c59f39456628e71f699561c25b5f0f861ca88a86b28f404c3503",
+        "diffusion_pytorch_model-00003-of-00008.safetensors": "7b2fcf0eb1948b4c684d261b3d689f528e5c796272ac66f9559c7c3ac873420b",
+        "diffusion_pytorch_model-00004-of-00008.safetensors": "e153ca87c57a0de6c88004b3e4b7c70d7303a49721194db3d02ba1a55f0add00",
+        "diffusion_pytorch_model-00005-of-00008.safetensors": "50465d87066913dad90d926fb129fb4f0cda6a0c5986738e89364740ebbcc7a5",
+        "diffusion_pytorch_model-00006-of-00008.safetensors": "04875b945a3d1e4087175a76da373bff5b25b1883ce7c986a274ef7839890fba",
+        "diffusion_pytorch_model-00007-of-00008.safetensors": "092b097ae57ed5f1976b688adc31066dac58c696e069fabcb31a3aeebff443e8",
+        "diffusion_pytorch_model-00008-of-00008.safetensors": "dcf9ec519ce74c327efe730faa028827d8a25eee0343ef4cb4d12d58394e456f",
+        "models_clip_open-clip-xlm-roberta-large-vit-huge-14.pth": "628c9998b613391f193eb67ff68da9667d75f492911e4eb3decf23460a158c38",
+        "models_t5_umt5-xxl-enc-bf16.pth": "7cace0da2b446bbbbc57d031ab6cf163a3d59b366da94e5afe36745b746fd81d",
+        "chinese-wav2vec2-base/pytorch_model.bin": "be2da40c9e7ae26bfc904a3ed79ebb9e8f060bec6dba85d6a6ae86114bc38901"
+      }
+    },
+    "steps": 2,
+    "seed": 42,
+    "license": "Apache-2.0 (code repository LICENSE; the HF weights repo ships the same Apache-2.0 LICENSE); Wan2.1 / InfiniteTalk base: Apache-2.0; chinese-wav2vec2-base: MIT",
+    "notes": "Portrait + supplied speech (audio_in) -> 512x512 25 fps video in chunks of 64 new frames (73-frame window, 9 motion frames from the previous chunk; Wan2.1-I2V-14B + InfiniteTalk audio adapter, 2 steps, no CFG; xfuser Ulysses x4). Visual controls are appended to the text prompt of the next chunk (upstream sets a prompt per chunk; control map aptavatar-control-map/1); controls without body / face content are acked unsupported. Each chunk needs the audio of its own 73-frame window, so lips lag speech by about one chunk (2.56 s) + compute. audio_out = the received speech, frame-aligned."
+  },
+  {
+    "model": "aptavatar",
+    "system_id": "aptavatar_comp",
+    "model_id": "aptavatar_comp",
+    "name": "AptAvatar 14B",
+    "provider": "self-hosted (Taobao Live, Alibaba)",
+    "system_kind": "composition",
+    "tracks": [
+      "digital_human_audio",
+      "digital_human_text"
+    ],
+    "server": {
+      "cmd": "{env}/bin/python -m torch.distributed.run --nproc_per_node=4 --master_port=29682 {model_dir}/server.py --port {port} --size 512*512",
+      "port": 18882,
+      "health_timeout_s": 2700
+    },
+    "composition": {
+      "input": "audio",
+      "audio_out": "server"
+    },
+    "portrait_policy": "benchmark_portrait",
+    "gpu": {
+      "count": 4
+    },
+    "output": {
+      "width": 512,
+      "height": 512,
+      "fps": 25
+    },
+    "model_version": "TaoLiveAIGC/AptAvatar@c3cc19ca4481d0aafa35998fe6a538003e5cef61",
+    "weights": {
+      "repo": "TaoLiveAIGC/AptAvatar@e5ae7ce74e1766693ed19473c3b51247351a0c78",
+      "audio_encoder": "TencentGameMate/chinese-wav2vec2-base@3991242c806928916fff4a8c0e4f76acf661b743",
+      "sha256": {
+        "Wan2.1_VAE.pth": "38071ab59bd94681c686fa51d75a1968f64e470262043be31f7a094e442fd981",
+        "diffusion_pytorch_model-00001-of-00008.safetensors": "9e6a5df940bb662c4376eb55d54804c1516c2c25a7d5e3e31f38637e8b42c8d5",
+        "diffusion_pytorch_model-00002-of-00008.safetensors": "f843bd7bed64c59f39456628e71f699561c25b5f0f861ca88a86b28f404c3503",
+        "diffusion_pytorch_model-00003-of-00008.safetensors": "7b2fcf0eb1948b4c684d261b3d689f528e5c796272ac66f9559c7c3ac873420b",
+        "diffusion_pytorch_model-00004-of-00008.safetensors": "e153ca87c57a0de6c88004b3e4b7c70d7303a49721194db3d02ba1a55f0add00",
+        "diffusion_pytorch_model-00005-of-00008.safetensors": "50465d87066913dad90d926fb129fb4f0cda6a0c5986738e89364740ebbcc7a5",
+        "diffusion_pytorch_model-00006-of-00008.safetensors": "04875b945a3d1e4087175a76da373bff5b25b1883ce7c986a274ef7839890fba",
+        "diffusion_pytorch_model-00007-of-00008.safetensors": "092b097ae57ed5f1976b688adc31066dac58c696e069fabcb31a3aeebff443e8",
+        "diffusion_pytorch_model-00008-of-00008.safetensors": "dcf9ec519ce74c327efe730faa028827d8a25eee0343ef4cb4d12d58394e456f",
+        "models_clip_open-clip-xlm-roberta-large-vit-huge-14.pth": "628c9998b613391f193eb67ff68da9667d75f492911e4eb3decf23460a158c38",
+        "models_t5_umt5-xxl-enc-bf16.pth": "7cace0da2b446bbbbc57d031ab6cf163a3d59b366da94e5afe36745b746fd81d",
+        "chinese-wav2vec2-base/pytorch_model.bin": "be2da40c9e7ae26bfc904a3ed79ebb9e8f060bec6dba85d6a6ae86114bc38901"
+      }
+    },
+    "steps": 2,
+    "seed": 42,
+    "license": "Apache-2.0 (code repository LICENSE; the HF weights repo ships the same Apache-2.0 LICENSE); Wan2.1 / InfiniteTalk base: Apache-2.0; chinese-wav2vec2-base: MIT",
+    "notes": "Renderer only: the client's shared DashScope ASR -> Qwen LLM -> Qwen TTS stack pushes the TTS speech as audio_in; the server lip-syncs the portrait to it (upstream default prompt) in 2.56 s chunks and plays it back as audio_out (frame-aligned)."
+  }
+]

@@ -1,0 +1,47 @@
+{
+  "model": "musetalk",
+  "system_id": "musetalk",
+  "model_id": "musetalk",
+  "name": "MuseTalk 1.5",
+  "provider": "self-hosted (Tencent Music / TMElyralab)",
+  "system_kind": "composition",
+  "tracks": [
+    "digital_human_audio",
+    "digital_human_text"
+  ],
+  "server": {
+    "cmd": "{env}/bin/python {model_dir}/server.py --port {port} --weights {weights}",
+    "port": 18793,
+    "health_timeout_s": 1800
+  },
+  "composition": {
+    "input": "audio",
+    "audio_out": "server"
+  },
+  "portrait_policy": "benchmark_portrait",
+  "gpu": {
+    "count": 1
+  },
+  "output": {
+    "width": 1024,
+    "height": 1024,
+    "fps": 25
+  },
+  "model_version": "MuseTalk 1.5 (real-time mode) @ code 0a89dec45a0192b824e3cf4daf96c239440c5ed8, weights TMElyralab/MuseTalk@2bcb936e2fddb4d86db4c62fd45b387d0c061571",
+  "weights": {
+    "repo": "TMElyralab/MuseTalk@2bcb936e2fddb4d86db4c62fd45b387d0c061571 (musetalkV15) + stabilityai/sd-vae-ft-mse + openai/whisper-tiny + yzd-v/DWPose + face-parse-bisent + S3FD",
+    "sha256": {
+      "musetalkV15/unet.pth": "7ebf6c98c181e20838e4c0054e96e944ac60d5d692cc01db42839fe11b787007",
+      "sd-vae/diffusion_pytorch_model.bin": "1b4889b6b1d4ce7ae320a02dedaeff1780ad77d415ea0d744b476155c6377ddc",
+      "whisper/pytorch_model.bin": "9607f98a2b22d9e229ae43c52ecea79dcede9e0c5cfae67e8da6eda86d8aac1d",
+      "dwpose/dw-ll_ucoco_384.pth": "0d9408b13cd863c4e95a149dd31232f88f2a12aa6cf8964ed74d7d97748c7a07",
+      "face-parse-bisent/79999_iter.pth": "468e13ca13a9b43cc0881a9f99083a430e9c0a38abd935431d1c28ee94b26567",
+      "face-parse-bisent/resnet18-5c106cde.pth": "5c106cde386e87d4033832f2996f5493238eda96ccf559d1d62760c4de0613f8",
+      "s3fd/s3fd-619a316812.pth": "619a31681264d3f7f7fc7a16a42cbbe8b23f31a256f75a366e5a1bcd59b33543"
+    }
+  },
+  "steps": 1,
+  "seed": 42,
+  "license": "MIT (code and weights); sd-vae-ft-mse MIT, whisper MIT, face-parsing MIT, DWPose Apache-2.0",
+  "notes": "lip-sync renderer from a single image: the avatar is prepared with upstream's real-time Avatar preparation from a one-frame reference video = the portrait, so only the mouth/jaw region is generated (no head motion, blinking or expression); 5-frame / 200 ms steps with 80 ms look-ahead (whisper window); portrait center-cropped to square and capped at 1024 px; TTS speech arrives as audio_in and is passed through as audio_out in sync with the frames it drove"
+}

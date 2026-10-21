@@ -1,0 +1,106 @@
+{
+  "schema_version": "streameval.evaluation-policy/1",
+  "version": "streameval.evaluation/2",
+  "comparison": {
+    "same": [
+      "dataset",
+      "population",
+      "task",
+      "input_profile",
+      "input_contract",
+      "portrait_policy",
+      "judge_configuration",
+      "metric_specification",
+      "repetitions"
+    ],
+    "model_identity_changes_rules": false,
+    "cross_task_total": false,
+    "display_groups": "paper_task_and_input_route_groups; shared_dialogue_stack_is_identified; stock_portraits_separate"
+  },
+  "inputs": {
+    "future_events": "never_visible",
+    "oracle": "never_visible_to_model",
+    "conversion": "declare_before_execution; preserve_released_semantics; include_conversion_time_in_response_time",
+    "normalization": "declare_audio_resampling_image_geometry_and_video_rate_policy",
+    "semantic_conversion": "separate_input_condition; never_treat_derived_input_as_native",
+    "unsupported": "retain_in_denominator_as_failure"
+  },
+  "execution": {
+    "ready_timeout_s": 180,
+    "readiness": "accepting_inputs_and_first_output_frame; avatar_greeting_rule_applies_to_all_avatar_models",
+    "instruction_started_editing": "accepting_source_before_epoch; generation_starts_with_first_released_instruction; declare_as_input_condition",
+    "pre_epoch_retries": 3,
+    "after_epoch_retries": 0,
+    "provider_refusal": "released_input_is_failure_on_the_shared_effective_roster; no_per_system_case_exclusion",
+    "client_fidelity_failure": "retain_attempt; do_not_select_a_later_success",
+    "interrupted_without_result": "retain_unknown; never_assume_non_start",
+    "output_clock": "client_receive_or_instrumented_presentation_clock; record_basis; never_subtract_audio_block_duration",
+    "implementation_defaults": "readiness_and_pre_epoch_retry_limits_are_shared_runner_settings; not_claimed_as_paper_measurements"
+  },
+  "judging": {
+    "model_specific_prompts": false,
+    "model_specific_masks": false,
+    "score_replacements": false,
+    "output_preprocessing": "same_task_rule_for_every_model; no_provider_specific_cropping_or_watermark_removal",
+    "configuration": "freeze_models_prompts_rules_and_sampling_before_judging; reuse_only_matching_requests",
+    "calibration": "retain_provisional_flags; no_winner_or_significance_marks; independent_human_validation_and_matched_endpoints_required"
+  },
+  "aggregation": {
+    "roster": "same_frozen_effective_roster_for_every_system_in_a_task; preserve_equal_duration_stratum_weights",
+    "repetitions_per_condition": 3,
+    "duration_strata_s": [
+      15,
+      30,
+      60,
+      120,
+      300
+    ],
+    "unknown": "unresolved_units_contribute_0_to_displayed_lower_bound; bounds_remain_in_local_evidence",
+    "display": "resolved_score_or_unresolved_lower_bound; content_2_decimals",
+    "overall": "equal_mean_of_all_applicable_content_metrics; unavailable_measurements_retain_weight_and_bounds; latency_excluded",
+    "confidence_interval": "95_percent_source_family_cluster_bootstrap_2000_draws",
+    "table_order": "alphabetical_within_paper_input_groups",
+    "table_highlights": "none"
+  },
+  "publication": {
+    "include": [
+      "evaluation_implementation",
+      "model_adapters",
+      "benchmark_definitions",
+      "scoring_rules",
+      "usage_documentation",
+      "benchmark_introduction_figures"
+    ],
+    "exclude": [
+      "credentials",
+      "private_endpoints",
+      "local_paths",
+      "account_ids",
+      "hostnames",
+      "process_ids",
+      "personal_execution_logs",
+      "private_sample_identifiers",
+      "private_rosters",
+      "private_sample_distributions",
+      "per_case_bindings",
+      "per_run_measurements",
+      "nonpaper_result_populations",
+      "response_time_measurements",
+      "coverage_measurements",
+      "unpublished_calibration_counts",
+      "diagnostic_intervals",
+      "maintained_evaluation_scores",
+      "result_tables",
+      "historical_calibration_results"
+    ],
+    "local_evidence": "retain_under_run_root_for_audit_and_replay; do_not_commit",
+    "numerical_scope": "no_evaluation_results; runtime_parameters_and_benchmark_definitions_only"
+  },
+  "reference": "StreamEval: Evaluating Interactive Streaming Video Generation Models, System Evaluation",
+  "identity_reference": {
+    "benchmark_portrait": "initialization portrait",
+    "provider_stock": "system opening frame",
+    "rating": "lower of primary and second judge",
+    "included_in_overall": true
+  }
+}

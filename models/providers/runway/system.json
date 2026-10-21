@@ -1,0 +1,29 @@
+{
+  "system_id": "runway_characters",
+  "model_id": "runway_characters",
+  "name": "Runway Characters",
+  "provider": "Runway",
+  "system_kind": "native",
+  "tracks": [
+    "digital_human_audio"
+  ],
+  "portrait_policy": "benchmark_portrait",
+  "python": "model.py:RunwayCharacters",
+  "model_version": "gwm1_avatars",
+  "notes": "vendor API; REST session + LiveKit room in-process (streameval.providers.rtc, pip install -e .[rtc]). Needs RUNWAYML_API_SECRET. Creates one account avatar per benchmark portrait (cached in STREAMEVAL_RUNWAY_AVATARS). No runtime text input.",
+  "input_adapters": {
+    "digital_human_audio": {
+      "mode": "normalized",
+      "transforms": [
+        {
+          "operation": "audio_resample",
+          "parameters": {
+            "input_rate": 16000,
+            "output_rate": 48000,
+            "method": "linear_continuous"
+          }
+        }
+      ]
+    }
+  }
+}

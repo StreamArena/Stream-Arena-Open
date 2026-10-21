@@ -1,0 +1,236 @@
+{
+  "schema_version": "streameval.scoring/2",
+  "status": "automated_evaluation",
+  "official_evaluation": false,
+  "visual_judge_model": "qwen3.8-max-0902",
+  "group_columns": {
+    "digital_human": [
+      "visual_quality",
+      "av_sync",
+      "stability",
+      "dialogue",
+      "identity",
+      "latency"
+    ],
+    "avatar_performance": [
+      "visual_quality",
+      "av_sync",
+      "stability",
+      "following",
+      "identity",
+      "latency"
+    ],
+    "general_interaction": [
+      "visual_quality",
+      "stability",
+      "following",
+      "reference",
+      "continuity",
+      "latency"
+    ],
+    "instruction_edit": [
+      "visual_quality",
+      "stability",
+      "following",
+      "edit_success",
+      "preservation",
+      "latency"
+    ],
+    "reference_edit": [
+      "visual_quality",
+      "stability",
+      "reference",
+      "edit_success",
+      "preservation",
+      "latency"
+    ]
+  },
+  "sampling": {
+    "duration_strata_ms": [
+      15000,
+      30000,
+      60000,
+      120000,
+      300000
+    ],
+    "repetitions_per_condition": 3,
+    "uniform_clip_ms": 5000,
+    "visual_frame_step_ms": 1000,
+    "temporal_verification": "sampled_frames_on_client_clock; resolution_limited_by_sampling",
+    "control_windows": "exact_current_oracle_and_actual_release",
+    "source_alignment": "matched_source_pts_not_wall_clock_or_first_frame",
+    "future_events_visible_to_adapter": false,
+    "paired_conditions_are_independent_samples": false
+  },
+  "metrics": {
+    "visual_quality": {
+      "kind": "rubric",
+      "unit": "five_second_clip",
+      "scale": [
+        0,
+        100
+      ],
+      "components": [
+        "detail_and_readability",
+        "geometry_and_anatomy",
+        "rendering_artifacts",
+        "lighting_and_composition"
+      ],
+      "formula": "per_clip_rating_from_defects; map_rating_r_to_25*(r-1); duration_weighted_within_run",
+      "style_aware": true,
+      "ratings": {
+        "5": "no_defect",
+        "4": "one_minor_defect",
+        "3": "multiple_minor_defects",
+        "2": "one_severe_defect",
+        "1": "multiple_severe_defects"
+      }
+    },
+    "identity": {
+      "kind": "rubric",
+      "unit": "five_second_clip_against_initial_identity",
+      "scale": [
+        0,
+        100
+      ],
+      "formula": "per_clip_rating=min(primary_portrait_rating,second_portrait_rating); map_rating_r_to_25*(r-1)",
+      "ignore": [
+        "authorized_expression",
+        "authorized_pose",
+        "authorized_outfit_change"
+      ]
+    },
+    "reference": {
+      "kind": "rubric",
+      "unit": "applicable_active_reference_checkpoint",
+      "scale": [
+        0,
+        100
+      ],
+      "formula": "25 * (mean(integer_ratings_1_to_5) - 1)",
+      "scope": "only_declared_reference_attributes",
+      "text_only_without_reference": "not_applicable_not_100"
+    },
+    "dialogue": {
+      "kind": "binary",
+      "unit": "dialogue_turn_opportunity",
+      "scale": [
+        0,
+        100
+      ],
+      "formula": "100 * turns_meeting_their_expected_outcome / all_planned_turns; wait, backchannel and interruption turns count; failed or unresolved turns stay in the denominator",
+      "session_strict_pass_reported_separately": true,
+      "session_strict_pass_formula": "100_if_all_turns_pass_else_0; unknown_if_no_fail_and_any_unknown"
+    },
+    "following": {
+      "kind": "binary",
+      "unit": "control_or_action_event",
+      "scale": [
+        0,
+        100
+      ],
+      "formula": "100 * successful_semantic_operations / all_planned_eligible_operations",
+      "supplied_speech_is_control_event": false
+    },
+    "edit_success": {
+      "kind": "binary",
+      "unit": "complete_edit_event",
+      "scale": [
+        0,
+        100
+      ],
+      "formula": "100 * events_where_target_scope_state_deadline_stability_AND_all_declared_protected_content_hold / all_edit_events",
+      "restore_basis": "current_source_pts",
+      "late_correct_output_is_pass": false,
+      "protection_is_conjunctive": true
+    },
+    "stability": {
+      "kind": "binary",
+      "unit": "five_second_temporal_probe",
+      "scale": [
+        0,
+        100
+      ],
+      "formula": "100 * stable_probe_duration / planned_probe_duration",
+      "expected_edits_and_cuts_are_instability": false,
+      "long_range_reappearance_checks_required": false,
+      "pass_rule": "no_severe_temporal_defect AND at_most_one_minor_temporal_defect AND no_severe_quality_defect",
+      "quality_rating_min": 3
+    },
+    "continuity": {
+      "kind": "binary",
+      "unit": "five_second_motion_and_cut_probe",
+      "scale": [
+        0,
+        100
+      ],
+      "formula": "100 * continuous_probe_duration / planned_probe_duration",
+      "checks": [
+        "motion_path",
+        "object_permanence",
+        "camera_transition",
+        "cross_shot_spatial_relation"
+      ]
+    },
+    "preservation": {
+      "kind": "binary",
+      "unit": "edit_checkpoint_protected_regions",
+      "scale": [
+        0,
+        100
+      ],
+      "formula": "100 * checkpoints_preserving_all_declared_non_targets_and_current_source_motion / all_edit_checkpoints"
+    },
+    "av_sync": {
+      "kind": "bounded_score",
+      "unit": "required_speech_event",
+      "scale": [
+        0,
+        100
+      ],
+      "formula": "100 * passing_required_speech_events / all_required_speech_events",
+      "silence_articulation_reported_separately": true,
+      "static_vlm_may_estimate_milliseconds": false,
+      "alignment_model": "av_sync_rule_v2.json",
+      "tolerance_ms": 200,
+      "confidence_threshold": 0.3,
+      "release_requires_calibration": true,
+      "missing_required_speech": "known_failure_0_not_empty_denominator",
+      "provisional": true
+    },
+    "latency": {
+      "kind": "time",
+      "unit": "eligible_successful_response_opportunity",
+      "scale": "seconds_lower_is_better_in_public_tables; milliseconds_in_local_reports",
+      "formula": "first_correct_observed_response_or_stable_effect_start - actual_input_origin",
+      "quantile": "nearest_rank",
+      "all_opportunity_p95_requires_complete_successful_measurement": true,
+      "successful_subset_p95_reported_separately": true,
+      "missing_value": null,
+      "successful_subset_p50_reported": true,
+      "public_quantile": 0.5,
+      "coverage": "timestamped_correct_responses / all_frozen_eligible_opportunities_including_failed_unresolved_and_unrun"
+    }
+  },
+  "aggregation": {
+    "order": [
+      "units_within_run",
+      "equal_repetitions_within_case",
+      "equal_cases_within_duration",
+      "equal_five_duration_strata"
+    ],
+    "calibration_in_rank": false,
+    "profiles_merged": false,
+    "groups_merged": false,
+    "combined_overall_score": null,
+    "unknown_score_bounds": "missing_judgment_contributes_0_to_lower_and_100_to_upper; point_score_null",
+    "known_missing_output_score": 0,
+    "not_applicable": "must_be_frozen_from_task_or_source_before_output; exclude_weight_and_report_count",
+    "confidence_interval": "95_percent_source_family_cluster_bootstrap_2000_draws_fixed_seed; suppress_if_fewer_than_5_families_or_incomplete_strata",
+    "seed": 20260923,
+    "public_display": "resolved_score_or_conservative_lower_bound; no_confidence_interval_substitution",
+    "ranking": "No significance ranks; compare matching metric sets, input routes and observation endpoints; provisional judges require independent validation."
+  },
+  "applies_to": "All registered systems under a frozen dataset and input condition.",
+  "evaluation_policy": "evaluation_v2.json"
+}

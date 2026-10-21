@@ -1,0 +1,1004 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:streameval:session:1",
+  "title": "StreamEval session: the frozen pre-v1 structure that v1 sessions are projected onto and validated against (streameval/benchmark/session.py)",
+  "oneOf": [
+    {
+      "$ref": "#/$defs/legacy_session"
+    },
+    {
+      "$ref": "#/$defs/avatar_performance_session"
+    }
+  ],
+  "$defs": {
+    "event": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "event_id",
+        "release",
+        "payload"
+      ],
+      "properties": {
+        "event_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "release": {
+          "oneOf": [
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "at_ms"
+              ],
+              "properties": {
+                "at_ms": {
+                  "type": "integer",
+                  "minimum": 0
+                }
+              }
+            },
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "trigger"
+              ],
+              "properties": {
+                "trigger": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "type",
+                    "after_turn",
+                    "offset_ms",
+                    "timeout_ms",
+                    "on_timeout",
+                    "timeout_origin"
+                  ],
+                  "properties": {
+                    "type": {
+                      "const": "response_started"
+                    },
+                    "after_turn": {
+                      "type": "string"
+                    },
+                    "offset_ms": {
+                      "type": "integer",
+                      "minimum": 0
+                    },
+                    "timeout_ms": {
+                      "type": "integer",
+                      "minimum": 1
+                    },
+                    "on_timeout": {
+                      "const": "fail_opportunity"
+                    },
+                    "timeout_origin": {
+                      "enum": [
+                        "end_of_referenced_user_audio",
+                        "user_prompt_release"
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "payload": {
+          "oneOf": [
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "type",
+                "text"
+              ],
+              "properties": {
+                "type": {
+                  "const": "text_control"
+                },
+                "text": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              }
+            },
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "type",
+                "asset_id",
+                "scope"
+              ],
+              "properties": {
+                "type": {
+                  "const": "reference_control"
+                },
+                "asset_id": {
+                  "type": "string"
+                },
+                "scope": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              }
+            },
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "type",
+                "asset_id"
+              ],
+              "properties": {
+                "type": {
+                  "const": "user_audio"
+                },
+                "asset_id": {
+                  "type": "string"
+                }
+              }
+            },
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "type",
+                "text"
+              ],
+              "properties": {
+                "type": {
+                  "enum": [
+                    "user_prompt",
+                    "camera_control"
+                  ]
+                },
+                "text": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              }
+            },
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "type",
+                "action",
+                "phase",
+                "duration_ms"
+              ],
+              "properties": {
+                "type": {
+                  "const": "action"
+                },
+                "action": {
+                  "enum": [
+                    "move_forward",
+                    "move_backward",
+                    "turn_left",
+                    "turn_right",
+                    "strafe_left",
+                    "strafe_right",
+                    "jump",
+                    "interact"
+                  ]
+                },
+                "phase": {
+                  "enum": [
+                    "pulse",
+                    "start",
+                    "stop"
+                  ]
+                },
+                "duration_ms": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 10000
+                }
+              },
+              "allOf": [
+                {
+                  "if": {
+                    "properties": {
+                      "phase": {
+                        "const": "stop"
+                      }
+                    }
+                  },
+                  "then": {
+                    "properties": {
+                      "duration_ms": {
+                        "const": 0
+                      }
+                    }
+                  },
+                  "else": {
+                    "properties": {
+                      "duration_ms": {
+                        "minimum": 1
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "type",
+                "asset_id",
+                "instruction"
+              ],
+              "properties": {
+                "type": {
+                  "const": "reference_update"
+                },
+                "asset_id": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "instruction": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    "legacy_session": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schema_version",
+        "dataset_version",
+        "base_id",
+        "case_id",
+        "source_family_id",
+        "split",
+        "title",
+        "difficulty",
+        "tags",
+        "duration_ms",
+        "readiness",
+        "group",
+        "task_family",
+        "scenario",
+        "input_profile",
+        "initialization",
+        "asset_ids",
+        "events"
+      ],
+      "properties": {
+        "schema_version": {
+          "const": "1"
+        },
+        "dataset_version": {
+          "enum": [
+            "streameval_v0.1",
+            "streameval_v0.2"
+          ]
+        },
+        "base_id": {
+          "type": "string",
+          "pattern": "^[0-9]{3}$"
+        },
+        "case_id": {
+          "type": "string",
+          "pattern": "^sa\\.v0[12]\\.[0-9]{3}\\.(reference_edit|instruction_edit|digital_human|general_interaction|conversation_text\\.digital_human)$"
+        },
+        "source_family_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "split": {
+          "enum": [
+            "public_dev",
+            "calibration",
+            "internal_test"
+          ]
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "difficulty": {
+          "enum": [
+            "atomic",
+            "composed",
+            "stress"
+          ]
+        },
+        "tags": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string"
+          }
+        },
+        "duration_ms": {
+          "type": "integer",
+          "minimum": 15000,
+          "maximum": 300000
+        },
+        "readiness": {
+          "enum": [
+            "design_only",
+            "reviewed"
+          ]
+        },
+        "group": {
+          "enum": [
+            "reference_edit",
+            "instruction_edit",
+            "digital_human",
+            "general_interaction"
+          ]
+        },
+        "task_family": {
+          "enum": [
+            "streaming_editing",
+            "streaming_interaction"
+          ]
+        },
+        "scenario": {
+          "type": "string",
+          "minLength": 1
+        },
+        "input_profile": {
+          "enum": [
+            "edit_reference",
+            "edit_instruction",
+            "conversation_audio",
+            "conversation_text",
+            "general_text_to_video",
+            "general_image_text_to_video"
+          ]
+        },
+        "initialization": {
+          "oneOf": [
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "source_video_asset_id",
+                "source_delivery"
+              ],
+              "properties": {
+                "source_video_asset_id": {
+                  "type": "string"
+                },
+                "source_delivery": {
+                  "const": "realtime_frames"
+                }
+              }
+            },
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "portrait_asset_id",
+                "persona",
+                "known_facts"
+              ],
+              "properties": {
+                "portrait_asset_id": {
+                  "type": "string"
+                },
+                "persona": {
+                  "type": "string"
+                },
+                "known_facts": {
+                  "type": "object"
+                }
+              }
+            },
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "prompt",
+                "reference_asset_ids"
+              ],
+              "properties": {
+                "prompt": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "reference_asset_ids": {
+                  "type": "array",
+                  "uniqueItems": true,
+                  "items": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "asset_ids": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "events": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/event"
+          }
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "dataset_version": {
+                "const": "streameval_v0.2"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "case_id": {
+                "pattern": "^sa\\.v02\\."
+              }
+            }
+          },
+          "else": {
+            "properties": {
+              "case_id": {
+                "pattern": "^sa\\.v01\\."
+              },
+              "group": {
+                "enum": [
+                  "reference_edit",
+                  "instruction_edit",
+                  "digital_human"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "group": {
+                "const": "reference_edit"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "case_id": {
+                "pattern": "\\.reference_edit$"
+              },
+              "task_family": {
+                "const": "streaming_editing"
+              },
+              "input_profile": {
+                "const": "edit_reference"
+              },
+              "asset_ids": {
+                "minItems": 1
+              },
+              "initialization": {
+                "required": [
+                  "source_video_asset_id",
+                  "source_delivery"
+                ]
+              },
+              "events": {
+                "items": {
+                  "properties": {
+                    "payload": {
+                      "properties": {
+                        "type": {
+                          "const": "reference_control"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "group": {
+                "const": "instruction_edit"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "case_id": {
+                "pattern": "\\.instruction_edit$"
+              },
+              "task_family": {
+                "const": "streaming_editing"
+              },
+              "input_profile": {
+                "const": "edit_instruction"
+              },
+              "asset_ids": {
+                "minItems": 1
+              },
+              "initialization": {
+                "required": [
+                  "source_video_asset_id",
+                  "source_delivery"
+                ]
+              },
+              "events": {
+                "items": {
+                  "properties": {
+                    "payload": {
+                      "properties": {
+                        "type": {
+                          "const": "text_control"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "group": {
+                "const": "digital_human"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "case_id": {
+                "pattern": "\\.digital_human$"
+              },
+              "task_family": {
+                "const": "streaming_interaction"
+              },
+              "input_profile": {
+                "enum": [
+                  "conversation_audio",
+                  "conversation_text"
+                ]
+              },
+              "asset_ids": {
+                "minItems": 1
+              },
+              "initialization": {
+                "required": [
+                  "portrait_asset_id",
+                  "persona",
+                  "known_facts"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "input_profile": {
+                "const": "conversation_audio"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "events": {
+                "items": {
+                  "properties": {
+                    "payload": {
+                      "properties": {
+                        "type": {
+                          "const": "user_audio"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "input_profile": {
+                "const": "conversation_text"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "events": {
+                "items": {
+                  "properties": {
+                    "payload": {
+                      "properties": {
+                        "type": {
+                          "const": "user_prompt"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "group": {
+                "const": "general_interaction"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "case_id": {
+                "pattern": "\\.general_interaction$"
+              },
+              "task_family": {
+                "const": "streaming_interaction"
+              },
+              "scenario": {
+                "enum": [
+                  "game_control",
+                  "reference_generation",
+                  "multi_shot"
+                ]
+              },
+              "input_profile": {
+                "enum": [
+                  "general_text_to_video",
+                  "general_image_text_to_video"
+                ]
+              },
+              "initialization": {
+                "required": [
+                  "prompt",
+                  "reference_asset_ids"
+                ]
+              },
+              "events": {
+                "items": {
+                  "properties": {
+                    "payload": {
+                      "properties": {
+                        "type": {
+                          "enum": [
+                            "user_prompt",
+                            "action",
+                            "camera_control",
+                            "reference_update"
+                          ]
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "input_profile": {
+                "const": "general_text_to_video"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "initialization": {
+                "properties": {
+                  "reference_asset_ids": {
+                    "maxItems": 0
+                  }
+                }
+              },
+              "asset_ids": {
+                "maxItems": 0
+              },
+              "events": {
+                "items": {
+                  "properties": {
+                    "payload": {
+                      "properties": {
+                        "type": {
+                          "enum": [
+                            "user_prompt",
+                            "action",
+                            "camera_control"
+                          ]
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "input_profile": {
+                "const": "conversation_text"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "events": {
+                "items": {
+                  "properties": {
+                    "release": {
+                      "properties": {
+                        "trigger": {
+                          "properties": {
+                            "timeout_origin": {
+                              "const": "user_prompt_release"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "case_id": {
+                "anyOf": [
+                  {
+                    "pattern": "^sa\\.v0[12]\\.[0-9]{3}\\.(reference_edit|instruction_edit|digital_human|general_interaction)$"
+                  },
+                  {
+                    "pattern": "^sa\\.v02\\.[0-9]{3}\\.conversation_text\\.digital_human$"
+                  }
+                ]
+              }
+            }
+          },
+          "else": {
+            "properties": {
+              "events": {
+                "items": {
+                  "properties": {
+                    "release": {
+                      "properties": {
+                        "trigger": {
+                          "properties": {
+                            "timeout_origin": {
+                              "const": "end_of_referenced_user_audio"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "case_id": {
+                "pattern": "^sa\\.v0[12]\\.[0-9]{3}\\.(reference_edit|instruction_edit|digital_human|general_interaction)$"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "avatar_performance_session": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schema_version",
+        "dataset_version",
+        "base_id",
+        "case_id",
+        "source_family_id",
+        "split",
+        "title",
+        "difficulty",
+        "tags",
+        "duration_ms",
+        "readiness",
+        "group",
+        "task_family",
+        "scenario",
+        "input_profile",
+        "initialization",
+        "asset_ids",
+        "events"
+      ],
+      "properties": {
+        "schema_version": {
+          "const": "1"
+        },
+        "dataset_version": {
+          "const": "streameval_avatar_v0.1"
+        },
+        "base_id": {
+          "type": "string",
+          "pattern": "^(06[1-9]|07[0-9]|080)$"
+        },
+        "case_id": {
+          "type": "string",
+          "pattern": "^sa\\.ap01\\.(06[1-9]|07[0-9]|080)\\.avatar_performance$"
+        },
+        "source_family_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "split": {
+          "enum": [
+            "public_dev",
+            "calibration",
+            "internal_test"
+          ]
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "difficulty": {
+          "enum": [
+            "atomic",
+            "composed",
+            "stress"
+          ]
+        },
+        "tags": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string"
+          }
+        },
+        "duration_ms": {
+          "type": "integer",
+          "minimum": 15000,
+          "maximum": 300000
+        },
+        "readiness": {
+          "enum": [
+            "design_only",
+            "reviewed"
+          ]
+        },
+        "group": {
+          "const": "avatar_performance"
+        },
+        "task_family": {
+          "const": "streaming_interaction"
+        },
+        "scenario": {
+          "const": "avatar_performance"
+        },
+        "input_profile": {
+          "const": "avatar_performance_audio"
+        },
+        "initialization": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "portrait_asset_id",
+            "rendering_context"
+          ],
+          "properties": {
+            "portrait_asset_id": {
+              "type": "string",
+              "minLength": 1
+            },
+            "rendering_context": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        "asset_ids": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "events": {
+          "type": "array",
+          "minItems": 2,
+          "items": {
+            "$ref": "#/$defs/avatar_performance_event"
+          }
+        }
+      }
+    },
+    "avatar_performance_event": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "event_id",
+        "release",
+        "payload"
+      ],
+      "properties": {
+        "event_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "release": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "at_ms"
+          ],
+          "properties": {
+            "at_ms": {
+              "type": "integer",
+              "minimum": 0
+            }
+          }
+        },
+        "payload": {
+          "oneOf": [
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "type",
+                "asset_id"
+              ],
+              "properties": {
+                "type": {
+                  "const": "speech_audio"
+                },
+                "asset_id": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              }
+            },
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "type",
+                "text"
+              ],
+              "properties": {
+                "type": {
+                  "const": "user_prompt"
+                },
+                "text": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

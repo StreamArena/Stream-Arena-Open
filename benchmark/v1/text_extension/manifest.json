@@ -1,0 +1,77 @@
+{
+ "assets": {
+  "sa.v1.107.portrait": {
+   "bytes": 1465503,
+   "kind": "image",
+   "path": "v1/images/099.png",
+   "role": "portrait",
+   "sha256": "e690b5a728e697c504166945d5e5736ec437ea19fbb035c5d99d953d973bff57"
+  },
+  "sa.v1.108.portrait": {
+   "bytes": 1580869,
+   "kind": "image",
+   "path": "v1/images/100.png",
+   "role": "portrait",
+   "sha256": "28689fa4f71967a1368d18a1e86ed18843020cd93824c17114893055039a3ec9"
+  },
+  "sa.v1.115.portrait": {
+   "bytes": 1324983,
+   "kind": "image",
+   "path": "v1/images/107.png",
+   "role": "portrait",
+   "sha256": "899f9bb5258a61cf15c2e0fed97f9d5bf252ad63cdbcfe752763f1836a7cf336"
+  },
+  "sa.v1.116.portrait": {
+   "bytes": 1827569,
+   "kind": "image",
+   "path": "v1/images/108.png",
+   "role": "portrait",
+   "sha256": "893f8d3945c0393a1f6202158d831279538c6be667943abb50ee1e2af0eb7826"
+  },
+  "sa.v1.123.portrait": {
+   "bytes": 1551766,
+   "kind": "image",
+   "path": "v1/images/115.png",
+   "role": "portrait",
+   "sha256": "48672c78d5c4bf090f181712f9887b8d37b0466a84d9d76ed218efef749fbd74"
+  },
+  "sa.v1.124.portrait": {
+   "bytes": 1508019,
+   "kind": "image",
+   "path": "v1/images/116.png",
+   "role": "portrait",
+   "sha256": "0f7a77d71ef5ab18131780a4ddc1d0cb0b797ae360ea2dfd229a244c2d3f7402"
+  },
+  "sa.v1.131.portrait": {
+   "bytes": 1456108,
+   "kind": "image",
+   "path": "v1/images/123.png",
+   "role": "portrait",
+   "sha256": "75a0a4531f0a1f2fd0b606a8e72eacfe2fba67378bea7c4924c03c8e333ae601"
+  },
+  "sa.v1.132.portrait": {
+   "bytes": 1957770,
+   "kind": "image",
+   "path": "v1/images/124.png",
+   "role": "portrait",
+   "sha256": "bb71be42845173c18f99885225f206ef923fc9ebe443c3cd3437574165492ad1"
+  },
+  "sa.v1.139.portrait": {
+   "bytes": 1509228,
+   "kind": "image",
+   "path": "v1/images/131.png",
+   "role": "portrait",
+   "sha256": "60f0ecaeab3304dcee340920b1c50f2051716c859cba74daa066ec5184317cda"
+  },
+  "sa.v1.140.portrait": {
+   "bytes": 1477515,
+   "kind": "image",
+   "path": "v1/images/132.png",
+   "role": "portrait",
+   "sha256": "2f604584ea54f44338cc674aeb860895f7ecdd18e620a51479408030b9f537a2"
+  }
+ },
+ "dataset_version": "streameval_v1.0",
+ "note": "Asset paths are relative to the data root (STREAMEVAL_DATA).",
+ "population": "text_extension"
+}

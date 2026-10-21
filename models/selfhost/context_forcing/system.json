@@ -1,0 +1,51 @@
+{
+  "model": "context_forcing",
+  "system_id": "context_forcing_1p3b",
+  "model_id": "context_forcing_1p3b",
+  "name": "Context Forcing",
+  "provider": "self-hosted (UC Merced, University of Waterloo)",
+  "system_kind": "native",
+  "tracks": [
+    "general_interaction"
+  ],
+  "server": {
+    "cmd": "{env}/bin/python {model_dir}/server.py --port {port}",
+    "port": 18874,
+    "health_timeout_s": 1800
+  },
+  "unsupported_ops": [],
+  "portrait_policy": null,
+  "gpu": {
+    "count": 1
+  },
+  "output": {
+    "width": 832,
+    "height": 480,
+    "fps": 16
+  },
+  "model_version": "Context Forcing model.pt (generator_ema; chunk-wise AR, 4-step contextual DMD from a long-context teacher, sink + slow / fast KV memory, no CFG) on Wan2.1-T2V-1.3B; code TIGER-AI-Lab/Context-Forcing@6dd9d9a88332",
+  "weights": {
+    "repo": "ShuoChen20/context_forcing@d44ae93b (model.pt) + Wan-AI/Wan2.1-T2V-1.3B (umT5-XXL text encoder, Wan2.1 VAE, DiT config)",
+    "sha256": {
+      "checkpoints/model.pt": "020aacc3ee5a67dc7a64e6a252cd3e68ffcd839aa7443edb4d9eeab5b42a7e41",
+      "wan_models/Wan2.1-T2V-1.3B/models_t5_umt5-xxl-enc-bf16.pth": "7cace0da2b446bbbbc57d031ab6cf163a3d59b366da94e5afe36745b746fd81d",
+      "wan_models/Wan2.1-T2V-1.3B/Wan2.1_VAE.pth": "38071ab59bd94681c686fa51d75a1968f64e470262043be31f7a094e442fd981"
+    }
+  },
+  "license": {
+    "code": "MIT",
+    "weights": "MIT"
+  },
+  "steps": 4,
+  "notes": "Text-to-video only: an opening image cannot be given, so the image + text (i2v) track is not registered. 832x480 at 16 fps, 3-latent (12-frame) causal blocks generated live with the upstream context_dmd_inference.yaml settings (4 DMD steps 1000/750/500/250, warped, shift 5.0; 21-latent KV cache = 3-latent sink + similarity-selected slow memory + 6-latent fast window, RoPE anchored within 21 latents, so long sessions use the model's own context memory). It has no prompt-switch mechanism: the block prompt '<init prompt>\\n<latest instruction>' is re-encoded and the cross-attention cache reset at the next block; camera_control text is given as prompt text because the model has no camera input.",
+  "input_adapters": {
+    "general_interaction": {
+      "mode": "derived",
+      "transforms": [
+        {
+          "operation": "camera_control_as_prompt_text"
+        }
+      ]
+    }
+  }
+}

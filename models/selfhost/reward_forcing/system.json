@@ -1,0 +1,51 @@
+{
+  "model": "reward_forcing",
+  "system_id": "reward_forcing_1p3b",
+  "model_id": "reward_forcing_1p3b",
+  "name": "Reward Forcing",
+  "provider": "self-hosted (Zhejiang University, Ant Group)",
+  "system_kind": "native",
+  "tracks": [
+    "general_interaction"
+  ],
+  "server": {
+    "cmd": "{env}/bin/python {model_dir}/server.py --port {port}",
+    "port": 18862,
+    "health_timeout_s": 1800
+  },
+  "unsupported_ops": [],
+  "portrait_policy": null,
+  "gpu": {
+    "count": 1
+  },
+  "output": {
+    "width": 832,
+    "height": 480,
+    "fps": 16
+  },
+  "model_version": "Reward Forcing rewardforcing.pt (chunk-wise AR, 4-step rewarded DMD, EMA attention sink, no CFG) on Wan2.1-T2V-1.3B; code JaydenLyh/Reward-Forcing@4317f5a0d29d",
+  "weights": {
+    "repo": "JaydenLu666/Reward-Forcing-T2V-1.3B@fc7e9400 (rewardforcing.pt) + Wan-AI/Wan2.1-T2V-1.3B (umT5-XXL text encoder, Wan2.1 VAE, DiT config)",
+    "sha256": {
+      "Reward-Forcing-T2V-1.3B/rewardforcing.pt": "88aebf418a04a0eb27c6f5baa996e44e1af0760a5f31f052faa209cf5523c3da",
+      "Wan2.1-T2V-1.3B/models_t5_umt5-xxl-enc-bf16.pth": "7cace0da2b446bbbbc57d031ab6cf163a3d59b366da94e5afe36745b746fd81d",
+      "Wan2.1-T2V-1.3B/Wan2.1_VAE.pth": "38071ab59bd94681c686fa51d75a1968f64e470262043be31f7a094e442fd981"
+    }
+  },
+  "license": {
+    "code": "Apache-2.0",
+    "weights": "Apache-2.0 (code repository licence; the model card states none)"
+  },
+  "steps": 4,
+  "notes": "Text-to-video only: an opening image cannot be given, so the image + text (i2v) track is not registered. 832x480 at 16 fps, 3-latent (12-frame) causal blocks generated live with the upstream reward_forcing.yaml settings (4 DMD steps 1000/750/500/250, shift 5.0; local attention 9 latents with a 3-latent EMA sink, window-relative RoPE, so long sessions use the model's own streaming mechanism). It has no prompt-switch mechanism: the block prompt '<init prompt>\\n<latest instruction>' is re-encoded and the cross-attention cache reset at the next block; camera_control text is given as prompt text because the model has no camera input.",
+  "input_adapters": {
+    "general_interaction": {
+      "mode": "derived",
+      "transforms": [
+        {
+          "operation": "camera_control_as_prompt_text"
+        }
+      ]
+    }
+  }
+}

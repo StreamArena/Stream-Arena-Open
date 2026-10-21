@@ -1,0 +1,51 @@
+{
+  "model": "shotstream",
+  "system_id": "shotstream_1p3b",
+  "model_id": "shotstream_1p3b",
+  "name": "ShotStream",
+  "provider": "self-hosted (CUHK MMLab, Kling Team)",
+  "system_kind": "native",
+  "tracks": [
+    "general_interaction"
+  ],
+  "server": {
+    "cmd": "{env}/bin/python {model_dir}/server.py --port {port}",
+    "port": 18877,
+    "health_timeout_s": 1800
+  },
+  "unsupported_ops": [],
+  "portrait_policy": null,
+  "gpu": {
+    "count": 1
+  },
+  "output": {
+    "width": 832,
+    "height": 480,
+    "fps": 16
+  },
+  "model_version": "ShotStream shotstream_merged.pt (causal multi-shot next-shot generation, 4-step DMD, no CFG) on Wan2.1-T2V-1.3B; code KlingAIResearch/ShotStream@c6a11719ee8a",
+  "weights": {
+    "repo": "KlingTeam/ShotStream@225806ba (shotstream_merged.pt, shotstream.yaml, default_config.yaml) + Wan-AI/Wan2.1-T2V-1.3B (umT5-XXL text encoder, Wan2.1 VAE, DiT config)",
+    "sha256": {
+      "ShotStream/shotstream_merged.pt": "91ee340300cb7ec6508ca425cae70ab2190d47397650cd3a8cf54ac8483d2b50",
+      "wan_models/Wan2.1-T2V-1.3B/models_t5_umt5-xxl-enc-bf16.pth": "7cace0da2b446bbbbc57d031ab6cf163a3d59b366da94e5afe36745b746fd81d",
+      "wan_models/Wan2.1-T2V-1.3B/Wan2.1_VAE.pth": "38071ab59bd94681c686fa51d75a1968f64e470262043be31f7a094e442fd981"
+    }
+  },
+  "license": {
+    "code": "Apache-2.0",
+    "weights": "Apache-2.0"
+  },
+  "steps": 4,
+  "notes": "Text-to-video only: an opening image cannot be given, so the image + text (i2v) track is not registered. 832x480 at 16 fps. Upstream multi-shot rollout streamed block by block (3 latents, 12 frames): each shot is 21 latents (81 frames, 5 s), conditioned on 6 frames sampled from the earlier shots (last 5 shots) with shot-aware RoPE and per-shot captions. Interaction = next-shot generation: an instruction (user_prompt or camera_control text, verbatim) starts a new shot at the next block with caption '<init prompt>shot<k>:<instruction>' (upstream global + shot caption format); a shot that reaches 21 latents continues as a new shot with the same caption. The model has no camera input; camera_control text is the shot caption.",
+  "input_adapters": {
+    "general_interaction": {
+      "mode": "derived",
+      "transforms": [
+        {
+          "operation": "camera_control_as_prompt_text"
+        }
+      ]
+    }
+  }
+}

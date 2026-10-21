@@ -1,0 +1,126 @@
+[
+  {
+    "system_id": "vidu_s2_avatar",
+    "model_id": "vidu_s2_avatar",
+    "name": "Vidu S2 Avatar",
+    "provider": "Vidu",
+    "system_kind": "native",
+    "tracks": [
+      "digital_human_audio",
+      "digital_human_text"
+    ],
+    "portrait_policy": "benchmark_portrait",
+    "backend": "backend.py:ViduS2",
+    "model_version": "vidu-s2",
+    "notes": "vendor API; AliRTC browser session backend (README.md). Needs VIDU_S2_API_KEY (VIDU_S2_API_BASE)."
+  },
+  {
+    "system_id": "vidu_s2_avatar_performance",
+    "model_id": "vidu_s2_avatar",
+    "name": "Vidu S2 Avatar",
+    "provider": "Vidu",
+    "system_kind": "native",
+    "tracks": [
+      "avatar_performance"
+    ],
+    "system_ids": {
+      "avatar_performance": "vidu_s2_avatar_performance_text"
+    },
+    "portrait_policy": "benchmark_portrait",
+    "backend": "backend.py:ViduS2",
+    "model_version": "vidu-s2",
+    "notes": "derived text route: supplied speech goes out as 'LINE: <script>', instructions as 'ACTION: <text>'. Needs VIDU_S2_API_KEY.",
+    "input_adapters": {
+      "avatar_performance": {
+        "mode": "derived",
+        "transforms": [
+          {
+            "operation": "speech_to_script",
+            "parameters": {
+              "source": "asset.script",
+              "prefix": "LINE: "
+            }
+          },
+          {
+            "operation": "performance_direction_to_text",
+            "parameters": {
+              "prefix": "ACTION: "
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "system_id": "vidu_s2_editing",
+    "model_id": "vidu_s2_editing",
+    "name": "Vidu S2 Editing",
+    "provider": "Vidu",
+    "system_kind": "native",
+    "tracks": [
+      "reference_edit"
+    ],
+    "system_ids": {
+      "reference_edit": "vidu_s2_editing_all"
+    },
+    "portrait_policy": null,
+    "backend": "backend.py:ViduS2",
+    "model_version": "vidu-s2",
+    "notes": "every reference condition through mapping.py. Needs VIDU_S2_API_KEY.",
+    "input_adapters": {
+      "reference_edit": {
+        "mode": "derived",
+        "transforms": [
+          {
+            "operation": "reference_state_to_single_target",
+            "parameters": {
+              "selection": "latest_active_target",
+              "empty_state": "current_source_frame"
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "system_id": "vidu_s2_editing_t2i",
+    "model_id": "vidu_s2_editing",
+    "name": "Vidu S2 Editing",
+    "provider": "Vidu",
+    "system_kind": "native",
+    "tracks": [
+      "instruction_edit"
+    ],
+    "system_ids": {
+      "instruction_edit": "vidu_s2_editing_t2i"
+    },
+    "portrait_policy": null,
+    "backend": "backend.py:ViduS2",
+    "kwargs": {
+      "compose_t2i": true
+    },
+    "model_version": "vidu-s2",
+    "notes": "composition recorded by the backend (instruction -> qwen-image reference -> S2 Editing). Needs VIDU_S2_API_KEY and DASHSCOPE_API_KEY.",
+    "input_adapters": {
+      "instruction_edit": {
+        "mode": "derived",
+        "transforms": [
+          {
+            "operation": "instruction_to_reference_image",
+            "parameters": {
+              "model": "qwen-image",
+              "instruction_templates": "mapping.INSTRUCTIONS"
+            }
+          },
+          {
+            "operation": "reference_state_to_single_target",
+            "parameters": {
+              "selection": "latest_active_target",
+              "empty_state": "current_source_frame"
+            }
+          }
+        ]
+      }
+    }
+  }
+]

@@ -1,0 +1,21 @@
+StreamEval
+Copyright 2026 The StreamEval authors
+
+This product is licensed under the Apache License, Version 2.0 (see LICENSE). The licence covers the code in this
+repository: the streameval package, the model servers and vendor adapters under models/, the examples and tests.
+
+Not covered by that licence:
+
+* Benchmark data (benchmark/, evaluation/protocol/) and all benchmark media: Creative Commons
+  Attribution 4.0 (CC BY 4.0). Media are distributed on Hugging Face and ModelScope, not in this repository.
+  Third-party source videos keep their own licences and credits, listed in benchmark/v1/ATTRIBUTION.md.
+* Third-party models: models/selfhost/<model>/ contains wrapper code only. Each wrapped model's code and weights
+  are downloaded by its setup.sh from the upstream publisher and remain under the upstream licences, several of
+  which are non-commercial or research-only; see models/README.md and each model's README.
+* Vendor services reached through models/providers/: use is subject to each vendor's terms of service.
+
+models/selfhost/_shims/ and models/selfhost/soulx_flashtalk/shims/ contain minimal stand-ins written for this
+repository for parts of the flash-attn and xformers Python APIs. They include no code from those
+projects.
+
+Introduction figures: see assets/CREDITS.md and the complete icon license notices in assets/.

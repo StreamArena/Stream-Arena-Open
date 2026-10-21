@@ -1,0 +1,59 @@
+{
+  "model": "sana_streaming",
+  "system_id": "sana_streaming_2b",
+  "model_id": "sana_streaming_2b",
+  "name": "SANA-Streaming",
+  "provider": "self-hosted (NVIDIA)",
+  "system_kind": "native",
+  "tracks": [
+    "instruction_edit"
+  ],
+  "server": {
+    "cmd": "{env}/bin/python {model_dir}/server.py --port {port}",
+    "port": 8766,
+    "health_timeout_s": 1800
+  },
+  "portrait_policy": null,
+  "gpu": {
+    "count": 1
+  },
+  "output": {
+    "width": 1280,
+    "height": 704,
+    "fps": 24
+  },
+  "push": {
+    "max_side": 1280,
+    "max_fps": 24
+  },
+  "model_version": "sana@f9178744c096 + dit/sana_streaming_ar.pth (BF16)",
+  "weights": {
+    "repo": "Efficient-Large-Model/SANA-Streaming@616778bc (dit/sana_streaming_ar.pth, ltx2_causal_vae_0516) + Lightricks/LTX-2@dfcc2108 vae + Efficient-Large-Model/gemma-2-2b-it@569d9809",
+    "sha256": {
+      "SANA-Streaming/dit/sana_streaming_ar.pth": "971839a07e5647875e0d7c79aefbc30d05751f33e62537a24ebff2be5f8fc5fa",
+      "SANA-Streaming/ltx2_causal_vae_0516/diffusion_pytorch_model.safetensors": "3694526c1da964fcf1ebccb70edb09895bf9e0a723b3ac48e0b5adf5bf97cc4a",
+      "LTX-2/vae/diffusion_pytorch_model.safetensors": "107cc359e3c4bce18c53d98686f4b3fe10c4207b6665d89b38b0741270514bfb",
+      "gemma-2-2b-it/model-00001-of-00002.safetensors": "532d792c9178805064170a3ec485b7dedbfccc6fd297b92c31a6091b6c7e41bf",
+      "gemma-2-2b-it/model-00002-of-00002.safetensors": "6d6d9ce84db398fb6e0191f91542e5da0a73da2cb695e172a24edc2146dc8d20"
+    }
+  },
+  "license": "code Apache-2.0; weights: SANA-Streaming Apache-2.0, LTX-2 VAE LTX-2 Community License (entities with annual revenue of at least USD 10M need a paid commercial licence), gemma-2-2b-it Gemma Terms of Use",
+  "steps": 4,
+  "seed": 0,
+  "notes": "Instruction-conditioned streaming V2V editing. Upstream has no streaming server; server.py runs the upstream long_streaming components incrementally (causal LTX-2 encode, SANAStreamingSampler chunk body with fixed-RoPE cache / sink token / 2 cached blocks, causal LTX-2 decode). Each text_control instruction is used verbatim as the editing prompt from the next 24-frame chunk on; caches are kept (no restart, no accumulation of earlier instructions). Source frames are passed through until the first instruction. No reference path (reference_edit not registered).",
+  "input_adapters": {
+    "instruction_edit": {
+      "mode": "normalized",
+      "transforms": [
+        {
+          "operation": "source_video_normalization",
+          "parameters": {
+            "max_side": 1280,
+            "max_fps": 24,
+            "upscale": false
+          }
+        }
+      ]
+    }
+  }
+}

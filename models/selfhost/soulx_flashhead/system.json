@@ -1,0 +1,43 @@
+{
+  "model": "soulx_flashhead",
+  "system_id": "soulx_flashhead",
+  "model_id": "soulx_flashhead",
+  "name": "SoulX-FlashHead (Lite)",
+  "provider": "self-hosted (Soul AI Lab)",
+  "system_kind": "composition",
+  "tracks": [
+    "digital_human_audio",
+    "digital_human_text"
+  ],
+  "server": {
+    "cmd": "{env}/bin/python {model_dir}/server.py --port {port} --weights {weights}",
+    "port": 18790,
+    "health_timeout_s": 1800
+  },
+  "composition": {
+    "input": "audio",
+    "audio_out": "server"
+  },
+  "portrait_policy": "benchmark_portrait",
+  "gpu": {
+    "count": 1
+  },
+  "output": {
+    "width": 512,
+    "height": 512,
+    "fps": 25
+  },
+  "model_version": "SoulX-FlashHead-1_3B Model_Lite @ code 9bc03de06bb0de82cd6bc477804512ae06144bf2",
+  "weights": {
+    "repo": "Soul-AILab/SoulX-FlashHead-1_3B",
+    "sha256": {
+      "Model_Lite/diffusion_pytorch_model.safetensors": "aaf1cde6e80ca23f740aae236c47954249f65b151db133cc0f77d3a138ccdf6e",
+      "VAE_LTX/diffusion_pytorch_model.safetensors": "265ca87cb5dff5e37f924286e957324e282fe7710a952a7dafc0df43883e2010",
+      "wav2vec2-base-960h/model.safetensors": "8aa76ab2243c81747a1f832954586bc566090c83a0ac167df6f31f0fa917d74a"
+    }
+  },
+  "steps": 4,
+  "seed": 42,
+  "license": "code Apache-2.0; weights: DiT Apache-2.0, VAE_LTX (LTX-Video 0.9 VAE) OpenRAIL-M; wav2vec2-base-960h Apache-2.0",
+  "notes": "renderer-only talking head (512x512, 25 fps, 24-frame / 0.96 s chunks, no look-ahead); TTS speech arrives as audio_in and is passed through as audio_out in sync with the frames it drove; portrait used as-is (center-crop to square, no face crop)"
+}

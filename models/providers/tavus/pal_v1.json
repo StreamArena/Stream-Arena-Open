@@ -1,0 +1,101 @@
+{
+ "frozen": "2026-09-30",
+ "purpose": "the frozen Full PAL (Tavus persona) of the StreamEval v1 Tavus CVI Full systems. Create it once on your account from `request` (POST https://tavusapi.com/v2/personas) and set TAVUS_PAL_ID to the returned persona_id; before every session the live persona's pinned_fields are compared with `persona`. Per-case conversational_context and dynamic_greeting false are set per conversation.",
+ "face_id": "r79996137c01",
+ "request": {
+  "persona_name": "StreamEval v1 benchmark (Full)",
+  "pipeline_mode": "full",
+  "system_prompt": "You are the character described in the conversational context of this call. Stay in that role, answer the user from the facts the context provides, and speak English.",
+  "context": "",
+  "default_replica_id": "r79996137c01",
+  "greeting": "",
+  "dynamic_greeting": false
+ },
+ "persona": {
+  "persona_name": "StreamEval v1 benchmark Full ",
+  "persona_description": "",
+  "pipeline_mode": "full",
+  "system_prompt": "You are the character described in the conversational context of this call. Stay in that role, answer the user from the facts the context provides, and speak English.",
+  "context": "",
+  "layers": {
+   "perception": {
+    "visual_tools": [],
+    "visual_awareness_queries": [],
+    "visual_tool_prompt": "",
+    "audio_tools": [],
+    "audio_awareness_queries": [],
+    "audio_tool_prompt": "",
+    "screen_awareness_queries": [],
+    "screen_tools": [],
+    "screen_tool_prompt": "",
+    "perception_analysis_queries": [],
+    "perception_model": "raven-1",
+    "emotion_recognition": "auto",
+    "perception_tools": [],
+    "ambient_awareness_queries": [],
+    "perception_tool_prompt": "",
+    "tool_prompt": ""
+   },
+   "tts": {
+    "voice_settings": {},
+    "external_voice_id": "",
+    "voice_id": "",
+    "tts_engine": "tavus-auto",
+    "playht_user_id": "",
+    "tts_emotion_control": true,
+    "tts_model_name": "",
+    "pronunciation_dictionary_id": null
+   },
+   "conversational_flow": {
+    "turn_detection_model": "sparrow-2",
+    "turn_taking_patience": "medium",
+    "replica_interruptibility": "medium",
+    "voice_isolation": "near",
+    "wake_phrase": null,
+    "sleep_phrase": null,
+    "idle_engagement": "off",
+    "idle_end_behavior": "wait"
+   }
+  },
+  "objectives_id": null,
+  "guardrails_id": null,
+  "greeting": "",
+  "dynamic_greeting": false,
+  "default_replica_id": "r79996137c01",
+  "document_ids": [],
+  "document_tags": [],
+  "guardrail_ids": [],
+  "guardrail_tags": [],
+  "tool_ids": [],
+  "skills": {},
+  "system_prompt_complete": true,
+  "languages": [],
+  "disclosure_type": "auto",
+  "verbal_disclosure": "",
+  "visual_disclosure": ""
+ },
+ "replica_selection": {
+  "replica_id": "r79996137c01",
+  "replica_name": "Jamie",
+  "model_name": "phoenix-4.5",
+  "rule": "stock system replicas, completed, available for the plan (144) -> phoenix-4.5 and provider-recommended (30) -> explicit 'office' or 'home' tag (4: Dr. Carol, Deborah, Jamie, Lee) -> neutral role, drop 'medical' -> casual presentation like the LiveAvatar stock avatar (chest-up, frontal, office) (Jamie, Lee: same office shoot) -> lowest replica_id: Jamie"
+ },
+ "pinned_fields": [
+  "pipeline_mode",
+  "system_prompt",
+  "context",
+  "greeting",
+  "dynamic_greeting",
+  "default_replica_id",
+  "layers",
+  "languages",
+  "disclosure_type",
+  "verbal_disclosure",
+  "visual_disclosure",
+  "tool_ids",
+  "document_ids",
+  "guardrails_id",
+  "objectives_id"
+ ],
+ "omitted": "the account-specific persona_id and timestamps, and credential-named fields of the persona layers (empty strings in the frozen persona)"
+}

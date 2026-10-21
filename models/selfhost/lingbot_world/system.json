@@ -1,0 +1,62 @@
+{
+  "model": "lingbot_world",
+  "system_id": "lingbot_world_v2_1p3b",
+  "model_id": "lingbot_world_v2_1p3b",
+  "name": "LingBot-World 2.0 1.3B (image + text only)",
+  "provider": "self-hosted (Robbyant, Ant Group)",
+  "system_kind": "native",
+  "tracks": [
+    "general_interaction_image"
+  ],
+  "server": {
+    "cmd": "{env}/bin/python {model_dir}/server.py --port {port}",
+    "port": 18875,
+    "health_timeout_s": 1800
+  },
+  "unsupported_ops": [
+    "reference_update"
+  ],
+  "portrait_policy": null,
+  "gpu": {
+    "count": 1
+  },
+  "output": {
+    "width": 832,
+    "height": 480,
+    "fps": 16
+  },
+  "model_version": "LingBot-World 2.0 (LingBot-World-Infinity) 1.3B causal-fast (I2V, camera poses, 4-step distilled, no CFG) on Wan 1.3B; code Robbyant/lingbot-world-v2@1895d300d8ac",
+  "weights": {
+    "repo": "robbyant/lingbot-world-v2-1.3b-causal-fast@7e36a5f9 (DiT shards) + Wan2.1 umT5-XXL encoder, Wan2.1 VAE and tokenizer (byte-identical in robbyant/lingbot-world-v2-14b-causal-fast and Wan-AI/Wan2.1-T2V-1.3B)",
+    "sha256": {
+      "lingbot-world-v2-1.3b-causal-fast/model-00001-of-00006.safetensors": "4169eaf504fc63c235f4b66c95887951ecd71ba4ca9492e8528b6709d63ed9b2",
+      "lingbot-world-v2-1.3b-causal-fast/model-00002-of-00006.safetensors": "e6745d1e600f697f2285ca435de09c49d2082303b7f9a2bb39003fc87b354d2f",
+      "lingbot-world-v2-1.3b-causal-fast/model-00003-of-00006.safetensors": "20f9b226fcfcfb4dead5c1e3ff1b77da182787442ebabfdaf23d3c68aca44ceb",
+      "lingbot-world-v2-1.3b-causal-fast/model-00004-of-00006.safetensors": "5b5c18cc18a4de976002f45777f59b4d27d30786c6db94e134d0af5a031f5272",
+      "lingbot-world-v2-1.3b-causal-fast/model-00005-of-00006.safetensors": "089575f86c3c62e12566a79c5e0afd663415aa4376e193b45ee2bb2ac65a9cbe",
+      "lingbot-world-v2-1.3b-causal-fast/model-00006-of-00006.safetensors": "c0d3d8643d07b6d6e26d614f80cf3538a562f575937a759c64a71d5575f2f915",
+      "Wan2.1-T2V-1.3B/models_t5_umt5-xxl-enc-bf16.pth": "7cace0da2b446bbbbc57d031ab6cf163a3d59b366da94e5afe36745b746fd81d",
+      "Wan2.1-T2V-1.3B/Wan2.1_VAE.pth": "38071ab59bd94681c686fa51d75a1968f64e470262043be31f7a094e442fd981"
+    }
+  },
+  "license": {
+    "code": "CC BY-NC-SA 4.0",
+    "weights": "CC BY-NC-SA 4.0 (HF model card); Wan2.1 encoder and VAE: Apache-2.0"
+  },
+  "steps": 4,
+  "notes": "Image-to-video world model: the released model starts from an image, so only the i2v (image + text) track is registered. 832x480 at 16 fps, 4-latent (16-frame) causal chunks generated live with upstream's causal-fast settings (4 steps, local attention 18 latents with a 6-latent sink). A prompt change applies from the next chunk (block prompt '<init prompt>\\n<latest instruction>', umT5 re-encoded, cross-attention cache recomputed). The camera-pose input is static (identity) by default; camera_control text is keyword-mapped onto translate / yaw / pitch pose steps (the keyword map of models/selfhost/hy_worldplay), unmappable text acked unsupported. Mid-session reference images have no model input (reference_update unsupported). Temporal RoPE table extended from 1024 to 4096 positions (same formula) for 300-second sessions.",
+  "input_adapters": {
+    "general_interaction_image": {
+      "mode": "derived",
+      "transforms": [
+        {
+          "operation": "camera_text_to_pose",
+          "parameters": {
+            "mapping": "hy_worldplay.camera_motion",
+            "unmapped": "unsupported"
+          }
+        }
+      ]
+    }
+  }
+}

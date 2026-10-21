@@ -1,0 +1,37 @@
+{
+  "system_id": "xmax_x2",
+  "model_id": "xmax_x2_realtime",
+  "name": "XMax X2.0",
+  "provider": "XMax",
+  "system_kind": "native",
+  "tracks": [
+    "instruction_edit",
+    "reference_edit"
+  ],
+  "portrait_policy": null,
+  "backend": "backend.py:XMax",
+  "model_version": "x2.0",
+  "notes": "vendor API; browser SDK session backend (streameval.providers.edit). Needs XMAX_API_KEY (XMAX_REGION: global | cn).",
+  "input_adapters": {
+    "instruction_edit": {
+      "mode": "normalized",
+      "transforms": [
+        {
+          "operation": "instruction_started_generation"
+        }
+      ]
+    },
+    "reference_edit": {
+      "mode": "normalized",
+      "transforms": [
+        {
+          "operation": "reference_to_prompt_and_image",
+          "parameters": {
+            "state": "single_slot",
+            "template": "streameval.v1.reference-prompt.en/1"
+          }
+        }
+      ]
+    }
+  }
+}

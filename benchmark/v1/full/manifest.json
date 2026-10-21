@@ -1,0 +1,5560 @@
+{
+ "assets": {
+  "sa.clean_reference_image.001.clothing_6576867681d2": {
+   "bytes": 225074,
+   "kind": "image",
+   "path": "v1/images/192.jpg",
+   "role": "clean_reference_image",
+   "sha256": "adc5d96cfcc1f7dfdeefe3b1569bb927191fd6b7a60887626db6596fb5171ff7"
+  },
+  "sa.clean_reference_image.001.clothing_fe528965fe2a": {
+   "bytes": 293253,
+   "kind": "image",
+   "path": "v1/images/193.jpg",
+   "role": "clean_reference_image",
+   "sha256": "810abef00b1228a35c6ec2ebb2fccaf0d5a35d30a697b4a384366e1e0ecdf3f7"
+  },
+  "sa.clean_reference_image.002.background_544c51ed36c3": {
+   "bytes": 788719,
+   "kind": "image",
+   "path": "v1/images/194.jpg",
+   "role": "background_reference_image",
+   "sha256": "2f2ce9e622a8e3a31f1d609904c81de7a5b667d7110eaaee263b1ca96894a04a"
+  },
+  "sa.clean_reference_image.002.background_b248f1052963": {
+   "bytes": 928298,
+   "kind": "image",
+   "path": "v1/images/195.jpg",
+   "role": "background_reference_image",
+   "sha256": "9ac935136ce058189f2b77ac8d4a482b48125bcf41e172a7946bd7cc8663c439"
+  },
+  "sa.clean_reference_image.003.left_vase_472e7be224c1": {
+   "bytes": 118091,
+   "kind": "image",
+   "path": "v1/images/196.jpg",
+   "role": "clean_reference_image",
+   "sha256": "ba585b1f729f6effbb65426980f4cc4d72500b6436c5d2ce5ce64a2a40b15b73"
+  },
+  "sa.clean_reference_image.003.left_vase_653bdf8cbc39": {
+   "bytes": 152057,
+   "kind": "image",
+   "path": "v1/images/197.jpg",
+   "role": "clean_reference_image",
+   "sha256": "f9cce8d032605abb492425e55850a1e27df1832ecfd01b4f5389bc2dd9fc70f1"
+  },
+  "sa.clean_reference_image.004.style_98f7efa00205": {
+   "bytes": 707789,
+   "kind": "image",
+   "path": "v1/images/198.jpg",
+   "role": "style_reference_image",
+   "sha256": "82e540930ece28cf335c119c380ac97671e8259ee165760bb36c39645df2df8d"
+  },
+  "sa.clean_reference_image.004.style_daa588a701d8": {
+   "bytes": 776196,
+   "kind": "image",
+   "path": "v1/images/199.jpg",
+   "role": "style_reference_image",
+   "sha256": "a6f0d90a2ef8a458bd8d257de23e2829ef28155d6aadd89a56c05ff94176873d"
+  },
+  "sa.clean_reference_image.005.scarf_8b9947b998b1": {
+   "bytes": 239852,
+   "kind": "image",
+   "path": "v1/images/200.jpg",
+   "role": "clean_reference_image",
+   "sha256": "bf723691ef02fb824e2536956bf7685edf1dcca7373911db7a5d0b449aac258a"
+  },
+  "sa.clean_reference_image.005.scarf_bf4f760a4060": {
+   "bytes": 264093,
+   "kind": "image",
+   "path": "v1/images/201.jpg",
+   "role": "clean_reference_image",
+   "sha256": "8434a81deddad6212780d6a00922cdcd219b96482cafffeb6fb56cb1d9217eb5"
+  },
+  "sa.clean_reference_image.006.jacket_rc1_e29a509bd2d0": {
+   "bytes": 194979,
+   "kind": "image",
+   "path": "v1/images/202.jpg",
+   "role": "clean_reference_image",
+   "sha256": "2aac4fd06737e1bdfc5562e0582d6bc41abdca7e4e128e3f1075287d739e6b53"
+  },
+  "sa.clean_reference_image.006.jacket_wd1_535e2cb32ce9": {
+   "bytes": 170603,
+   "kind": "image",
+   "path": "v1/images/203.jpg",
+   "role": "clean_reference_image",
+   "sha256": "63168ebd6bdb6f6b4297f9daf2fbbeaf25966bf2caceff14fa05e05263dc02eb"
+  },
+  "sa.clean_reference_image.007.background_78536ce65c5b": {
+   "bytes": 945905,
+   "kind": "image",
+   "path": "v1/images/204.jpg",
+   "role": "background_reference_image",
+   "sha256": "17f7d1756ba4695beb08438680bd4323eb2ec15d9fe330db9ba178724f1cfc16"
+  },
+  "sa.clean_reference_image.007.clothing_wd1_9eb2cdec0daf": {
+   "bytes": 125175,
+   "kind": "image",
+   "path": "v1/images/205.jpg",
+   "role": "clean_reference_image",
+   "sha256": "15cfb38f750d1c15b2b65d79cd2686e1e0052df2767b97feca02b740ba7e8a29"
+  },
+  "sa.clean_reference_image.007.clothing_wd1_c4b1b3eb7964": {
+   "bytes": 287554,
+   "kind": "image",
+   "path": "v1/images/206.jpg",
+   "role": "clean_reference_image",
+   "sha256": "2b5b85354f81954893c7917c896ad0f1108a0a07044a4e8b0d27852cc5be0b18"
+  },
+  "sa.clean_reference_image.008.left_glove_mint_four_digit_v2": {
+   "bytes": 150287,
+   "kind": "image",
+   "path": "v1/images/207.jpg",
+   "role": "clean_reference_image",
+   "sha256": "3976b650fd111ab5fcf2f06963484c31ef2d3316f0f1756ef72f37b28a955600"
+  },
+  "sa.clean_reference_image.008.left_glove_vermilion_four_digit_v2": {
+   "bytes": 138571,
+   "kind": "image",
+   "path": "v1/images/208.jpg",
+   "role": "clean_reference_image",
+   "sha256": "dea5337c63d8225798a6a2cfb7104c1a98088464aca6ce271b5f6e8ac74c6868"
+  },
+  "sa.clean_reference_image.008.right_glove_copper_four_digit_v2": {
+   "bytes": 138092,
+   "kind": "image",
+   "path": "v1/images/209.jpg",
+   "role": "clean_reference_image",
+   "sha256": "d88ae03685e91985245a6062b34fb854395d48a13cf3334f7a8ff1b0c5d73f9d"
+  },
+  "sa.clean_reference_image.009.background_4adcc416d05a": {
+   "bytes": 726716,
+   "kind": "image",
+   "path": "v1/images/210.jpg",
+   "role": "background_reference_image",
+   "sha256": "cc941d3493c65601ee83924cab2b6941d8e19be017b09bca3b8935039981681d"
+  },
+  "sa.clean_reference_image.009.style_fd989bc2624e": {
+   "bytes": 855919,
+   "kind": "image",
+   "path": "v1/images/211.jpg",
+   "role": "style_reference_image",
+   "sha256": "fb99b9b0374c01722bc71c3a024ab072fcd0d9283286e3c17e58a96c5df6144d"
+  },
+  "sa.clean_reference_image.011.sky_color_35cfd73e4f06": {
+   "bytes": 103091,
+   "kind": "image",
+   "path": "v1/images/212.jpg",
+   "role": "clean_reference_image",
+   "sha256": "6afd11e43385b653db7e35e5d7af60c6fbdcf245bd379317cc5db4ba3d7c787b"
+  },
+  "sa.clean_reference_image.011.sky_color_63e3666dcf3b": {
+   "bytes": 107879,
+   "kind": "image",
+   "path": "v1/images/213.jpg",
+   "role": "clean_reference_image",
+   "sha256": "c97f807ebb695c0bac439d844cfab90397e7b54fa0dccb0420ca2fd0a7109e50"
+  },
+  "sa.clean_reference_image.012.character_f2553eeeda9f": {
+   "bytes": 136246,
+   "kind": "image",
+   "path": "v1/images/214.jpg",
+   "role": "clean_reference_image",
+   "sha256": "756ca9a2e267cd1a81f40a4095f2d76123056f89ca02489280dcc1c043806355"
+  },
+  "sa.clean_reference_image.012.character_rc1_3cb3251cc8f3": {
+   "bytes": 135538,
+   "kind": "image",
+   "path": "v1/images/215.jpg",
+   "role": "clean_reference_image",
+   "sha256": "4f9946bd7be22c9358a0ec597eca784e4901b2b1ed460fc123ef567a3af08e09"
+  },
+  "sa.clean_reference_image.013.background_094b15fb4f7f": {
+   "bytes": 936835,
+   "kind": "image",
+   "path": "v1/images/216.jpg",
+   "role": "background_reference_image",
+   "sha256": "6b4b0e3b925bf57924a98588624016bc1c4627983257daa91efa1a658597710e"
+  },
+  "sa.clean_reference_image.013.clothing_wd1_b903cad92501": {
+   "bytes": 157604,
+   "kind": "image",
+   "path": "v1/images/217.jpg",
+   "role": "clean_reference_image",
+   "sha256": "c7f25cca4764633f6df170f10854ec4c6dca4aa19801e40ff95015338b186903"
+  },
+  "sa.clean_reference_image.013.clothing_wd2_99505b36dc99": {
+   "bytes": 140229,
+   "kind": "image",
+   "path": "v1/images/218.jpg",
+   "role": "clean_reference_image",
+   "sha256": "a00ac03da4138aaa5de480e35b10a6b734c28b357bba7b83c7b1e2ba18986d42"
+  },
+  "sa.clean_reference_image.014.left_clothing_wd1_0a3133dbe3a1": {
+   "bytes": 221718,
+   "kind": "image",
+   "path": "v1/images/219.jpg",
+   "role": "clean_reference_image",
+   "sha256": "3e6bc1ea34a3c5397e05cdfcbd32d21688f8ebd2549a461111f932b91aa00990"
+  },
+  "sa.clean_reference_image.014.left_clothing_wd1_248a76284814": {
+   "bytes": 280341,
+   "kind": "image",
+   "path": "v1/images/220.jpg",
+   "role": "clean_reference_image",
+   "sha256": "82bd684d2d5b97518676a3339b931ac0cd087a2eeda78fee8e11a99313ce6116"
+  },
+  "sa.clean_reference_image.014.right_clothing_rc1_475ae85bf14d": {
+   "bytes": 217414,
+   "kind": "image",
+   "path": "v1/images/221.jpg",
+   "role": "clean_reference_image",
+   "sha256": "e0d312067c98c38bed21d6cf7e3d446794458cda770dbe7d5d7c30875b28fd2d"
+  },
+  "sa.clean_reference_image.015.style_02ceee5b0aaf": {
+   "bytes": 512609,
+   "kind": "image",
+   "path": "v1/images/222.jpg",
+   "role": "style_reference_image",
+   "sha256": "610dbe3658c551e709326db9b49afc3ff5ad9d9878c377d03c03d8c00fcbe55a"
+  },
+  "sa.clean_reference_image.015.style_1dfa006d33aa": {
+   "bytes": 771966,
+   "kind": "image",
+   "path": "v1/images/223.jpg",
+   "role": "style_reference_image",
+   "sha256": "0bdcdb3f6e8721b516e5f40422cdf772386b3efb6ed37c1f5da46b13ffe04a85"
+  },
+  "sa.clean_reference_image.016.vest_rc1_8afc0e081d1d": {
+   "bytes": 155401,
+   "kind": "image",
+   "path": "v1/images/224.jpg",
+   "role": "clean_reference_image",
+   "sha256": "6407a68b1ac6a3b083ee8d192c5618b8d80eed6745de79a57870acefb5adbf68"
+  },
+  "sa.clean_reference_image.016.vest_wd1_b6eefc77d8fd": {
+   "bytes": 285932,
+   "kind": "image",
+   "path": "v1/images/225.jpg",
+   "role": "clean_reference_image",
+   "sha256": "e8c21b31e875b217692a5830bd21b9aefe97c39369ce9aaf6930d17453845105"
+  },
+  "sa.clean_reference_image.017.cushion_11321534acfd": {
+   "bytes": 236405,
+   "kind": "image",
+   "path": "v1/images/226.jpg",
+   "role": "clean_reference_image",
+   "sha256": "7397783d4e9256d5abfd3cb4bf0eb701fc67eeb686faee19b2590185d0d23f5e"
+  },
+  "sa.clean_reference_image.017.cushion_f140827cbf1b": {
+   "bytes": 346098,
+   "kind": "image",
+   "path": "v1/images/227.jpg",
+   "role": "clean_reference_image",
+   "sha256": "e89797ffb9590c93de7c5dc55e06469c6f764849dc684743d8454601d247fa38"
+  },
+  "sa.clean_reference_image.018.background_a5e4a53242d4": {
+   "bytes": 805315,
+   "kind": "image",
+   "path": "v1/images/228.jpg",
+   "role": "background_reference_image",
+   "sha256": "eb86217d8575eba152aed8b8adc9769907144827e7c653d9f329e7d8a8c9133d"
+  },
+  "sa.clean_reference_image.018.coat_wd1_94d6e96a58a8": {
+   "bytes": 217933,
+   "kind": "image",
+   "path": "v1/images/229.jpg",
+   "role": "clean_reference_image",
+   "sha256": "45d6c9ed87c9fd05de83553476bfb131245809c42210e27b1aeceba2031ed3b5"
+  },
+  "sa.clean_reference_image.018.coat_wd1_ff470f6a996b": {
+   "bytes": 172405,
+   "kind": "image",
+   "path": "v1/images/230.jpg",
+   "role": "clean_reference_image",
+   "sha256": "571cfd40658b8977ef03fc34037e2a4f1e540dbac2c306e465a2967abbebe6fb"
+  },
+  "sa.clean_reference_image.019.background_rc1_465849ab5d69": {
+   "bytes": 1248067,
+   "kind": "image",
+   "path": "v1/images/231.jpg",
+   "role": "background_reference_image",
+   "sha256": "be4bfbf4b2f7d04c90a054a98d5f262ac76093c143474edc4e86d0a8252487e4"
+  },
+  "sa.clean_reference_image.019.style_rc2_43e25f875001": {
+   "bytes": 517437,
+   "kind": "image",
+   "path": "v1/images/232.jpg",
+   "role": "style_reference_image",
+   "sha256": "d4101420c531e9681eda1785e7814130380311194691af9082a0fe32fe718668"
+  },
+  "sa.clean_reference_image.020.background_af10d15ecfd7": {
+   "bytes": 929560,
+   "kind": "image",
+   "path": "v1/images/233.jpg",
+   "role": "background_reference_image",
+   "sha256": "7621268b0228faf0ee52387fa3f8357678f30d2b899a6ee7974d80f90f8d5de2"
+  },
+  "sa.clean_reference_image.020.clothing_wd1_96b3be2e63ea": {
+   "bytes": 254472,
+   "kind": "image",
+   "path": "v1/images/234.jpg",
+   "role": "clean_reference_image",
+   "sha256": "5095e7d761802348c35af090023fb6c9f01e08b9b3f06239133b17d7c86c4c16"
+  },
+  "sa.clean_reference_image.020.clothing_wd1_be4a161ec69f": {
+   "bytes": 228657,
+   "kind": "image",
+   "path": "v1/images/235.jpg",
+   "role": "clean_reference_image",
+   "sha256": "c68a3b8975eb29b5f8d68cc7fc9cfc16b44f05e037f3a2ef0087c7bfafc9ac2f"
+  },
+  "sa.clean_reference_image.v1_221.a": {
+   "bytes": 1430801,
+   "kind": "image",
+   "path": "v1/images/001.png",
+   "role": "clean_reference_image",
+   "sha256": "85edd0d973d7dfd66740bd3d892db40861963a2d92cccc6d19c0f1317e285346"
+  },
+  "sa.clean_reference_image.v1_221.b": {
+   "bytes": 1379802,
+   "kind": "image",
+   "path": "v1/images/002.png",
+   "role": "clean_reference_image",
+   "sha256": "4b473803baaa3c26290138325441fca18cd8620b7b0c52126f72fca7763bfb4d"
+  },
+  "sa.clean_reference_image.v1_222.a": {
+   "bytes": 1999058,
+   "kind": "image",
+   "path": "v1/images/003.png",
+   "role": "clean_reference_image",
+   "sha256": "47c422df31adb18d31aa8582fc4980041bbd7d8d5431a11beab6d571e3f94d5d"
+  },
+  "sa.clean_reference_image.v1_222.b": {
+   "bytes": 1834863,
+   "kind": "image",
+   "path": "v1/images/004.png",
+   "role": "clean_reference_image",
+   "sha256": "b2e5b2ac3d1cdf274d7aa1e393cb93c29dad33af28684bb8588b30beb216e4ec"
+  },
+  "sa.clean_reference_image.v1_223.a": {
+   "bytes": 1470721,
+   "kind": "image",
+   "path": "v1/images/005.png",
+   "role": "clean_reference_image",
+   "sha256": "586708b305fe1cc604fe1eb9281789dabad56c947e22ceb6070d85a42ebf9bf5"
+  },
+  "sa.clean_reference_image.v1_223.c": {
+   "bytes": 1441674,
+   "kind": "image",
+   "path": "v1/images/006.png",
+   "role": "clean_reference_image",
+   "sha256": "57f9993b76b1f6f81bb1622a1d8934162709a83961653c33f3c431e7049312c4"
+  },
+  "sa.clean_reference_image.v1_224.a": {
+   "bytes": 1818041,
+   "kind": "image",
+   "path": "v1/images/007.png",
+   "role": "clean_reference_image",
+   "sha256": "7b2ad0e7d4003f74fb4abf3edae389385fde7dc78a4334f4a3c7557b7e29eb8c"
+  },
+  "sa.clean_reference_image.v1_224.c": {
+   "bytes": 1480642,
+   "kind": "image",
+   "path": "v1/images/008.png",
+   "role": "clean_reference_image",
+   "sha256": "c99623b024a7ffded179e0817c3702a180aad84423253274089daba961de628f"
+  },
+  "sa.clean_reference_image.v1_225.a": {
+   "bytes": 1747658,
+   "kind": "image",
+   "path": "v1/images/009.png",
+   "role": "clean_reference_image",
+   "sha256": "c5db7170509392067718fde7700625cbc2f36507d4a989a5cfb531c0a7940a6a"
+  },
+  "sa.clean_reference_image.v1_225.b": {
+   "bytes": 1482281,
+   "kind": "image",
+   "path": "v1/images/010.png",
+   "role": "clean_reference_image",
+   "sha256": "667da39df232464088461dca5c721d38ad064100196b5bd1309561dfe5c5559b"
+  },
+  "sa.clean_reference_image.v1_226.a": {
+   "bytes": 1631203,
+   "kind": "image",
+   "path": "v1/images/011.png",
+   "role": "clean_reference_image",
+   "sha256": "746786539ddda01d7c931e1231f1b1430595701e4a7dbc32ccc01605104d2191"
+  },
+  "sa.clean_reference_image.v1_226.b": {
+   "bytes": 1493715,
+   "kind": "image",
+   "path": "v1/images/012.png",
+   "role": "clean_reference_image",
+   "sha256": "2858041c8f9af94de65d31e46158ac648027114c71aac6ed26490a59744e5f67"
+  },
+  "sa.clean_reference_image.v1_227.a": {
+   "bytes": 1468036,
+   "kind": "image",
+   "path": "v1/images/013.png",
+   "role": "clean_reference_image",
+   "sha256": "64ed660af009bcfe742e511c91dc7ccb30a4e20ed67a0ddbfc2c973bdb65ca1c"
+  },
+  "sa.clean_reference_image.v1_227.b": {
+   "bytes": 1915980,
+   "kind": "image",
+   "path": "v1/images/014.png",
+   "role": "clean_reference_image",
+   "sha256": "e17fc7bc73e718c072541c3214631c4eb4bcd1f36d43d0990416cf19b8856b65"
+  },
+  "sa.clean_reference_image.v1_227.c": {
+   "bytes": 1516621,
+   "kind": "image",
+   "path": "v1/images/015.png",
+   "role": "clean_reference_image",
+   "sha256": "3f77758a33c131f2462979d60156a344d4c35659d8eb41665f0175577cbfcd75"
+  },
+  "sa.clean_reference_image.v1_228.a": {
+   "bytes": 1602906,
+   "kind": "image",
+   "path": "v1/images/016.png",
+   "role": "clean_reference_image",
+   "sha256": "1788eb4ccaea869d347fd61bb78f056f641d3597bbcd4c36851ac8cf92d6d9d0"
+  },
+  "sa.clean_reference_image.v1_228.b": {
+   "bytes": 1508940,
+   "kind": "image",
+   "path": "v1/images/017.png",
+   "role": "clean_reference_image",
+   "sha256": "26977e4a2c1b77f18e5997171f75d1f44b958a05b52dda5d826f0053417aa7de"
+  },
+  "sa.clean_reference_image.v1_228.c": {
+   "bytes": 1530191,
+   "kind": "image",
+   "path": "v1/images/018.png",
+   "role": "clean_reference_image",
+   "sha256": "4396e51fb0f4d92a29e3d6976eeb93ed96de4335927511222ac5aa90564d44c9"
+  },
+  "sa.clean_reference_image.v1_229.a": {
+   "bytes": 1471733,
+   "kind": "image",
+   "path": "v1/images/019.png",
+   "role": "clean_reference_image",
+   "sha256": "1f1fa12bc26d34130e62afe9987d31847d1bb3a3836cfd5063dc43d4bc48d3aa"
+  },
+  "sa.clean_reference_image.v1_229.b": {
+   "bytes": 1351992,
+   "kind": "image",
+   "path": "v1/images/020.png",
+   "role": "clean_reference_image",
+   "sha256": "623bc08522dfb36e306d1eb2c49783c5683c7b73022abba14267b58d971fcb02"
+  },
+  "sa.clean_reference_image.v1_230.a": {
+   "bytes": 1436003,
+   "kind": "image",
+   "path": "v1/images/021.png",
+   "role": "clean_reference_image",
+   "sha256": "84aa01d4b2705e005f6ea91aa8321a27be5110356014bc75496167878d5642fb"
+  },
+  "sa.clean_reference_image.v1_230.b": {
+   "bytes": 1793011,
+   "kind": "image",
+   "path": "v1/images/022.png",
+   "role": "clean_reference_image",
+   "sha256": "0162400820d8fc9e2ffb1f23456b8ae33595ae202eb76ce7e3d8d64851bb399f"
+  },
+  "sa.clean_reference_image.v1_231.a": {
+   "bytes": 1514822,
+   "kind": "image",
+   "path": "v1/images/023.png",
+   "role": "clean_reference_image",
+   "sha256": "0daac668aabeb0b1627ac6c2bfd4b4fd29538b34f90896f22360609a3232dfaa"
+  },
+  "sa.clean_reference_image.v1_231.c": {
+   "bytes": 1427901,
+   "kind": "image",
+   "path": "v1/images/024.png",
+   "role": "clean_reference_image",
+   "sha256": "b24e00da2470867913d120e48483fc9b0f3d5e4e93ebd24fcd56b898b7a2c508"
+  },
+  "sa.clean_reference_image.v1_232.a": {
+   "bytes": 1487951,
+   "kind": "image",
+   "path": "v1/images/025.png",
+   "role": "clean_reference_image",
+   "sha256": "e9dcfb144ddaf9c4772199221da4f124335a63f57c333a7477bfdd33fbd66941"
+  },
+  "sa.clean_reference_image.v1_232.c": {
+   "bytes": 1487653,
+   "kind": "image",
+   "path": "v1/images/026.png",
+   "role": "clean_reference_image",
+   "sha256": "6b59ec79595a4f2344cd462122881cb9a46f9e44f4ab4c442d588d79ae2fa983"
+  },
+  "sa.clean_reference_image.v1_233.a": {
+   "bytes": 1525846,
+   "kind": "image",
+   "path": "v1/images/027.png",
+   "role": "clean_reference_image",
+   "sha256": "502354cfbf87f59e7153ab74bad785e5d1210d95c23b1c76179dbf585550f487"
+  },
+  "sa.clean_reference_image.v1_233.b": {
+   "bytes": 1463305,
+   "kind": "image",
+   "path": "v1/images/028.png",
+   "role": "clean_reference_image",
+   "sha256": "ec2c5b374555c3b552517c83ce70406b83c85132d091b7917593e7f9c8fcd02d"
+  },
+  "sa.clean_reference_image.v1_234.a": {
+   "bytes": 1616718,
+   "kind": "image",
+   "path": "v1/images/029.png",
+   "role": "clean_reference_image",
+   "sha256": "8b50b8df11ef2732de483015ad83622ccce841ae88007ab819737188d42cd70b"
+  },
+  "sa.clean_reference_image.v1_234.b": {
+   "bytes": 1648692,
+   "kind": "image",
+   "path": "v1/images/030.png",
+   "role": "clean_reference_image",
+   "sha256": "452bdf6f928337d6173c73aac2c163177b27d5a595e11f7f403a719ac4160e2f"
+  },
+  "sa.clean_reference_image.v1_235.a": {
+   "bytes": 1547325,
+   "kind": "image",
+   "path": "v1/images/031.png",
+   "role": "clean_reference_image",
+   "sha256": "d62af4e923e1ce5f2da60f95cb4983cc89a11fe8f7b20ddb822889dd87af1960"
+  },
+  "sa.clean_reference_image.v1_235.b": {
+   "bytes": 1540350,
+   "kind": "image",
+   "path": "v1/images/032.png",
+   "role": "clean_reference_image",
+   "sha256": "2e239d356c5e2c32ad36bf9a05d00e82dfc0c34063cc38e1a599a349563273b0"
+  },
+  "sa.clean_reference_image.v1_235.c": {
+   "bytes": 1595704,
+   "kind": "image",
+   "path": "v1/images/033.png",
+   "role": "clean_reference_image",
+   "sha256": "ea0d4e51eacc5db9bf72a6d65866f995306c9dbb161bb3f2148d6e8cf998d1cd"
+  },
+  "sa.clean_reference_image.v1_236.a": {
+   "bytes": 1732107,
+   "kind": "image",
+   "path": "v1/images/034.png",
+   "role": "clean_reference_image",
+   "sha256": "16bf1d6e9d2265e8cf6eb527ef7c95cf4049c8534007e81e333f3960d6304cac"
+  },
+  "sa.clean_reference_image.v1_236.b": {
+   "bytes": 1884034,
+   "kind": "image",
+   "path": "v1/images/035.png",
+   "role": "clean_reference_image",
+   "sha256": "beeda559ea080b9e26211febb56d4db20f33041c3727b8cd472334b6a86d7782"
+  },
+  "sa.clean_reference_image.v1_236.c": {
+   "bytes": 1464259,
+   "kind": "image",
+   "path": "v1/images/036.png",
+   "role": "clean_reference_image",
+   "sha256": "0664ac437984ec86edc03a3c69c42059ed8d4d4d26c722bfff522d2358580b7b"
+  },
+  "sa.clean_reference_image.v1_237.a": {
+   "bytes": 1600472,
+   "kind": "image",
+   "path": "v1/images/037.png",
+   "role": "clean_reference_image",
+   "sha256": "cc52db1c1b2f93e04e7c0a05c3ede8009d1522b5385f9de449b2e14c6dcff2fb"
+  },
+  "sa.clean_reference_image.v1_237.b": {
+   "bytes": 1815282,
+   "kind": "image",
+   "path": "v1/images/038.png",
+   "role": "clean_reference_image",
+   "sha256": "bba735803af6d839cf46b289462f7e9b8237c28cba0e2fa128e95626840e3c4c"
+  },
+  "sa.clean_reference_image.v1_238.a": {
+   "bytes": 1535746,
+   "kind": "image",
+   "path": "v1/images/039.png",
+   "role": "clean_reference_image",
+   "sha256": "60dec25aabcf517ad6c731b94b078509a2f18727aafae37a1ebe5dfd7512d54b"
+  },
+  "sa.clean_reference_image.v1_238.b": {
+   "bytes": 1632148,
+   "kind": "image",
+   "path": "v1/images/040.png",
+   "role": "clean_reference_image",
+   "sha256": "fd6613a1ef6624e541698d6afed81c2366c5e159146b21f25d6d3061e8cb2ce8"
+  },
+  "sa.clean_reference_image.v1_239.a": {
+   "bytes": 1723133,
+   "kind": "image",
+   "path": "v1/images/041.png",
+   "role": "clean_reference_image",
+   "sha256": "9ebed7f89000b9e9363800d65b81e30cd7f1610669b1b149b447e32248e8c8b0"
+  },
+  "sa.clean_reference_image.v1_239.c": {
+   "bytes": 1450871,
+   "kind": "image",
+   "path": "v1/images/042.png",
+   "role": "clean_reference_image",
+   "sha256": "875abf59462dadf5cf6e4ca79b9c936d3fe1ea0b7661c7760f39568ca40dea11"
+  },
+  "sa.clean_reference_image.v1_240.a": {
+   "bytes": 1432253,
+   "kind": "image",
+   "path": "v1/images/043.png",
+   "role": "clean_reference_image",
+   "sha256": "fb9debbb60c3f63f37331a5c8c6dabf3c7987f9b90fd46e6d05967000f042bad"
+  },
+  "sa.clean_reference_image.v1_240.c": {
+   "bytes": 1411568,
+   "kind": "image",
+   "path": "v1/images/044.png",
+   "role": "clean_reference_image",
+   "sha256": "ca8a8b22ee8ca6a8f173cd10883998c04d94ef07bda9b9b99f0ecf827e051814"
+  },
+  "sa.clean_reference_image.v1_241.a": {
+   "bytes": 2169717,
+   "kind": "image",
+   "path": "v1/images/045.png",
+   "role": "clean_reference_image",
+   "sha256": "fe013ad3ee1dd55f85a534955d39c30abc6244e4d9e46c4555b54e54aa7b2396"
+  },
+  "sa.clean_reference_image.v1_241.b": {
+   "bytes": 1976215,
+   "kind": "image",
+   "path": "v1/images/046.png",
+   "role": "clean_reference_image",
+   "sha256": "9860c1021a142b0768caf21f15f81e755fca0a62c3ecae371b50ef9828055ec4"
+  },
+  "sa.clean_reference_image.v1_242.a": {
+   "bytes": 1556349,
+   "kind": "image",
+   "path": "v1/images/047.png",
+   "role": "clean_reference_image",
+   "sha256": "8f78caf9a4e823c7306d3f8cf099117ce78e61a9f7431895bdc4b26d17935917"
+  },
+  "sa.clean_reference_image.v1_242.b": {
+   "bytes": 1520619,
+   "kind": "image",
+   "path": "v1/images/048.png",
+   "role": "clean_reference_image",
+   "sha256": "145ff40c03cb07b93a70bbf04b4153a4af314cabd2e3b48444220586b044d723"
+  },
+  "sa.clean_reference_image.v1_243.a": {
+   "bytes": 1565984,
+   "kind": "image",
+   "path": "v1/images/049.png",
+   "role": "clean_reference_image",
+   "sha256": "176cf981312d548ee95420693f76b19bacc17e0f520f58bb47b244725ab4389a"
+  },
+  "sa.clean_reference_image.v1_243.b": {
+   "bytes": 1663337,
+   "kind": "image",
+   "path": "v1/images/050.png",
+   "role": "clean_reference_image",
+   "sha256": "56a3893a798d2c80060eaba8e8096bbae609e044b27db3786bf6943dd640e853"
+  },
+  "sa.clean_reference_image.v1_243.c": {
+   "bytes": 1697021,
+   "kind": "image",
+   "path": "v1/images/051.png",
+   "role": "clean_reference_image",
+   "sha256": "fee7b9be37a16c14f7fa0edf838473fff9c250d4b8976db7ff694a8e5c4e4bc9"
+  },
+  "sa.clean_reference_image.v1_244.a": {
+   "bytes": 1718271,
+   "kind": "image",
+   "path": "v1/images/052.png",
+   "role": "clean_reference_image",
+   "sha256": "5ab9098b38f51c68a0a3771302228a657c6f65fc6cc82996cb7c517eb4eba9ca"
+  },
+  "sa.clean_reference_image.v1_244.b": {
+   "bytes": 1869644,
+   "kind": "image",
+   "path": "v1/images/053.png",
+   "role": "clean_reference_image",
+   "sha256": "1c772eb71f61cc8f48d3d4c18185a7820cd6f391de5e5bef47bffe34cddeeda8"
+  },
+  "sa.clean_reference_image.v1_244.c": {
+   "bytes": 1447182,
+   "kind": "image",
+   "path": "v1/images/054.png",
+   "role": "clean_reference_image",
+   "sha256": "4c908a6ecc74c35eab2b666c9f46c79bac6480462c7a5428ddd7b7cadc4502b6"
+  },
+  "sa.clean_reference_image.v1_245.a": {
+   "bytes": 1622947,
+   "kind": "image",
+   "path": "v1/images/055.png",
+   "role": "clean_reference_image",
+   "sha256": "a46b02d6775559648e7225a12b026deecb3534718548a9d2c759de016423c967"
+  },
+  "sa.clean_reference_image.v1_245.b": {
+   "bytes": 1732639,
+   "kind": "image",
+   "path": "v1/images/056.png",
+   "role": "clean_reference_image",
+   "sha256": "d2fdf7b6d781982e514567d9dc09f578330d1269063ed68228b08e498c79ba6e"
+  },
+  "sa.clean_reference_image.v1_246.a": {
+   "bytes": 1788148,
+   "kind": "image",
+   "path": "v1/images/057.png",
+   "role": "clean_reference_image",
+   "sha256": "665cbddf56d0b0fddcdad748ed76d59cb43ebbdf8c19420c7e0b961262ec8bae"
+  },
+  "sa.clean_reference_image.v1_246.b": {
+   "bytes": 1437374,
+   "kind": "image",
+   "path": "v1/images/058.png",
+   "role": "clean_reference_image",
+   "sha256": "c9e1cd6d7e56c1c0a1a00d00d63a902b001ebc2ae22632920f8de34de3594f97"
+  },
+  "sa.clean_reference_image.v1_247.a": {
+   "bytes": 1861551,
+   "kind": "image",
+   "path": "v1/images/059.png",
+   "role": "clean_reference_image",
+   "sha256": "3d569e136d77a3b1b68d8caf1b3c451b48abce3f27ff89fc7a1261033115047d"
+  },
+  "sa.clean_reference_image.v1_247.c": {
+   "bytes": 1798818,
+   "kind": "image",
+   "path": "v1/images/060.png",
+   "role": "clean_reference_image",
+   "sha256": "c56c53b5a70c8efca1e2c6032862ba2884422d3844178cdf3ed90b3bd70b1b2a"
+  },
+  "sa.clean_reference_image.v1_248.a": {
+   "bytes": 1616162,
+   "kind": "image",
+   "path": "v1/images/061.png",
+   "role": "clean_reference_image",
+   "sha256": "3c9891287606f7dde717514c1087172b028bd522ac6127a10fa0b4cab0f26e46"
+  },
+  "sa.clean_reference_image.v1_248.c": {
+   "bytes": 1492550,
+   "kind": "image",
+   "path": "v1/images/062.png",
+   "role": "clean_reference_image",
+   "sha256": "6bb6f87bdb5766f6fd0466cbc593f93ed3cb49a28b6eb03e32087505791cfef4"
+  },
+  "sa.clean_reference_image.v1_249.a": {
+   "bytes": 1373107,
+   "kind": "image",
+   "path": "v1/images/063.png",
+   "role": "clean_reference_image",
+   "sha256": "e3c3b6018f385547dcffc6a3f59cf598240eab237b5135d500d5f8303876719a"
+  },
+  "sa.clean_reference_image.v1_249.b": {
+   "bytes": 1514020,
+   "kind": "image",
+   "path": "v1/images/064.png",
+   "role": "clean_reference_image",
+   "sha256": "5f7f7925d72caa618b2a696fc1367b48864bcbcd78da910ecf22630cc0a07234"
+  },
+  "sa.clean_reference_image.v1_250.a": {
+   "bytes": 1628962,
+   "kind": "image",
+   "path": "v1/images/065.png",
+   "role": "clean_reference_image",
+   "sha256": "8b337b9be1602a8588dd85ee3701d66cf9bc6f3fbb81306a35251073081b3953"
+  },
+  "sa.clean_reference_image.v1_250.b": {
+   "bytes": 1618529,
+   "kind": "image",
+   "path": "v1/images/066.png",
+   "role": "clean_reference_image",
+   "sha256": "eed08f7ba185af09be2c563433d954c4c6b7ce3d4897118769a508052914cadf"
+  },
+  "sa.clean_reference_image.v1_251.a": {
+   "bytes": 1580136,
+   "kind": "image",
+   "path": "v1/images/067.png",
+   "role": "clean_reference_image",
+   "sha256": "4e037311b14b5d41152f6fdad2102167c9bd1674564a900cb0415e497d808a80"
+  },
+  "sa.clean_reference_image.v1_251.b": {
+   "bytes": 2027663,
+   "kind": "image",
+   "path": "v1/images/068.png",
+   "role": "clean_reference_image",
+   "sha256": "c25db14263e8b9d2093f28b702048a494a246b0d5c4e6489f08e1884c2363774"
+  },
+  "sa.clean_reference_image.v1_251.c": {
+   "bytes": 1481355,
+   "kind": "image",
+   "path": "v1/images/069.png",
+   "role": "clean_reference_image",
+   "sha256": "150b2597c1413c316c3d8a0f0daee93fa7d135b495de33dfe0c590eefdbb3379"
+  },
+  "sa.clean_reference_image.v1_252.a": {
+   "bytes": 1422042,
+   "kind": "image",
+   "path": "v1/images/070.png",
+   "role": "clean_reference_image",
+   "sha256": "6d767e64828c2070657cc24aa02d359cfd45ad39082b3a9506161b9098007135"
+  },
+  "sa.clean_reference_image.v1_252.b": {
+   "bytes": 1500351,
+   "kind": "image",
+   "path": "v1/images/071.png",
+   "role": "clean_reference_image",
+   "sha256": "9b6dc64e3a1de193a39c7cf04112f5b650e32b5fa4210e7132cbd452e2459913"
+  },
+  "sa.clean_reference_image.v1_252.c": {
+   "bytes": 1422049,
+   "kind": "image",
+   "path": "v1/images/072.png",
+   "role": "clean_reference_image",
+   "sha256": "50f7de397711c566bc1924ffc9fa6fddf35a6637ed8e865c1afa6ea1a1d725db"
+  },
+  "sa.clean_reference_image.v1_253.a": {
+   "bytes": 1631744,
+   "kind": "image",
+   "path": "v1/images/073.png",
+   "role": "clean_reference_image",
+   "sha256": "fa3f52d0413e37fdda050dae4deaefabaf9c8893672d67e76cea650281b67ab8"
+  },
+  "sa.clean_reference_image.v1_253.b": {
+   "bytes": 1611384,
+   "kind": "image",
+   "path": "v1/images/074.png",
+   "role": "clean_reference_image",
+   "sha256": "8cc65c92b16874bb88ac6e8d5b66eefe6d9a4fc688ec86a84462befb780b6ea7"
+  },
+  "sa.clean_reference_image.v1_254.a": {
+   "bytes": 1617229,
+   "kind": "image",
+   "path": "v1/images/075.png",
+   "role": "clean_reference_image",
+   "sha256": "7318a30772be94aa51110e6892f6b62169486915b8a689d523a9250a2c4b71a4"
+  },
+  "sa.clean_reference_image.v1_254.b": {
+   "bytes": 1563883,
+   "kind": "image",
+   "path": "v1/images/076.png",
+   "role": "clean_reference_image",
+   "sha256": "b5ceaa41eae9bd51b551a0c24b98ed7ad4d59e3644e88570ef4e778245e9c5aa"
+  },
+  "sa.clean_reference_image.v1_255.a": {
+   "bytes": 1547497,
+   "kind": "image",
+   "path": "v1/images/077.png",
+   "role": "clean_reference_image",
+   "sha256": "1a95ae465df7f47ec809a7cb12c541e5807e187900e8622181c0972311521783"
+  },
+  "sa.clean_reference_image.v1_255.c": {
+   "bytes": 1387351,
+   "kind": "image",
+   "path": "v1/images/078.png",
+   "role": "clean_reference_image",
+   "sha256": "1387e5db6466f73a367d066d5baec8c423a8665606dc8f1dc11d358c6fd58357"
+  },
+  "sa.clean_reference_image.v1_256.a": {
+   "bytes": 1768595,
+   "kind": "image",
+   "path": "v1/images/079.png",
+   "role": "clean_reference_image",
+   "sha256": "18c1e42ab6b7a2302ee3d90d28f1573dec9f703a7c4c0a07223a297deafb15f8"
+  },
+  "sa.clean_reference_image.v1_256.c": {
+   "bytes": 1407328,
+   "kind": "image",
+   "path": "v1/images/080.png",
+   "role": "clean_reference_image",
+   "sha256": "95b012f88e45277f175232e5795ff329da834aaba145ce753450b3f75577bd83"
+  },
+  "sa.clean_reference_image.v1_257.a": {
+   "bytes": 1795267,
+   "kind": "image",
+   "path": "v1/images/081.png",
+   "role": "clean_reference_image",
+   "sha256": "b495e56fed8d8c718e82fb153d94eb66c4fcf07c2db6f21a407086ec611f25d2"
+  },
+  "sa.clean_reference_image.v1_257.b": {
+   "bytes": 1702086,
+   "kind": "image",
+   "path": "v1/images/082.png",
+   "role": "clean_reference_image",
+   "sha256": "134210101e71ed038d52746306779ffe981d0dfda0da514d084aa505bd9e805e"
+  },
+  "sa.clean_reference_image.v1_258.a": {
+   "bytes": 1635068,
+   "kind": "image",
+   "path": "v1/images/083.png",
+   "role": "clean_reference_image",
+   "sha256": "1f0f8614d73b9cfe79d33d30f0f898d25be8959dc8e979c3c833aaf8cded0d12"
+  },
+  "sa.clean_reference_image.v1_258.b": {
+   "bytes": 1676311,
+   "kind": "image",
+   "path": "v1/images/084.png",
+   "role": "clean_reference_image",
+   "sha256": "404daed15b859abc8e6647142aae31b7ef9dce038d7d83c25503be2519ede116"
+  },
+  "sa.clean_reference_image.v1_259.a": {
+   "bytes": 1518126,
+   "kind": "image",
+   "path": "v1/images/085.png",
+   "role": "clean_reference_image",
+   "sha256": "dfa4241b5c144b2a0e919b54b0a5555d3d0fdc88634fe99f3977f9d3ce9d44ce"
+  },
+  "sa.clean_reference_image.v1_259.b": {
+   "bytes": 1666084,
+   "kind": "image",
+   "path": "v1/images/086.png",
+   "role": "clean_reference_image",
+   "sha256": "e1538a4a462bd5130cc25f3368b6e6ff8ae81e3fb077e1c7d75a8a51b9f76e85"
+  },
+  "sa.clean_reference_image.v1_259.c": {
+   "bytes": 1532506,
+   "kind": "image",
+   "path": "v1/images/087.png",
+   "role": "clean_reference_image",
+   "sha256": "4f4e8e018de989dc4a4dd2d9e3ab2b80445b24309c6a24ef69b4563eba1b5ef2"
+  },
+  "sa.clean_reference_image.v1_260.a": {
+   "bytes": 1582639,
+   "kind": "image",
+   "path": "v1/images/088.png",
+   "role": "clean_reference_image",
+   "sha256": "ca3e1898c9b9426b1c387f1defd1e23c227b2443607f1761e03fea241949e639"
+  },
+  "sa.clean_reference_image.v1_260.b": {
+   "bytes": 1568746,
+   "kind": "image",
+   "path": "v1/images/089.png",
+   "role": "clean_reference_image",
+   "sha256": "85086998dbee43bf3affddc1bfa509b0fd06448027b2d39c0ba5dbec97cafca1"
+  },
+  "sa.clean_reference_image.v1_260.c": {
+   "bytes": 1486367,
+   "kind": "image",
+   "path": "v1/images/090.png",
+   "role": "clean_reference_image",
+   "sha256": "6d96fb84cf16e86d14c9a2bf8964bdc7a01094b858d3565af59c01f612d00a4e"
+  },
+  "sa.clean_reference_image.v1_301.a": {
+   "bytes": 676492,
+   "kind": "image",
+   "path": "v1/images/236.png",
+   "role": "clean_reference_image",
+   "sha256": "fac36759d5fe5f04034878c7a865627df3c819f2ab9aec6cc18f889e99b8bb6c"
+  },
+  "sa.clean_reference_image.v1_301.b": {
+   "bytes": 365780,
+   "kind": "image",
+   "path": "v1/images/237.png",
+   "role": "clean_reference_image",
+   "sha256": "03760e5dd068fe1c5a2d4ffad1ee0e5c2d70e09ac672ccbe748d7cbdac33e37e"
+  },
+  "sa.general_reference_image.042.a": {
+   "bytes": 319574,
+   "kind": "image",
+   "path": "v1/images/238.jpg",
+   "role": "general_reference_image",
+   "sha256": "06955d0fed657ead628f8f78146f03bb9bf22ab15e09313f1327bedc0f7931bb"
+  },
+  "sa.general_reference_image.042.b": {
+   "bytes": 358904,
+   "kind": "image",
+   "path": "v1/images/239.jpg",
+   "role": "general_reference_image",
+   "sha256": "78df28feca933b80a73d51b465384c0f6ed89b8c18d97fc0cd9935d02f4b3e61"
+  },
+  "sa.general_reference_image.045.a": {
+   "bytes": 288059,
+   "kind": "image",
+   "path": "v1/images/240.jpg",
+   "role": "general_reference_image",
+   "sha256": "00866ceaa5cf613a967c87d0e4d7d25b33a46348f79459f0d15b3638c590a5f9"
+  },
+  "sa.general_reference_image.045.b": {
+   "bytes": 291387,
+   "kind": "image",
+   "path": "v1/images/241.jpg",
+   "role": "general_reference_image",
+   "sha256": "ad49b08d0ddae58a48efbf0a5026c48afbb61dc77922e6e4c37a8e12958db7cf"
+  },
+  "sa.general_reference_image.046.a": {
+   "bytes": 366609,
+   "kind": "image",
+   "path": "v1/images/242.jpg",
+   "role": "general_reference_image",
+   "sha256": "c6a88671d7807b2392eac339e240cc1709bfd60620465144a2da6d4d5c420145"
+  },
+  "sa.general_reference_image.048.a": {
+   "bytes": 277368,
+   "kind": "image",
+   "path": "v1/images/243.jpg",
+   "role": "general_reference_image",
+   "sha256": "026453f4197becce2906d3e1ffa6db5141b6cf051f1dc4cbcf51371a9918dbb2"
+  },
+  "sa.general_reference_image.048.b": {
+   "bytes": 289382,
+   "kind": "image",
+   "path": "v1/images/244.jpg",
+   "role": "general_reference_image",
+   "sha256": "b9a7c6461a19b0e0dd1a95502e27431f5ae56e0300ef24e7a695cbdc31851c33"
+  },
+  "sa.general_reference_image.051.a": {
+   "bytes": 475173,
+   "kind": "image",
+   "path": "v1/images/245.jpg",
+   "role": "general_reference_image",
+   "sha256": "974d8a7e8de4b3c3befe2db2a64036de99451616f9c78a0d58e79f2cdede2e8a"
+  },
+  "sa.general_reference_image.051.b": {
+   "bytes": 469246,
+   "kind": "image",
+   "path": "v1/images/246.jpg",
+   "role": "general_reference_image",
+   "sha256": "feebbd668b0be537f6f12be27a6286df08750e69fc3176b686bea3ecb2ba46ff"
+  },
+  "sa.general_reference_image.052.a": {
+   "bytes": 568711,
+   "kind": "image",
+   "path": "v1/images/247.jpg",
+   "role": "general_reference_image",
+   "sha256": "4242b3b2a52509e998bb9f3e04014db5d5aefecd81379ca29dbefeae8c05cc13"
+  },
+  "sa.general_reference_image.054.a": {
+   "bytes": 294868,
+   "kind": "image",
+   "path": "v1/images/248.jpg",
+   "role": "general_reference_image",
+   "sha256": "f8000c2d9b4660a50ee3cf32b099c392a0c82ca7475cb99b6d34e8c6a0f1e960"
+  },
+  "sa.general_reference_image.054.b": {
+   "bytes": 294832,
+   "kind": "image",
+   "path": "v1/images/249.jpg",
+   "role": "general_reference_image",
+   "sha256": "95752b47b740d8118e37802c02a798ccc68b5798a29a7cb43c5f5c25809818cd"
+  },
+  "sa.general_reference_image.055.a": {
+   "bytes": 318568,
+   "kind": "image",
+   "path": "v1/images/250.jpg",
+   "role": "general_reference_image",
+   "sha256": "7e4bdc318a88cf16037a186beb38f3331987437d945336aebf8b40957dadfd57"
+  },
+  "sa.general_reference_image.057.a": {
+   "bytes": 280511,
+   "kind": "image",
+   "path": "v1/images/251.jpg",
+   "role": "general_reference_image",
+   "sha256": "566d7f1fdb37d1a70af73e3810333bcf8a8ff0437cdbed2d0233705c12e58872"
+  },
+  "sa.general_reference_image.057.b": {
+   "bytes": 314038,
+   "kind": "image",
+   "path": "v1/images/252.jpg",
+   "role": "general_reference_image",
+   "sha256": "8de4781019941e441066ee7158738d74ebdf74fec6b9db7ade49eb1a891b3c5a"
+  },
+  "sa.general_reference_image.060.a": {
+   "bytes": 282395,
+   "kind": "image",
+   "path": "v1/images/253.jpg",
+   "role": "general_reference_image",
+   "sha256": "43ee104cc41938a98fd55f83ee4038957eabd9530f8aa086bdcafe0e31d8cac9"
+  },
+  "sa.performance_portrait.061": {
+   "bytes": 325914,
+   "kind": "image",
+   "path": "v1/images/254.jpg",
+   "role": "performance_portrait",
+   "sha256": "0f4af1ca8dba9cce246aba9aaabde0d900687d55b17223945173a56448fa532b"
+  },
+  "sa.performance_portrait.062": {
+   "bytes": 361984,
+   "kind": "image",
+   "path": "v1/images/255.jpg",
+   "role": "performance_portrait",
+   "sha256": "89221e64f23c7acd826f1fcfa0767f45d89c4299f8f0b4fdcb83a3c419b19414"
+  },
+  "sa.performance_portrait.063": {
+   "bytes": 188620,
+   "kind": "image",
+   "path": "v1/images/256.jpg",
+   "role": "performance_portrait",
+   "sha256": "1e4e033b81787223d1d80a1deab33728e86c610de6e83a1bb6f6b49ef653f74e"
+  },
+  "sa.performance_portrait.064": {
+   "bytes": 261746,
+   "kind": "image",
+   "path": "v1/images/257.jpg",
+   "role": "performance_portrait",
+   "sha256": "b2830fecd063636cbcb3799874503102c70a2de700d6b3916ffe7534e10961d9"
+  },
+  "sa.performance_portrait.065": {
+   "bytes": 279229,
+   "kind": "image",
+   "path": "v1/images/258.jpg",
+   "role": "performance_portrait",
+   "sha256": "ed783e0a857ad52e55db9902de29c8dd1b721f44df1314d62577665229b171fd"
+  },
+  "sa.performance_portrait.066": {
+   "bytes": 257690,
+   "kind": "image",
+   "path": "v1/images/259.jpg",
+   "role": "performance_portrait",
+   "sha256": "1ad68dda8dfa7211c11f5b33b18021ea0dc5076d076288bd735566a7deff5edd"
+  },
+  "sa.performance_portrait.067": {
+   "bytes": 537715,
+   "kind": "image",
+   "path": "v1/images/260.jpg",
+   "role": "performance_portrait",
+   "sha256": "e2798004fb6f6dfa11c0a55423ac030287372da682aa5caa4892353bb15865a0"
+  },
+  "sa.performance_portrait.068": {
+   "bytes": 334423,
+   "kind": "image",
+   "path": "v1/images/261.jpg",
+   "role": "performance_portrait",
+   "sha256": "9336134883195dbcaa5510ffd5fc835bf1cccb19dde83e71cd7f0164d96b96a1"
+  },
+  "sa.performance_portrait.069": {
+   "bytes": 266397,
+   "kind": "image",
+   "path": "v1/images/262.jpg",
+   "role": "performance_portrait",
+   "sha256": "31b24ff86fcabad4bad6b0c18b8f81b9e42d93b1a25556c3166c6f52ca042784"
+  },
+  "sa.performance_portrait.070": {
+   "bytes": 285778,
+   "kind": "image",
+   "path": "v1/images/263.jpg",
+   "role": "performance_portrait",
+   "sha256": "b91414a3261cf3b3b653479563af513dd356398837eb8736484663483a8f9013"
+  },
+  "sa.performance_portrait.071": {
+   "bytes": 343545,
+   "kind": "image",
+   "path": "v1/images/264.jpg",
+   "role": "performance_portrait",
+   "sha256": "495711194070c3f23f6f4d2c6eb12729953e3c0b50ea42518b2db324d5c22a22"
+  },
+  "sa.performance_portrait.072": {
+   "bytes": 239075,
+   "kind": "image",
+   "path": "v1/images/265.jpg",
+   "role": "performance_portrait",
+   "sha256": "9f36d4b181ee24ab4215fcde9969883b4f64629c04758993eb8777566386653e"
+  },
+  "sa.performance_portrait.073": {
+   "bytes": 257855,
+   "kind": "image",
+   "path": "v1/images/266.jpg",
+   "role": "performance_portrait",
+   "sha256": "0996dbe3a09ee4ffa04d5ae8c254f67bc219a2fe0851e65272a59053102f507d"
+  },
+  "sa.performance_portrait.074": {
+   "bytes": 261593,
+   "kind": "image",
+   "path": "v1/images/267.jpg",
+   "role": "performance_portrait",
+   "sha256": "42063d16846393cec7d940a1fba4de9f55a4f58bde8ddb130c3902bd18156337"
+  },
+  "sa.performance_portrait.075": {
+   "bytes": 223783,
+   "kind": "image",
+   "path": "v1/images/268.jpg",
+   "role": "performance_portrait",
+   "sha256": "81fbf04c7ba95c54a7620ecc990e595b909bf2da6c1b0149263ade6824440355"
+  },
+  "sa.performance_portrait.076": {
+   "bytes": 292162,
+   "kind": "image",
+   "path": "v1/images/269.jpg",
+   "role": "performance_portrait",
+   "sha256": "ab306952a4ff298a896dec0feec122ce26d21efef7fae46256a4a0ac2eea54ab"
+  },
+  "sa.performance_portrait.077": {
+   "bytes": 289584,
+   "kind": "image",
+   "path": "v1/images/270.jpg",
+   "role": "performance_portrait",
+   "sha256": "89c245a7902584c13439e6100ac0b38decffb0f213478e90f84bfd953e46bc3a"
+  },
+  "sa.performance_portrait.078": {
+   "bytes": 286006,
+   "kind": "image",
+   "path": "v1/images/271.jpg",
+   "role": "performance_portrait",
+   "sha256": "f0404b196b55093349a96aa9c2adf87438635153cc064f36c852c5892dde7138"
+  },
+  "sa.performance_portrait.079": {
+   "bytes": 190501,
+   "kind": "image",
+   "path": "v1/images/272.jpg",
+   "role": "performance_portrait",
+   "sha256": "72440d4e155f08a0698bb0ec8a8bbd893e27fb6f47fcfcc6485d201418bd1f15"
+  },
+  "sa.performance_portrait.080": {
+   "bytes": 267330,
+   "kind": "image",
+   "path": "v1/images/273.jpg",
+   "role": "performance_portrait",
+   "sha256": "23d10e35d8df1393f16e910c219d52e251a22ebc11351b7fbb35bfd26958bcbb"
+  },
+  "sa.portrait.021": {
+   "bytes": 268931,
+   "kind": "image",
+   "path": "v1/images/274.jpg",
+   "role": "portrait",
+   "sha256": "15d9aee2eeb937f30ddb8d350b5ddbdccf4b574ee089744ffe8d7150b6c256a8"
+  },
+  "sa.portrait.022": {
+   "bytes": 303754,
+   "kind": "image",
+   "path": "v1/images/275.jpg",
+   "role": "portrait",
+   "sha256": "9e422060592ee2b456d27a075cf0f0e90dd4c2d9f6eae7493085dfe97efead87"
+  },
+  "sa.portrait.023": {
+   "bytes": 352392,
+   "kind": "image",
+   "path": "v1/images/276.jpg",
+   "role": "portrait",
+   "sha256": "84c65b07b9ce9ed0a301649915c8dad923dc765f846a7c241274203b7bd1ccd7"
+  },
+  "sa.portrait.024": {
+   "bytes": 324724,
+   "kind": "image",
+   "path": "v1/images/277.jpg",
+   "role": "portrait",
+   "sha256": "33b908f85c2e772e3cb529fcdd92244a548995522851d545dbcdf58d32284e95"
+  },
+  "sa.portrait.025": {
+   "bytes": 279213,
+   "kind": "image",
+   "path": "v1/images/278.jpg",
+   "role": "portrait",
+   "sha256": "bc119f88e56892f061ccf2ede2f66467ae08503005605e9291170f59cfb23f58"
+  },
+  "sa.portrait.026": {
+   "bytes": 351612,
+   "kind": "image",
+   "path": "v1/images/279.jpg",
+   "role": "portrait",
+   "sha256": "479940d89a5cbe7650380099dbd51dfc8d321c85f0c5a541d6d5b9c7794cccb6"
+  },
+  "sa.portrait.027": {
+   "bytes": 326467,
+   "kind": "image",
+   "path": "v1/images/280.jpg",
+   "role": "portrait",
+   "sha256": "ee01d8e50e2e4d50f0340de57cbddb13d9c7e793740e3e41fab64bb17b61b84c"
+  },
+  "sa.portrait.028": {
+   "bytes": 323265,
+   "kind": "image",
+   "path": "v1/images/281.jpg",
+   "role": "portrait",
+   "sha256": "acf36c5d498d4ae12b41c8cf7754f73e25c02f46c2814e73732b30a3164823d8"
+  },
+  "sa.portrait.029": {
+   "bytes": 288837,
+   "kind": "image",
+   "path": "v1/images/282.jpg",
+   "role": "portrait",
+   "sha256": "a3067e9b1402c1f2a871d2a544013f54b9dd34db16419c38c7816b4541ce470d"
+  },
+  "sa.portrait.030": {
+   "bytes": 251998,
+   "kind": "image",
+   "path": "v1/images/283.jpg",
+   "role": "portrait",
+   "sha256": "74a3f78bea26ff0a4d147aad6c7350858ceb3e9aa74463342cbe06ace0d2b11a"
+  },
+  "sa.portrait.031": {
+   "bytes": 331055,
+   "kind": "image",
+   "path": "v1/images/284.jpg",
+   "role": "portrait",
+   "sha256": "2e0f74662f32454e66989d22de603cccbe64743032bfce9758e335c7b9154265"
+  },
+  "sa.portrait.032": {
+   "bytes": 267828,
+   "kind": "image",
+   "path": "v1/images/285.jpg",
+   "role": "portrait",
+   "sha256": "e3ca11a56477293a065ddd0cf8ca7b83ddb33155157f4463900774578a1d08ef"
+  },
+  "sa.portrait.033": {
+   "bytes": 292238,
+   "kind": "image",
+   "path": "v1/images/286.jpg",
+   "role": "portrait",
+   "sha256": "cf0ad184892a30280c24b988f969d606a8b2782f7ef3fc114dc7d3dcfbac7707"
+  },
+  "sa.portrait.034": {
+   "bytes": 242980,
+   "kind": "image",
+   "path": "v1/images/287.jpg",
+   "role": "portrait",
+   "sha256": "3c95e229f18b8fc75254724fa9be9c84a8ad29f9cbd9a7cd4d452b261dd51824"
+  },
+  "sa.portrait.035": {
+   "bytes": 434140,
+   "kind": "image",
+   "path": "v1/images/288.jpg",
+   "role": "portrait",
+   "sha256": "828c113c83f85ab82a65fdcbc1f22c1c5ed57926f8eca4e1229b787861620729"
+  },
+  "sa.portrait.036": {
+   "bytes": 281131,
+   "kind": "image",
+   "path": "v1/images/289.jpg",
+   "role": "portrait",
+   "sha256": "38c10d60fbe5d0e5ae22db759d2e2cec28d77500a32742f6a76473c6a8156645"
+  },
+  "sa.portrait.037": {
+   "bytes": 250884,
+   "kind": "image",
+   "path": "v1/images/290.jpg",
+   "role": "portrait",
+   "sha256": "fe7c0f9963ad6466f76cf6ead2b833a831c05b170d338d21c01a42d69e98b8ff"
+  },
+  "sa.portrait.038": {
+   "bytes": 272812,
+   "kind": "image",
+   "path": "v1/images/291.jpg",
+   "role": "portrait",
+   "sha256": "7073e249e40ad6886372fcf3ae6d4b2a8338d1502aaa2d854208bbdc3f5211ad"
+  },
+  "sa.portrait.039": {
+   "bytes": 353082,
+   "kind": "image",
+   "path": "v1/images/292.jpg",
+   "role": "portrait",
+   "sha256": "7c84815b701fdde7845ae896476c538f3ce1ad811420257cc272be9df4cd20fb"
+  },
+  "sa.portrait.040": {
+   "bytes": 361226,
+   "kind": "image",
+   "path": "v1/images/293.jpg",
+   "role": "portrait",
+   "sha256": "f04833bfebb67d87534c3c4731e93b79ad893283d2ddc0d14057bc0253cd4a21"
+  },
+  "sa.source_video.001": {
+   "bytes": 8374372,
+   "kind": "video",
+   "path": "v1/videos/041.mp4",
+   "role": "source_video",
+   "sha256": "5b7757d809eec1059048bbad4449aaa003e172b39eacb04c016e67d9bc49fa6a"
+  },
+  "sa.source_video.002": {
+   "bytes": 16976026,
+   "kind": "video",
+   "path": "v1/videos/042.mp4",
+   "role": "source_video",
+   "sha256": "cdf5f993ad7271457ac1987436011446f2d71657bce7f49d07f8b26b9ee0fe7f"
+  },
+  "sa.source_video.003": {
+   "bytes": 7690288,
+   "kind": "video",
+   "path": "v1/videos/043.mp4",
+   "role": "source_video",
+   "sha256": "ad56ed704c3a764a0a346478312477fcee26f71c515222b3a7818b9425f1922d"
+  },
+  "sa.source_video.004": {
+   "bytes": 34997967,
+   "kind": "video",
+   "path": "v1/videos/044.mp4",
+   "role": "source_video",
+   "sha256": "02eb150fc6563838a1ecabe5922c236441d2ca6abd113e053c44741e47244858"
+  },
+  "sa.source_video.005": {
+   "bytes": 6277470,
+   "kind": "video",
+   "path": "v1/videos/045.mp4",
+   "role": "source_video",
+   "sha256": "e0a75e1b50c919926a065af42eb63551f3577b7bdde9163ee3ec50c566dded72"
+  },
+  "sa.source_video.006": {
+   "bytes": 13566517,
+   "kind": "video",
+   "path": "v1/videos/046.mp4",
+   "role": "source_video",
+   "sha256": "4867895e70dd848f5000502622e0d13b602d71223eec562bf462a144a3931d59"
+  },
+  "sa.source_video.007": {
+   "bytes": 29527162,
+   "kind": "video",
+   "path": "v1/videos/047.mp4",
+   "role": "source_video",
+   "sha256": "bf975bebb55eb7445ac390d0b9bf8eb63e95dfb5955fe223e071022d910f2d62"
+  },
+  "sa.source_video.008": {
+   "bytes": 68178321,
+   "kind": "video",
+   "path": "v1/videos/048.mp4",
+   "role": "source_video",
+   "sha256": "1eefe220f0a1e9c5968ce1d062b785ccb95d95d7d4f3a3db9cdbb82427874562"
+  },
+  "sa.source_video.009": {
+   "bytes": 48261296,
+   "kind": "video",
+   "path": "v1/videos/049.mp4",
+   "role": "source_video",
+   "sha256": "81362f1b063179b4f9d86a92bee5c6f188be61d9e1ad5bcbe16cbbdedeeb490d"
+  },
+  "sa.source_video.011": {
+   "bytes": 62794715,
+   "kind": "video",
+   "path": "v1/videos/050.mp4",
+   "role": "source_video",
+   "sha256": "8e399da0f9432c3bcf5a01478b4684f6733bbb46aba13fff0a206e0c80abd178"
+  },
+  "sa.source_video.012": {
+   "bytes": 58648552,
+   "kind": "video",
+   "path": "v1/videos/051.mp4",
+   "role": "source_video",
+   "sha256": "b873a243c0967a33f13282e28dccc0f135afd2527e9fa126b3070491bb3c14ab"
+  },
+  "sa.source_video.013": {
+   "bytes": 118069075,
+   "kind": "video",
+   "path": "v1/videos/052.mp4",
+   "role": "source_video",
+   "sha256": "9537a0737616ee352f44b05c5920cc60f29ca27ce40984c655981c1b70b8e423"
+  },
+  "sa.source_video.014": {
+   "bytes": 107782762,
+   "kind": "video",
+   "path": "v1/videos/053.mp4",
+   "role": "source_video",
+   "sha256": "46fd945b23bfa0fa6ec219a795eeeb8188e316e22d00aa71c836866fd1aa1701"
+  },
+  "sa.source_video.015": {
+   "bytes": 97601407,
+   "kind": "video",
+   "path": "v1/videos/054.mp4",
+   "role": "source_video",
+   "sha256": "71f14e37d7173b792a823ecdb752f3efe7253e9934b7640cf11322ed5decdf3a"
+  },
+  "sa.source_video.016": {
+   "bytes": 11140963,
+   "kind": "video",
+   "path": "v1/videos/055.mp4",
+   "role": "source_video",
+   "sha256": "b56130062132c34500decd6de061ddd2e1890aca9e8349ff680f53b9fc025a3e"
+  },
+  "sa.source_video.017": {
+   "bytes": 18192568,
+   "kind": "video",
+   "path": "v1/videos/056.mp4",
+   "role": "source_video",
+   "sha256": "cc44f9e1fac93e22c2b16b6b8cbad4c4067c9bdcba4623ebf3705c9d7336ed1b"
+  },
+  "sa.source_video.018": {
+   "bytes": 26956441,
+   "kind": "video",
+   "path": "v1/videos/057.mp4",
+   "role": "source_video",
+   "sha256": "0d3033137d646b6ee5c18a90e5a204388aa0d67384fdcd59690035c97a6ef2fc"
+  },
+  "sa.source_video.019": {
+   "bytes": 145267030,
+   "kind": "video",
+   "path": "v1/videos/058.mp4",
+   "role": "source_video",
+   "sha256": "9ba5491fd653706312f2d140b1a3f8159b6e7ee7e1782d2b64275b99a575b31e"
+  },
+  "sa.source_video.020": {
+   "bytes": 75421667,
+   "kind": "video",
+   "path": "v1/videos/059.mp4",
+   "role": "source_video",
+   "sha256": "41bdfb0038705f191790ab31d0f67e2f329ee14c747ed2f10dc32b2c3e73b8d4"
+  },
+  "sa.source_video.v1_221": {
+   "bytes": 6274601,
+   "kind": "video",
+   "path": "v1/videos/001.mp4",
+   "role": "source_video",
+   "sha256": "8c43aadddb6053600b6ccc872ece50245568216fde389a73f9a876323ec485ce"
+  },
+  "sa.source_video.v1_222": {
+   "bytes": 5298917,
+   "kind": "video",
+   "path": "v1/videos/002.mp4",
+   "role": "source_video",
+   "sha256": "61dcb21def21a11dd8e9bce637a82d7b4a5c587439e348b7f06912835f7ef02a"
+  },
+  "sa.source_video.v1_223": {
+   "bytes": 4515879,
+   "kind": "video",
+   "path": "v1/videos/003.mp4",
+   "role": "source_video",
+   "sha256": "f2d50d45f2046baefa449200832dc598f939157c8afc097bc9e2a939fbf4b624"
+  },
+  "sa.source_video.v1_224": {
+   "bytes": 12991456,
+   "kind": "video",
+   "path": "v1/videos/004.mp4",
+   "role": "source_video",
+   "sha256": "f35c7881f53127676f5a2d135abc21ffba25d0c8a7a9649295cc0dea91427a87"
+  },
+  "sa.source_video.v1_225": {
+   "bytes": 2677853,
+   "kind": "video",
+   "path": "v1/videos/005.mp4",
+   "role": "source_video",
+   "sha256": "85be7ddc0ed74aa713f6b0d50ff7e84eb3f664a2c369b0b4d9147ea1d93429ce"
+  },
+  "sa.source_video.v1_226": {
+   "bytes": 13971843,
+   "kind": "video",
+   "path": "v1/videos/006.mp4",
+   "role": "source_video",
+   "sha256": "90be1d62cea93df8f0da967e99351c3de2c702c8942957c6f1c90fc269966775"
+  },
+  "sa.source_video.v1_227": {
+   "bytes": 15534212,
+   "kind": "video",
+   "path": "v1/videos/007.mp4",
+   "role": "source_video",
+   "sha256": "19aabafc2d54e326d6bc73dccf63bdd0f559f5f4a49ef825719c94636eef97a7"
+  },
+  "sa.source_video.v1_228": {
+   "bytes": 1760279,
+   "kind": "video",
+   "path": "v1/videos/008.mp4",
+   "role": "source_video",
+   "sha256": "81a97d726e47a773d0b76678aaf59ffba78e1c71d9b850224ad379d050eaceeb"
+  },
+  "sa.source_video.v1_229": {
+   "bytes": 45801831,
+   "kind": "video",
+   "path": "v1/videos/009.mp4",
+   "role": "source_video",
+   "sha256": "19401065e73d833b503ce82d1e02a03317daab96d3bcd8308d4a77c101398d89"
+  },
+  "sa.source_video.v1_230": {
+   "bytes": 27557981,
+   "kind": "video",
+   "path": "v1/videos/010.mp4",
+   "role": "source_video",
+   "sha256": "de7531d7363955a27a7c07d29da792af7a8ba54ebfb57100680cce0606f6b43a"
+  },
+  "sa.source_video.v1_231": {
+   "bytes": 8815442,
+   "kind": "video",
+   "path": "v1/videos/011.mp4",
+   "role": "source_video",
+   "sha256": "c3245f3e8c4aa39b9b0075c99b5fd83337d6382727f53de8b7d78e73ba166add"
+  },
+  "sa.source_video.v1_232": {
+   "bytes": 21365516,
+   "kind": "video",
+   "path": "v1/videos/012.mp4",
+   "role": "source_video",
+   "sha256": "a42106e40f7427af80c15b390dbb7ba672fe0753bba6cff30beedf67efa0cfa4"
+  },
+  "sa.source_video.v1_233": {
+   "bytes": 11235055,
+   "kind": "video",
+   "path": "v1/videos/013.mp4",
+   "role": "source_video",
+   "sha256": "d3d6d7ed578bb19c5bfc102dfef986e4482193733bd66ed464926d5440c2119b"
+  },
+  "sa.source_video.v1_234": {
+   "bytes": 3560542,
+   "kind": "video",
+   "path": "v1/videos/014.mp4",
+   "role": "source_video",
+   "sha256": "54191802055f185e0aacfdbc14210c1ccec740ca3ad4cd134828718c3c8d7f25"
+  },
+  "sa.source_video.v1_235": {
+   "bytes": 21701603,
+   "kind": "video",
+   "path": "v1/videos/015.mp4",
+   "role": "source_video",
+   "sha256": "fca41eb718e18eb6f613b775cfefcb4379d300f461b6d1c45d59f92c1213066e"
+  },
+  "sa.source_video.v1_236": {
+   "bytes": 7223522,
+   "kind": "video",
+   "path": "v1/videos/016.mp4",
+   "role": "source_video",
+   "sha256": "ff18d967fc6379bfb7256330fcbaa6b5bf28565bb3b84ad658fdc989d41fed73"
+  },
+  "sa.source_video.v1_237": {
+   "bytes": 8496748,
+   "kind": "video",
+   "path": "v1/videos/017.mp4",
+   "role": "source_video",
+   "sha256": "0a095115a64f3aede8de54f70b0646212091e3c359a7d9a73326c3d6540f615f"
+  },
+  "sa.source_video.v1_238": {
+   "bytes": 6319627,
+   "kind": "video",
+   "path": "v1/videos/018.mp4",
+   "role": "source_video",
+   "sha256": "532a121d4f89f66191145a782bec2a9a88f44cab9a0795a9a7b9a54f03aed490"
+  },
+  "sa.source_video.v1_239": {
+   "bytes": 5883093,
+   "kind": "video",
+   "path": "v1/videos/019.mp4",
+   "role": "source_video",
+   "sha256": "ae42941e846f2d23ab1b4c3d6a243cf6f3c1e988d22fd2f928c8c06fba1ea7cd"
+  },
+  "sa.source_video.v1_240": {
+   "bytes": 11434955,
+   "kind": "video",
+   "path": "v1/videos/020.mp4",
+   "role": "source_video",
+   "sha256": "68df9b7ae13fff3b3ace2675e0fac4ce801bf5c8eb59bb5286f511ff0ed16412"
+  },
+  "sa.source_video.v1_241": {
+   "bytes": 29068792,
+   "kind": "video",
+   "path": "v1/videos/021.mp4",
+   "role": "source_video",
+   "sha256": "338969f8592d3040c16e6f15864cab79bf39fcac8809516465e9acbb5cb34da5"
+  },
+  "sa.source_video.v1_242": {
+   "bytes": 11780136,
+   "kind": "video",
+   "path": "v1/videos/022.mp4",
+   "role": "source_video",
+   "sha256": "40cedebec982149d6d6eddcecaf6dc2e389ff56c21935ac42480fb01d3b0e5da"
+  },
+  "sa.source_video.v1_243": {
+   "bytes": 10378430,
+   "kind": "video",
+   "path": "v1/videos/023.mp4",
+   "role": "source_video",
+   "sha256": "21f667ee14b5624b024351022e908c00de59ab87e5c03d65cce760b777ab0aa8"
+  },
+  "sa.source_video.v1_244": {
+   "bytes": 21971767,
+   "kind": "video",
+   "path": "v1/videos/024.mp4",
+   "role": "source_video",
+   "sha256": "a59c06385da02838a9af9e4efaeaff47bec82dc815aede0a55b6d85a17c293f6"
+  },
+  "sa.source_video.v1_245": {
+   "bytes": 52718094,
+   "kind": "video",
+   "path": "v1/videos/025.mp4",
+   "role": "source_video",
+   "sha256": "6b9ee4e09589ab37d01c7100133f93264b486b7f78dc150906d62c2bbce33a0e"
+  },
+  "sa.source_video.v1_246": {
+   "bytes": 123887486,
+   "kind": "video",
+   "path": "v1/videos/026.mp4",
+   "role": "source_video",
+   "sha256": "1eba1e41b440c85b303d050244a1ec5956d82ca5ec23d3e82377a1f542a9950d"
+  },
+  "sa.source_video.v1_247": {
+   "bytes": 159387763,
+   "kind": "video",
+   "path": "v1/videos/027.mp4",
+   "role": "source_video",
+   "sha256": "a2c137681f1e2575a84731e69feacde9e51e71d02396f5bc2e4dcd2a6b27c16a"
+  },
+  "sa.source_video.v1_248": {
+   "bytes": 17553776,
+   "kind": "video",
+   "path": "v1/videos/028.mp4",
+   "role": "source_video",
+   "sha256": "1a5d8290c1f7eb2472b8a200b7a1cbad67924ec2bcc96ed2c6839fd146e738ca"
+  },
+  "sa.source_video.v1_249": {
+   "bytes": 54248387,
+   "kind": "video",
+   "path": "v1/videos/029.mp4",
+   "role": "source_video",
+   "sha256": "5bb72a8eb7a7325a0d24753564463b906e271d1cce06255395f53a2d12773378"
+  },
+  "sa.source_video.v1_250": {
+   "bytes": 68757933,
+   "kind": "video",
+   "path": "v1/videos/030.mp4",
+   "role": "source_video",
+   "sha256": "38009c520962384c4d43c09d8af21ce01d2d13fef0ead1dab18f91825b2e7f3c"
+  },
+  "sa.source_video.v1_251": {
+   "bytes": 52037212,
+   "kind": "video",
+   "path": "v1/videos/031.mp4",
+   "role": "source_video",
+   "sha256": "2245c66c1bb5f385ed1ea440f2a1811ba60cf3f5565a17e97b436e2210a35446"
+  },
+  "sa.source_video.v1_252": {
+   "bytes": 167594282,
+   "kind": "video",
+   "path": "v1/videos/032.mp4",
+   "role": "source_video",
+   "sha256": "132f8ffb0905df272ebc48b8344e823ed5a74db160ea6f1850daa2771f1db7e6"
+  },
+  "sa.source_video.v1_253": {
+   "bytes": 179745994,
+   "kind": "video",
+   "path": "v1/videos/033.mp4",
+   "role": "source_video",
+   "sha256": "b0cbc9bb14852946cbd22db9d38da4147c4e5a414f2a272cf6f85587c9c03786"
+  },
+  "sa.source_video.v1_254": {
+   "bytes": 49976798,
+   "kind": "video",
+   "path": "v1/videos/034.mp4",
+   "role": "source_video",
+   "sha256": "27d60d01d7e03be50fd3a5b4fe7069da58c1e3ce889531c469f9d84c34b262b5"
+  },
+  "sa.source_video.v1_255": {
+   "bytes": 12451388,
+   "kind": "video",
+   "path": "v1/videos/035.mp4",
+   "role": "source_video",
+   "sha256": "35226d5cd625667208b3045073e8619d8296abe7e359a9d8bceeec606b2ff931"
+  },
+  "sa.source_video.v1_256": {
+   "bytes": 200791997,
+   "kind": "video",
+   "path": "v1/videos/036.mp4",
+   "role": "source_video",
+   "sha256": "fa08321490d5f37ac887559a50c29ca4b977ff5fbe13bc1b3de5db807507f7ef"
+  },
+  "sa.source_video.v1_257": {
+   "bytes": 80639083,
+   "kind": "video",
+   "path": "v1/videos/037.mp4",
+   "role": "source_video",
+   "sha256": "9099f6e3f3f6f0ab7f400d38fae7d8832fae409dc26419e190395f434318e549"
+  },
+  "sa.source_video.v1_258": {
+   "bytes": 44342341,
+   "kind": "video",
+   "path": "v1/videos/038.mp4",
+   "role": "source_video",
+   "sha256": "a64497ebfdf9f2899c8a4678bf16d2a25a0cb8e04709f3fd7d663114a1169268"
+  },
+  "sa.source_video.v1_259": {
+   "bytes": 87203262,
+   "kind": "video",
+   "path": "v1/videos/039.mp4",
+   "role": "source_video",
+   "sha256": "4dd0271b62d31b0046a7e963a49a0e273a5e1de835a85404700110418695d30d"
+  },
+  "sa.source_video.v1_260": {
+   "bytes": 32917721,
+   "kind": "video",
+   "path": "v1/videos/040.mp4",
+   "role": "source_video",
+   "sha256": "df067d75b1d533e504d3d9ecd7ace1405a2ab857265a6ddf850ce0639c9bcb7c"
+  },
+  "sa.source_video.v1_301": {
+   "bytes": 16714852,
+   "kind": "video",
+   "path": "v1/videos/060.mp4",
+   "role": "source_video",
+   "sha256": "9350daae8cf8903bdfe0c0b26d15f25f5d5ba843bd3918467a3488cd12b8c436"
+  },
+  "sa.speech_audio.061.s01": {
+   "bytes": 96044,
+   "kind": "audio",
+   "path": "v1/audio/163.wav",
+   "role": "speech_audio",
+   "script": "Leaf veins form a fine mesh.",
+   "sha256": "2351852d6b83f5d6579f0e60c9cc0612ef6775e111e406a4b6413321cc50371c"
+  },
+  "sa.speech_audio.061.s02": {
+   "bytes": 84524,
+   "kind": "audio",
+   "path": "v1/audio/164.wav",
+   "role": "speech_audio",
+   "script": "The tender leaves are unfolding.",
+   "sha256": "bb2a64022761bd376843dccd1fa6450bff89e77a7622b8a5b8622a01219a08dd"
+  },
+  "sa.speech_audio.062.s01": {
+   "bytes": 99884,
+   "kind": "audio",
+   "path": "v1/audio/165.wav",
+   "role": "speech_audio",
+   "script": "Light reveals each small edge.",
+   "sha256": "f9631b4fad31558d91b7bd97ee9acbcd86f52f2c9c37566ec62cb235ce5c62c1"
+  },
+  "sa.speech_audio.062.s02": {
+   "bytes": 65324,
+   "kind": "audio",
+   "path": "v1/audio/166.wav",
+   "role": "speech_audio",
+   "script": "The surface feels calm.",
+   "sha256": "151f91465a3643f9e13a425d60cc96464ad05be9c5c86bd961b0c69504449f74"
+  },
+  "sa.speech_audio.063.s01": {
+   "bytes": 107564,
+   "kind": "audio",
+   "path": "v1/audio/167.wav",
+   "role": "speech_audio",
+   "script": "An arc encloses a patch of blue.",
+   "sha256": "af1a7375f2aed0bc0bb26a17299d14162709d08d8044d77bc9d3759950a5670b"
+  },
+  "sa.speech_audio.063.s02": {
+   "bytes": 88364,
+   "kind": "audio",
+   "path": "v1/audio/168.wav",
+   "role": "speech_audio",
+   "script": "Space unfolds here.",
+   "sha256": "61d1e0798fcaef82784cc5e6f84e78f9e801325a2068dd879b5f8d5a18c358da"
+  },
+  "sa.speech_audio.064.s01": {
+   "bytes": 122924,
+   "kind": "audio",
+   "path": "v1/audio/169.wav",
+   "role": "speech_audio",
+   "script": "The paper fibers run in different directions.",
+   "sha256": "5f5f24d5bad0317faadcfdb0475e65a983547eb7758692c78880cd45418e6429"
+  },
+  "sa.speech_audio.064.s02": {
+   "bytes": 153644,
+   "kind": "audio",
+   "path": "v1/audio/170.wav",
+   "role": "speech_audio",
+   "script": "Fold lines give a flat sheet depth.",
+   "sha256": "b9973562a87a7f2ba0ad4b738474bf3823e8895d3d03a9bb49c9902a19433e18"
+  },
+  "sa.speech_audio.064.s03": {
+   "bytes": 107564,
+   "kind": "audio",
+   "path": "v1/audio/171.wav",
+   "role": "speech_audio",
+   "script": "The material's edges remain clear.",
+   "sha256": "d45ca5dec22f859b8d26901dca2fe53ecd2e0b41cdac1fde1a70d774af2d0e1d"
+  },
+  "sa.speech_audio.065.s01": {
+   "bytes": 88364,
+   "kind": "audio",
+   "path": "v1/audio/172.wav",
+   "role": "speech_audio",
+   "script": "A faint star becomes visible.",
+   "sha256": "65728e50fdd8be0fc2f230f704898514be0b988e48bb9b7ac75020ca4061d1d4"
+  },
+  "sa.speech_audio.065.s02": {
+   "bytes": 103724,
+   "kind": "audio",
+   "path": "v1/audio/173.wav",
+   "role": "speech_audio",
+   "script": "Its light travels through open space.",
+   "sha256": "f7065170b5a7f0abe066ae2228409729727896017420073a95945c4fa51381bf"
+  },
+  "sa.speech_audio.065.s03": {
+   "bytes": 96044,
+   "kind": "audio",
+   "path": "v1/audio/174.wav",
+   "role": "speech_audio",
+   "script": "The night has many quiet details.",
+   "sha256": "c46886dd948cda28d283f75d8d701f16f66af96577e2e2dcd9620aad2faaba36"
+  },
+  "sa.speech_audio.066.s01": {
+   "bytes": 130604,
+   "kind": "audio",
+   "path": "v1/audio/175.wav",
+   "role": "speech_audio",
+   "script": "The stage's wood grain extends into the distance.",
+   "sha256": "28555970da594750a9f0d427a0c62386cfe44d5f76b02fe4641fae9febf6aa32"
+  },
+  "sa.speech_audio.066.s02": {
+   "bytes": 92204,
+   "kind": "audio",
+   "path": "v1/audio/176.wav",
+   "role": "speech_audio",
+   "script": "The curtain casts a soft shadow.",
+   "sha256": "326dff3f9dbb11e81be33a9741183d2803f0d547bcbd99f1a2dd533c67f366d0"
+  },
+  "sa.speech_audio.066.s03": {
+   "bytes": 65324,
+   "kind": "audio",
+   "path": "v1/audio/177.wav",
+   "role": "speech_audio",
+   "script": "This space stays open.",
+   "sha256": "2985b2750a7c22af62b5b7f7b92f9670019ce612321f9641aaa034a77def2efc"
+  },
+  "sa.speech_audio.067.s01": {
+   "bytes": 107564,
+   "kind": "audio",
+   "path": "v1/audio/178.wav",
+   "role": "speech_audio",
+   "script": "The stone preserves traces of rainwater.",
+   "sha256": "5df7bcc86bb344449576af5c1ce8df249c708d92ca65e7855eb836e82e67fd9c"
+  },
+  "sa.speech_audio.067.s02": {
+   "bytes": 145964,
+   "kind": "audio",
+   "path": "v1/audio/179.wav",
+   "role": "speech_audio",
+   "script": "New branches reach from the wall toward the sunlight.",
+   "sha256": "d563fb890fc0589b7a951e82e69cb57e3611532d56d5faf6f025d1ac2d3c5192"
+  },
+  "sa.speech_audio.067.s03": {
+   "bytes": 111404,
+   "kind": "audio",
+   "path": "v1/audio/180.wav",
+   "role": "speech_audio",
+   "script": "Both sides of the path leave breathing room.",
+   "sha256": "dcb06b005f5c2450329368b15dfd0fc4837f37d9081ad2e1db9c23ab27c1ed38"
+  },
+  "sa.speech_audio.067.s04": {
+   "bytes": 111404,
+   "kind": "audio",
+   "path": "v1/audio/181.wav",
+   "role": "speech_audio",
+   "script": "The tree shadows are clearer than before.",
+   "sha256": "f950e0d53921b9ab987d7b1cb90b77011d0f8a8f68ed78fc5d0c17f5fc603236"
+  },
+  "sa.speech_audio.068.s01": {
+   "bytes": 130604,
+   "kind": "audio",
+   "path": "v1/audio/182.wav",
+   "role": "speech_audio",
+   "script": "Even thin paper can form a stable structure.",
+   "sha256": "df3e52174625baacc1a58518bbd10d8cec2fb41a56b9bc6fadb2d1472edcf131"
+  },
+  "sa.speech_audio.068.s02": {
+   "bytes": 96044,
+   "kind": "audio",
+   "path": "v1/audio/183.wav",
+   "role": "speech_audio",
+   "script": "The layered edges are all different.",
+   "sha256": "80ac0954987c4fd48a0b5aba1d136b9fa3eea30537ba3eb8f1a065f4d3bba58a"
+  },
+  "sa.speech_audio.068.s03": {
+   "bytes": 99884,
+   "kind": "audio",
+   "path": "v1/audio/184.wav",
+   "role": "speech_audio",
+   "script": "Negative space makes the shape clearer.",
+   "sha256": "500cca69165ea1b8b252ea1d2f090a9ce3c1c2d1949d9303b36a2c5395260f46"
+  },
+  "sa.speech_audio.068.s04": {
+   "bytes": 126764,
+   "kind": "audio",
+   "path": "v1/audio/185.wav",
+   "role": "speech_audio",
+   "script": "The shadow on the folded surface softens gradually.",
+   "sha256": "5287bdc98f8f7b4ce1f186558a401f6ad4f2040c4073720af15abfff46862ba1"
+  },
+  "sa.speech_audio.069.s01": {
+   "bytes": 138284,
+   "kind": "audio",
+   "path": "v1/audio/186.wav",
+   "role": "speech_audio",
+   "script": "The floor gives each shape a clear outline.",
+   "sha256": "b591412cbbbfa017bd490769f21b6a767b7fdfe5334ba7b522c3d6c4f0365bf1"
+  },
+  "sa.speech_audio.069.s02": {
+   "bytes": 119084,
+   "kind": "audio",
+   "path": "v1/audio/187.wav",
+   "role": "speech_audio",
+   "script": "A small movement changes the balance.",
+   "sha256": "04f87ed7d34d79206d3387c8ea716db747f6d29f75a4bf4303f5ea10af7dd536"
+  },
+  "sa.speech_audio.069.s03": {
+   "bytes": 111404,
+   "kind": "audio",
+   "path": "v1/audio/188.wav",
+   "role": "speech_audio",
+   "script": "Space remains open around the figure.",
+   "sha256": "16a3d47e63cce54289b5d8baf64dc84901b217f9930bba490d423b49908095cb"
+  },
+  "sa.speech_audio.069.s04": {
+   "bytes": 96044,
+   "kind": "audio",
+   "path": "v1/audio/189.wav",
+   "role": "speech_audio",
+   "script": "The final shape settles gently.",
+   "sha256": "8fb350e11c3e605cadc9f5ab65fd73b6e4a8a74f5415bc04bdb8010f8f4538f1"
+  },
+  "sa.speech_audio.070.s01": {
+   "bytes": 88364,
+   "kind": "audio",
+   "path": "v1/audio/190.wav",
+   "role": "speech_audio",
+   "script": "The bark's texture records its growth.",
+   "sha256": "3a6ab9d6333a289aa39a8c8a51270dd7172e23946cd0126753760b15892e753b"
+  },
+  "sa.speech_audio.070.s02": {
+   "bytes": 111404,
+   "kind": "audio",
+   "path": "v1/audio/191.wav",
+   "role": "speech_audio",
+   "script": "Different leaves retain different amounts of moisture.",
+   "sha256": "a810115ca014dc83cf01d597853655232146fd876e0cd1319fdeaab563561172"
+  },
+  "sa.speech_audio.070.s03": {
+   "bytes": 96044,
+   "kind": "audio",
+   "path": "v1/audio/192.wav",
+   "role": "speech_audio",
+   "script": "Tiny changes can be observed slowly.",
+   "sha256": "dda83eeff60bbf42ef6636d66893240f3e12ab2b7eaf3a3bcb30445e5b894c98"
+  },
+  "sa.speech_audio.070.s04": {
+   "bytes": 126764,
+   "kind": "audio",
+   "path": "v1/audio/193.wav",
+   "role": "speech_audio",
+   "script": "The colors outside the window are getting softer.",
+   "sha256": "79222b617f2191601a6c126bf06310967594c58e7051c8da259b40106b911bd5"
+  },
+  "sa.speech_audio.070.s05": {
+   "bytes": 115244,
+   "kind": "audio",
+   "path": "v1/audio/194.wav",
+   "role": "speech_audio",
+   "script": "The details of nature remain clearly visible.",
+   "sha256": "1ac1b7d802a03c556ccb8aac091144d2ec871ee20722dbb149152f7121115512"
+  },
+  "sa.speech_audio.071.s01": {
+   "bytes": 111404,
+   "kind": "audio",
+   "path": "v1/audio/195.wav",
+   "role": "speech_audio",
+   "script": "The clay leaves fine granules.",
+   "sha256": "212c16370d1648a24965a417a2305dfa479532b906821f486657f640963d1014"
+  },
+  "sa.speech_audio.071.s02": {
+   "bytes": 149804,
+   "kind": "audio",
+   "path": "v1/audio/196.wav",
+   "role": "speech_audio",
+   "script": "Light spreads slowly along the curved surface.",
+   "sha256": "cf3a82d02864193d3f58ca2b6dba02a2419a22e754fc7f65b1834846167a442b"
+  },
+  "sa.speech_audio.071.s03": {
+   "bytes": 84524,
+   "kind": "audio",
+   "path": "v1/audio/197.wav",
+   "role": "speech_audio",
+   "script": "The color change isn't abrupt.",
+   "sha256": "3b95b18bc9c897cec132a0c99a9f2610b0f5aed424a6ad1773cca150976171e5"
+  },
+  "sa.speech_audio.071.s04": {
+   "bytes": 134444,
+   "kind": "audio",
+   "path": "v1/audio/198.wav",
+   "role": "speech_audio",
+   "script": "The outline and shadow complement each other.",
+   "sha256": "82f19dd83dbc777bc09b93a81093476f56df9d71b5b26dc97a1dac734797cc66"
+  },
+  "sa.speech_audio.071.s05": {
+   "bytes": 142124,
+   "kind": "audio",
+   "path": "v1/audio/199.wav",
+   "role": "speech_audio",
+   "script": "The surface details are worth viewing slowly.",
+   "sha256": "b7f67ef24a8524cb27d17cd95ca27748300a62a1fa8e986868460b4bef23e5bd"
+  },
+  "sa.speech_audio.072.s01": {
+   "bytes": 119084,
+   "kind": "audio",
+   "path": "v1/audio/200.wav",
+   "role": "speech_audio",
+   "script": "Clear shapes make the screen easier to read.",
+   "sha256": "bf332c00f978782fc73a437c52974321e874471d6631aeb9ff9ef7892408a1f3"
+  },
+  "sa.speech_audio.072.s02": {
+   "bytes": 103724,
+   "kind": "audio",
+   "path": "v1/audio/201.wav",
+   "role": "speech_audio",
+   "script": "The colors leave room around each object.",
+   "sha256": "e37d90608d2a460d2c98f2f7876542103ebbc73c09209b33f0e9c779755b7484"
+  },
+  "sa.speech_audio.072.s03": {
+   "bytes": 111404,
+   "kind": "audio",
+   "path": "v1/audio/202.wav",
+   "role": "speech_audio",
+   "script": "A small detail can change the whole impression.",
+   "sha256": "b0946980106bc488c0f23b49f00faa92dd7ab2904a4c6ddf1fc45c5147094188"
+  },
+  "sa.speech_audio.072.s04": {
+   "bytes": 99884,
+   "kind": "audio",
+   "path": "v1/audio/203.wav",
+   "role": "speech_audio",
+   "script": "The background remains simple and balanced.",
+   "sha256": "92896d0accefbef632a64fe4e086cfe265fceac4218e69408025d343c184f012"
+  },
+  "sa.speech_audio.072.s05": {
+   "bytes": 96044,
+   "kind": "audio",
+   "path": "v1/audio/204.wav",
+   "role": "speech_audio",
+   "script": "The sequence ends with a clear view.",
+   "sha256": "9b21328fde0a683192ca3b8b3e4aa70c11c73d3cdfd8c3a8e03061e2c0b631a0"
+  },
+  "sa.speech_audio.073.s01": {
+   "bytes": 80684,
+   "kind": "audio",
+   "path": "v1/audio/205.wav",
+   "role": "speech_audio",
+   "script": "The light falls in the quiet room.",
+   "sha256": "57e3d52da7c12fce9d514638912d8bd47f1a60ad1f2531fef4e91dca43fcd14e"
+  },
+  "sa.speech_audio.073.s02": {
+   "bytes": 111404,
+   "kind": "audio",
+   "path": "v1/audio/206.wav",
+   "role": "speech_audio",
+   "script": "The shadow by the window has new layers.",
+   "sha256": "e99bad8358598ecfa6625b92312401c902310689288a9a6c3f7a6ccce160a361"
+  },
+  "sa.speech_audio.073.s03": {
+   "bytes": 157484,
+   "kind": "audio",
+   "path": "v1/audio/207.wav",
+   "role": "speech_audio",
+   "script": "A stretch of negative space makes the details clearer.",
+   "sha256": "bac3a657a85fcf64bdfff13dca99b8133bd73d617a8a193f12b08f5f63b9432e"
+  },
+  "sa.speech_audio.073.s04": {
+   "bytes": 138284,
+   "kind": "audio",
+   "path": "v1/audio/208.wav",
+   "role": "speech_audio",
+   "script": "The color transitions slowly between light and dark.",
+   "sha256": "2f352c8633ac4a11cd95e244e6a1d637afb79ca1f292a8a0edb0abb45305246a"
+  },
+  "sa.speech_audio.073.s05": {
+   "bytes": 103724,
+   "kind": "audio",
+   "path": "v1/audio/209.wav",
+   "role": "speech_audio",
+   "script": "Stillness doesn't mean the image stops.",
+   "sha256": "c5ad738ab1628db4266f8b952322871d9cc58df5e928b7eaf47b835ad9a03500"
+  },
+  "sa.speech_audio.073.s06": {
+   "bytes": 107564,
+   "kind": "audio",
+   "path": "v1/audio/210.wav",
+   "role": "speech_audio",
+   "script": "The last spot of light is still soft.",
+   "sha256": "7311f1e6fd4f2933dfcd77de2bf94dee6d3332a4b6695f3b694dc410341a0544"
+  },
+  "sa.speech_audio.074.s01": {
+   "bytes": 99884,
+   "kind": "audio",
+   "path": "v1/audio/211.wav",
+   "role": "speech_audio",
+   "script": "The empty ground leaves a clear boundary.",
+   "sha256": "a3a4e58d6567c906c9a27dfc7f7b11241ffaeb2a0ad540d75a26deaafac11f33"
+  },
+  "sa.speech_audio.074.s02": {
+   "bytes": 99884,
+   "kind": "audio",
+   "path": "v1/audio/212.wav",
+   "role": "speech_audio",
+   "script": "Color unfolds quietly along the wall.",
+   "sha256": "fd1bf9dc407baf43ae079dd3bbef2c5f3160499811b6cb1d3421d96104b451af"
+  },
+  "sa.speech_audio.074.s03": {
+   "bytes": 111404,
+   "kind": "audio",
+   "path": "v1/audio/213.wav",
+   "role": "speech_audio",
+   "script": "Every detail has its own place.",
+   "sha256": "1563335520272b16abba18d0dd8304477172e2048813d839273e7f90255608c8"
+  },
+  "sa.speech_audio.074.s04": {
+   "bytes": 84524,
+   "kind": "audio",
+   "path": "v1/audio/214.wav",
+   "role": "speech_audio",
+   "script": "The distant shapes stay stable.",
+   "sha256": "cff0fb3af50b139f003fb57a3873cd54e4f8a01eb540ed833562b1e639f73357"
+  },
+  "sa.speech_audio.074.s05": {
+   "bytes": 107564,
+   "kind": "audio",
+   "path": "v1/audio/215.wav",
+   "role": "speech_audio",
+   "script": "The open space makes the outline clearer.",
+   "sha256": "77928e6ac58dda532676bc855b938fd4f21d0d39f297f0d9029d5a5ec1912fa6"
+  },
+  "sa.speech_audio.074.s06": {
+   "bytes": 126764,
+   "kind": "audio",
+   "path": "v1/audio/216.wav",
+   "role": "speech_audio",
+   "script": "This presentation comes to a calm close.",
+   "sha256": "f674dadf1ca9518aef3dab0bc4f5234c9cabe6e9b4cde3554c2480292ca5178e"
+  },
+  "sa.speech_audio.075.s01": {
+   "bytes": 115244,
+   "kind": "audio",
+   "path": "v1/audio/217.wav",
+   "role": "speech_audio",
+   "script": "The space at hand can hold subtle changes.",
+   "sha256": "a509c2288c3e80a541aac7700ce57b010637227aa78092d6c42e0794ce5ecd6c"
+  },
+  "sa.speech_audio.075.s02": {
+   "bytes": 76844,
+   "kind": "audio",
+   "path": "v1/audio/218.wav",
+   "role": "speech_audio",
+   "script": "Light makes the boundary distinct.",
+   "sha256": "462d92de4ada823feff4b607ae8bb7e90e816985e41acd74eca401723cf27691"
+  },
+  "sa.speech_audio.075.s03": {
+   "bytes": 103724,
+   "kind": "audio",
+   "path": "v1/audio/219.wav",
+   "role": "speech_audio",
+   "script": "Different shapes have different rhythms.",
+   "sha256": "79332682339784f28d2f81c32c3de1d514dd21742187496d33e173f1bf8ccfb8"
+  },
+  "sa.speech_audio.075.s04": {
+   "bytes": 103724,
+   "kind": "audio",
+   "path": "v1/audio/220.wav",
+   "role": "speech_audio",
+   "script": "The soft colors maintain balance.",
+   "sha256": "8ecb97c5aa707e954274bf55e4af02e7bb9ee5a09fa328a0a6043bed8e6cc42d"
+  },
+  "sa.speech_audio.075.s05": {
+   "bytes": 103724,
+   "kind": "audio",
+   "path": "v1/audio/221.wav",
+   "role": "speech_audio",
+   "script": "Details are easier to see in the quiet.",
+   "sha256": "f93f99f43ec30f4556669816be11eadeae1c4bf47d9a5f6ca7bbf7662eccc065"
+  },
+  "sa.speech_audio.075.s06": {
+   "bytes": 103724,
+   "kind": "audio",
+   "path": "v1/audio/222.wav",
+   "role": "speech_audio",
+   "script": "The clear outline remains until the end.",
+   "sha256": "fe237d9d5ee1f78c6fd9647827f81d5a36306dd2db05d7da0b1ac84afb702e65"
+  },
+  "sa.speech_audio.076.s01": {
+   "bytes": 88364,
+   "kind": "audio",
+   "path": "v1/audio/223.wav",
+   "role": "speech_audio",
+   "script": "Fine granules catch the light.",
+   "sha256": "bfd6d782f0874b4139013a347d40d57cbe29a895f94a00898bd49bc36e0c5890"
+  },
+  "sa.speech_audio.076.s02": {
+   "bytes": 88364,
+   "kind": "audio",
+   "path": "v1/audio/224.wav",
+   "role": "speech_audio",
+   "script": "The outline grows clearer.",
+   "sha256": "df2630e7498886a9394d060f9ac5e7979e8dce9918bcd4f53e7462945cf0f785"
+  },
+  "sa.speech_audio.077.s01": {
+   "bytes": 122924,
+   "kind": "audio",
+   "path": "v1/audio/225.wav",
+   "role": "speech_audio",
+   "script": "The room gives each outline enough space.",
+   "sha256": "fdf2b108034780427e01011978a5d01a015e8493336e949ecd1bcc9299bd262f"
+  },
+  "sa.speech_audio.077.s02": {
+   "bytes": 99884,
+   "kind": "audio",
+   "path": "v1/audio/226.wav",
+   "role": "speech_audio",
+   "script": "Light falls evenly across the floor.",
+   "sha256": "10c61e2b5271dc39198ae0cdf999eed6bbd8c7b1eea21ed78d88b074ff90c6ed"
+  },
+  "sa.speech_audio.077.s03": {
+   "bytes": 103724,
+   "kind": "audio",
+   "path": "v1/audio/227.wav",
+   "role": "speech_audio",
+   "script": "The scene remains clear and open.",
+   "sha256": "599b45bea04f4685837c3576cb11595bbe9bcda48b44ae6dd7c19577ac93dc1d"
+  },
+  "sa.speech_audio.078.s01": {
+   "bytes": 115244,
+   "kind": "audio",
+   "path": "v1/audio/228.wav",
+   "role": "speech_audio",
+   "script": "The pottery's surface rises and dips slightly.",
+   "sha256": "8637835b9601caf5420d3be18abef6cf929bc7560530ca5080cd6f2b48dd4da1"
+  },
+  "sa.speech_audio.078.s02": {
+   "bytes": 103724,
+   "kind": "audio",
+   "path": "v1/audio/229.wav",
+   "role": "speech_audio",
+   "script": "Different angles bring different light and shade.",
+   "sha256": "7d615a9277d8edd3dacbbf12124300cb6afd00f3ae2ec1befe51baf1c348f4cb"
+  },
+  "sa.speech_audio.078.s03": {
+   "bytes": 103724,
+   "kind": "audio",
+   "path": "v1/audio/230.wav",
+   "role": "speech_audio",
+   "script": "Negative space gives the image more layers.",
+   "sha256": "18dc633727bcb4128aa54ab79dbcfc7a35871e20b76f74dc654eb22a5220648c"
+  },
+  "sa.speech_audio.078.s04": {
+   "bytes": 73004,
+   "kind": "audio",
+   "path": "v1/audio/231.wav",
+   "role": "speech_audio",
+   "script": "The soft edge is still clear.",
+   "sha256": "3773316636cfbc8302698337f2deb2595cab5e8703dc02aeae2febde6486720e"
+  },
+  "sa.speech_audio.079.s01": {
+   "bytes": 145964,
+   "kind": "audio",
+   "path": "v1/audio/232.wav",
+   "role": "speech_audio",
+   "script": "The curved surface divides the light into different layers.",
+   "sha256": "7efd0b1d7074ba1c408dd15dc4c03e056f36a25930eaede7bfffcf00cf5d25d5"
+  },
+  "sa.speech_audio.079.s02": {
+   "bytes": 96044,
+   "kind": "audio",
+   "path": "v1/audio/233.wav",
+   "role": "speech_audio",
+   "script": "The distant colors maintain balance.",
+   "sha256": "04d13cf11ad8577caeb45c1642a9a6d4e1995f5e5cceff7c3cbc98e441d295b4"
+  },
+  "sa.speech_audio.079.s03": {
+   "bytes": 103724,
+   "kind": "audio",
+   "path": "v1/audio/234.wav",
+   "role": "speech_audio",
+   "script": "The open space sets off the outline.",
+   "sha256": "b8dd7016e327154ae6fdfeb3156e7417aec1073a8fc81e5aee09dcd1523c9d80"
+  },
+  "sa.speech_audio.079.s04": {
+   "bytes": 119084,
+   "kind": "audio",
+   "path": "v1/audio/235.wav",
+   "role": "speech_audio",
+   "script": "Local changes bring new viewing angles.",
+   "sha256": "c177609613fe9d78c8f069c5d14660eb974c4781b9c46c3d3ed465e9b34b5442"
+  },
+  "sa.speech_audio.079.s05": {
+   "bytes": 92204,
+   "kind": "audio",
+   "path": "v1/audio/236.wav",
+   "role": "speech_audio",
+   "script": "This quiet continues to the end.",
+   "sha256": "98b123e60c6d513a9604fbbdbc2a7b5db898a96edbd804956597fb5aa38adacd"
+  },
+  "sa.speech_audio.080.s01": {
+   "bytes": 119084,
+   "kind": "audio",
+   "path": "v1/audio/237.wav",
+   "role": "speech_audio",
+   "script": "The cardboard box preserves different shapes.",
+   "sha256": "07f323e38bebcf5d2cc5509420fd7c79a9d5b0aefda1a60704042f31eade9b22"
+  },
+  "sa.speech_audio.080.s02": {
+   "bytes": 80684,
+   "kind": "audio",
+   "path": "v1/audio/238.wav",
+   "role": "speech_audio",
+   "script": "Light makes fine edges clear.",
+   "sha256": "753fd03a9102f211e6d0344881fef9d86047ee2291e1e65d745260164df8c212"
+  },
+  "sa.speech_audio.080.s03": {
+   "bytes": 103724,
+   "kind": "audio",
+   "path": "v1/audio/239.wav",
+   "role": "speech_audio",
+   "script": "Quiet moments still have subtle changes.",
+   "sha256": "3d433719fc821c0379b9a83ac5fb70d6d69327c0eca7c082dce4bfb7988cc890"
+  },
+  "sa.speech_audio.080.s04": {
+   "bytes": 76844,
+   "kind": "audio",
+   "path": "v1/audio/240.wav",
+   "role": "speech_audio",
+   "script": "New angles bring new layers.",
+   "sha256": "0138b8a7e83690789b29d97f515ae5eda8b43db8e848e4954a5a6da470e26164"
+  },
+  "sa.speech_audio.080.s05": {
+   "bytes": 122924,
+   "kind": "audio",
+   "path": "v1/audio/241.wav",
+   "role": "speech_audio",
+   "script": "A stable frame can hold details.",
+   "sha256": "effea8d67b9cd1431c82f7ec7f1244a702e905d1cb67d5d33924617560a1261c"
+  },
+  "sa.speech_audio.080.s06": {
+   "bytes": 84524,
+   "kind": "audio",
+   "path": "v1/audio/242.wav",
+   "role": "speech_audio",
+   "script": "The last moment is still unhurried.",
+   "sha256": "82baa174664c4381f452d7190436e2059cb16bce2f2927b75146e456418f7ac5"
+  },
+  "sa.user_audio.021.u1": {
+   "bytes": 69164,
+   "kind": "audio",
+   "path": "v1/audio/243.wav",
+   "role": "user_audio",
+   "script": "What time does it close?",
+   "sha256": "f86edf7e479e5d2c6d868b99df8559cb5503ab0642d7feff7f672207c45931ef"
+  },
+  "sa.user_audio.022.u1": {
+   "bytes": 49964,
+   "kind": "audio",
+   "path": "v1/audio/244.wav",
+   "role": "user_audio",
+   "script": "Don't answer yet.",
+   "sha256": "7566eda0b6b28d9115041f8a3d962b1807f2e3e94797e428102f815c8c40c1a8"
+  },
+  "sa.user_audio.022.u2": {
+   "bytes": 99884,
+   "kind": "audio",
+   "path": "v1/audio/245.wav",
+   "role": "user_audio",
+   "script": "Which notebook should I use for grids?",
+   "sha256": "62fabc8c878782a953f6c61533dd940bd914e27c8631903a5dc42cbb804fe898"
+  },
+  "sa.user_audio.023.u1": {
+   "bytes": 115244,
+   "kind": "audio",
+   "path": "v1/audio/246.wav",
+   "role": "user_audio",
+   "script": "Which route only takes fifteen minutes?",
+   "sha256": "a215268dbb1bc87e876e9e1ea3d3c5bae1432b39bde8ea0f3690936208ae99df"
+  },
+  "sa.user_audio.024.u1": {
+   "bytes": 203564,
+   "kind": "audio",
+   "path": "v1/audio/247.wav",
+   "role": "user_audio",
+   "script": "Walk me through the three preparation steps, with a short explanation for each.",
+   "sha256": "61b6f50aaf6031fed1b2044c524fc09e22cba300f7ac18a09825a1ddcc467886"
+  },
+  "sa.user_audio.024.u2": {
+   "bytes": 111404,
+   "kind": "audio",
+   "path": "v1/audio/248.wav",
+   "role": "user_audio",
+   "script": "Mm-hm, go on.",
+   "sha256": "fbb7cfa70f9a2a603c76728cb593c2ba3dd86c61b393b7c56057a1f388ebd422"
+  },
+  "sa.user_audio.025.u1": {
+   "bytes": 99884,
+   "kind": "audio",
+   "path": "v1/audio/249.wav",
+   "role": "user_audio",
+   "script": "Remember, arrive at two o'clock.",
+   "sha256": "9f8c462f61bf26241ea67340df088ed3191191155d1ea7eb00e13c35fc5c6a81"
+  },
+  "sa.user_audio.025.u2": {
+   "bytes": 122924,
+   "kind": "audio",
+   "path": "v1/audio/250.wav",
+   "role": "user_audio",
+   "script": "Change it to three. What's the final time?",
+   "sha256": "86e8c94de1340d6366cd6857d4f19339dc2e648cc117bbea50a6bcb5862be7c7"
+  },
+  "sa.user_audio.026.u1": {
+   "bytes": 53804,
+   "kind": "audio",
+   "path": "v1/audio/251.wav",
+   "role": "user_audio",
+   "script": "A cup of black tea.",
+   "sha256": "f6ec1953273afbf830cdf50b0fc268c0bdc3b3b1392a848c0bb192ddf51d35b1"
+  },
+  "sa.user_audio.026.u2": {
+   "bytes": 46124,
+   "kind": "audio",
+   "path": "v1/audio/252.wav",
+   "role": "user_audio",
+   "script": "Small size.",
+   "sha256": "7dabab19dfd39b00ba70d31c07b3fd5fe9b9e4f739c4883bfb8e0df49ec3a4ff"
+  },
+  "sa.user_audio.027.u1": {
+   "bytes": 215084,
+   "kind": "audio",
+   "path": "v1/audio/253.wav",
+   "role": "user_audio",
+   "script": "Wait, I'm not finished. I want to visit the Mineral Hall,",
+   "sha256": "932cdaf20aa8a657811b762f4f0283b0e8e10ff66233bd3b1220721fa596c593"
+  },
+  "sa.user_audio.027.u2": {
+   "bytes": 207404,
+   "kind": "audio",
+   "path": "v1/audio/254.wav",
+   "role": "user_audio",
+   "script": "then the Volcano Hall. Now tell me which floor each is on.",
+   "sha256": "4ff7908d24da2d466eb73dc835ed76109ed036a0c013eb79afdf2be5661586c9"
+  },
+  "sa.user_audio.027.u3": {
+   "bytes": 215084,
+   "kind": "audio",
+   "path": "v1/audio/255.wav",
+   "role": "user_audio",
+   "script": "Change of plan: just the Volcano Hall. Cancel the Mineral Hall.",
+   "sha256": "f83d08bedbdb64fa5677b4fa6a8ba60e5ba6d607b87204f3a7fa9b08df422777"
+  },
+  "sa.user_audio.027.u4": {
+   "bytes": 195884,
+   "kind": "audio",
+   "path": "v1/audio/256.wav",
+   "role": "user_audio",
+   "script": "Which hall am I visiting now, and which side is the lift on?",
+   "sha256": "fad2c216eb2007f5ea0b1d3f1e8a0c417d2a677a30832f36cb32a374215d383a"
+  },
+  "sa.user_audio.028.u1": {
+   "bytes": 215084,
+   "kind": "audio",
+   "path": "v1/audio/257.wav",
+   "role": "user_audio",
+   "script": "I don't eat eggs. First introduce your sample dishes in four sentences.",
+   "sha256": "839d719413a6fd974bb8f06e3a3142a1254f2df915bc4d52aa8b977258036960"
+  },
+  "sa.user_audio.028.u2": {
+   "bytes": 134444,
+   "kind": "audio",
+   "path": "v1/audio/258.wav",
+   "role": "user_audio",
+   "script": "Stop explaining. Give me a brief egg-free pairing.",
+   "sha256": "fbeeff5ef433efccbee51263df268dc958d83f750217dfbc373ebfd83a6f9aa1"
+  },
+  "sa.user_audio.028.u3": {
+   "bytes": 103724,
+   "kind": "audio",
+   "path": "v1/audio/259.wav",
+   "role": "user_audio",
+   "script": "Add another condition, no spinach.",
+   "sha256": "5d71156c91bbabbd0be05769dcb5d99fb280d3db14ea125ad4593a3f8f59fd2b"
+  },
+  "sa.user_audio.028.u4": {
+   "bytes": 126764,
+   "kind": "audio",
+   "path": "v1/audio/260.wav",
+   "role": "user_audio",
+   "script": "Tell me the current food pairing in one sentence.",
+   "sha256": "555a64d2bf27a7c2e1176ad123f366b2223312fe15467ac1f056d7ca9e3e861e"
+  },
+  "sa.user_audio.029.u1": {
+   "bytes": 226604,
+   "kind": "audio",
+   "path": "v1/audio/261.wav",
+   "role": "user_audio",
+   "script": "Please explain the borrowing process in three steps, briefly covering each step.",
+   "sha256": "393733930a6e104bd7ad0602c95e435ed3fb51dab910805e926cbadf87827510"
+  },
+  "sa.user_audio.029.u2": {
+   "bytes": 76844,
+   "kind": "audio",
+   "path": "v1/audio/262.wav",
+   "role": "user_audio",
+   "script": "Mm-hm, go on.",
+   "sha256": "f45b153bd3d6e6412356757c1ec32849a6241590e651a4c2fdb12bfb0826934d"
+  },
+  "sa.user_audio.029.u3": {
+   "bytes": 165164,
+   "kind": "audio",
+   "path": "v1/audio/263.wav",
+   "role": "user_audio",
+   "script": "Please use four sentences to explain renewals and returns.",
+   "sha256": "70885705c7a7b04ab82376d480a9b8932b1d45eb8efd8e09c1dde7ad791939fc"
+  },
+  "sa.user_audio.029.u4": {
+   "bytes": 142124,
+   "kind": "audio",
+   "path": "v1/audio/264.wav",
+   "role": "user_audio",
+   "script": "Stop. Just tell me the borrowing period in days.",
+   "sha256": "7f084e919118f31465f2cc544c6919239841e6c20dc4592311fb3177d11fcaf9"
+  },
+  "sa.user_audio.030.u1": {
+   "bytes": 167084,
+   "kind": "audio",
+   "path": "v1/audio/265.wav",
+   "role": "user_audio",
+   "script": "It stopped working. Can you help me describe the issue?",
+   "sha256": "aef26ea3e449d003cc3b9c00365d53de7818f70a20db26fdfeb668f3fe0d8e46"
+  },
+  "sa.user_audio.030.u2": {
+   "bytes": 144044,
+   "kind": "audio",
+   "path": "v1/audio/266.wav",
+   "role": "user_audio",
+   "script": "It is a desk lamp, and I prefer a morning visit.",
+   "sha256": "7a19d69b4f606f5aabf3a233b2c2778304444f2a634108f23ae0394823ca397d"
+  },
+  "sa.user_audio.030.u3": {
+   "bytes": 163244,
+   "kind": "audio",
+   "path": "v1/audio/267.wav",
+   "role": "user_audio",
+   "script": "Correction: an afternoon visit, not morning.",
+   "sha256": "860a7ccd71132b4e6dc64e0d80a6d27c157b94edf9409f791673a8de88ad4aee"
+  },
+  "sa.user_audio.030.u4": {
+   "bytes": 155564,
+   "kind": "audio",
+   "path": "v1/audio/268.wav",
+   "role": "user_audio",
+   "script": "Repeat the device and my final time preference.",
+   "sha256": "94db449544b764ae9741f465ae105be56e830ed1920dccb29e51b1deb55f0796"
+  },
+  "sa.user_audio.030.u5": {
+   "bytes": 82604,
+   "kind": "audio",
+   "path": "v1/audio/269.wav",
+   "role": "user_audio",
+   "script": "Use the west entrance.",
+   "sha256": "19ce5649c29905236b1f951121fe57a7c0e05e423fb6225c5b61d530ce564a21"
+  },
+  "sa.user_audio.030.u6": {
+   "bytes": 124844,
+   "kind": "audio",
+   "path": "v1/audio/270.wav",
+   "role": "user_audio",
+   "script": "Remember: no phone calls.",
+   "sha256": "f3727454fc3a49e3131f4c96f73d193aab112ad73136faa3182e3c996851ef90"
+  },
+  "sa.user_audio.030.u7": {
+   "bytes": 128684,
+   "kind": "audio",
+   "path": "v1/audio/271.wav",
+   "role": "user_audio",
+   "script": "Keep the afternoon; switch to a fan.",
+   "sha256": "434e979d4c5fef9a6c9a2befbed37c731d437f385d34b23fc41795ff1d3b1fd4"
+  },
+  "sa.user_audio.030.u8": {
+   "bytes": 151724,
+   "kind": "audio",
+   "path": "v1/audio/272.wav",
+   "role": "user_audio",
+   "script": "Summarize my device, time and access notes.",
+   "sha256": "1890b50360435af3daceb342d4a179e20788022a1c5ee729489fc14236046bb6"
+  },
+  "sa.user_audio.031.u1": {
+   "bytes": 218924,
+   "kind": "audio",
+   "path": "v1/audio/273.wav",
+   "role": "user_audio",
+   "script": "Star room first, then telescope deck. Please remember that order.",
+   "sha256": "25e57ba33ea8d2c97dbb54102d85cf5bde6566257ad3d9fb8ff9084512d99244"
+  },
+  "sa.user_audio.031.u2": {
+   "bytes": 172844,
+   "kind": "audio",
+   "path": "v1/audio/274.wav",
+   "role": "user_audio",
+   "script": "Actually, reverse that order. Reply in English from now on.",
+   "sha256": "906fe12f8aeab5c6eab475e0755564ec4388e06689181bb8d1bda31bb41821e9"
+  },
+  "sa.user_audio.031.u3": {
+   "bytes": 53804,
+   "kind": "audio",
+   "path": "v1/audio/275.wav",
+   "role": "user_audio",
+   "script": "Where is the lift?",
+   "sha256": "9cb7d3690f5fa2c796753dff91306ec958d55c0e47b33cbab21b00ff60856d2d"
+  },
+  "sa.user_audio.031.u4": {
+   "bytes": 145964,
+   "kind": "audio",
+   "path": "v1/audio/276.wav",
+   "role": "user_audio",
+   "script": "What is my first stop, and which floor is it on?",
+   "sha256": "a32be3d0316f6a43e62ea7f4298ec622374f6a4e5d0122b4339e3bb6e3b82e37"
+  },
+  "sa.user_audio.031.u5": {
+   "bytes": 107564,
+   "kind": "audio",
+   "path": "v1/audio/277.wav",
+   "role": "user_audio",
+   "script": "I need the lift, not stairs.",
+   "sha256": "cbb554ea158adc631bd5e942571dff0b6bc31176138c93fc1096f98efea250fa"
+  },
+  "sa.user_audio.031.u6": {
+   "bytes": 69164,
+   "kind": "audio",
+   "path": "v1/audio/278.wav",
+   "role": "user_audio",
+   "script": "Where is the star room?",
+   "sha256": "86ed80a5ee7084b493b9ec8d88a2f40fa95c36b896b1bf7a5782e6ca5692e8c8"
+  },
+  "sa.user_audio.031.u7": {
+   "bytes": 107564,
+   "kind": "audio",
+   "path": "v1/audio/279.wav",
+   "role": "user_audio",
+   "script": "Now put the star room first.",
+   "sha256": "02ae0b872eeb693dd75258f302b653d8ff53884e7f8dd37f3a496f62577f456a"
+  },
+  "sa.user_audio.031.u8": {
+   "bytes": 92204,
+   "kind": "audio",
+   "path": "v1/audio/280.wav",
+   "role": "user_audio",
+   "script": "First stop and access method?",
+   "sha256": "613bdf19706bdc0847e49bf376e6cfe676bf6f89dc54f32dd109e86a344fd34e"
+  },
+  "sa.user_audio.032.u1": {
+   "bytes": 211244,
+   "kind": "audio",
+   "path": "v1/audio/281.wav",
+   "role": "user_audio",
+   "script": "I'll say this in two parts, don't give suggestions yet. There are eight of us,",
+   "sha256": "c7b73ee4d647e9d1d40c248e32db4a1366b7339a7d5a465c3f345c6ae7b6ee76"
+  },
+  "sa.user_audio.032.u2": {
+   "bytes": 161324,
+   "kind": "audio",
+   "path": "v1/audio/282.wav",
+   "role": "user_audio",
+   "script": "and arrive at four p.m. Now choose a room that seats us all.",
+   "sha256": "31c0a57ea35027b65f4f9cd8cd79d9ac34e9ab12dba08eaec79ef127a2246a50"
+  },
+  "sa.user_audio.032.u3": {
+   "bytes": 142124,
+   "kind": "audio",
+   "path": "v1/audio/283.wav",
+   "role": "user_audio",
+   "script": "Change the number to five people, keep the time the same.",
+   "sha256": "04547134980ffcb0083d5b036ffee64d5f855c6cc30fd626aa06368bf508fd41"
+  },
+  "sa.user_audio.032.u4": {
+   "bytes": 122924,
+   "kind": "audio",
+   "path": "v1/audio/284.wav",
+   "role": "user_audio",
+   "script": "Confirm our final headcount and arrival time.",
+   "sha256": "7cc0bceffe38a749cb2624822e9d5a280a3013d9cbebae394c0b2402831453dc"
+  },
+  "sa.user_audio.032.u5": {
+   "bytes": 61484,
+   "kind": "audio",
+   "path": "v1/audio/285.wav",
+   "role": "user_audio",
+   "script": "Change it to 5 PM.",
+   "sha256": "fd7ecad3b1d7665ad5c47580caf2091583c2e9f60c34dfff13652341ac6f8ae5"
+  },
+  "sa.user_audio.032.u6": {
+   "bytes": 80684,
+   "kind": "audio",
+   "path": "v1/audio/286.wav",
+   "role": "user_audio",
+   "script": "One companion uses a wheelchair.",
+   "sha256": "9bc4273bad169b363a05379da5a94b1d206c17efb0d5680c9f99916fd8340f51"
+  },
+  "sa.user_audio.032.u7": {
+   "bytes": 130604,
+   "kind": "audio",
+   "path": "v1/audio/287.wav",
+   "role": "user_audio",
+   "script": "Change the number to six, keep the time the same.",
+   "sha256": "0e957538b5a7ebde5c8c2503e65a10da4af286ff4da8c9994bd4f3b56a1d4afb"
+  },
+  "sa.user_audio.032.u8": {
+   "bytes": 145964,
+   "kind": "audio",
+   "path": "v1/audio/288.wav",
+   "role": "user_audio",
+   "script": "Confirm the headcount, time, and access needs.",
+   "sha256": "a0149623be0fb7f4503ab86460998a98420dd2796a01d5a12d6350064779330b"
+  },
+  "sa.user_audio.033.u1": {
+   "bytes": 322604,
+   "kind": "audio",
+   "path": "v1/audio/289.wav",
+   "role": "user_audio",
+   "script": "There are two of us, we want the 3 PM East Route. First introduce this route in four sentences.",
+   "sha256": "a373d5bb4e0afb632746be4c47741bfe75a2b16bc2a7bd8b3b226ddcd3f37e78"
+  },
+  "sa.user_audio.033.u10": {
+   "bytes": 122924,
+   "kind": "audio",
+   "path": "v1/audio/290.wav",
+   "role": "user_audio",
+   "script": "Our luggage is just two small bags.",
+   "sha256": "5668041b80493fcee76dbea3b7b5fca285f06d25df711b80fe4ed214148670af"
+  },
+  "sa.user_audio.033.u11": {
+   "bytes": 88364,
+   "kind": "audio",
+   "path": "v1/audio/291.wav",
+   "role": "user_audio",
+   "script": "Change the headcount to four.",
+   "sha256": "5ca3afe47b8e71e0c0bb89067841711d4fa9a4e409abdbafe9806ddc346b92bb"
+  },
+  "sa.user_audio.033.u12": {
+   "bytes": 84524,
+   "kind": "audio",
+   "path": "v1/audio/292.wav",
+   "role": "user_audio",
+   "script": "How long is the whole west route?",
+   "sha256": "58371a05f101dac7af1a3996383e310e70917b73fd3255282f8111bd83ebeb5e"
+  },
+  "sa.user_audio.033.u13": {
+   "bytes": 99884,
+   "kind": "audio",
+   "path": "v1/audio/293.wav",
+   "role": "user_audio",
+   "script": "Cancel the bike, not bringing it.",
+   "sha256": "3802130e31ada8c06b161259cee96567bc7c6bc9ef41ad7c10ad7623eaa0c659"
+  },
+  "sa.user_audio.033.u14": {
+   "bytes": 92204,
+   "kind": "audio",
+   "path": "v1/audio/294.wav",
+   "role": "user_audio",
+   "script": "Change the time to two o'clock.",
+   "sha256": "5eb4b04d8c55841dbe1014e6dfba0656cadc522ce4c72d06f8ddcf23abac7e0b"
+  },
+  "sa.user_audio.033.u15": {
+   "bytes": 145964,
+   "kind": "audio",
+   "path": "v1/audio/295.wav",
+   "role": "user_audio",
+   "script": "Make it three people again; luggage unchanged.",
+   "sha256": "5931d9c8b7d031acdfd292c47b58831b211e483dabc006a12bd23b2b25baafa9"
+  },
+  "sa.user_audio.033.u16": {
+   "bytes": 92204,
+   "kind": "audio",
+   "path": "v1/audio/296.wav",
+   "role": "user_audio",
+   "script": "Which route was introduced first?",
+   "sha256": "0c9864cd73f6211dfd94476e728da919f99b7dd11889d3547a4b88dc303e0202"
+  },
+  "sa.user_audio.033.u17": {
+   "bytes": 126764,
+   "kind": "audio",
+   "path": "v1/audio/297.wav",
+   "role": "user_audio",
+   "script": "Switch to the east route, time unchanged.",
+   "sha256": "c27b63c3f8d02f96cb652bde6ddb3e9e953446ba5c24b8d5e904150d199de5ee"
+  },
+  "sa.user_audio.033.u18": {
+   "bytes": 80684,
+   "kind": "audio",
+   "path": "v1/audio/298.wav",
+   "role": "user_audio",
+   "script": "Just bring one small bag.",
+   "sha256": "31d33ecf6a59fc1e7a17a2af4f176b0727d6f631304c7d6ef76224b20e1449a3"
+  },
+  "sa.user_audio.033.u19": {
+   "bytes": 76844,
+   "kind": "audio",
+   "path": "v1/audio/299.wav",
+   "role": "user_audio",
+   "script": "Switch back to the west route.",
+   "sha256": "4985bb48ecad745ae7c4b2acd81a38f78213775a2bfb18ce8f8e5296eb4f6906"
+  },
+  "sa.user_audio.033.u2": {
+   "bytes": 169004,
+   "kind": "audio",
+   "path": "v1/audio/300.wav",
+   "role": "user_audio",
+   "script": "Stop. Make it three people; keep the time and route for now.",
+   "sha256": "53bbaf97036f228c6eb4a80b0345d4e4a0d47cc3f6efcdd8b0dee26ea772ea9e"
+  },
+  "sa.user_audio.033.u20": {
+   "bytes": 126764,
+   "kind": "audio",
+   "path": "v1/audio/301.wav",
+   "role": "user_audio",
+   "script": "What's the luggage now, still bringing the bike?",
+   "sha256": "7321ba8499b111e27c85769d9f406155069fce882bdf76bbe3d2a4905784ea26"
+  },
+  "sa.user_audio.033.u21": {
+   "bytes": 122924,
+   "kind": "audio",
+   "path": "v1/audio/302.wav",
+   "role": "user_audio",
+   "script": "Confirm the current headcount, time, and route.",
+   "sha256": "a5a03258a035d2784037489048406b5dbbf1cf4f0026365ae83d24da729185ff"
+  },
+  "sa.user_audio.033.u3": {
+   "bytes": 142124,
+   "kind": "audio",
+   "path": "v1/audio/303.wav",
+   "role": "user_audio",
+   "script": "Now change the departure time to four o'clock.",
+   "sha256": "93565ab2b5d8b62849892cccfe0b85605371076c355f80d24190a009ede8c299"
+  },
+  "sa.user_audio.033.u4": {
+   "bytes": 111404,
+   "kind": "audio",
+   "path": "v1/audio/304.wav",
+   "role": "user_audio",
+   "script": "How early do we need to start boarding?",
+   "sha256": "480dc1f7d7aa3178b9b0337c1c26c4a53e5988f9e3a9444bd5ba7651e91e38b9"
+  },
+  "sa.user_audio.033.u5": {
+   "bytes": 134444,
+   "kind": "audio",
+   "path": "v1/audio/305.wav",
+   "role": "user_audio",
+   "script": "Switch to the west route; keep everything else.",
+   "sha256": "6010d8724b3f5c78e1eb082fd3d31c562bea0174eae3558f0a5a34ed3b61f8d8"
+  },
+  "sa.user_audio.033.u6": {
+   "bytes": 218924,
+   "kind": "audio",
+   "path": "v1/audio/306.wav",
+   "role": "user_audio",
+   "script": "Confirm the final headcount, departure time, and route in one sentence.",
+   "sha256": "e3b6a1276044d9bb0d25ee3b0727a8b572cf64c4d11eb22b1bfa0fe5ff903874"
+  },
+  "sa.user_audio.033.u7": {
+   "bytes": 111404,
+   "kind": "audio",
+   "path": "v1/audio/307.wav",
+   "role": "user_audio",
+   "script": "We're bringing one folding bicycle.",
+   "sha256": "386e91992c1a9dc60d3797588324e0d4000027fc934dcbd82ed95a8957c21fe4"
+  },
+  "sa.user_audio.033.u8": {
+   "bytes": 130604,
+   "kind": "audio",
+   "path": "v1/audio/308.wav",
+   "role": "user_audio",
+   "script": "Change the departure time back to three o'clock.",
+   "sha256": "0f31ff5c8fc773786162bc2ab02c1d7a4de137c5b91ef578c20053fdf838ae07"
+  },
+  "sa.user_audio.033.u9": {
+   "bytes": 88364,
+   "kind": "audio",
+   "path": "v1/audio/309.wav",
+   "role": "user_audio",
+   "script": "How long is the whole East Route?",
+   "sha256": "e497bd68520cbbc0803a9d15b86d3e6e79796645b7abbd2721cbd57fc9643948"
+  },
+  "sa.user_audio.034.u1": {
+   "bytes": 153644,
+   "kind": "audio",
+   "path": "v1/audio/310.wav",
+   "role": "user_audio",
+   "script": "Wait till I finish both parts. It's my first time here,",
+   "sha256": "6e243e934b926a1af1daeb8703f68c6154f1cc105d7e3e27c8e91958f0e2cc18"
+  },
+  "sa.user_audio.034.u10": {
+   "bytes": 145964,
+   "kind": "audio",
+   "path": "v1/audio/311.wav",
+   "role": "user_audio",
+   "script": "Switch to green thread, material unchanged.",
+   "sha256": "d0bf8ab147635c5d262361a25023c55a8cde7153315736a5b2ac42289883a641"
+  },
+  "sa.user_audio.034.u11": {
+   "bytes": 80684,
+   "kind": "audio",
+   "path": "v1/audio/312.wav",
+   "role": "user_audio",
+   "script": "My friend hasn't learned it either.",
+   "sha256": "28e306109c4ddb8daa5fe0f5e3cd44afb90038856fb0979f3591933d9c03329c"
+  },
+  "sa.user_audio.034.u12": {
+   "bytes": 107564,
+   "kind": "audio",
+   "path": "v1/audio/313.wav",
+   "role": "user_audio",
+   "script": "Is the class thirty or forty minutes?",
+   "sha256": "2ea5681413a4868c8fd459850221bdfb326a2622bdd1509ae7de937d13b05573"
+  },
+  "sa.user_audio.034.u13": {
+   "bytes": 103724,
+   "kind": "audio",
+   "path": "v1/audio/314.wav",
+   "role": "user_audio",
+   "script": "No green thread, change back to blue.",
+   "sha256": "3d5180370e62a0b67906a4f5a7ec193aec93486158e7677dab8d7aadedd52fb4"
+  },
+  "sa.user_audio.034.u14": {
+   "bytes": 69164,
+   "kind": "audio",
+   "path": "v1/audio/315.wav",
+   "role": "user_audio",
+   "script": "I want to make a coaster.",
+   "sha256": "a955fc9db53f99e16358102d5166b58eb077fde7bdb22234e095566e0f527f4b"
+  },
+  "sa.user_audio.034.u15": {
+   "bytes": 76844,
+   "kind": "audio",
+   "path": "v1/audio/316.wav",
+   "role": "user_audio",
+   "script": "My friend wants to make a bookmark.",
+   "sha256": "1fbf52c3db20807e93032ab32f364e0562f817f9faf0d5d53d749a3d3c6da646"
+  },
+  "sa.user_audio.034.u16": {
+   "bytes": 99884,
+   "kind": "audio",
+   "path": "v1/audio/317.wav",
+   "role": "user_audio",
+   "script": "Change my goal to a bookmark too.",
+   "sha256": "4fdfd74fe3b8d28c7eab2e6d76a140fecb7e4c5f5d058d8e1753f19f0b76d306"
+  },
+  "sa.user_audio.034.u17": {
+   "bytes": 92204,
+   "kind": "audio",
+   "path": "v1/audio/318.wav",
+   "role": "user_audio",
+   "script": "Is my friend still making a coaster?",
+   "sha256": "593c6445955e3de20d9696d8bd00d4f52db4b62ff3207bd8c9204f8450235ca4"
+  },
+  "sa.user_audio.034.u18": {
+   "bytes": 96044,
+   "kind": "audio",
+   "path": "v1/audio/319.wav",
+   "role": "user_audio",
+   "script": "Change my material to hemp thread.",
+   "sha256": "ffffe22e70c6c23a65e0779098c25222ece0e4f33880e7fdfb98481459d77e16"
+  },
+  "sa.user_audio.034.u19": {
+   "bytes": 96044,
+   "kind": "audio",
+   "path": "v1/audio/320.wav",
+   "role": "user_audio",
+   "script": "What was the first material chosen?",
+   "sha256": "5bfc0360ca4a776a7d0db404b8dc48b93134a42db804fb68a96288b45ec98976"
+  },
+  "sa.user_audio.034.u2": {
+   "bytes": 322604,
+   "kind": "audio",
+   "path": "v1/audio/321.wav",
+   "role": "user_audio",
+   "script": "I only have forty minutes. Please introduce a suitable class in three steps, one sentence per step.",
+   "sha256": "8494f12df0365088ac4755be31a69b6601a9fde5bd4fb525f3e661097850989a"
+  },
+  "sa.user_audio.034.u20": {
+   "bytes": 103724,
+   "kind": "audio",
+   "path": "v1/audio/322.wav",
+   "role": "user_audio",
+   "script": "What are my friend and I each making now?",
+   "sha256": "44f01bdfa9cf8339b1605bdabf983fe982c5ed2258142f4964bc8ac7eff8fa1f"
+  },
+  "sa.user_audio.034.u21": {
+   "bytes": 130604,
+   "kind": "audio",
+   "path": "v1/audio/323.wav",
+   "role": "user_audio",
+   "script": "Confirm my material, color, and project.",
+   "sha256": "1e0a6320ac0416ad3c09b4dfb80d2177f10be247d3075b3a29993ad475d68efb"
+  },
+  "sa.user_audio.034.u3": {
+   "bytes": 65324,
+   "kind": "audio",
+   "path": "v1/audio/324.wav",
+   "role": "user_audio",
+   "script": "Mm-hm, go on.",
+   "sha256": "0ee3687ee5e97add09bc6d6c78a77a214773ca070b0c49ef1ca47aca1a9ea9d7"
+  },
+  "sa.user_audio.034.u4": {
+   "bytes": 169004,
+   "kind": "audio",
+   "path": "v1/audio/325.wav",
+   "role": "user_audio",
+   "script": "Explain first-time weaving precautions in four sentences.",
+   "sha256": "b986dc9d1521b7b434da16153df397a021484770b9335668222696b6477ff964"
+  },
+  "sa.user_audio.034.u5": {
+   "bytes": 165164,
+   "kind": "audio",
+   "path": "v1/audio/326.wav",
+   "role": "user_audio",
+   "script": "Hold on, no need to elaborate. Just tell me how long this class is.",
+   "sha256": "e7d07872bbfd15dca7f62766d6f0f23e873611dee693481a3d9a7be917eedeea"
+  },
+  "sa.user_audio.034.u6": {
+   "bytes": 107564,
+   "kind": "audio",
+   "path": "v1/audio/327.wav",
+   "role": "user_audio",
+   "script": "Do you remember if it's my first time?",
+   "sha256": "1c7999c190e554e2387ef2afeb56702c88a9f722b1bab5adea0dd5633ef20af6"
+  },
+  "sa.user_audio.034.u7": {
+   "bytes": 149804,
+   "kind": "audio",
+   "path": "v1/audio/328.wav",
+   "role": "user_audio",
+   "script": "Use cotton thread for the weaving class materials.",
+   "sha256": "433106e4761f8623465eb55a468a3bd677f610a709f7ca3b7c56c50f07a76146"
+  },
+  "sa.user_audio.034.u8": {
+   "bytes": 80684,
+   "kind": "audio",
+   "path": "v1/audio/329.wav",
+   "role": "user_audio",
+   "script": "Pick blue for the color first.",
+   "sha256": "3c8f6cc5b46f8dff25b29456644f0e5e8ee5db496f9db4ea0357c07936e6c481"
+  },
+  "sa.user_audio.034.u9": {
+   "bytes": 88364,
+   "kind": "audio",
+   "path": "v1/audio/330.wav",
+   "role": "user_audio",
+   "script": "I'll wash my hands before class.",
+   "sha256": "229cc06c1f663a4b8c464896fd82b51c0ea29adf863648bd13b7b52e5ab656de"
+  },
+  "sa.user_audio.035.u1": {
+   "bytes": 268844,
+   "kind": "audio",
+   "path": "v1/audio/331.wav",
+   "role": "user_audio",
+   "script": "There are four of us. We want the herb workshop at ten. Give me a four-sentence introduction.",
+   "sha256": "28505679104ee181f1271c5bb1196408f1e5105f9000660bdd403e925c3dcd56"
+  },
+  "sa.user_audio.035.u10": {
+   "bytes": 61484,
+   "kind": "audio",
+   "path": "v1/audio/332.wav",
+   "role": "user_audio",
+   "script": "Move us back to ten.",
+   "sha256": "11afe3c2557754d5677befedecbdf722dec56c211d68597f31b98bafc8852d3a"
+  },
+  "sa.user_audio.035.u11": {
+   "bytes": 76844,
+   "kind": "audio",
+   "path": "v1/audio/333.wav",
+   "role": "user_audio",
+   "script": "Make our group five people.",
+   "sha256": "917bbc673e28fc46a2881abb3ac51e1c5ea847735ad9267cac5e6481d53a4fb1"
+  },
+  "sa.user_audio.035.u12": {
+   "bytes": 103724,
+   "kind": "audio",
+   "path": "v1/audio/334.wav",
+   "role": "user_audio",
+   "script": "Please use large-print instructions.",
+   "sha256": "bdab47b5cd45297330f806259db05e0c58b151e3117346b0a3d514a92ca43c45"
+  },
+  "sa.user_audio.035.u13": {
+   "bytes": 92204,
+   "kind": "audio",
+   "path": "v1/audio/335.wav",
+   "role": "user_audio",
+   "script": "Cancel the extra chair request.",
+   "sha256": "5dd8bd03032b4f8fabc6188c5e74dc270c4d608dd8279b6a2bf880185b90efeb"
+  },
+  "sa.user_audio.035.u14": {
+   "bytes": 84524,
+   "kind": "audio",
+   "path": "v1/audio/336.wav",
+   "role": "user_audio",
+   "script": "Now choose the herb workshop.",
+   "sha256": "deb7e7995df5cbb1e34bb6be37d1fdc6fa71662f1d41582a38e6622ab7a9e8a7"
+  },
+  "sa.user_audio.035.u15": {
+   "bytes": 111404,
+   "kind": "audio",
+   "path": "v1/audio/337.wav",
+   "role": "user_audio",
+   "script": "How many people were in my original request?",
+   "sha256": "3a3c5d59befaddb1624db950e945e9fa377b1c1d62572b7c9aecdd1662002d4e"
+  },
+  "sa.user_audio.035.u16": {
+   "bytes": 84524,
+   "kind": "audio",
+   "path": "v1/audio/338.wav",
+   "role": "user_audio",
+   "script": "Use the west entrance instead.",
+   "sha256": "a8bf8e252a352b89b0a4e44952fede4866a65914df8ab76903008d1575abeed9"
+  },
+  "sa.user_audio.035.u17": {
+   "bytes": 88364,
+   "kind": "audio",
+   "path": "v1/audio/339.wav",
+   "role": "user_audio",
+   "script": "There will be four of us after all.",
+   "sha256": "89f51205bb21534b4ca0a19d94d494509e9cd7566594ba3b3729808b3adcfda3"
+  },
+  "sa.user_audio.035.u18": {
+   "bytes": 76844,
+   "kind": "audio",
+   "path": "v1/audio/340.wav",
+   "role": "user_audio",
+   "script": "Move the time to eleven again.",
+   "sha256": "4fb7839931d2fda87b53730ef55b5e05dac55c7219b703fc1536b9e58eb9219f"
+  },
+  "sa.user_audio.035.u19": {
+   "bytes": 88364,
+   "kind": "audio",
+   "path": "v1/audio/341.wav",
+   "role": "user_audio",
+   "script": "What materials preference remains?",
+   "sha256": "6ec3f581cfbf0d7854140bc2c985fa66d6ea7fcbce1a536f5f25a0b47253880a"
+  },
+  "sa.user_audio.035.u2": {
+   "bytes": 161324,
+   "kind": "audio",
+   "path": "v1/audio/342.wav",
+   "role": "user_audio",
+   "script": "Stop there. Make it three people, but keep the workshop and time.",
+   "sha256": "1d7411883424a8803f3e9ccb80b3cc29f76f696b6ca568e83af6ccc7af5cfe4b"
+  },
+  "sa.user_audio.035.u20": {
+   "bytes": 111404,
+   "kind": "audio",
+   "path": "v1/audio/343.wav",
+   "role": "user_audio",
+   "script": "Which entrance, and do we need that chair?",
+   "sha256": "b35d7a09e9cda252713ffe65d5e3fb83cb23bc0af8bf886ca73474fe60e28908"
+  },
+  "sa.user_audio.035.u21": {
+   "bytes": 107564,
+   "kind": "audio",
+   "path": "v1/audio/344.wav",
+   "role": "user_audio",
+   "script": "Final group size, workshop and time?",
+   "sha256": "3ae8ad0cb570a7927094c28562855c3a7730ed6e24e60c229ea0dd5088a02ee7"
+  },
+  "sa.user_audio.035.u3": {
+   "bytes": 111404,
+   "kind": "audio",
+   "path": "v1/audio/345.wav",
+   "role": "user_audio",
+   "script": "Actually, move us to eleven a.m.",
+   "sha256": "9dada4fe981b505433794c5f37b527b1ceb661cacfa7f5fd5279dfde698d32e0"
+  },
+  "sa.user_audio.035.u4": {
+   "bytes": 42284,
+   "kind": "audio",
+   "path": "v1/audio/346.wav",
+   "role": "user_audio",
+   "script": "Where do we meet?",
+   "sha256": "1bb9bbedea5d55a217d8b7a206102dd48489780bd8ebe8a59579d592e40f46f0"
+  },
+  "sa.user_audio.035.u5": {
+   "bytes": 126764,
+   "kind": "audio",
+   "path": "v1/audio/347.wav",
+   "role": "user_audio",
+   "script": "Change the workshop to seeds; keep the rest.",
+   "sha256": "1d4ed4ec82f4a4fb0267b6061bc64ca13b2ecfd5c94c78e51229b1457fe54cba"
+  },
+  "sa.user_audio.035.u6": {
+   "bytes": 145964,
+   "kind": "audio",
+   "path": "v1/audio/348.wav",
+   "role": "user_audio",
+   "script": "Confirm our final group size, workshop and time.",
+   "sha256": "9b6e913cc33f330ba5d69d2f50c1c8eb1580c75c503e415af222f04f0a3b09dd"
+  },
+  "sa.user_audio.035.u7": {
+   "bytes": 69164,
+   "kind": "audio",
+   "path": "v1/audio/349.wav",
+   "role": "user_audio",
+   "script": "We need the east entrance.",
+   "sha256": "829d94b2f0971ec5d86bb262775144911b5119ecd944486c97010666d6f86148"
+  },
+  "sa.user_audio.035.u8": {
+   "bytes": 61484,
+   "kind": "audio",
+   "path": "v1/audio/350.wav",
+   "role": "user_audio",
+   "script": "One guest needs a chair.",
+   "sha256": "bd04a350565dc9ab8d8d86c9dd80fc307355bd206ffc11cd6bf197ded29abb9f"
+  },
+  "sa.user_audio.035.u9": {
+   "bytes": 80684,
+   "kind": "audio",
+   "path": "v1/audio/351.wav",
+   "role": "user_audio",
+   "script": "How long is the herb workshop?",
+   "sha256": "f7344adc464d65a3139cdeda59537046f29b719fe44ed9d2bba1c7b41f2fff09"
+  },
+  "sa.user_audio.036.u1": {
+   "bytes": 96044,
+   "kind": "audio",
+   "path": "v1/audio/352.wav",
+   "role": "user_audio",
+   "script": "What time is the afternoon session?",
+   "sha256": "d2181248de89119f560d439b4989362a3d97f260b93ff45adf731db0f79e2a99"
+  },
+  "sa.user_audio.037.u1": {
+   "bytes": 199724,
+   "kind": "audio",
+   "path": "v1/audio/353.wav",
+   "role": "user_audio",
+   "script": "Explain the three preparation steps, with one short sentence about each.",
+   "sha256": "038a77f34cdf2b70a5fa79b8b32f972cb1ede7687a7d156ee173cc73e2f14fd6"
+  },
+  "sa.user_audio.037.u2": {
+   "bytes": 57644,
+   "kind": "audio",
+   "path": "v1/audio/354.wav",
+   "role": "user_audio",
+   "script": "Right, carry on.",
+   "sha256": "84d95c9cf7a725a54a6499eb8f631801a5edc3016f6f45de8173c766dcf60107"
+  },
+  "sa.user_audio.038.u1": {
+   "bytes": 107564,
+   "kind": "audio",
+   "path": "v1/audio/355.wav",
+   "role": "user_audio",
+   "script": "Help me choose a table for playing this weekend.",
+   "sha256": "603636c3afd1c3a75e242f4e4130cd03e76a3c216d1c818381a5b08fc682e83f"
+  },
+  "sa.user_audio.038.u2": {
+   "bytes": 88364,
+   "kind": "audio",
+   "path": "v1/audio/356.wav",
+   "role": "user_audio",
+   "script": "Six people, coming at two p.m.",
+   "sha256": "7833d86b6845f3a73c8bc6cb42dda17928effa8ed469ba6f9a1fb09eaf276675"
+  },
+  "sa.user_audio.038.u3": {
+   "bytes": 126764,
+   "kind": "audio",
+   "path": "v1/audio/357.wav",
+   "role": "user_audio",
+   "script": "Correction, just change the time to three p.m.",
+   "sha256": "d724771ec6569248b3537f8246df90ba0d2fdabaab87d7b2ce436372d2ff1d48"
+  },
+  "sa.user_audio.038.u4": {
+   "bytes": 149804,
+   "kind": "audio",
+   "path": "v1/audio/358.wav",
+   "role": "user_audio",
+   "script": "Finally confirm the headcount, time, and table type.",
+   "sha256": "02a54031c24967be67ad4d176c0fea4d542a58c3de40bd5fa638e9d86c68fcb4"
+  },
+  "sa.user_audio.039.u1": {
+   "bytes": 207404,
+   "kind": "audio",
+   "path": "v1/audio/359.wav",
+   "role": "user_audio",
+   "script": "I only have thirty minutes. First introduce the vase class in four sentences.",
+   "sha256": "565438cb065370bee41d8c268cfef33ebb478cbbbc0d0d2efd1e8e4c4d37e3e3"
+  },
+  "sa.user_audio.039.u2": {
+   "bytes": 161324,
+   "kind": "audio",
+   "path": "v1/audio/360.wav",
+   "role": "user_audio",
+   "script": "Stop, no need to introduce it. Just tell me which class suits me.",
+   "sha256": "ed0292a8331f4a479cf5ffbf53ab67f390daff6b3f3b1a7b9a8ce2a3be687732"
+  },
+  "sa.user_audio.039.u3": {
+   "bytes": 192044,
+   "kind": "audio",
+   "path": "v1/audio/361.wav",
+   "role": "user_audio",
+   "script": "I've changed to having sixty minutes, but still pick the cup class.",
+   "sha256": "3bdfbb8e6458da2aca3ba3108cc475dc8c07278682470746116f3813b7cdd67f"
+  },
+  "sa.user_audio.039.u4": {
+   "bytes": 119084,
+   "kind": "audio",
+   "path": "v1/audio/362.wav",
+   "role": "user_audio",
+   "script": "Which class did I finally pick, and where do we meet?",
+   "sha256": "f3b32e86cb452e92b994717cf7749ba4f3d61e2a1d910855298a9b34b7d74aca"
+  },
+  "sa.user_audio.039.u5": {
+   "bytes": 119084,
+   "kind": "audio",
+   "path": "v1/audio/363.wav",
+   "role": "user_audio",
+   "script": "One companion is also taking the cup class.",
+   "sha256": "3c8eb8f626ca5f23fddb2112885b117ced35dc6bc085756365151ff7927b90cc"
+  },
+  "sa.user_audio.039.u6": {
+   "bytes": 76844,
+   "kind": "audio",
+   "path": "v1/audio/364.wav",
+   "role": "user_audio",
+   "script": "I don't want to use glaze.",
+   "sha256": "38272b9ad9e5017fd0a86d87a5734172d61c0420214c5cebfe0686ac1ba81252"
+  },
+  "sa.user_audio.039.u7": {
+   "bytes": 80684,
+   "kind": "audio",
+   "path": "v1/audio/365.wav",
+   "role": "user_audio",
+   "script": "Make that two companions.",
+   "sha256": "695b796db53db7a42e54a561c42aa1d3a95f0c1bd3d072afbee992bedeccb0d4"
+  },
+  "sa.user_audio.039.u8": {
+   "bytes": 138284,
+   "kind": "audio",
+   "path": "v1/audio/366.wav",
+   "role": "user_audio",
+   "script": "Confirm the class, number of companions, and restrictions.",
+   "sha256": "041cd402b771b5aa8e9a827843df65fbcd3a08dc34647f0832b90f9c3ac546f6"
+  },
+  "sa.user_audio.040.u1": {
+   "bytes": 99884,
+   "kind": "audio",
+   "path": "v1/audio/367.wav",
+   "role": "user_audio",
+   "script": "Wait for both parts. There are five of us,",
+   "sha256": "debe5308225400d3ab98d8308b6cf8fc4e603fe3747bc04adb6b7a05f7917312"
+  },
+  "sa.user_audio.040.u10": {
+   "bytes": 65324,
+   "kind": "audio",
+   "path": "v1/audio/368.wav",
+   "role": "user_audio",
+   "script": "Change the time to 1 o'clock.",
+   "sha256": "a0bb94fbf03259ba5c7c615caddb1281e3539c842e5ded1631c00517f1dd0927"
+  },
+  "sa.user_audio.040.u11": {
+   "bytes": 73004,
+   "kind": "audio",
+   "path": "v1/audio/369.wav",
+   "role": "user_audio",
+   "script": "Increase the number to six.",
+   "sha256": "e100234f376d3b2accc873586d35c1658a70bac662c924225dd23ae79322b286"
+  },
+  "sa.user_audio.040.u12": {
+   "bytes": 57644,
+   "kind": "audio",
+   "path": "v1/audio/370.wav",
+   "role": "user_audio",
+   "script": "We want to meet at the south gate.",
+   "sha256": "125ee2ec71dff277574692c6f62632e66bd8dac6c314a494afe4c75387f7d51f"
+  },
+  "sa.user_audio.040.u13": {
+   "bytes": 80684,
+   "kind": "audio",
+   "path": "v1/audio/371.wav",
+   "role": "user_audio",
+   "script": "Cancel the front seat request.",
+   "sha256": "78be5a9fb41b2345a17dfd112cae719990d283d265918bb3f2a355c56883b3da"
+  },
+  "sa.user_audio.040.u14": {
+   "bytes": 122924,
+   "kind": "audio",
+   "path": "v1/audio/372.wav",
+   "role": "user_audio",
+   "script": "Change the luggage to three small backpacks.",
+   "sha256": "383aa1f000a988729d685dfb921c8bb9c7c4422828a86296aeb7cf906353166e"
+  },
+  "sa.user_audio.040.u15": {
+   "bytes": 69164,
+   "kind": "audio",
+   "path": "v1/audio/373.wav",
+   "role": "user_audio",
+   "script": "How many of us were there at first?",
+   "sha256": "fc4d8af15092a1df9ecdfce38b3c7a536cc67fbea6994c799e8faf9f28c1bd18"
+  },
+  "sa.user_audio.040.u16": {
+   "bytes": 76844,
+   "kind": "audio",
+   "path": "v1/audio/374.wav",
+   "role": "user_audio",
+   "script": "Now switch to the south route.",
+   "sha256": "72c5aa8677952fcadc993b5430358cc3d031ffe29a9b9eae68fdabecf972180a"
+  },
+  "sa.user_audio.040.u17": {
+   "bytes": 76844,
+   "kind": "audio",
+   "path": "v1/audio/375.wav",
+   "role": "user_audio",
+   "script": "Change the time again to 2 o'clock.",
+   "sha256": "0a4c3c55095fb841e5491c96c869c699ee54e4d95a4c658fbc59c9fe4cd9a635"
+  },
+  "sa.user_audio.040.u18": {
+   "bytes": 76844,
+   "kind": "audio",
+   "path": "v1/audio/376.wav",
+   "role": "user_audio",
+   "script": "One friend isn't coming anymore.",
+   "sha256": "5fb272e99cca233d111d13ceb078be9ac1ea59ce8c64d0a74fa2cfdd60d61fea"
+  },
+  "sa.user_audio.040.u19": {
+   "bytes": 69164,
+   "kind": "audio",
+   "path": "v1/audio/377.wav",
+   "role": "user_audio",
+   "script": "Do we still need a front seat?",
+   "sha256": "62dad8e0c94cde53ebec9eee82bb166d285853540afddb7f49fbf2a64b8e813b"
+  },
+  "sa.user_audio.040.u2": {
+   "bytes": 188204,
+   "kind": "audio",
+   "path": "v1/audio/378.wav",
+   "role": "user_audio",
+   "script": "and we'd like the two o'clock north route. Introduce it in four sentences.",
+   "sha256": "551a91c1fa362b15394af91e36c705e81bb6b94e923b4fa83c13a81b02ceab62"
+  },
+  "sa.user_audio.040.u20": {
+   "bytes": 84524,
+   "kind": "audio",
+   "path": "v1/audio/379.wav",
+   "role": "user_audio",
+   "script": "How many backpacks are we bringing now?",
+   "sha256": "944091f9da0b767380e6146650c1d2aabb0b9d63a3760cead817a33828fcc699"
+  },
+  "sa.user_audio.040.u21": {
+   "bytes": 99884,
+   "kind": "audio",
+   "path": "v1/audio/380.wav",
+   "role": "user_audio",
+   "script": "Confirm the number, time, and route.",
+   "sha256": "8d632b83a9825ace989110fd3a14fbe134e03849d3901b91a1da6818a8a2d652"
+  },
+  "sa.user_audio.040.u3": {
+   "bytes": 149804,
+   "kind": "audio",
+   "path": "v1/audio/381.wav",
+   "role": "user_audio",
+   "script": "Stop explaining. Only change the headcount to four.",
+   "sha256": "f34dc947cdb27fa74dab572d68bb8727180c788d7ad937073dd9828214796f4e"
+  },
+  "sa.user_audio.040.u4": {
+   "bytes": 161324,
+   "kind": "audio",
+   "path": "v1/audio/382.wav",
+   "role": "user_audio",
+   "script": "Change it to a 3 o'clock departure, still the north route.",
+   "sha256": "c1768d16230d748db152ebc04c2d75aaf7a265626d9a961ef916e5ab64e5c173"
+  },
+  "sa.user_audio.040.u5": {
+   "bytes": 46124,
+   "kind": "audio",
+   "path": "v1/audio/383.wav",
+   "role": "user_audio",
+   "script": "Where do we board?",
+   "sha256": "5d53ad4b833896978782102477b33af0155e8201a1b99ae4485df74fc24276b4"
+  },
+  "sa.user_audio.040.u6": {
+   "bytes": 184364,
+   "kind": "audio",
+   "path": "v1/audio/384.wav",
+   "role": "user_audio",
+   "script": "Confirm the final headcount, time, and route in one sentence.",
+   "sha256": "ad747669b5a6364e8b41ee04be283bed79808287c54545d18a668812b0272972"
+  },
+  "sa.user_audio.040.u7": {
+   "bytes": 69164,
+   "kind": "audio",
+   "path": "v1/audio/385.wav",
+   "role": "user_audio",
+   "script": "We're bringing two small backpacks.",
+   "sha256": "74d507f09a01dcba530442267ca23999a49aa12a7a7cb7e4d32dd2a8c7c0edef"
+  },
+  "sa.user_audio.040.u8": {
+   "bytes": 61484,
+   "kind": "audio",
+   "path": "v1/audio/386.wav",
+   "role": "user_audio",
+   "script": "One of us needs a front seat.",
+   "sha256": "169e4dfb8b21aa18af8b19ab5f0399393909dc7c61795058c924bb449607c359"
+  },
+  "sa.user_audio.040.u9": {
+   "bytes": 65324,
+   "kind": "audio",
+   "path": "v1/audio/387.wav",
+   "role": "user_audio",
+   "script": "How long does the south route take?",
+   "sha256": "65380c16a066d1ff1ca5184c898857ea3a74a0f78e5d30a147ab53b4e5c4aa18"
+  },
+  "sa.v1.101.portrait": {
+   "bytes": 1854486,
+   "kind": "image",
+   "path": "v1/images/093.png",
+   "role": "portrait",
+   "sha256": "fdc86ac3e389b2c2963d1d2cf5fa787adba5d351fe63309340ede99a600ea929"
+  },
+  "sa.v1.101.user_audio.u1": {
+   "bytes": 115244,
+   "kind": "audio",
+   "path": "v1/audio/001.wav",
+   "role": "user_audio",
+   "script": "Which hand on your tide-clock tracks the solar tides?",
+   "sha256": "34117f77eba400660be7e2563e1eb8347ce620a97bf30668e645fc8fa0cb00a0"
+  },
+  "sa.v1.102.portrait": {
+   "bytes": 1572351,
+   "kind": "image",
+   "path": "v1/images/094.png",
+   "role": "portrait",
+   "sha256": "7be1c3612af6ec7f2ce5e1e9f186c271e3642ed8401e38b971a001f6d4bd4369"
+  },
+  "sa.v1.102.user_audio.u1": {
+   "bytes": 199724,
+   "kind": "audio",
+   "path": "v1/audio/002.wav",
+   "role": "user_audio",
+   "script": "I heard this loom display uses pure silk threads. Can I touch them?",
+   "sha256": "7e850d0990f782890824b3efc2fbb92b967e6d07d5c6f66117bc50bca1c33595"
+  },
+  "sa.v1.103.portrait": {
+   "bytes": 1761806,
+   "kind": "image",
+   "path": "v1/images/095.png",
+   "role": "portrait",
+   "sha256": "e42ce3a91920f138c9009da1704a766f37a30968962c7af493a294d7c8d3593e"
+  },
+  "sa.v1.103.user_audio.u1": {
+   "bytes": 153644,
+   "kind": "audio",
+   "path": "v1/audio/003.wav",
+   "role": "user_audio",
+   "script": "Note I prefer no cold drafts near ferns when I visit.",
+   "sha256": "2739345127b590b37b62ee9cd7f95496a391001ab36a8d1631359ddbd0b0a2ed"
+  },
+  "sa.v1.103.user_audio.u2": {
+   "bytes": 161324,
+   "kind": "audio",
+   "path": "v1/audio/004.wav",
+   "role": "user_audio",
+   "script": "The side door is stuck again. How do you protect your ferns?",
+   "sha256": "e2d34f4ac2f0c544e26b769b33c44f6c00e08bea13f74ca8f7432d7c18fa14ee"
+  },
+  "sa.v1.104.portrait": {
+   "bytes": 2115501,
+   "kind": "image",
+   "path": "v1/images/096.png",
+   "role": "portrait",
+   "sha256": "b1a559896e46c3c2684e0bdd7429f8c64766fbfa979bb1487b89e344f7769677"
+  },
+  "sa.v1.104.user_audio.u1": {
+   "bytes": 82604,
+   "kind": "audio",
+   "path": "v1/audio/005.wav",
+   "role": "user_audio",
+   "script": "My ticket is alpha...",
+   "sha256": "ef605099264e10799b2a3d1741c4e3df2112817177310f5dfcc9ae5986f35487"
+  },
+  "sa.v1.104.user_audio.u2": {
+   "bytes": 86444,
+   "kind": "audio",
+   "path": "v1/audio/006.wav",
+   "role": "user_audio",
+   "script": "...bravo, please log it.",
+   "sha256": "476e8a5f8d1880067fa7b96a2f3f9b35a28bbfc598681a941a88ba2e33882000"
+  },
+  "sa.v1.105.portrait": {
+   "bytes": 1507082,
+   "kind": "image",
+   "path": "v1/images/097.png",
+   "role": "portrait",
+   "sha256": "7973b4d7eabe7e2c62cabf0138578e76de4009f4f692679588d0bc50e40c6064"
+  },
+  "sa.v1.105.user_audio.u1": {
+   "bytes": 73004,
+   "kind": "audio",
+   "path": "v1/audio/007.wav",
+   "role": "user_audio",
+   "script": "I want to know when the...",
+   "sha256": "c8ed5875e26a762e1289564b1c92197b321dfbb84caddd70ca9b17fa94ffc69b"
+  },
+  "sa.v1.105.user_audio.u2": {
+   "bytes": 84524,
+   "kind": "audio",
+   "path": "v1/audio/008.wav",
+   "role": "user_audio",
+   "script": "...evening jazz show airs?",
+   "sha256": "e8ce0c477f1a560bb6739c2af9a6894d604d12567954d2930dfda45543475097"
+  },
+  "sa.v1.106.portrait": {
+   "bytes": 1638108,
+   "kind": "image",
+   "path": "v1/images/098.png",
+   "role": "portrait",
+   "sha256": "1a7f8cfdbb0ba5969c30b844ddcb8bf9d36cd6a4ae2e1ae9e274f289dc5d4597"
+  },
+  "sa.v1.106.user_audio.u1": {
+   "bytes": 103724,
+   "kind": "audio",
+   "path": "v1/audio/009.wav",
+   "role": "user_audio",
+   "script": "I was wondering if your stoneware uses—",
+   "sha256": "142c51ec19b6510bd21cc8212e43cf0a68228a2576ddc62d61675a66bf1e8d41"
+  },
+  "sa.v1.106.user_audio.u2": {
+   "bytes": 69164,
+   "kind": "audio",
+   "path": "v1/audio/010.wav",
+   "role": "user_audio",
+   "script": "—local river clay?",
+   "sha256": "0b77abbb38b92709db41d334c4b9eb2f01b0142f512d44daa5240edede136b55"
+  },
+  "sa.v1.107.portrait": {
+   "bytes": 1465503,
+   "kind": "image",
+   "path": "v1/images/099.png",
+   "role": "portrait",
+   "sha256": "e690b5a728e697c504166945d5e5736ec437ea19fbb035c5d99d953d973bff57"
+  },
+  "sa.v1.107.user_audio.u1": {
+   "bytes": 84524,
+   "kind": "audio",
+   "path": "v1/audio/011.wav",
+   "role": "user_audio",
+   "script": "How many cots are in Zone Three?",
+   "sha256": "9c610fced3f1305af3a5171eab1cbe3388caa3a3643381cf520c47f3df499f97"
+  },
+  "sa.v1.107.user_audio.u2": {
+   "bytes": 161324,
+   "kind": "audio",
+   "path": "v1/audio/012.wav",
+   "role": "user_audio",
+   "script": "Wait, I meant Zone Five, not Three.",
+   "sha256": "99e97b2fa971befd9f876e4ecf52e861702af13850bb7d232729960ad6ced88f"
+  },
+  "sa.v1.108.portrait": {
+   "bytes": 1580869,
+   "kind": "image",
+   "path": "v1/images/100.png",
+   "role": "portrait",
+   "sha256": "28689fa4f71967a1368d18a1e86ed18843020cd93824c17114893055039a3ec9"
+  },
+  "sa.v1.108.user_audio.u1": {
+   "bytes": 145964,
+   "kind": "audio",
+   "path": "v1/audio/013.wav",
+   "role": "user_audio",
+   "script": "Route thermal blankets to Bleached Atoll and Deep Shelf.",
+   "sha256": "db8d60c6097265310445d2c249c0c47b20a24e7c737b71f694bdd6dc26af87c9"
+  },
+  "sa.v1.108.user_audio.u2": {
+   "bytes": 153644,
+   "kind": "audio",
+   "path": "v1/audio/014.wav",
+   "role": "user_audio",
+   "script": "Wait, Bleached Atoll is evacuated, drop it.",
+   "sha256": "baf1e9ee8fc2dfc51cd8ef0ddb3ea7e8993ddc56a6cd55ace1f71f2a09d32762"
+  },
+  "sa.v1.109.portrait": {
+   "bytes": 1617041,
+   "kind": "image",
+   "path": "v1/images/101.png",
+   "role": "portrait",
+   "sha256": "3ce3b000643251e13166e84f69c0264381d8467ac1a148c210d9aff31db6599d"
+  },
+  "sa.v1.109.user_audio.u1": {
+   "bytes": 291884,
+   "kind": "audio",
+   "path": "v1/audio/015.wav",
+   "role": "user_audio",
+   "script": "Rui, comparing the sealed heritage case and the open exchange tray, which feature is safer for visitors?",
+   "sha256": "78d79ba75ce4cad3585a551f14abfccff88c1c042ecd48607b0f7cca575edf86"
+  },
+  "sa.v1.109.user_audio.u2": {
+   "bytes": 80684,
+   "kind": "audio",
+   "path": "v1/audio/016.wav",
+   "role": "user_audio",
+   "script": "Why is the sealed one better?",
+   "sha256": "d2b6d10ba90f4385c202f07f9618ef93d0569ad3dc7015ad9a3bf5a11ab75ce1"
+  },
+  "sa.v1.110.portrait": {
+   "bytes": 1340481,
+   "kind": "image",
+   "path": "v1/images/102.png",
+   "role": "portrait",
+   "sha256": "39fc772204c306855173e26e2a79173167207b99fd5751103656a3546102873c"
+  },
+  "sa.v1.110.user_audio.u1": {
+   "bytes": 263084,
+   "kind": "audio",
+   "path": "v1/audio/017.wav",
+   "role": "user_audio",
+   "script": "I heard the Orion projector is showing the Mars documentary. What resolution does it support?",
+   "sha256": "8d4f923c1f6847a58825fce91a83fd9862771604573bca58cf4f6b641a0ebead"
+  },
+  "sa.v1.111.portrait": {
+   "bytes": 1394130,
+   "kind": "image",
+   "path": "v1/images/103.png",
+   "role": "portrait",
+   "sha256": "750bd7f9f4d01bdbb9c6c6a0567804cd718580b593297b93b368a237d19c5112"
+  },
+  "sa.v1.111.user_audio.u1": {
+   "bytes": 107564,
+   "kind": "audio",
+   "path": "v1/audio/018.wav",
+   "role": "user_audio",
+   "script": "Please reserve the East Storage Room for me.",
+   "sha256": "0f884ca64373f82e44d2cb5915f5d74a8cd3f5f99c5cde3022a7d885b2b02800"
+  },
+  "sa.v1.111.user_audio.u2": {
+   "bytes": 145964,
+   "kind": "audio",
+   "path": "v1/audio/019.wav",
+   "role": "user_audio",
+   "script": "Actually, change that to the West Pump Room instead.",
+   "sha256": "6720193c1d5af9462fde1052c9031e151d0220b3fd39c3b042f9e5ddc99c1c3d"
+  },
+  "sa.v1.112.portrait": {
+   "bytes": 1519977,
+   "kind": "image",
+   "path": "v1/images/104.png",
+   "role": "portrait",
+   "sha256": "cd44d496340a4c377ec0ab00df6d41edaf726f0f1b4c97976b087c2154f49e53"
+  },
+  "sa.v1.112.user_audio.u1": {
+   "bytes": 203564,
+   "kind": "audio",
+   "path": "v1/audio/020.wav",
+   "role": "user_audio",
+   "script": "I am logging the rim sherd as Priority and the base sherd as Standard.",
+   "sha256": "73412a6cbc17dd777a0f2c72744b3b9f13009e0981d75c8e3d3288db779dc329"
+  },
+  "sa.v1.112.user_audio.u2": {
+   "bytes": 107564,
+   "kind": "audio",
+   "path": "v1/audio/021.wav",
+   "role": "user_audio",
+   "script": "Please mark it for immediate analysis.",
+   "sha256": "6bc48996163374d3c4b97f8a1ab1a60bcb4deccedacb0d32fd150c87c8b66d91"
+  },
+  "sa.v1.113.portrait": {
+   "bytes": 1766372,
+   "kind": "image",
+   "path": "v1/images/105.png",
+   "role": "portrait",
+   "sha256": "453efacd0e24cdc1a6827f38e8c5935d6b653b3eb23335227c2199e845318dfe"
+  },
+  "sa.v1.113.user_audio.u1": {
+   "bytes": 96044,
+   "kind": "audio",
+   "path": "v1/audio/022.wav",
+   "role": "user_audio",
+   "script": "Can I bring my water bottle on your tour?",
+   "sha256": "5ae1e020a88cd82a06c527378492ff6df19df32b0adad16af352f39170f4a29f"
+  },
+  "sa.v1.113.user_audio.u2": {
+   "bytes": 92204,
+   "kind": "audio",
+   "path": "v1/audio/023.wav",
+   "role": "user_audio",
+   "script": "The evening one, the Dusk Walk.",
+   "sha256": "49c04d0011cbe601b04c83555d76caaaee3b97547dc295ed5a4e0e1b76c4de8f"
+  },
+  "sa.v1.114.portrait": {
+   "bytes": 1607967,
+   "kind": "image",
+   "path": "v1/images/106.png",
+   "role": "portrait",
+   "sha256": "919b7d8d00859c638c8e9c60abd1ea04bfd839245c3723cc91a508a2806340b9"
+  },
+  "sa.v1.114.user_audio.u1": {
+   "bytes": 199724,
+   "kind": "audio",
+   "path": "v1/audio/024.wav",
+   "role": "user_audio",
+   "script": "I need details on the Harrowgate survey, but wait, I'm still thinking...",
+   "sha256": "edb99d87ac98d50c448a5c6af5af2aed9154430df9f8fb686e5e962008af69f4"
+  },
+  "sa.v1.114.user_audio.u2": {
+   "bytes": 157484,
+   "kind": "audio",
+   "path": "v1/audio/025.wav",
+   "role": "user_audio",
+   "script": "Okay, I'm ready now. How many tributaries did it chart?",
+   "sha256": "356c97407c1dda6582ad8695469d30b01b55dca03a551794dc37f476680dc7db"
+  },
+  "sa.v1.114.user_audio.u3": {
+   "bytes": 115244,
+   "kind": "audio",
+   "path": "v1/audio/026.wav",
+   "role": "user_audio",
+   "script": "And where are the older maritime maps kept?",
+   "sha256": "39e312c926e1bf35beb2a2a0b7bf0c2bc341d7ca6a4c38f20a199d2f945ede42"
+  },
+  "sa.v1.115.portrait": {
+   "bytes": 1324983,
+   "kind": "image",
+   "path": "v1/images/107.png",
+   "role": "portrait",
+   "sha256": "899f9bb5258a61cf15c2e0fed97f9d5bf252ad63cdbcfe752763f1836a7cf336"
+  },
+  "sa.v1.115.user_audio.u1": {
+   "bytes": 90284,
+   "kind": "audio",
+   "path": "v1/audio/027.wav",
+   "role": "user_audio",
+   "script": "Could you put my duffel bag in the—",
+   "sha256": "9a7a7e1303a0fafb1a3de040a93eac40769cff07a04e7712db6529dccab8c0e9"
+  },
+  "sa.v1.115.user_audio.u2": {
+   "bytes": 117164,
+   "kind": "audio",
+   "path": "v1/audio/028.wav",
+   "role": "user_audio",
+   "script": "Actually no, it is my cello case.",
+   "sha256": "298f6f31011d8b3823e34797b36df46efe27c20d7af163b9c8cf44dca0342702"
+  },
+  "sa.v1.116.portrait": {
+   "bytes": 1827569,
+   "kind": "image",
+   "path": "v1/images/108.png",
+   "role": "portrait",
+   "sha256": "893f8d3945c0393a1f6202158d831279538c6be667943abb50ee1e2af0eb7826"
+  },
+  "sa.v1.116.user_audio.u1": {
+   "bytes": 111404,
+   "kind": "audio",
+   "path": "v1/audio/029.wav",
+   "role": "user_audio",
+   "script": "Are the dinosaur hall sensors off for maintenance?",
+   "sha256": "4203f5c0ff6788c497f8078fe5b9cfb38e9a79814ad1cbaa53ba6b92e2e418de"
+  },
+  "sa.v1.116.user_audio.u2": {
+   "bytes": 161324,
+   "kind": "audio",
+   "path": "v1/audio/030.wav",
+   "role": "user_audio",
+   "script": "Wait, the status update says those sensors are fully armed.",
+   "sha256": "72267714efe8e4eabf5b97c08a628fe36aae25355b0b83cffe41dd1946d44bbd"
+  },
+  "sa.v1.117.portrait": {
+   "bytes": 1527749,
+   "kind": "image",
+   "path": "v1/images/109.png",
+   "role": "portrait",
+   "sha256": "0ea92def4f8bf8d93384395d5d5bcb4d5ce5ddfda45efec5e5e20d865023b19e"
+  },
+  "sa.v1.117.user_audio.u1": {
+   "bytes": 387884,
+   "kind": "audio",
+   "path": "v1/audio/031.wav",
+   "role": "user_audio",
+   "script": "I heard the North Ridge trail bans solo hikers after noon. I have my advanced wilderness certificate. Can I still go alone?",
+   "sha256": "c208efb6370a7bc2c43d0da7c65553db723a400a526d4da1ba329eddcaa4cdd1"
+  },
+  "sa.v1.117.user_audio.u2": {
+   "bytes": 238124,
+   "kind": "audio",
+   "path": "v1/audio/032.wav",
+   "role": "user_audio",
+   "script": "Great. So just to confirm, my certificate overrides the noon restriction entirely?",
+   "sha256": "7155fccdc5511194852620386e82cf568eb2793d7e36be29f3b9250a0da53f3f"
+  },
+  "sa.v1.118.portrait": {
+   "bytes": 1356279,
+   "kind": "image",
+   "path": "v1/images/110.png",
+   "role": "portrait",
+   "sha256": "70b5c268a9a48e903d855d8cbc185a32efdf98682e884641b666d56eb9080547"
+  },
+  "sa.v1.118.user_audio.u1": {
+   "bytes": 230444,
+   "kind": "audio",
+   "path": "v1/audio/033.wav",
+   "role": "user_audio",
+   "script": "I need to reach Kael Island tonight but I only have forty credits. Which route should I take?",
+   "sha256": "1efbed37e64016ea55f4b68903bfe48204d9277e307af3a2dfb12306057bb237"
+  },
+  "sa.v1.118.user_audio.u2": {
+   "bytes": 207404,
+   "kind": "audio",
+   "path": "v1/audio/034.wav",
+   "role": "user_audio",
+   "script": "Actually, I also must arrive before midnight. Does that change your recommendation?",
+   "sha256": "f5065b8b4dafafff15a93fc3ca56874f3ee34c78dabb6083e93e364a240c397a"
+  },
+  "sa.v1.119.portrait": {
+   "bytes": 1591055,
+   "kind": "image",
+   "path": "v1/images/111.png",
+   "role": "portrait",
+   "sha256": "a71059a7a7822184dd90aa7098b2caff65b05b53692677516c58e501e04fcc91"
+  },
+  "sa.v1.119.user_audio.u1": {
+   "bytes": 230444,
+   "kind": "audio",
+   "path": "v1/audio/035.wav",
+   "role": "user_audio",
+   "script": "For this shift, never assign cabin seven; its door sensor is faulty.",
+   "sha256": "cf9a52dc049aadbbc99e8ece2416bbc725c8aa5d8f137c1940659cb52168184b"
+  },
+  "sa.v1.119.user_audio.u2": {
+   "bytes": 218924,
+   "kind": "audio",
+   "path": "v1/audio/036.wav",
+   "role": "user_audio",
+   "script": "A family of four needs the fourteen hundred departure. Which cabin numbers are eligible?",
+   "sha256": "a4ccc5c364c5c5f15fef64b57b4db86943e13454510120d6446ebac2ba3fc147"
+  },
+  "sa.v1.119.user_audio.u3": {
+   "bytes": 215084,
+   "kind": "audio",
+   "path": "v1/audio/037.wav",
+   "role": "user_audio",
+   "script": "For my log, does the cabin-seven exclusion still apply to that departure?",
+   "sha256": "b852b8cd978203345019c1f7e3269049414401957c182eabcd615081a79b3e3c"
+  },
+  "sa.v1.120.portrait": {
+   "bytes": 1489749,
+   "kind": "image",
+   "path": "v1/images/112.png",
+   "role": "portrait",
+   "sha256": "549bae20dc72fe9247c3ed54b46c2cc384274580048d28e8cacc0c960e49ecfd"
+  },
+  "sa.v1.120.user_audio.u1": {
+   "bytes": 188204,
+   "kind": "audio",
+   "path": "v1/audio/038.wav",
+   "role": "user_audio",
+   "script": "Add a silver mask and a blue scarf to the desk inventory.",
+   "sha256": "d036e9f07b3014d3540e91a57223b75727a0ea4af86b0546004f5cb79fcaf805"
+  },
+  "sa.v1.120.user_audio.u2": {
+   "bytes": 165164,
+   "kind": "audio",
+   "path": "v1/audio/039.wav",
+   "role": "user_audio",
+   "script": "Now remove the silver mask. What remains?",
+   "sha256": "ce7a8d26f0e7cf6f07b29900f18e9d1d59ee1fc43d50e3010d9d1805268d7e04"
+  },
+  "sa.v1.120.user_audio.u3": {
+   "bytes": 188204,
+   "kind": "audio",
+   "path": "v1/audio/040.wav",
+   "role": "user_audio",
+   "script": "I did not add anything else. Confirm what is left.",
+   "sha256": "00834abeec87fd4e0372cbe1a34b70d0173b30a5ee7761c9d78bfcc30f4c5d7f"
+  },
+  "sa.v1.121.portrait": {
+   "bytes": 1645838,
+   "kind": "image",
+   "path": "v1/images/113.png",
+   "role": "portrait",
+   "sha256": "4d240893bf282dbad66240c95a0bef057870218ce4f8455a3a0c879e9004f368"
+  },
+  "sa.v1.121.user_audio.u1": {
+   "bytes": 282284,
+   "kind": "audio",
+   "path": "v1/audio/041.wav",
+   "role": "user_audio",
+   "script": "Excuse me, how long is the full loop up here, because I need to know if—",
+   "sha256": "7b67e114ada3f6dde6d126aba34d153bc019b4b4fc273e7116d26ee382d7d5d6"
+  },
+  "sa.v1.121.user_audio.u2": {
+   "bytes": 170924,
+   "kind": "audio",
+   "path": "v1/audio/042.wav",
+   "role": "user_audio",
+   "script": "Hey! Is this platform rated for twenty people at once?",
+   "sha256": "7170ef14dadecd5ee0cd656a856395ccea123341c58f55a5b230ceec5a440452"
+  },
+  "sa.v1.121.user_audio.u3": {
+   "bytes": 121004,
+   "kind": "audio",
+   "path": "v1/audio/043.wav",
+   "role": "user_audio",
+   "script": "Sorry about that, please go on.",
+   "sha256": "0a1c5ae7a0522feeed043733e6c9e41b209a2f13a70a1863211cbc78f4a033a7"
+  },
+  "sa.v1.122.portrait": {
+   "bytes": 1924604,
+   "kind": "image",
+   "path": "v1/images/114.png",
+   "role": "portrait",
+   "sha256": "5aa79fa1d57008700e2eb07bd36e7ac894a61ef62b2fb0713c7b79f6c0899d64"
+  },
+  "sa.v1.122.user_audio.u1": {
+   "bytes": 165164,
+   "kind": "audio",
+   "path": "v1/audio/044.wav",
+   "role": "user_audio",
+   "script": "Which deck holds the wet lab for sample processing?",
+   "sha256": "8f910913c7ecbbd5b73c701c59e61900faa47d42551bdbe3fbfde66ba9c77fc5"
+  },
+  "sa.v1.122.user_audio.u2": {
+   "bytes": 176684,
+   "kind": "audio",
+   "path": "v1/audio/045.wav",
+   "role": "user_audio",
+   "script": "After that noise clears, where do we store the sediment cores?",
+   "sha256": "27c747f288d7485176d034a0efac355350a61d465c598b57c324825f7918fb56"
+  },
+  "sa.v1.122.user_audio.u3": {
+   "bytes": 126764,
+   "kind": "audio",
+   "path": "v1/audio/046.wav",
+   "role": "user_audio",
+   "script": "Do I need a separate keycard for the cold room?",
+   "sha256": "f799a8d86d1d048415c8709071486915416703626ae0f5d42c72f1ac310e140d"
+  },
+  "sa.v1.123.portrait": {
+   "bytes": 1551766,
+   "kind": "image",
+   "path": "v1/images/115.png",
+   "role": "portrait",
+   "sha256": "48672c78d5c4bf090f181712f9887b8d37b0466a84d9d76ed218efef749fbd74"
+  },
+  "sa.v1.123.user_audio.u1": {
+   "bytes": 238124,
+   "kind": "audio",
+   "path": "v1/audio/047.wav",
+   "role": "user_audio",
+   "script": "I need a floodplain planting plan for our south field, but everything has to be organic.",
+   "sha256": "476b5e9726cd8b99b6945aeda30a087583303dcdcb4c314aca638246da620b81"
+  },
+  "sa.v1.123.user_audio.u2": {
+   "bytes": 222764,
+   "kind": "audio",
+   "path": "v1/audio/048.wav",
+   "role": "user_audio",
+   "script": "Wait, skip the rice—let's do sorghum instead, still organic though.",
+   "sha256": "c5b497ba9803f3d5e2cd5b7f7ee28d55789d6d02ee0d8bbd409dd4500a9e6a4e"
+  },
+  "sa.v1.124.portrait": {
+   "bytes": 1508019,
+   "kind": "image",
+   "path": "v1/images/116.png",
+   "role": "portrait",
+   "sha256": "0f7a77d71ef5ab18131780a4ddc1d0cb0b797ae360ea2dfd229a244c2d3f7402"
+  },
+  "sa.v1.124.user_audio.u1": {
+   "bytes": 130604,
+   "kind": "audio",
+   "path": "v1/audio/049.wav",
+   "role": "user_audio",
+   "script": "Which mapped route might suit our survey?",
+   "sha256": "33092421460c5a30924045d5c1f948a32cca5b9cf6099f5b2449fb819872d432"
+  },
+  "sa.v1.124.user_audio.u2": {
+   "bytes": 203564,
+   "kind": "audio",
+   "path": "v1/audio/050.wav",
+   "role": "user_audio",
+   "script": "Wait, hold on—our hull is rated to only two thousand meters.",
+   "sha256": "afe9ee5a9548c34e5afb6fcc0894a1142655f3a1d469bfeee729133eb33732a4"
+  },
+  "sa.v1.125.portrait": {
+   "bytes": 1543982,
+   "kind": "image",
+   "path": "v1/images/117.png",
+   "role": "portrait",
+   "sha256": "50e27b2964d3e272757fd46d32ad448116a6eaf73ff67de80ec7a9a5ff00c92e"
+  },
+  "sa.v1.125.user_audio.u1": {
+   "bytes": 353324,
+   "kind": "audio",
+   "path": "v1/audio/051.wav",
+   "role": "user_audio",
+   "script": "Notice A says all clear glass is accepted but notice B says no clear glass after noon. Which is it?",
+   "sha256": "03c81bff4f96246f0706da4f23846967af16eb8eeedb9c63ac014c491adc7638"
+  },
+  "sa.v1.125.user_audio.u2": {
+   "bytes": 134444,
+   "kind": "audio",
+   "path": "v1/audio/052.wav",
+   "role": "user_audio",
+   "script": "So where do I take my old window panes then?",
+   "sha256": "d99d13e4d2af198278dfa6d64d3ad6021743471dac7b755bccedbb1a3d26401d"
+  },
+  "sa.v1.126.portrait": {
+   "bytes": 1552964,
+   "kind": "image",
+   "path": "v1/images/118.png",
+   "role": "portrait",
+   "sha256": "08c261405e488fc0bd5b892830ec0f226178c9c689b22e2ff4550d9b2d95203d"
+  },
+  "sa.v1.126.user_audio.u1": {
+   "bytes": 357164,
+   "kind": "audio",
+   "path": "v1/audio/053.wav",
+   "role": "user_audio",
+   "script": "In the log, the entry says the brass compass was left near the dome vent because someone was rushing. Is that an observation or an inference?",
+   "sha256": "ed373bac2970ef7d7fce56bc23761f842052b2c5050851a2f42705efd9985fdd"
+  },
+  "sa.v1.126.user_audio.u2": {
+   "bytes": 399404,
+   "kind": "audio",
+   "path": "v1/audio/054.wav",
+   "role": "user_audio",
+   "script": "I'm the night-shift inventory clerk, so I need precise records. Can you confirm what the log directly observed about the red thermos?",
+   "sha256": "d2c6305d74ef3df48d8e02d748ba6af9f8d09e1e608a0432e68293ed78bda4c7"
+  },
+  "sa.v1.126.user_audio.u3": {
+   "bytes": 341804,
+   "kind": "audio",
+   "path": "v1/audio/055.wav",
+   "role": "user_audio",
+   "script": "Given my clerk duties, which lost items are confirmed by direct observation versus inferred missing from the shelves?",
+   "sha256": "0afa660f56be5fa228fa492d49d6e514f3a55d46b981c6da9ee5ea077d16ad8c"
+  },
+  "sa.v1.127.portrait": {
+   "bytes": 1458636,
+   "kind": "image",
+   "path": "v1/images/119.png",
+   "role": "portrait",
+   "sha256": "34eb3778fd0a453d1e41a9497607e4ace24d1707598d81ba70b237d051cffa12"
+  },
+  "sa.v1.127.user_audio.u1": {
+   "bytes": 274604,
+   "kind": "audio",
+   "path": "v1/audio/056.wav",
+   "role": "user_audio",
+   "script": "I only want to approve watercolor-style murals for the downtown corridor permits.",
+   "sha256": "37e7935b4e79aaefca17c67cc514ea51c164f3384779fdaef188db114dfcd73d"
+  },
+  "sa.v1.127.user_audio.u2": {
+   "bytes": 266924,
+   "kind": "audio",
+   "path": "v1/audio/057.wav",
+   "role": "user_audio",
+   "script": "Wait, I also need every site we approve to be fully wheelchair accessible with ramps.",
+   "sha256": "6856f0ab1773a305415bf2cd056ef7f6aa4cf0627b4cd5f4212ddea34bc63eb2"
+  },
+  "sa.v1.127.user_audio.u3": {
+   "bytes": 347564,
+   "kind": "audio",
+   "path": "v1/audio/058.wav",
+   "role": "user_audio",
+   "script": "So which of your three downtown blocks actually meet both the watercolor rule and the ramp requirement now?",
+   "sha256": "852de5abe7daa5467c43cdaf77909ecf621fb06e92e1a1a46c39ac9b8dcf9bf3"
+  },
+  "sa.v1.127.user_audio.u4": {
+   "bytes": 224684,
+   "kind": "audio",
+   "path": "v1/audio/059.wav",
+   "role": "user_audio",
+   "script": "Got it. Please keep that combined filter active for the rest of our session.",
+   "sha256": "4b266d19d9c5c522e93e60e7ab06127c3a97adf45731cf806bf26a7dec3ed240"
+  },
+  "sa.v1.128.portrait": {
+   "bytes": 1631544,
+   "kind": "image",
+   "path": "v1/images/120.png",
+   "role": "portrait",
+   "sha256": "ee0a56da41848e8266474048d0a396d7d0997f16f1a7d403305c32b6c78ce927"
+  },
+  "sa.v1.128.user_audio.u1": {
+   "bytes": 241964,
+   "kind": "audio",
+   "path": "v1/audio/060.wav",
+   "role": "user_audio",
+   "script": "I'm dropping the weekend-sort proposal entirely. It conflicts with our Saturday-only rule.",
+   "sha256": "e81a38e17024041fd559cf4b7ed3f98a11af33a1d49173d2e3ba332c4fe13a37"
+  },
+  "sa.v1.128.user_audio.u2": {
+   "bytes": 326444,
+   "kind": "audio",
+   "path": "v1/audio/061.wav",
+   "role": "user_audio",
+   "script": "Let's go with the holiday-box campaign instead. Actually, move it to Friday evenings so it doesn't overlap.",
+   "sha256": "f49c539942a34cb22b60f3f33ac6ae7b4b516add77eab92234aaf16746e72e5a"
+  },
+  "sa.v1.128.user_audio.u3": {
+   "bytes": 199724,
+   "kind": "audio",
+   "path": "v1/audio/062.wav",
+   "role": "user_audio",
+   "script": "Wait, remind me—which of those two proposals did I just reject?",
+   "sha256": "d4662ad87f19360c302388110d069b2a77a8ae3e7f313f1d88d429b10c1d6428"
+  },
+  "sa.v1.129.portrait": {
+   "bytes": 1506109,
+   "kind": "image",
+   "path": "v1/images/121.png",
+   "role": "portrait",
+   "sha256": "e3e5d92b2777c153acbe3ae365a838e78d1fa75e4c7581d1d0e73ebde43f1082"
+  },
+  "sa.v1.129.user_audio.u1": {
+   "bytes": 188204,
+   "kind": "audio",
+   "path": "v1/audio/063.wav",
+   "role": "user_audio",
+   "script": "I signed up for the deep-sky session but I was wondering if maybe...",
+   "sha256": "f835dd4c733cfe3e697f401d87cf75bb672f6b9873a3303bbeaf20caed2aa792"
+  },
+  "sa.v1.129.user_audio.u2": {
+   "bytes": 165164,
+   "kind": "audio",
+   "path": "v1/audio/064.wav",
+   "role": "user_audio",
+   "script": "...if maybe we could switch to the planetary viewing instead?",
+   "sha256": "0b696d0c7bd8a9012041ce6b5a2190c305132f11146ef47d165c73934b1510c4"
+  },
+  "sa.v1.129.user_audio.u3": {
+   "bytes": 96044,
+   "kind": "audio",
+   "path": "v1/audio/065.wav",
+   "role": "user_audio",
+   "script": "Great. What time does it start?",
+   "sha256": "ea60794c5f0abc4e6e17635bed2db65f9dc6960fd199b933be31c03e66d5991a"
+  },
+  "sa.v1.130.portrait": {
+   "bytes": 1756442,
+   "kind": "image",
+   "path": "v1/images/122.png",
+   "role": "portrait",
+   "sha256": "90652233826caa700947fcb57356f4886d95334ad5579be66b060610a24899f8"
+  },
+  "sa.v1.130.user_audio.u1": {
+   "bytes": 261164,
+   "kind": "audio",
+   "path": "v1/audio/066.wav",
+   "role": "user_audio",
+   "script": "I wanted to ask how indigo—actually wait, which mordant is logged for the blue swatch?",
+   "sha256": "061c6d4294df063b08324a4d6117d985f17ed080cd83f2c19e2d593791dc4f13"
+  },
+  "sa.v1.130.user_audio.u2": {
+   "bytes": 115244,
+   "kind": "audio",
+   "path": "v1/audio/067.wav",
+   "role": "user_audio",
+   "script": "And which swatch uses iron in your log?",
+   "sha256": "8493094bb4f4ebc928d4301b3c417ef1c9efc54e53ab62dc59d7b7dbcc6e230a"
+  },
+  "sa.v1.130.user_audio.u3": {
+   "bytes": 107564,
+   "kind": "audio",
+   "path": "v1/audio/068.wav",
+   "role": "user_audio",
+   "script": "Hold on, I am still checking this label...",
+   "sha256": "0d26040296d2ea80342edd8f079d4e1af14fc71813408bf2863f8a6adb3b3a5e"
+  },
+  "sa.v1.130.user_audio.u4": {
+   "bytes": 153644,
+   "kind": "audio",
+   "path": "v1/audio/069.wav",
+   "role": "user_audio",
+   "script": "Found it. Which container takes the used blue-swatch bath?",
+   "sha256": "524dbe0a53c526a1088e05de65e296feaaa192443b919906f4922ff3bc5525d9"
+  },
+  "sa.v1.131.portrait": {
+   "bytes": 1456108,
+   "kind": "image",
+   "path": "v1/images/123.png",
+   "role": "portrait",
+   "sha256": "75a0a4531f0a1f2fd0b606a8e72eacfe2fba67378bea7c4924c03c8e333ae601"
+  },
+  "sa.v1.131.user_audio.u1": {
+   "bytes": 190124,
+   "kind": "audio",
+   "path": "v1/audio/070.wav",
+   "role": "user_audio",
+   "script": "Book the north array for Dr. Lorn at twenty-two hundred hours.",
+   "sha256": "236208ad7f6f75ebd26bc6677c20c286714f3eb23d52d2ae9df763e7ab3cb99a"
+  },
+  "sa.v1.131.user_audio.u2": {
+   "bytes": 105644,
+   "kind": "audio",
+   "path": "v1/audio/071.wav",
+   "role": "user_audio",
+   "script": "Wait no make it twenty-three hundred.",
+   "sha256": "a3aa727be3c13e44e9a62e294edf28b780eba6a804e495a6083736ce47be349b"
+  },
+  "sa.v1.131.user_audio.u3": {
+   "bytes": 147884,
+   "kind": "audio",
+   "path": "v1/audio/072.wav",
+   "role": "user_audio",
+   "script": "Actually scratch that lock it in at midnight instead.",
+   "sha256": "e88527364a2915a803a5dc668ef3d9dd72a10ce5459ac79b2b86222ae2cc71f7"
+  },
+  "sa.v1.132.portrait": {
+   "bytes": 1957770,
+   "kind": "image",
+   "path": "v1/images/124.png",
+   "role": "portrait",
+   "sha256": "bb71be42845173c18f99885225f206ef923fc9ebe443c3cd3437574165492ad1"
+  },
+  "sa.v1.132.user_audio.u1": {
+   "bytes": 165164,
+   "kind": "audio",
+   "path": "v1/audio/073.wav",
+   "role": "user_audio",
+   "script": "Walk me through the three-step storm protocol for the north ridge.",
+   "sha256": "234a03b68d3e6026a44901dbf9617950da8e65daeee206b03055bb16032594a0"
+  },
+  "sa.v1.132.user_audio.u2": {
+   "bytes": 268844,
+   "kind": "audio",
+   "path": "v1/audio/074.wav",
+   "role": "user_audio",
+   "script": "Wait, the north ridge shelter is Bunker Seven now, not Bunker Four. Go on.",
+   "sha256": "f44af3e3f10faf0974c78660fd35415a541aa4571605eab4537c3aad8b9d6d53"
+  },
+  "sa.v1.133.portrait": {
+   "bytes": 1411416,
+   "kind": "image",
+   "path": "v1/images/125.png",
+   "role": "portrait",
+   "sha256": "ac21fdff1d30b106fb9cf4acffdc0ac458a863c52f10a256238d3dfa60c21299"
+  },
+  "sa.v1.133.user_audio.u1": {
+   "bytes": 197804,
+   "kind": "audio",
+   "path": "v1/audio/075.wav",
+   "role": "user_audio",
+   "script": "Tariq, check the registry: what did Project Nereid study?",
+   "sha256": "f8a01f6adbdb4a33efa099027611e9ff852566e00311ecebbd2880c7c6017b2a"
+  },
+  "sa.v1.133.user_audio.u2": {
+   "bytes": 167084,
+   "kind": "audio",
+   "path": "v1/audio/076.wav",
+   "role": "user_audio",
+   "script": "What is the standard salinity for our display tanks?",
+   "sha256": "392b268e785bfd661272414af21c5e707a3ac4bff6ec4df28ea1424e32e47b6a"
+  },
+  "sa.v1.133.user_audio.u3": {
+   "bytes": 159404,
+   "kind": "audio",
+   "path": "v1/audio/077.wav",
+   "role": "user_audio",
+   "script": "How often do we cycle the green macroalgae?",
+   "sha256": "c664cfce030cdcf8352886b2ef75303434c1c895966cd19569c165f3ea48c909"
+  },
+  "sa.v1.133.user_audio.u4": {
+   "bytes": 217004,
+   "kind": "audio",
+   "path": "v1/audio/078.wav",
+   "role": "user_audio",
+   "script": "I need to update the visitor log format. What fields are required?",
+   "sha256": "1145fda2af3e50955ed73a9778a0a1cc562fb4e357f63fd34847d9016e19d555"
+  },
+  "sa.v1.133.user_audio.u5": {
+   "bytes": 197804,
+   "kind": "audio",
+   "path": "v1/audio/079.wav",
+   "role": "user_audio",
+   "script": "Going back to my first question, which organism was it again?",
+   "sha256": "3bb70fb9057498146581187fdb6b5a82b2eccef4cdd3661538831219a0ae5c97"
+  },
+  "sa.v1.133.user_audio.u6": {
+   "bytes": 174764,
+   "kind": "audio",
+   "path": "v1/audio/080.wav",
+   "role": "user_audio",
+   "script": "And what is the current registry status of those organisms?",
+   "sha256": "f21209ef929790557ee9230fbd4c9a402677411709905ae6d4dfe8efebe2a40b"
+  },
+  "sa.v1.134.portrait": {
+   "bytes": 1615083,
+   "kind": "image",
+   "path": "v1/images/126.png",
+   "role": "portrait",
+   "sha256": "3cb497a83a0be58cd6c2d4c5a4a00153de06f745995d6211821a10a6f5253e5b"
+  },
+  "sa.v1.134.user_audio.u1": {
+   "bytes": 188204,
+   "kind": "audio",
+   "path": "v1/audio/081.wav",
+   "role": "user_audio",
+   "script": "I want to try block printing. Is water-based ink on your approved list?",
+   "sha256": "14fabdd0e45cf76e8183a010573ae6e7af3a28549bb3eb494ab772746acfc8a7"
+  },
+  "sa.v1.134.user_audio.u2": {
+   "bytes": 211244,
+   "kind": "audio",
+   "path": "v1/audio/082.wav",
+   "role": "user_audio",
+   "script": "Actually, I changed my choice to soy-based ink. Does your approved list allow it?",
+   "sha256": "3d5ded3c948fb08c4eeef1ab546bb031154318ac5debeb9b31bff8b6e43ada1a"
+  },
+  "sa.v1.134.user_audio.u3": {
+   "bytes": 115244,
+   "kind": "audio",
+   "path": "v1/audio/083.wav",
+   "role": "user_audio",
+   "script": "Do I need gloves while rolling the ink on a slab?",
+   "sha256": "dba78c68799eba10a8713bf5ddf377e74a47caab69b46c1ff2f6a2f9c0ddf407"
+  },
+  "sa.v1.134.user_audio.u4": {
+   "bytes": 119084,
+   "kind": "audio",
+   "path": "v1/audio/084.wav",
+   "role": "user_audio",
+   "script": "Do beginners get to try woodblock as well as linocut?",
+   "sha256": "4f69ad6c127b63fe9ac6386bbac9f613501b2439bf15f03e59f54951f24e4fba"
+  },
+  "sa.v1.134.user_audio.u5": {
+   "bytes": 169004,
+   "kind": "audio",
+   "path": "v1/audio/085.wav",
+   "role": "user_audio",
+   "script": "With my soy-based choice, what rules should I remember before carving?",
+   "sha256": "ddb3eb735fcdb8a99766f18948dfebda08e0116813be197951fc9d841e9eeed7"
+  },
+  "sa.v1.135.portrait": {
+   "bytes": 1433105,
+   "kind": "image",
+   "path": "v1/images/127.png",
+   "role": "portrait",
+   "sha256": "367ce3881387afa5103fb0670dae4a1b37d82640fe795db09757d95c63b40662"
+  },
+  "sa.v1.135.user_audio.u1": {
+   "bytes": 188204,
+   "kind": "audio",
+   "path": "v1/audio/086.wav",
+   "role": "user_audio",
+   "script": "I think I will take the north ridge trail up to the viewing platform tonight.",
+   "sha256": "80be5ba5da1d231e297ca9e86ef5c144cc181b01f616c1f2a3271ed25ef7bdc1"
+  },
+  "sa.v1.135.user_audio.u2": {
+   "bytes": 295724,
+   "kind": "audio",
+   "path": "v1/audio/087.wav",
+   "role": "user_audio",
+   "script": "Can you tell me more about borrowing that field telescope? What comes with it? I have never used one before.",
+   "sha256": "faeb1a9c113adb519cb8278a9681ea698f059ff16c2c87de40a89f78a8986cd2"
+  },
+  "sa.v1.135.user_audio.u3": {
+   "bytes": 345644,
+   "kind": "audio",
+   "path": "v1/audio/088.wav",
+   "role": "user_audio",
+   "script": "Oh wow, so anyone can check it out? Do I need my own tripod? Also, what constellations are easiest for beginners?",
+   "sha256": "746d0ea5549d23787d8b3bcfaa4b4d56eeb1914fc8f9ffca45f1c84fa30d6964"
+  },
+  "sa.v1.135.user_audio.u4": {
+   "bytes": 326444,
+   "kind": "audio",
+   "path": "v1/audio/089.wav",
+   "role": "user_audio",
+   "script": "That is really helpful. I did not know Orion was so easy to spot. How long does the lending paperwork usually take?",
+   "sha256": "2630d54990c506095d6d824ab6d201e5143cead9344cf01f718f12e873ebe79f"
+  },
+  "sa.v1.135.user_audio.u5": {
+   "bytes": 307244,
+   "kind": "audio",
+   "path": "v1/audio/090.wav",
+   "role": "user_audio",
+   "script": "Right, just a quick form. Anyway, remind me which trail I decided to take earlier so I do not get lost in the dark.",
+   "sha256": "42dda1062282ec1dcb83d41ee8b7b93f46dacd1e89144a09c106794e78eec228"
+  },
+  "sa.v1.136.portrait": {
+   "bytes": 2041413,
+   "kind": "image",
+   "path": "v1/images/128.png",
+   "role": "portrait",
+   "sha256": "029a5ee0939f66c6c1570136469f0eb1778402622e9e08e6e82d938b20719420"
+  },
+  "sa.v1.136.user_audio.u1": {
+   "bytes": 149804,
+   "kind": "audio",
+   "path": "v1/audio/091.wav",
+   "role": "user_audio",
+   "script": "I need a beginner wall slot for the ten o'clock session.",
+   "sha256": "4e9e8ba09f2ec865f559919a11f1f3356185174966b18738ed3efe479b269b0d"
+  },
+  "sa.v1.136.user_audio.u2": {
+   "bytes": 134444,
+   "kind": "audio",
+   "path": "v1/audio/092.wav",
+   "role": "user_audio",
+   "script": "Add two harness rentals to that booking please.",
+   "sha256": "fc89c7414bbfdb2feeab3a56eb44b398047ca38a1f97a6bf4074bf16708380ce"
+  },
+  "sa.v1.136.user_audio.u3": {
+   "bytes": 145964,
+   "kind": "audio",
+   "path": "v1/audio/093.wav",
+   "role": "user_audio",
+   "script": "We actually have five people now, not three.",
+   "sha256": "068b63a865bc4c1fd0ec6c1ef0ed87884dd7cc52fe6f6ec021b1a69f43f28118"
+  },
+  "sa.v1.136.user_audio.u4": {
+   "bytes": 145964,
+   "kind": "audio",
+   "path": "v1/audio/094.wav",
+   "role": "user_audio",
+   "script": "Can we push our slot to the twelve o'clock one instead?",
+   "sha256": "f965a05582d95b48013c8840af36c7ba4772822e15803c0e3c5dfbad9b5cb6e4"
+  },
+  "sa.v1.136.user_audio.u5": {
+   "bytes": 103724,
+   "kind": "audio",
+   "path": "v1/audio/095.wav",
+   "role": "user_audio",
+   "script": "What does my final booking look like?",
+   "sha256": "a8e46028841c87591cc11274f745a7c896c8d1fe7f48f00bc8d4a9d2ae03f2e7"
+  },
+  "sa.v1.136.user_audio.u6": {
+   "bytes": 130604,
+   "kind": "audio",
+   "path": "v1/audio/096.wav",
+   "role": "user_audio",
+   "script": "And the two-hour duration stays the same, right?",
+   "sha256": "9752baf878572f5ccf6ab30346b9a6b11ef8412ce080cd5b304ae3c5cce0a02a"
+  },
+  "sa.v1.136.user_audio.u7": {
+   "bytes": 126764,
+   "kind": "audio",
+   "path": "v1/audio/097.wav",
+   "role": "user_audio",
+   "script": "Great, no extra fees for beginners I assume?",
+   "sha256": "d17683b1a394c95e9aa0c587ca0a3fc03d828b179d893635b39e4a2e846e3fa0"
+  },
+  "sa.v1.137.portrait": {
+   "bytes": 1290018,
+   "kind": "image",
+   "path": "v1/images/129.png",
+   "role": "portrait",
+   "sha256": "a84d3ebf486a846c7f2935e10933956aad7f2a57f270e8b01d625754d0800672"
+  },
+  "sa.v1.137.user_audio.u1": {
+   "bytes": 174764,
+   "kind": "audio",
+   "path": "v1/audio/098.wav",
+   "role": "user_audio",
+   "script": "Hey Evan, which riser do the altos stand on tonight?",
+   "sha256": "8431033bb7427d9817abaf705cfadb8577ac5332e4840f248749fed23f48629b"
+  },
+  "sa.v1.137.user_audio.u2": {
+   "bytes": 270764,
+   "kind": "audio",
+   "path": "v1/audio/099.wav",
+   "role": "user_audio",
+   "script": "Sorry, those people behind me are just chatting. My question is how long we warm up.",
+   "sha256": "142dd0027f7b9b83a729fcc52f0d7cd7087d2945234a7add3ce128d9f426dd3a"
+  },
+  "sa.v1.137.user_audio.u3": {
+   "bytes": 213164,
+   "kind": "audio",
+   "path": "v1/audio/100.wav",
+   "role": "user_audio",
+   "script": "Wait, ignore them arguing over there. Are tenors on the right riser?",
+   "sha256": "70308aae741ea0dd5c765f29dff1ccbddbeb2e95fb5294228dc318364ca20325"
+  },
+  "sa.v1.137.user_audio.u4": {
+   "bytes": 243884,
+   "kind": "audio",
+   "path": "v1/audio/101.wav",
+   "role": "user_audio",
+   "script": "They are still debating. Anyway, how many music copies did you print?",
+   "sha256": "1c68f8b9dca4774d7a3452c0a78a6ad534a65b76a08a73cad3265dbd371b1755"
+  },
+  "sa.v1.137.user_audio.u5": {
+   "bytes": 224684,
+   "kind": "audio",
+   "path": "v1/audio/102.wav",
+   "role": "user_audio",
+   "script": "Okay last thing before we start, can someone bring their phone out during practice?",
+   "sha256": "43f161481de9862fb6276a24c8ff36f4bb5028fed6f60d7b43bda32816aadab1"
+  },
+  "sa.v1.138.portrait": {
+   "bytes": 2032768,
+   "kind": "image",
+   "path": "v1/images/130.png",
+   "role": "portrait",
+   "sha256": "6778948057b4e18d8760a81980deb6b68865452a58523a57af0b41b09a342da4"
+  },
+  "sa.v1.138.user_audio.u1": {
+   "bytes": 203564,
+   "kind": "audio",
+   "path": "v1/audio/103.wav",
+   "role": "user_audio",
+   "script": "What years does your archive cover, and can I see the original logbooks?",
+   "sha256": "b80c64f30117b1753f336ecc44ca3a605c7a62c6d8b821e2ad8b5875a10b2409"
+  },
+  "sa.v1.138.user_audio.u2": {
+   "bytes": 203564,
+   "kind": "audio",
+   "path": "v1/audio/104.wav",
+   "role": "user_audio",
+   "script": "I'm researching the early forties. Was there a notable hurricane recorded around then?",
+   "sha256": "c94133387884a36479b3d60623daf73f7bce562411f495bad6a275db931e4df5"
+  },
+  "sa.v1.138.user_audio.u3": {
+   "bytes": 130604,
+   "kind": "audio",
+   "path": "v1/audio/105.wav",
+   "role": "user_audio",
+   "script": "Actually, let me check my notes first. Hold on.",
+   "sha256": "9c5285473e09c8958536f56735034d33e9b9443f68a344ffc7db3731860bb7e1"
+  },
+  "sa.v1.138.user_audio.u4": {
+   "bytes": 253484,
+   "kind": "audio",
+   "path": "v1/audio/106.wav",
+   "role": "user_audio",
+   "script": "Okay, found them. I'm specifically interested in the biggest storm you have on record overall.",
+   "sha256": "204d49d4f7edcd6636b6a8c88a7623fac407afd049143ea191edc12a963d97fe"
+  },
+  "sa.v1.138.user_audio.u5": {
+   "bytes": 288044,
+   "kind": "audio",
+   "path": "v1/audio/107.wav",
+   "role": "user_audio",
+   "script": "Wait, I need to be more precise. I meant the one that set the lowest pressure reading ever at this station.",
+   "sha256": "518bf4af39a25d36219dfdd3b726725cdb4ded36fa0fec58585ea99095e9ba28"
+  },
+  "sa.v1.138.user_audio.u6": {
+   "bytes": 226604,
+   "kind": "audio",
+   "path": "v1/audio/108.wav",
+   "role": "user_audio",
+   "script": "Yes, that's the one. How does its severity compare to everything else you've cataloged?",
+   "sha256": "cdd2575b7627d78a374a7c389e62f8af945e92172301701a7b5a4f16e5892e9b"
+  },
+  "sa.v1.138.user_audio.u7": {
+   "bytes": 122924,
+   "kind": "audio",
+   "path": "v1/audio/109.wav",
+   "role": "user_audio",
+   "script": "Thank you, Priya. That covers everything I needed.",
+   "sha256": "34ca30f9a378d81138665d93c4c7252457b13e60e51d33d68a83790428094a87"
+  },
+  "sa.v1.139.portrait": {
+   "bytes": 1509228,
+   "kind": "image",
+   "path": "v1/images/131.png",
+   "role": "portrait",
+   "sha256": "60f0ecaeab3304dcee340920b1c50f2051716c859cba74daa066ec5184317cda"
+  },
+  "sa.v1.139.user_audio.u1": {
+   "bytes": 157484,
+   "kind": "audio",
+   "path": "v1/audio/110.wav",
+   "role": "user_audio",
+   "script": "Go ahead and read the outgoing shift summary for Ridge Station.",
+   "sha256": "f0b0f36bd5c488d7a64a145b324b855be6a06e621219d3f37eca2787d8645058"
+  },
+  "sa.v1.139.user_audio.u2": {
+   "bytes": 311084,
+   "kind": "audio",
+   "path": "v1/audio/111.wav",
+   "role": "user_audio",
+   "script": "Wait, stop. The wind speed is actually forty knots from the southwest, not twenty from the north.",
+   "sha256": "04a04d85666ccd57fa22c565c721e7e9230945eadd201952e2b9accee384093a"
+  },
+  "sa.v1.139.user_audio.u3": {
+   "bytes": 238124,
+   "kind": "audio",
+   "path": "v1/audio/112.wav",
+   "role": "user_audio",
+   "script": "Okay, given that change, which version of the evening log should I file?",
+   "sha256": "e065962c0caa73e565863042679bf02c7db75e6c1fbbf9ba2e7247955edecd61"
+  },
+  "sa.v1.139.user_audio.u4": {
+   "bytes": 172844,
+   "kind": "audio",
+   "path": "v1/audio/113.wav",
+   "role": "user_audio",
+   "script": "Also note the humidity dropped to eight percent ten minutes ago.",
+   "sha256": "0acd6799e13e56db8ffbf004438f2f3ed1fcb0da1ece92a91c3a70de626413ae"
+  },
+  "sa.v1.139.user_audio.u5": {
+   "bytes": 203564,
+   "kind": "audio",
+   "path": "v1/audio/114.wav",
+   "role": "user_audio",
+   "script": "And the access road is closed due to a fallen oak near marker six.",
+   "sha256": "365dd1954a2557b66a74fa19e24bf046e09247b1b07a14f000c4997e252f0e87"
+  },
+  "sa.v1.139.user_audio.u6": {
+   "bytes": 222764,
+   "kind": "audio",
+   "path": "v1/audio/115.wav",
+   "role": "user_audio",
+   "script": "One more thing: the relief driver is now Tomas, not Elena.",
+   "sha256": "b46d03c648025eaa28db7bf94fe5965fb041f123b68a626cd53ed4f2c829f3b3"
+  },
+  "sa.v1.139.user_audio.u7": {
+   "bytes": 184364,
+   "kind": "audio",
+   "path": "v1/audio/116.wav",
+   "role": "user_audio",
+   "script": "So confirm everything you have for the final handover packet.",
+   "sha256": "824144450ca2702a34536b2ad11e987a3aa08404e882ee75f1958301bdc2d8bc"
+  },
+  "sa.v1.140.portrait": {
+   "bytes": 1477515,
+   "kind": "image",
+   "path": "v1/images/132.png",
+   "role": "portrait",
+   "sha256": "2f604584ea54f44338cc674aeb860895f7ecdd18e620a51479408030b9f537a2"
+  },
+  "sa.v1.140.user_audio.u1": {
+   "bytes": 126764,
+   "kind": "audio",
+   "path": "v1/audio/117.wav",
+   "role": "user_audio",
+   "script": "What barrier method should we use for the north bank?",
+   "sha256": "ff7164dfb27b0a2f9fa5cbb2ef08952cd22fa28be5068b2a095a586c44693ced"
+  },
+  "sa.v1.140.user_audio.u2": {
+   "bytes": 265004,
+   "kind": "audio",
+   "path": "v1/audio/118.wav",
+   "role": "user_audio",
+   "script": "Hold on, archived directive seven says we must use permeable barriers there, not silt fences.",
+   "sha256": "b2c1ae78396d480cdc590329bf414738b7744760ad9616eadb0f2484a1619057"
+  },
+  "sa.v1.140.user_audio.u3": {
+   "bytes": 195884,
+   "kind": "audio",
+   "path": "v1/audio/119.wav",
+   "role": "user_audio",
+   "script": "Okay, so what about the south bank vegetation stabilization?",
+   "sha256": "844dd8feb8252f9c2857d92a8be475193924dd6192a422f135432f2c57bcd6e9"
+  },
+  "sa.v1.140.user_audio.u4": {
+   "bytes": 249644,
+   "kind": "audio",
+   "path": "v1/audio/120.wav",
+   "role": "user_audio",
+   "script": "Wait, doesn't archived directive seven also require native willow stakes instead of coir logs?",
+   "sha256": "a0db84e9b6e943b28b30bee6b804b5fc6f0950234820555bd140a23a95e5d5ef"
+  },
+  "sa.v1.140.user_audio.u5": {
+   "bytes": 161324,
+   "kind": "audio",
+   "path": "v1/audio/121.wav",
+   "role": "user_audio",
+   "script": "Got it. Summarize the final plan for both banks then.",
+   "sha256": "72cccef859dc1de6e886191cfdf8e226c33390b7a2756a11475fe22d16d97ace"
+  },
+  "sa.v1.140.user_audio.u6": {
+   "bytes": 195884,
+   "kind": "audio",
+   "path": "v1/audio/122.wav",
+   "role": "user_audio",
+   "script": "Just confirming, are we ignoring current municipal protocols entirely now?",
+   "sha256": "af47c5144f852cb917342b7949c8d23177d235560db8b57583f514c0321865b3"
+  },
+  "sa.v1.141.performance_portrait": {
+   "bytes": 1381938,
+   "kind": "image",
+   "path": "v1/images/133.png",
+   "role": "performance_portrait",
+   "sha256": "89a451515c5cda6f60b2972d3685884e9600cd4a630a0781f4dabdef0d348c2f"
+  },
+  "sa.v1.141.speech_audio.s1": {
+   "bytes": 96044,
+   "kind": "audio",
+   "path": "v1/audio/123.wav",
+   "role": "speech_audio",
+   "script": "Welcome to the deep ocean exhibit.",
+   "sha256": "aaf317691493c778aa01b267c387b468597551f78222babc02643c3d544fbcc6"
+  },
+  "sa.v1.142.performance_portrait": {
+   "bytes": 1506920,
+   "kind": "image",
+   "path": "v1/images/134.png",
+   "role": "performance_portrait",
+   "sha256": "b4e7cd841d201a593612a92b6784772b50992ba026af7c5a9fc999343b20dc98"
+  },
+  "sa.v1.142.speech_audio.s1": {
+   "bytes": 57644,
+   "kind": "audio",
+   "path": "v1/audio/124.wav",
+   "role": "speech_audio",
+   "script": "Now crease here.",
+   "sha256": "496763e90c8914cccaa78ce3df53346584347974f3517758c242440678e06188"
+  },
+  "sa.v1.143.performance_portrait": {
+   "bytes": 1402373,
+   "kind": "image",
+   "path": "v1/images/135.png",
+   "role": "performance_portrait",
+   "sha256": "c9650a44aab1255de493486a5f07f7747f4475c05f84e040346a34eb646d86f7"
+  },
+  "sa.v1.143.speech_audio.s1": {
+   "bytes": 57644,
+   "kind": "audio",
+   "path": "v1/audio/125.wav",
+   "role": "speech_audio",
+   "script": "Watch my eyes now.",
+   "sha256": "94ea0d6958aa7136d99acbc3c338bbf69c99528167cd838076d0b3bc8b5c4c73"
+  },
+  "sa.v1.144.performance_portrait": {
+   "bytes": 1515550,
+   "kind": "image",
+   "path": "v1/images/136.png",
+   "role": "performance_portrait",
+   "sha256": "703750643b64d4c37a28dcc23130d209fffbe3e2e2357683795209637101b634"
+  },
+  "sa.v1.144.speech_audio.s1": {
+   "bytes": 69164,
+   "kind": "audio",
+   "path": "v1/audio/126.wav",
+   "role": "speech_audio",
+   "script": "The canopy shelters us all.",
+   "sha256": "a1a6e49d7ec666360cf65dc4e520bdf955e4e15163d5f582619e1fc024c09a5e"
+  },
+  "sa.v1.145.performance_portrait": {
+   "bytes": 1500841,
+   "kind": "image",
+   "path": "v1/images/137.png",
+   "role": "performance_portrait",
+   "sha256": "2cdeba861f48f327f86cd83a5b51ce1d206911fdb8a60ea26c6486f7355a46a6"
+  },
+  "sa.v1.145.speech_audio.s1": {
+   "bytes": 73004,
+   "kind": "audio",
+   "path": "v1/audio/127.wav",
+   "role": "speech_audio",
+   "script": "Breathe out slowly now.",
+   "sha256": "74e3d49283b4d4cdf13437584efae237db38eef1d92e02272712d3186e98c633"
+  },
+  "sa.v1.146.performance_portrait": {
+   "bytes": 1451058,
+   "kind": "image",
+   "path": "v1/images/138.png",
+   "role": "performance_portrait",
+   "sha256": "871f532e9d09cb51ef5705020d8345689e4b717694cdc5f33299534908b12d49"
+  },
+  "sa.v1.146.speech_audio.s1": {
+   "bytes": 61484,
+   "kind": "audio",
+   "path": "v1/audio/128.wav",
+   "role": "speech_audio",
+   "script": "Watch the hands move.",
+   "sha256": "b5dfe66643cdc05d0c53d8caef88f7d6dd27864aa471ec3501cc90d7ace59fc8"
+  },
+  "sa.v1.147.performance_portrait": {
+   "bytes": 1454485,
+   "kind": "image",
+   "path": "v1/images/139.png",
+   "role": "performance_portrait",
+   "sha256": "1a5bd5da429d20f02fc57ac09f5c05f9dff3ae96d0d7c53ba18aff51f2c9998d"
+  },
+  "sa.v1.147.speech_audio.s1": {
+   "bytes": 49964,
+   "kind": "audio",
+   "path": "v1/audio/129.wav",
+   "role": "speech_audio",
+   "script": "Signal received.",
+   "sha256": "dbcaf22466ea1393571cf19e412c2512bce5cf76db02c995da23cbb4f4832112"
+  },
+  "sa.v1.148.performance_portrait": {
+   "bytes": 1454076,
+   "kind": "image",
+   "path": "v1/images/140.png",
+   "role": "performance_portrait",
+   "sha256": "9bfba2326589463410ede429fbe20c58de265d71f46a6799331bd3868578cc46"
+  },
+  "sa.v1.148.speech_audio.s1": {
+   "bytes": 38444,
+   "kind": "audio",
+   "path": "v1/audio/130.wav",
+   "role": "speech_audio",
+   "script": "Watch me.",
+   "sha256": "8d267e1115dc0314278a4aa2c9eb6790867fd57ad27165175a0ad3dcb6a02a4f"
+  },
+  "sa.v1.149.performance_portrait": {
+   "bytes": 1394077,
+   "kind": "image",
+   "path": "v1/images/141.png",
+   "role": "performance_portrait",
+   "sha256": "29a660d595f2aa7d52025ecf1eb288a8c7226b23efd90c496dd5ec9f17845ccc"
+  },
+  "sa.v1.149.speech_audio.s1": {
+   "bytes": 107564,
+   "kind": "audio",
+   "path": "v1/audio/131.wav",
+   "role": "speech_audio",
+   "script": "Observe how the relic shifts under light.",
+   "sha256": "29905a41c30890430d57a2dc91d86ff73aa6d8b08cb3910929489e930d028ddd"
+  },
+  "sa.v1.150.performance_portrait": {
+   "bytes": 1354254,
+   "kind": "image",
+   "path": "v1/images/142.png",
+   "role": "performance_portrait",
+   "sha256": "6fc3c14144c74ccdaeaee6cdad410363c8222d1d8df1f04240ac97956d4dcd34"
+  },
+  "sa.v1.150.speech_audio.s1": {
+   "bytes": 130604,
+   "kind": "audio",
+   "path": "v1/audio/132.wav",
+   "role": "speech_audio",
+   "script": "Always secure your guard before starting the saw blade.",
+   "sha256": "db30da2a858eb10a9b95ad5341c595ad1c034663d93964220a69757fb070e8a9"
+  },
+  "sa.v1.151.performance_portrait": {
+   "bytes": 1339659,
+   "kind": "image",
+   "path": "v1/images/143.png",
+   "role": "performance_portrait",
+   "sha256": "211d74c983a597fdb05c3f3fee07502e81c3eaef17e664132827e1f6d2aa0471"
+  },
+  "sa.v1.151.speech_audio.s1": {
+   "bytes": 165164,
+   "kind": "audio",
+   "path": "v1/audio/133.wav",
+   "role": "speech_audio",
+   "script": "Watch closely here, then observe the distant light.",
+   "sha256": "1b4414e11aae9f2296af1c69604295b927b808f574e58c8461499b5d6daa71ba"
+  },
+  "sa.v1.152.performance_portrait": {
+   "bytes": 1754059,
+   "kind": "image",
+   "path": "v1/images/144.png",
+   "role": "performance_portrait",
+   "sha256": "2fa4f5ca7b80c612f6dfe058eebea960aa59bb16777df3c1ffacbe48c9b5dba8"
+  },
+  "sa.v1.152.speech_audio.s1": {
+   "bytes": 169004,
+   "kind": "audio",
+   "path": "v1/audio/134.wav",
+   "role": "speech_audio",
+   "script": "Please observe the texture of this ancient artifact carefully.",
+   "sha256": "6a20c3a595a93db4739506dee4552baf6a1b104a6ba595fd5b5752638a53f9f9"
+  },
+  "sa.v1.153.performance_portrait": {
+   "bytes": 1416014,
+   "kind": "image",
+   "path": "v1/images/145.png",
+   "role": "performance_portrait",
+   "sha256": "537ebb0a5955eb6bda6eab150ae4b6dc2b03bdd2daf279ade2969a62ef3e26f4"
+  },
+  "sa.v1.153.speech_audio.s1": {
+   "bytes": 92204,
+   "kind": "audio",
+   "path": "v1/audio/135.wav",
+   "role": "speech_audio",
+   "script": "Hold the brace steady while I turn.",
+   "sha256": "41fcc996609cd52f5820d98f5b039dc716828a0e9b5dc68cb6a6bf35fa300cf4"
+  },
+  "sa.v1.154.performance_portrait": {
+   "bytes": 1570743,
+   "kind": "image",
+   "path": "v1/images/146.png",
+   "role": "performance_portrait",
+   "sha256": "5d61fe81e0b0ac7a375dfb0e9b6558cf69bf2e2e7b0af9794f4c6463ba18ddef"
+  },
+  "sa.v1.154.speech_audio.s1": {
+   "bytes": 84524,
+   "kind": "audio",
+   "path": "v1/audio/136.wav",
+   "role": "speech_audio",
+   "script": "Step up, hold the balance now.",
+   "sha256": "475277b5669175d87373743c34c52a9c089ba0706929a47a7cd59681046fc9d3"
+  },
+  "sa.v1.155.performance_portrait": {
+   "bytes": 1183525,
+   "kind": "image",
+   "path": "v1/images/147.png",
+   "role": "performance_portrait",
+   "sha256": "e1293db30cc872f320e683e89c9a380e4a293bfbb2ccf9b154150e6bf52aab22"
+  },
+  "sa.v1.155.speech_audio.s1": {
+   "bytes": 138284,
+   "kind": "audio",
+   "path": "v1/audio/137.wav",
+   "role": "speech_audio",
+   "script": "Silence speaks louder than words ever could.",
+   "sha256": "09b63b5fd835f33663df1d2de59c25f71b1b9398b669c2aac19d684386f288c0"
+  },
+  "sa.v1.156.performance_portrait": {
+   "bytes": 1158185,
+   "kind": "image",
+   "path": "v1/images/148.png",
+   "role": "performance_portrait",
+   "sha256": "706587640b5eec5b0b4e70b763e10810430afc6fc09fbe31f1acebff5d943150"
+  },
+  "sa.v1.156.speech_audio.s1": {
+   "bytes": 73004,
+   "kind": "audio",
+   "path": "v1/audio/138.wav",
+   "role": "speech_audio",
+   "script": "The curtain rises once more.",
+   "sha256": "2d04df960a7acb92d598e8b4ace417eba3156767a4d47c16759e55f950418a25"
+  },
+  "sa.v1.157.performance_portrait": {
+   "bytes": 1490337,
+   "kind": "image",
+   "path": "v1/images/149.png",
+   "role": "performance_portrait",
+   "sha256": "9c01f8aa40da04a6c82f09d2bfb927ca51acb65c3eb88df1ce269c7fd8617d6a"
+  },
+  "sa.v1.157.speech_audio.s1": {
+   "bytes": 215084,
+   "kind": "audio",
+   "path": "v1/audio/139.wav",
+   "role": "speech_audio",
+   "script": "Barnacles filter tiny plankton from each passing wave constantly.",
+   "sha256": "f62cb6b3295e35b4df5bec381e91c1142756f32ab5adac7ea0e3759411c1d06d"
+  },
+  "sa.v1.158.performance_portrait": {
+   "bytes": 1461390,
+   "kind": "image",
+   "path": "v1/images/150.png",
+   "role": "performance_portrait",
+   "sha256": "f699fed0a0e44c9a0863e5727eb0c2bb20c5febf87bd3e0ffe5626b9cb521dfa"
+  },
+  "sa.v1.158.speech_audio.s1": {
+   "bytes": 126764,
+   "kind": "audio",
+   "path": "v1/audio/140.wav",
+   "role": "speech_audio",
+   "script": "The arctic terns begin their southern journey today.",
+   "sha256": "5a1e671785dc225ee40ae4d827b94ffe71abc31eb892c13bd3d87186c705871d"
+  },
+  "sa.v1.159.performance_portrait": {
+   "bytes": 1326378,
+   "kind": "image",
+   "path": "v1/images/151.png",
+   "role": "performance_portrait",
+   "sha256": "73a741068510ddc3d0cf32550e496b4e657794ed7b388aa2a07701bd2183532b"
+  },
+  "sa.v1.159.speech_audio.s1": {
+   "bytes": 138284,
+   "kind": "audio",
+   "path": "v1/audio/141.wav",
+   "role": "speech_audio",
+   "script": "The constellation rotates fifteen degrees per hour.",
+   "sha256": "77859551b04bd36c73d5b019dfae857167ce8970ce26c84058a0d4aa0dc4834b"
+  },
+  "sa.v1.160.performance_portrait": {
+   "bytes": 1408941,
+   "kind": "image",
+   "path": "v1/images/152.png",
+   "role": "performance_portrait",
+   "sha256": "8a0b80005e05c66d05c24cf900b4acfbb73720a3405d9809a4ea5cb63c1e9eb3"
+  },
+  "sa.v1.160.speech_audio.s1": {
+   "bytes": 122924,
+   "kind": "audio",
+   "path": "v1/audio/142.wav",
+   "role": "speech_audio",
+   "script": "Read the ancient steps silently now.",
+   "sha256": "dbc7af83c7cf11624a3dee01fe0e5bad602ad3a22eb518a8403c2a2c103d6ec7"
+  },
+  "sa.v1.161.performance_portrait": {
+   "bytes": 1787127,
+   "kind": "image",
+   "path": "v1/images/153.png",
+   "role": "performance_portrait",
+   "sha256": "7b353d43d135b6a5d2265b4d6a5d1c03747b8479ae58a39750f049f9d390db48"
+  },
+  "sa.v1.161.speech_audio.s1": {
+   "bytes": 111404,
+   "kind": "audio",
+   "path": "v1/audio/143.wav",
+   "role": "speech_audio",
+   "script": "Fold the silk gently along the crease.",
+   "sha256": "a99c74b31c3966abd36718ddcbad1e1ea722858c16114e3cb1c07956c5873128"
+  },
+  "sa.v1.162.performance_portrait": {
+   "bytes": 1773055,
+   "kind": "image",
+   "path": "v1/images/154.png",
+   "role": "performance_portrait",
+   "sha256": "cbe959ae3fe1756340a6828e30af3aa5a740b87d392449190f4cbcb533307c7d"
+  },
+  "sa.v1.162.speech_audio.s1": {
+   "bytes": 73004,
+   "kind": "audio",
+   "path": "v1/audio/144.wav",
+   "role": "speech_audio",
+   "script": "Hold the gate shut like this.",
+   "sha256": "021cffb4718283880f5860069db8e4fc76ae95247ba9bc4de19a660cc6053359"
+  },
+  "sa.v1.163.performance_portrait": {
+   "bytes": 1265553,
+   "kind": "image",
+   "path": "v1/images/155.png",
+   "role": "performance_portrait",
+   "sha256": "26b05966b7f29bcbca2876905bad489d2a11fb431263e07e701345efa681ed6c"
+  },
+  "sa.v1.163.speech_audio.s1": {
+   "bytes": 115244,
+   "kind": "audio",
+   "path": "v1/audio/145.wav",
+   "role": "speech_audio",
+   "script": "Breathe in, breathe out, now hold steady.",
+   "sha256": "8726a4e07cbe14bcf06ceedfd99a5803e4606a9a5fbea8baafd2272f7ab7745b"
+  },
+  "sa.v1.164.performance_portrait": {
+   "bytes": 1374261,
+   "kind": "image",
+   "path": "v1/images/156.png",
+   "role": "performance_portrait",
+   "sha256": "b20b8dde504737a4e30b0fd40019f647b18d79c495c07c69b33847a48bb8af31"
+  },
+  "sa.v1.164.speech_audio.s1": {
+   "bytes": 103724,
+   "kind": "audio",
+   "path": "v1/audio/146.wav",
+   "role": "speech_audio",
+   "script": "Watch the ridge quietly now.",
+   "sha256": "446080cb17aadb12e9b995a754fe918dd0b5c467b8f949fc36e7709c619e0a8c"
+  },
+  "sa.v1.165.performance_portrait": {
+   "bytes": 1435716,
+   "kind": "image",
+   "path": "v1/images/157.png",
+   "role": "performance_portrait",
+   "sha256": "205d293bb7eea7ebb47f8ac195b90cbe9db6be6d936540192eb454e543d03d5b"
+  },
+  "sa.v1.165.speech_audio.s1": {
+   "bytes": 134444,
+   "kind": "audio",
+   "path": "v1/audio/147.wav",
+   "role": "speech_audio",
+   "script": "The storm gathered beyond the cliffs, silent and waiting.",
+   "sha256": "c081abd224a828c11f18b6b43f3a8b28c2d61f0e4e57866e475c88362163f84e"
+  },
+  "sa.v1.166.performance_portrait": {
+   "bytes": 1472907,
+   "kind": "image",
+   "path": "v1/images/158.png",
+   "role": "performance_portrait",
+   "sha256": "f03914741caea377ff9f55f28e4586152aeac047680d43993e7b471b8156b2c6"
+  },
+  "sa.v1.166.speech_audio.s1": {
+   "bytes": 92204,
+   "kind": "audio",
+   "path": "v1/audio/148.wav",
+   "role": "speech_audio",
+   "script": "Observe how light defines form.",
+   "sha256": "60fd38a3cf52beb807fb5087f1a77d94b7acb93a24af85bec77e537dc77fc716"
+  },
+  "sa.v1.167.performance_portrait": {
+   "bytes": 1238068,
+   "kind": "image",
+   "path": "v1/images/159.png",
+   "role": "performance_portrait",
+   "sha256": "550aa379608d8d8ab10f8baa6a4f799b2a2ae6e51a5d3aef577ce23d02123570"
+  },
+  "sa.v1.167.speech_audio.s1": {
+   "bytes": 88364,
+   "kind": "audio",
+   "path": "v1/audio/149.wav",
+   "role": "speech_audio",
+   "script": "Observe the resonance pattern now.",
+   "sha256": "9e332063e1be6a0af70533312451670537c14a5d5801adcfeee141604b2c1753"
+  },
+  "sa.v1.168.performance_portrait": {
+   "bytes": 1101459,
+   "kind": "image",
+   "path": "v1/images/160.png",
+   "role": "performance_portrait",
+   "sha256": "6e58851be81b026ac0522900ed15dcee8026d3031c5411df6dafa70ee18e2d9c"
+  },
+  "sa.v1.168.speech_audio.s1": {
+   "bytes": 134444,
+   "kind": "audio",
+   "path": "v1/audio/150.wav",
+   "role": "speech_audio",
+   "script": "Readers, observe this panel closely now.",
+   "sha256": "dcd0412f73f1caf7ad927031e954529dba65422e62e831b583c4a5f936e77207"
+  },
+  "sa.v1.169.performance_portrait": {
+   "bytes": 1935154,
+   "kind": "image",
+   "path": "v1/images/161.png",
+   "role": "performance_portrait",
+   "sha256": "92dfd5fa0b36f292264ea55b12936745419d02852b9bba095b0b93443dc3a49b"
+  },
+  "sa.v1.169.speech_audio.s1": {
+   "bytes": 115244,
+   "kind": "audio",
+   "path": "v1/audio/151.wav",
+   "role": "speech_audio",
+   "script": "Extend your striking arm slowly now.",
+   "sha256": "406426b880daffcb6da5bdfb16bb12722d4f75a4f6fb9668a46be8d6f098a4cc"
+  },
+  "sa.v1.170.performance_portrait": {
+   "bytes": 1452105,
+   "kind": "image",
+   "path": "v1/images/162.png",
+   "role": "performance_portrait",
+   "sha256": "1832f54faa74d5954a2a82030b9d832a4de7e5da77694fb4a417aedfd421d3fe"
+  },
+  "sa.v1.170.speech_audio.s1": {
+   "bytes": 107564,
+   "kind": "audio",
+   "path": "v1/audio/152.wav",
+   "role": "speech_audio",
+   "script": "Hold the pointer exactly halfway up now.",
+   "sha256": "462247d6ca8d13e8d5f0366f44fde647360282de479a34996b5d45458e739b5f"
+  },
+  "sa.v1.171.performance_portrait": {
+   "bytes": 1373890,
+   "kind": "image",
+   "path": "v1/images/163.png",
+   "role": "performance_portrait",
+   "sha256": "ce01364d8af507c7ae1b3e2b47afbd5b61a7d2c6d6f25fc7143636b2ee6c81ac"
+  },
+  "sa.v1.171.speech_audio.s1": {
+   "bytes": 138284,
+   "kind": "audio",
+   "path": "v1/audio/153.wav",
+   "role": "speech_audio",
+   "script": "The eastern records detail our oldest findings.",
+   "sha256": "4e78f66f818d155d96a5269ba7e24cf7b5bd64951cb55e1e8382bc2c03617d8c"
+  },
+  "sa.v1.172.performance_portrait": {
+   "bytes": 1359600,
+   "kind": "image",
+   "path": "v1/images/164.png",
+   "role": "performance_portrait",
+   "sha256": "cd031924ab0576ac1fc2229b62ddad493a2fc7f35a6987b220b5989efa32f00e"
+  },
+  "sa.v1.172.speech_audio.s1": {
+   "bytes": 73004,
+   "kind": "audio",
+   "path": "v1/audio/154.wav",
+   "role": "speech_audio",
+   "script": "Silence holds the shape.",
+   "sha256": "8826a1bf4a8c15d6b8bcef3186dc180feaff593a37d65b6dd2cb504773dd493f"
+  },
+  "sa.v1.173.performance_portrait": {
+   "bytes": 1301979,
+   "kind": "image",
+   "path": "v1/images/165.png",
+   "role": "performance_portrait",
+   "sha256": "abebfb9f015470b768091b064b08c2a020a14967ff6e295bd1cd339e3753689f"
+  },
+  "sa.v1.173.speech_audio.s1": {
+   "bytes": 145964,
+   "kind": "audio",
+   "path": "v1/audio/155.wav",
+   "role": "speech_audio",
+   "script": "Brass enters first, strings follow my downbeat.",
+   "sha256": "a469884ff8f222c1bd38ca1760182fab371862722dbb10f48246e3ae666d98d4"
+  },
+  "sa.v1.174.performance_portrait": {
+   "bytes": 1505305,
+   "kind": "image",
+   "path": "v1/images/166.png",
+   "role": "performance_portrait",
+   "sha256": "339b784aba28c347137c8656fd243a50e2c1adfd6a2daa136cf8ca1ce115cdf7"
+  },
+  "sa.v1.174.speech_audio.s1": {
+   "bytes": 84524,
+   "kind": "audio",
+   "path": "v1/audio/156.wav",
+   "role": "speech_audio",
+   "script": "Stars remember every forgotten name.",
+   "sha256": "9c83edd8ef24ba8b7592a69cce646246450b438c316aa37d371e9b7d42e0a018"
+  },
+  "sa.v1.175.performance_portrait": {
+   "bytes": 1672925,
+   "kind": "image",
+   "path": "v1/images/167.png",
+   "role": "performance_portrait",
+   "sha256": "1bebed4a4402c0d57cdf0df3a6b4c4b0bbfbbc7fdd3371130c69a825113f90df"
+  },
+  "sa.v1.175.speech_audio.s1": {
+   "bytes": 169004,
+   "kind": "audio",
+   "path": "v1/audio/157.wav",
+   "role": "speech_audio",
+   "script": "These heirloom tomatoes need gentle morning light only.",
+   "sha256": "311303ddd4922ff938de2a52638fdba5d232fa990c4f00d242e68dc2c49b80ac"
+  },
+  "sa.v1.176.performance_portrait": {
+   "bytes": 1535418,
+   "kind": "image",
+   "path": "v1/images/168.png",
+   "role": "performance_portrait",
+   "sha256": "59662b3873462a91d5ff40c966b802b701f8a0ae3f4326a6b13d1418586abdb6"
+  },
+  "sa.v1.176.speech_audio.s1": {
+   "bytes": 88364,
+   "kind": "audio",
+   "path": "v1/audio/158.wav",
+   "role": "speech_audio",
+   "script": "Check all emergency exits now.",
+   "sha256": "596639ce3f3546209470866dd62269c82f20c7c73d4d3aa4ea0332a66ce6ddf2"
+  },
+  "sa.v1.177.performance_portrait": {
+   "bytes": 1536130,
+   "kind": "image",
+   "path": "v1/images/169.png",
+   "role": "performance_portrait",
+   "sha256": "f09762fcf767f03ac27d8bfb1ba1df71a67e7f51350e427e72f836b7ad785b9f"
+  },
+  "sa.v1.177.speech_audio.s1": {
+   "bytes": 65324,
+   "kind": "audio",
+   "path": "v1/audio/159.wav",
+   "role": "speech_audio",
+   "script": "Shape the grain slowly.",
+   "sha256": "59391a6b1a7215e0866e495297d535e1e66c5f4119799a8bd5dca7133511e010"
+  },
+  "sa.v1.178.performance_portrait": {
+   "bytes": 1234152,
+   "kind": "image",
+   "path": "v1/images/170.png",
+   "role": "performance_portrait",
+   "sha256": "aeda6b7e8bcddd69ab426907ab887a4b6e62025acb5b50e97af360115fcc92ac"
+  },
+  "sa.v1.178.speech_audio.s1": {
+   "bytes": 92204,
+   "kind": "audio",
+   "path": "v1/audio/160.wav",
+   "role": "speech_audio",
+   "script": "Warm up sequence begins now.",
+   "sha256": "813e2b92f30998e5a86bb1751ed60ddf1e301954039f518d9ee9367bfba22411"
+  },
+  "sa.v1.179.performance_portrait": {
+   "bytes": 1675471,
+   "kind": "image",
+   "path": "v1/images/171.png",
+   "role": "performance_portrait",
+   "sha256": "3a579b4c98472a82d7606b97aea77f1b135f42391010fe985d2873e3c6cbe0e5"
+  },
+  "sa.v1.179.speech_audio.s1": {
+   "bytes": 107564,
+   "kind": "audio",
+   "path": "v1/audio/161.wav",
+   "role": "speech_audio",
+   "script": "Compost needs air to break down properly.",
+   "sha256": "300ce2d93d5af07cf98d6c6611d3ca289a2befa5e82e8373944fe85748a2cfc9"
+  },
+  "sa.v1.180.performance_portrait": {
+   "bytes": 1286561,
+   "kind": "image",
+   "path": "v1/images/172.png",
+   "role": "performance_portrait",
+   "sha256": "d4ba9a41ace6e6bf448dec5d87871728eecaaec7482967b9a15d54bf3887f40e"
+  },
+  "sa.v1.180.speech_audio.s1": {
+   "bytes": 57644,
+   "kind": "audio",
+   "path": "v1/audio/162.wav",
+   "role": "speech_audio",
+   "script": "Behold the silent art.",
+   "sha256": "a1b60ac672c80ad558385f9787e8d4b7024fd2db86737ef7bfb6dbdf3e6e8fa1"
+  },
+  "sa.v1.187.general_reference_image.a": {
+   "bytes": 1502308,
+   "kind": "image",
+   "path": "v1/images/173.png",
+   "role": "general_reference_image",
+   "sha256": "3589b3e901049b0e4c7a95f9a12e219e39b38edad71c8c0b57989b523349739a"
+  },
+  "sa.v1.188.general_reference_image.a": {
+   "bytes": 1690131,
+   "kind": "image",
+   "path": "v1/images/174.png",
+   "role": "general_reference_image",
+   "sha256": "40f79baa09716b0eafb35b8483e94c46d31041d0ae77b9bfc37ae4ae5cfc8abf"
+  },
+  "sa.v1.188.general_reference_image.b": {
+   "bytes": 1493883,
+   "kind": "image",
+   "path": "v1/images/175.png",
+   "role": "general_reference_image",
+   "sha256": "b9c3173f039d7fb9548ad34d6985ccf298dcd25d7be6e9e005c05874b70c0361"
+  },
+  "sa.v1.195.general_reference_image.a": {
+   "bytes": 1755809,
+   "kind": "image",
+   "path": "v1/images/176.png",
+   "role": "general_reference_image",
+   "sha256": "b2468fbcf7f422ea9e5ba4b525ef1288e94870e57c098a179ae736f3ce83b668"
+  },
+  "sa.v1.195.general_reference_image.b": {
+   "bytes": 1337320,
+   "kind": "image",
+   "path": "v1/images/177.png",
+   "role": "general_reference_image",
+   "sha256": "c7ee99610841d6f4c3462723e849fd5cd8c0b85c03c31ae30120db0ee1fd0a53"
+  },
+  "sa.v1.196.general_reference_image.a": {
+   "bytes": 1113826,
+   "kind": "image",
+   "path": "v1/images/178.png",
+   "role": "general_reference_image",
+   "sha256": "69e03dbe999071e9eab5741a1147042abb793d6fe85dab18d605f2ee1733e84c"
+  },
+  "sa.v1.196.general_reference_image.b": {
+   "bytes": 1224635,
+   "kind": "image",
+   "path": "v1/images/179.png",
+   "role": "general_reference_image",
+   "sha256": "4c3179c666fe5a1ed6519f98c3d618b40b1ac3f741e5102f72ba94f29cd732b4"
+  },
+  "sa.v1.203.general_reference_image.a": {
+   "bytes": 1230614,
+   "kind": "image",
+   "path": "v1/images/180.png",
+   "role": "general_reference_image",
+   "sha256": "b80b42bbff6fb23e2c35a386f0c445fdf81285a15308bd0d91c0226bb1b21cfd"
+  },
+  "sa.v1.203.general_reference_image.b": {
+   "bytes": 1265082,
+   "kind": "image",
+   "path": "v1/images/181.png",
+   "role": "general_reference_image",
+   "sha256": "7281283f4763088c5c2cb79f46d6cde33bf0aaf02b31c21803346dce45724b27"
+  },
+  "sa.v1.204.general_reference_image.a": {
+   "bytes": 1133937,
+   "kind": "image",
+   "path": "v1/images/182.png",
+   "role": "general_reference_image",
+   "sha256": "225824fb37651c1e4defaa32f9574a17241f67e41ee0d1f0474015d8ca0adbc3"
+  },
+  "sa.v1.204.general_reference_image.b": {
+   "bytes": 1269550,
+   "kind": "image",
+   "path": "v1/images/183.png",
+   "role": "general_reference_image",
+   "sha256": "19b7cc37147c2dd21c02e2d7f55debf2f80475a8eed8dcfb693bbb61dab12531"
+  },
+  "sa.v1.211.general_reference_image.a": {
+   "bytes": 1232710,
+   "kind": "image",
+   "path": "v1/images/184.png",
+   "role": "general_reference_image",
+   "sha256": "82258e41a5d42380ae9a270167278acc0bc7fa93bbd8bc3a82bd592fb57c565e"
+  },
+  "sa.v1.211.general_reference_image.b": {
+   "bytes": 1267070,
+   "kind": "image",
+   "path": "v1/images/185.png",
+   "role": "general_reference_image",
+   "sha256": "2a756bd8e38381621813ed0e01602dca0bfe6a733d5913dcf3db2c6d71dec4d7"
+  },
+  "sa.v1.212.general_reference_image.a": {
+   "bytes": 1501658,
+   "kind": "image",
+   "path": "v1/images/186.png",
+   "role": "general_reference_image",
+   "sha256": "0d2960f5c07cb488c75afc577c83ca5a4b78ae81124a4a889c7d9ef57933d311"
+  },
+  "sa.v1.212.general_reference_image.b": {
+   "bytes": 1463259,
+   "kind": "image",
+   "path": "v1/images/187.png",
+   "role": "general_reference_image",
+   "sha256": "19ce55b7ea1d6e2bcc7cf87a56e339206ab193a7dc20eec46244d6eac3c8f5bb"
+  },
+  "sa.v1.219.general_reference_image.a": {
+   "bytes": 1205667,
+   "kind": "image",
+   "path": "v1/images/188.png",
+   "role": "general_reference_image",
+   "sha256": "913bf793dd1287a0d06bdf4b82ddfdad8cf2ee5c44d6793eafb8c7251225c858"
+  },
+  "sa.v1.219.general_reference_image.b": {
+   "bytes": 1344882,
+   "kind": "image",
+   "path": "v1/images/189.png",
+   "role": "general_reference_image",
+   "sha256": "b70d064498ee048031dd939eab41cade5a3d941ab43d52d4a355de09cf882ed8"
+  },
+  "sa.v1.220.general_reference_image.a": {
+   "bytes": 1266169,
+   "kind": "image",
+   "path": "v1/images/190.png",
+   "role": "general_reference_image",
+   "sha256": "0d17d7d7a4f439d9ebb9cf2ad4edcf6acb066b4656a2e5e2ea2e5d91dab5fe0a"
+  },
+  "sa.v1.220.general_reference_image.b": {
+   "bytes": 1274131,
+   "kind": "image",
+   "path": "v1/images/191.png",
+   "role": "general_reference_image",
+   "sha256": "5eed5315e6c017c080d1add756757e91c0de4f463182b2f80f4a8031d46c73b1"
+  }
+ },
+ "dataset_version": "streameval_v1.0",
+ "note": "The complete benchmark. Asset paths are relative to STREAMEVAL_DATA.",
+ "population": "full"
+}

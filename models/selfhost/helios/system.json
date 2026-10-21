@@ -1,0 +1,60 @@
+{
+  "model": "helios",
+  "system_id": "helios",
+  "model_id": "helios",
+  "name": "Helios (Distilled)",
+  "provider": "self-hosted (PKU-YuanGroup)",
+  "system_kind": "native",
+  "tracks": [
+    "general_interaction",
+    "general_interaction_image"
+  ],
+  "server": {
+    "cmd": "{env}/bin/python {model_dir}/server.py --port {port} --weights {weights} --compile max-autotune-no-cudagraphs --attn default",
+    "port": 18797,
+    "health_timeout_s": 2400
+  },
+  "unsupported_ops": [],
+  "portrait_policy": null,
+  "gpu": {
+    "count": 1
+  },
+  "output": {
+    "width": 640,
+    "height": 384,
+    "fps": 24
+  },
+  "model_version": "Helios-Distilled (14B autoregressive DiT on Wan-2.1-14B; x0-prediction, HeliosDMDScheduler, pyramid stage 2 [2,2,2] steps, no CFG); code PKU-YuanGroup/Helios@babed981",
+  "weights": {
+    "repo": "BestWishYsh/Helios-Distilled@b991c037 (transformer, text_encoder umT5-XXL, vae Wan2.1, scheduler, tokenizer; transformer_ode unused)",
+    "transformer_sha256": {
+      "00001": "7be354f061682a7b2ddc96858ae488ea1944fa315109f1b3835b14286cd17df4",
+      "00002": "1d64852ef16272dd64de21341a2e13821d81a514f03bd300963bdad7e553a84f",
+      "00003": "3c0b54709d92bb50796633fb539099af626470957c47620306b2b50d56c31360",
+      "00004": "fe8d7490f474dd5ca7d5a02c2d942aa1bdc894c9f88270e54565dae77b3e48a5",
+      "00005": "e6816fa9b378d3203b9c29dd47c89565ca40cf4f6ebbc8d3e3eabea0e2e504b6",
+      "00006": "be7d8c1cb8a0e467a30e68e9defc5631e051fce9d01abaa930b54d5174175028"
+    }
+  },
+  "steps": 6,
+  "license": "code Apache-2.0; weights Apache-2.0 (Helios-Distilled; base Wan2.1-14B, umT5-XXL, Wan2.1 VAE)",
+  "notes": "faster than the 24 fps output); the next chunk starts just in time (buffered video <= expected chunk compute + 0.5 s), so events apply at the next chunk boundary. user_prompt / text_control and camera_control switch the umT5 text condition from the next chunk (camera language goes through the text condition; Helios has no numeric camera input); reference_update replaces the first-frame anchor latent (the semantics of set_image in Reactor's hosted Helios API) and its instruction joins the prompt.",
+  "input_adapters": {
+    "general_interaction": {
+      "mode": "derived",
+      "transforms": [
+        {
+          "operation": "camera_control_as_prompt_text"
+        }
+      ]
+    },
+    "general_interaction_image": {
+      "mode": "derived",
+      "transforms": [
+        {
+          "operation": "camera_control_as_prompt_text"
+        }
+      ]
+    }
+  }
+}

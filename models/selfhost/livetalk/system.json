@@ -1,0 +1,89 @@
+[
+  {
+    "model": "livetalk",
+    "system_id": "livetalk",
+    "model_id": "livetalk",
+    "name": "LiveTalk 1.3B",
+    "provider": "self-hosted (GAIR, Shanghai Jiao Tong University)",
+    "system_kind": "native",
+    "tracks": [
+      "avatar_performance"
+    ],
+    "server": {
+      "cmd": "{env}/bin/python {model_dir}/server.py --port {port}",
+      "port": 18811,
+      "health_timeout_s": 1800
+    },
+    "portrait_policy": "benchmark_portrait",
+    "gpu": {
+      "count": 1
+    },
+    "output": {
+      "width": 512,
+      "height": 512,
+      "fps": 16
+    },
+    "model_version": "LiveTalk@e0d555fc5edf8516fbed2c955f1c0f4b32476abb",
+    "weights": {
+      "repo": "GAIR/LiveTalk-1.3B-V0.1@be14ffdf356e73e328db88595ccf62e7e1374b74",
+      "text_encoder_vae": "Wan-AI/Wan2.1-T2V-1.3B",
+      "audio_encoder": "facebook/wav2vec2-base-960h",
+      "sha256": {
+        "LiveTalk-1.3B-V0.1/model.safetensors": "fbf0e5c869c27326d636a0b618c80aeca6ce1d33a189b5eb0b6bef49ea07ef50",
+        "Wan2.1-T2V-1.3B/Wan2.1_VAE.pth": "38071ab59bd94681c686fa51d75a1968f64e470262043be31f7a094e442fd981",
+        "Wan2.1-T2V-1.3B/models_t5_umt5-xxl-enc-bf16.pth": "7cace0da2b446bbbbc57d031ab6cf163a3d59b366da94e5afe36745b746fd81d",
+        "wav2vec2-base-960h/model.safetensors": "8aa76ab2243c81747a1f832954586bc566090c83a0ac167df6f31f0fa917d74a"
+      }
+    },
+    "steps": 4,
+    "seed": 42,
+    "license": "Conflicting: Apache-2.0 (README and HF model card) vs CC BY-NC-SA 4.0 (repository LICENSE.md; upstream issue #7 unanswered); Wan2.1 T5/VAE: Apache-2.0; wav2vec2-base-960h: Apache-2.0",
+    "notes": "Portrait + supplied speech (audio_in) -> lip-synced 512x512 video at 16 fps in 12-frame blocks (causal self-forcing OmniAvatar, 4 steps, KV window 15 latents with a 9-latent identity sink, causal VAE decode per block). Visual controls are appended to the text prompt of the next block (control map livetalk-control-map/1, prompt re-encoded, cross-attention cache reset); controls without body / face content are acked unsupported. audio_out = the received speech, frame-aligned."
+  },
+  {
+    "model": "livetalk",
+    "system_id": "livetalk_comp",
+    "model_id": "livetalk_comp",
+    "name": "LiveTalk 1.3B",
+    "provider": "self-hosted (GAIR, Shanghai Jiao Tong University)",
+    "system_kind": "composition",
+    "tracks": [
+      "digital_human_audio",
+      "digital_human_text"
+    ],
+    "server": {
+      "cmd": "{env}/bin/python {model_dir}/server.py --port {port}",
+      "port": 18812,
+      "health_timeout_s": 1800
+    },
+    "composition": {
+      "input": "audio",
+      "audio_out": "server"
+    },
+    "portrait_policy": "benchmark_portrait",
+    "gpu": {
+      "count": 1
+    },
+    "output": {
+      "width": 512,
+      "height": 512,
+      "fps": 16
+    },
+    "model_version": "LiveTalk@e0d555fc5edf8516fbed2c955f1c0f4b32476abb",
+    "weights": {
+      "repo": "GAIR/LiveTalk-1.3B-V0.1@be14ffdf356e73e328db88595ccf62e7e1374b74",
+      "text_encoder_vae": "Wan-AI/Wan2.1-T2V-1.3B",
+      "audio_encoder": "facebook/wav2vec2-base-960h",
+      "sha256": {
+        "LiveTalk-1.3B-V0.1/model.safetensors": "fbf0e5c869c27326d636a0b618c80aeca6ce1d33a189b5eb0b6bef49ea07ef50",
+        "Wan2.1-T2V-1.3B/Wan2.1_VAE.pth": "38071ab59bd94681c686fa51d75a1968f64e470262043be31f7a094e442fd981",
+        "Wan2.1-T2V-1.3B/models_t5_umt5-xxl-enc-bf16.pth": "7cace0da2b446bbbbc57d031ab6cf163a3d59b366da94e5afe36745b746fd81d",
+        "wav2vec2-base-960h/model.safetensors": "8aa76ab2243c81747a1f832954586bc566090c83a0ac167df6f31f0fa917d74a"
+      }
+    },
+    "steps": 4,
+    "seed": 42,
+    "license": "Conflicting: Apache-2.0 (README and HF model card) vs CC BY-NC-SA 4.0 (repository LICENSE.md; upstream issue #7 unanswered); Wan2.1 T5/VAE: Apache-2.0; wav2vec2-base-960h: Apache-2.0",
+    "notes": "Renderer only: the client's shared DashScope ASR -> Qwen LLM -> Qwen TTS stack pushes the TTS speech as audio_in; the server lip-syncs the portrait to it (upstream example prompt) and plays it back as audio_out (frame-aligned)."
+  }
+]

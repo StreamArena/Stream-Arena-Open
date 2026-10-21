@@ -1,0 +1,51 @@
+{
+  "model": "hy_worldplay",
+  "system_id": "hy_worldplay",
+  "model_id": "hy_worldplay",
+  "name": "HY-World 1.5 WorldPlay (AR distilled)",
+  "provider": "self-hosted (Tencent Hunyuan)",
+  "system_kind": "native",
+  "tracks": [
+    "general_interaction_image"
+  ],
+  "server": {
+    "cmd": "{env}/bin/python {model_dir}/server.py --port {port} --weights {weights}",
+    "port": 18795,
+    "health_timeout_s": 900
+  },
+  "unsupported_ops": [],
+  "portrait_policy": null,
+  "gpu": {
+    "count": 1
+  },
+  "output": {
+    "width": 832,
+    "height": 480,
+    "fps": 24
+  },
+  "model_version": "HY-World1.5-Autoregressive-480P-I2V-distill (ar_distilled_action_model, 4-step, no CFG) on HunyuanVideo-1.5 480p_i2v DiT config; code Tencent-Hunyuan/HY-WorldPlay@1588e13",
+  "weights": {
+    "repo": "tencent/HY-WorldPlay@f4c29235 ar_distilled_action_model/model.safetensors",
+    "sha256": "2642ca972e49355e1a00d18dbc9847a2d8c1e707a6a9abd0994d4949258cc963",
+    "base": "tencent/HunyuanVideo-1.5@9b49404b (vae, scheduler, transformer/480p_i2v/config.json)",
+    "text_encoder": "Qwen/Qwen2.5-VL-7B-Instruct@cc594898 + google/byt5-small@68377bdc + AI-ModelScope/Glyph-SDXL-v2 byt5_model.pt",
+    "vision_encoder": "black-forest-labs/FLUX.1-Redux-dev image_encoder (SigLIP; gated on Hugging Face)"
+  },
+  "license": "code and weights: Tencent HY-WorldPlay Community License (not licensed in the EU, UK and South Korea); HunyuanVideo-1.5: Tencent Hunyuan Community License (same territorial exclusion); Qwen2.5-VL-7B-Instruct, byt5-small: Apache-2.0; FLUX.1-Redux-dev image encoder: FLUX.1 [dev] Non-Commercial License",
+  "steps": 4,
+  "notes": "image-anchored (released checkpoint is 480p I2V only; text-only start degenerates), so only the i2v track is registered. Image center-cropped to 832x480; 4-latent (16-frame) AR chunks with reconstituted context memory, generated live. user_prompt switches the text condition from the next chunk; camera_control is keyword-mapped onto the native action space (translate / yaw / pitch / orbit / hold), unmapped phrases ack unsupported; reference_update re-encodes the SigLIP semantic condition (pixel anchor unchanged).",
+  "input_adapters": {
+    "general_interaction_image": {
+      "mode": "derived",
+      "transforms": [
+        {
+          "operation": "camera_text_to_pose",
+          "parameters": {
+            "mapping": "hy_worldplay.camera_motion",
+            "unmapped": "unsupported"
+          }
+        }
+      ]
+    }
+  }
+}

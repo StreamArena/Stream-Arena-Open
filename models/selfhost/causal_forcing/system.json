@@ -1,0 +1,62 @@
+{
+  "model": "causal_forcing",
+  "system_id": "causal_forcing_1p3b",
+  "model_id": "causal_forcing_1p3b",
+  "name": "Causal Forcing++",
+  "provider": "self-hosted (Tsinghua University)",
+  "system_kind": "native",
+  "tracks": [
+    "general_interaction",
+    "general_interaction_image"
+  ],
+  "server": {
+    "cmd": "{env}/bin/python {model_dir}/server.py --port {port}",
+    "port": 18861,
+    "health_timeout_s": 1800
+  },
+  "unsupported_ops": [
+    "reference_update"
+  ],
+  "portrait_policy": null,
+  "gpu": {
+    "count": 1
+  },
+  "output": {
+    "width": 832,
+    "height": 480,
+    "fps": 16
+  },
+  "model_version": "Causal Forcing++ causal-forcing++/framewise-2step.pt (generator_ema; frame-wise AR, 2-step DMD after causal consistency distillation, first frame 4 steps, no CFG) on Wan2.1-T2V-1.3B; code thu-ml/Causal-Forcing@8202903297918",
+  "weights": {
+    "repo": "zhuhz22/Causal-Forcing@2f8eb8bb (causal-forcing++/framewise-2step.pt) + Wan-AI/Wan2.1-T2V-1.3B (umT5-XXL text encoder, Wan2.1 VAE, DiT config)",
+    "sha256": {
+      "checkpoints/causal-forcing++/framewise-2step.pt": "8f899a016dffb9539788fac82c6200e43ef6e23b6e61ec6b885bb507a760ce42",
+      "wan_models/Wan2.1-T2V-1.3B/models_t5_umt5-xxl-enc-bf16.pth": "7cace0da2b446bbbbc57d031ab6cf163a3d59b366da94e5afe36745b746fd81d",
+      "wan_models/Wan2.1-T2V-1.3B/Wan2.1_VAE.pth": "38071ab59bd94681c686fa51d75a1968f64e470262043be31f7a094e442fd981"
+    }
+  },
+  "license": {
+    "code": "Apache-2.0",
+    "weights": "Apache-2.0"
+  },
+  "steps": 2,
+  "notes": "Text OR image start (t2v and i2v tracks): the frame-wise model natively supports I2V (upstream inference.py --i2v: the image is VAE-encoded as latent 0 and cached as clean context; center-cropped to 832:480 here). 832x480 at 16 fps, one latent (4 frames) per causal block generated live (2 DMD steps 1000/500, the first block 4 steps, shift 5.0). The released checkpoint is a 5-second model: sessions continue past 21 latent frames with upstream's rolling KV cache (local attention 21 latents), which the checkpoint was not trained for. It has no prompt-switch mechanism: the block prompt '<init prompt>\\n<latest instruction>' is re-encoded and the cross-attention cache reset at the next block; camera_control text is given as prompt text because the model has no camera input. Mid-session reference images have no model input (reference_update unsupported).",
+  "input_adapters": {
+    "general_interaction": {
+      "mode": "derived",
+      "transforms": [
+        {
+          "operation": "camera_control_as_prompt_text"
+        }
+      ]
+    },
+    "general_interaction_image": {
+      "mode": "derived",
+      "transforms": [
+        {
+          "operation": "camera_control_as_prompt_text"
+        }
+      ]
+    }
+  }
+}

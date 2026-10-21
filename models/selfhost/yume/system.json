@@ -1,0 +1,58 @@
+{
+  "model": "yume",
+  "system_id": "yume_5b",
+  "model_id": "yume_5b",
+  "name": "Yume 1.5 (720p)",
+  "provider": "self-hosted (Shanghai AI Lab)",
+  "system_kind": "native",
+  "tracks": [
+    "general_interaction",
+    "general_interaction_image"
+  ],
+  "server": {
+    "cmd": "{env}/bin/python {model_dir}/server.py --port {port} --weights {weights}/Yume-5B-720P",
+    "port": 18840,
+    "health_timeout_s": 3000
+  },
+  "unsupported_ops": [
+    "reference_update"
+  ],
+  "portrait_policy": null,
+  "gpu": {
+    "count": 1
+  },
+  "output": {
+    "width": 1280,
+    "height": 704,
+    "fps": 16
+  },
+  "model_version": "Yume 1.5: Yume-5B-720P (distilled, 4 Euler steps, sigma shift 7.0, no CFG) on Wan2.2-TI2V-5B; code stdstu12/YUME (fastvideo/sample/sample_5b.py loop)",
+  "weights": {
+    "repo": "stdstu123/Yume-5B-720P@b117c778 (DiT, Wan2.2 VAE, umT5-XXL)",
+    "sha256": "recorded per session in ready.system_config.weights_sha256"
+  },
+  "license": {
+    "code": "Apache-2.0",
+    "weights": "Apache-2.0"
+  },
+  "steps": 4,
+  "notes": "Interactive world model (text + keyboard/camera as text). Text OR image start (t2v and i2v tracks). 1280x704 at 16 fps, 32-frame (8-latent) segments generated live with upstream's long-video loop: all history kept, compressed by upstream's multi-ratio memory. Each segment has its own caption (upstream per-segment captions); the caption is '<init prompt>\\n<latest instruction>', and camera_control text goes in verbatim (Yume's keyboard/camera control is text). Image start = upstream I2V first segment (center-cropped). Mid-session reference images have no model input (reference_update unsupported).",
+  "input_adapters": {
+    "general_interaction": {
+      "mode": "derived",
+      "transforms": [
+        {
+          "operation": "camera_control_as_prompt_text"
+        }
+      ]
+    },
+    "general_interaction_image": {
+      "mode": "derived",
+      "transforms": [
+        {
+          "operation": "camera_control_as_prompt_text"
+        }
+      ]
+    }
+  }
+}

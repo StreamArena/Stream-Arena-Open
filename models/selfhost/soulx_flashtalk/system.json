@@ -1,0 +1,49 @@
+{
+  "model": "soulx_flashtalk",
+  "system_id": "soulx_flashtalk",
+  "model_id": "soulx_flashtalk",
+  "name": "SoulX-FlashTalk 14B",
+  "provider": "self-hosted (Soul AI Lab)",
+  "system_kind": "composition",
+  "tracks": [
+    "digital_human_audio",
+    "digital_human_text"
+  ],
+  "server": {
+    "cmd": "{env}/bin/python -m torch.distributed.run --nproc_per_node=4 --master_port=29661 {model_dir}/server.py --port {port} --size 512*512",
+    "port": 18801,
+    "health_timeout_s": 2400
+  },
+  "composition": {
+    "input": "audio",
+    "audio_out": "server"
+  },
+  "portrait_policy": "benchmark_portrait",
+  "gpu": {
+    "count": 4
+  },
+  "output": {
+    "width": 512,
+    "height": 512,
+    "fps": 25
+  },
+  "model_version": "SoulX-FlashTalk@2ba2e1e801d59a9f526212a5aae5d374db8f2978",
+  "weights": {
+    "repo": "Soul-AILab/SoulX-FlashTalk-14B@f3fda6499a6022862cadd39fc41ae63b64706e1b",
+    "audio_encoder": "TencentGameMate/chinese-wav2vec2-base@3991242c806928916fff4a8c0e4f76acf661b743",
+    "sha256": {
+      "Wan2.1_VAE.pth": "38071ab59bd94681c686fa51d75a1968f64e470262043be31f7a094e442fd981",
+      "diffusion_pytorch_model-00001-of-00004.safetensors": "f8d9f60ed603a94e4ee04b15f56880a3002661e38e5d936efa12f9d08c2f613a",
+      "diffusion_pytorch_model-00002-of-00004.safetensors": "998792ab7c0e5a79dd249bb14bae45b5c52e2c4dca9d9151e59dfcf7c9138f7e",
+      "diffusion_pytorch_model-00003-of-00004.safetensors": "38161149af655d29976c6cdf324076afe4c34043f0dbf2e9f06ba094b6a193de",
+      "diffusion_pytorch_model-00004-of-00004.safetensors": "55f40633da5a544582a81cca1c609c49843de2e7dad2d76b8a8cbc4c8a23d9fc",
+      "models_clip_open-clip-xlm-roberta-large-vit-huge-14.pth": "628c9998b613391f193eb67ff68da9667d75f492911e4eb3decf23460a158c38",
+      "models_t5_umt5-xxl-enc-bf16.pth": "7cace0da2b446bbbbc57d031ab6cf163a3d59b366da94e5afe36745b746fd81d",
+      "chinese-wav2vec2-base/pytorch_model.bin": "be2da40c9e7ae26bfc904a3ed79ebb9e8f060bec6dba85d6a6ae86114bc38901"
+    }
+  },
+  "steps": 4,
+  "seed": 42,
+  "license": "Apache-2.0 (code and SoulX-FlashTalk-14B weights; Wan2.1 / InfiniteTalk base: Apache-2.0); chinese-wav2vec2-base: MIT",
+  "notes": "renderer-only half-body talking avatar (Wan2.1-I2V-14B / InfiniteTalk, self-correcting bidirectional distillation): 512x512, 25 fps, 28-frame / 1.12 s chunks (33-frame window, 5 motion frames), 4 steps, no CFG, 8 s rolling wav2vec context, no look-ahead; xfuser Ulysses x4; TTS speech arrives as audio_in and is passed through as audio_out in sync with the frames it drove"
+}

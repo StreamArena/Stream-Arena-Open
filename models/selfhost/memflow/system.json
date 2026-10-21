@@ -1,0 +1,49 @@
+{
+  "model": "memflow",
+  "system_id": "memflow_1p3b",
+  "model_id": "memflow_1p3b",
+  "name": "MemFlow",
+  "provider": "self-hosted (The University of Hong Kong, Kling Team)",
+  "system_kind": "native",
+  "tracks": [
+    "general_interaction"
+  ],
+  "server": {
+    "cmd": "{env}/bin/python {model_dir}/server.py --port {port}",
+    "port": 18814,
+    "health_timeout_s": 1800
+  },
+  "unsupported_ops": [],
+  "portrait_policy": null,
+  "gpu": {
+    "count": 1
+  },
+  "output": {
+    "width": 832,
+    "height": 480,
+    "fps": 16
+  },
+  "model_version": "MemFlow base.pt (generator) + lora.pt (rank 256; chunk-wise AR, 4-step, no CFG, memory bank) on Wan2.1-T2V-1.3B; code KlingAIResearch/MemFlow@7ed514771f5a (configs/interactive_inference.yaml)",
+  "weights": {
+    "repo": "KlingTeam/MemFlow@c41043fd (base.pt, lora.pt) + Wan-AI/Wan2.1-T2V-1.3B (umT5-XXL text encoder, Wan2.1 VAE, DiT config)",
+    "sha256": {
+      "MemFlow/base.pt": "10a2aa8fcf89c77d9033f4c117405412a690e289625766619d293f0c5a208ee7",
+      "MemFlow/lora.pt": "1dec690a21efbf4f1941f74337970696345449b9973035517a742f075e5f781a",
+      "wan_models/Wan2.1-T2V-1.3B/models_t5_umt5-xxl-enc-bf16.pth": "7cace0da2b446bbbbc57d031ab6cf163a3d59b366da94e5afe36745b746fd81d",
+      "wan_models/Wan2.1-T2V-1.3B/Wan2.1_VAE.pth": "38071ab59bd94681c686fa51d75a1968f64e470262043be31f7a094e442fd981"
+    }
+  },
+  "license": "Apache-2.0 (repository); LongLive-derived source files carry CC BY-NC-SA 4.0 headers; weights: no licence stated on the model card",
+  "steps": 4,
+  "notes": "Text-to-video only: an opening image cannot be given, so the image + text (i2v) track is not registered. 832x480 at 16 fps, 3-latent (12-frame) causal blocks generated live with upstream interactive_inference.yaml settings (4 warped steps, local attention 12 latents, sink 3 with global sink, memory bank 3 frames updated every 9 latents, sparse memory activation off as released). Prompt changes use upstream's interactive switch (cross-attention reset + KV re-cache of the last 12 latents under the new prompt). The block prompt is '<init prompt>\\n<latest instruction>'; camera_control text is given as prompt text because the model has no camera input. Temporal RoPE table extended from 1024 to 4096 positions (same formula) for 300-second sessions.",
+  "input_adapters": {
+    "general_interaction": {
+      "mode": "derived",
+      "transforms": [
+        {
+          "operation": "camera_control_as_prompt_text"
+        }
+      ]
+    }
+  }
+}

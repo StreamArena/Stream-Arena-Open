@@ -1,0 +1,85 @@
+[
+  {
+    "model": "avatar_forever",
+    "system_id": "avatar_forever",
+    "model_id": "avatar_forever",
+    "name": "Avatar-Forever 22B",
+    "provider": "self-hosted (PolyU / ByteDance)",
+    "system_kind": "native",
+    "tracks": [
+      "avatar_performance"
+    ],
+    "server": {
+      "cmd": "{env}/bin/python {model_dir}/server.py --port {port} --size 640*640",
+      "port": 18871,
+      "health_timeout_s": 3600
+    },
+    "portrait_policy": "benchmark_portrait",
+    "gpu": {
+      "count": 1
+    },
+    "output": {
+      "width": 640,
+      "height": 640,
+      "fps": 25
+    },
+    "model_version": "leeruibin/avatarforever@4dfc42b0e2dbbded4d148387d186219bd7601279",
+    "weights": {
+      "repo": "LetsThink/AvatarForever@622ea82482c09e7fb2d8e29cb7ff1d009c820f05",
+      "text_encoder": "google/gemma-3-12b-it-qat-q4_0-unquantized (gated on Hugging Face; revision not pinned)",
+      "sha256": {
+        "avatarforever-ltx-2.3-22b.safetensors": "08dea67ed3d35a75da49b056ce2ca59a0e9ce538b429143fb9022c9bd5c3b145"
+      }
+    },
+    "license": {
+      "code": "LTX-2 Community License Agreement (repo LICENSE)",
+      "weights": "LTX-2 Community License Agreement (LTX-2.3 derivative; the HF repo has no model card); Gemma 3: Gemma Terms of Use"
+    },
+    "steps": 4,
+    "notes": "Portrait + supplied speech (audio_in) -> 640x640 25 fps video in 32-frame AR chunks (upstream sampler, 4 steps, 1 history chunk + first-chunk sink, one GPU). Visual controls go into the text prompt of the next AR chunk (control map avatarforever-control-map/1); camera / scene / appearance-only controls are acked unsupported. Each chunk is conditioned on audio up to 0.28 s past its last frame (upstream's audio-to-chunk alignment), so it starts only after that audio has arrived. audio_out = the received speech, frame-aligned."
+  },
+  {
+    "model": "avatar_forever",
+    "system_id": "avatar_forever_comp",
+    "model_id": "avatar_forever_comp",
+    "name": "Avatar-Forever 22B",
+    "provider": "self-hosted (PolyU / ByteDance)",
+    "system_kind": "composition",
+    "tracks": [
+      "digital_human_audio",
+      "digital_human_text"
+    ],
+    "server": {
+      "cmd": "{env}/bin/python {model_dir}/server.py --port {port} --size 640*640",
+      "port": 18872,
+      "health_timeout_s": 3600
+    },
+    "portrait_policy": "benchmark_portrait",
+    "gpu": {
+      "count": 1
+    },
+    "output": {
+      "width": 640,
+      "height": 640,
+      "fps": 25
+    },
+    "composition": {
+      "input": "audio",
+      "audio_out": "server"
+    },
+    "model_version": "leeruibin/avatarforever@4dfc42b0e2dbbded4d148387d186219bd7601279",
+    "weights": {
+      "repo": "LetsThink/AvatarForever@622ea82482c09e7fb2d8e29cb7ff1d009c820f05",
+      "text_encoder": "google/gemma-3-12b-it-qat-q4_0-unquantized (gated on Hugging Face; revision not pinned)",
+      "sha256": {
+        "avatarforever-ltx-2.3-22b.safetensors": "08dea67ed3d35a75da49b056ce2ca59a0e9ce538b429143fb9022c9bd5c3b145"
+      }
+    },
+    "license": {
+      "code": "LTX-2 Community License Agreement (repo LICENSE)",
+      "weights": "LTX-2 Community License Agreement (LTX-2.3 derivative; the HF repo has no model card); Gemma 3: Gemma Terms of Use"
+    },
+    "steps": 4,
+    "notes": "Renderer only: the harness's shared DashScope ASR -> Qwen LLM -> Qwen TTS stack pushes the TTS speech as audio_in; the server lip-syncs the portrait to it (upstream default motion/stability prompt) and plays it back as audio_out (frame-aligned)."
+  }
+]

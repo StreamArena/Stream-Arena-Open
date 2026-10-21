@@ -1,0 +1,49 @@
+{
+  "model": "alayaworld",
+  "system_id": "alayaworld",
+  "model_id": "alayaworld",
+  "name": "AlayaWorld (image + text only)",
+  "provider": "self-hosted (Alaya Lab)",
+  "system_kind": "native",
+  "tracks": [
+    "general_interaction_image"
+  ],
+  "server": {
+    "cmd": "{env}/bin/python {model_dir}/server.py --port {port}",
+    "port": 18850,
+    "health_timeout_s": 3600
+  },
+  "unsupported_ops": [
+    "reference_update"
+  ],
+  "portrait_policy": null,
+  "gpu": {
+    "count": 1
+  },
+  "output": {
+    "width": 960,
+    "height": 544,
+    "fps": 24
+  },
+  "model_version": "AlayaWorld da3 interactive path: merged_infer.safetensors (AR + DMD, 4 steps) on LTX-2.3 22B, Gemma 3 12B text encoder, Depth-Anything-3 spatial memory; upstream reactor/alayaworld.py adapter settings",
+  "weights": {
+    "repo": "AlayaLab/AlayaWorld (merged_infer.safetensors, revision pinned in reactor/alayaworld.yaml) + google/gemma-3-12b-it-qat-q4_0-unquantized (gated on Hugging Face; also available from ModelScope) + depth-anything/DA3NESTED-GIANT-LARGE-1.1, all at the revisions pinned in reactor/alayaworld.yaml",
+    "sha256": "recorded per session in ready.system_config.weights_sha256"
+  },
+  "license": {
+    "code": "LTX-2 Community License Agreement (repo LICENSE)",
+    "weights": "LTX-2 Community License Agreement (HF model card); Gemma 3: Gemma Terms of Use; DA3NESTED-GIANT-LARGE-1.1: CC BY-NC 4.0 (non-commercial)"
+  },
+  "steps": 4,
+  "notes": "Image-to-video world model: the released interactive path starts from an image, so only the i2v (image + text) track is registered. 960x544 at 24 fps, 32-frame chunks generated live through AlayaLab's own interactive adapter (reactor/alayaworld.py, the browser demo's model class) with its serving settings. A prompt change applies from the next chunk; the block prompt is '<init prompt>\\n<latest instruction>' and camera_control text is given as prompt text (the six native camera axes are held at zero, i.e. a static camera). Mid-session reference images have no model input (reference_update unsupported). See README.",
+  "input_adapters": {
+    "general_interaction_image": {
+      "mode": "derived",
+      "transforms": [
+        {
+          "operation": "camera_control_as_prompt_text"
+        }
+      ]
+    }
+  }
+}

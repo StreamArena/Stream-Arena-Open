@@ -1,0 +1,89 @@
+[
+  {
+    "model": "avatarforcing",
+    "system_id": "avatarforcing",
+    "model_id": "avatarforcing",
+    "name": "AvatarForcing 1.3B",
+    "provider": "self-hosted (Kling Team, Kuaishou)",
+    "system_kind": "native",
+    "tracks": [
+      "avatar_performance"
+    ],
+    "server": {
+      "cmd": "{env}/bin/python {model_dir}/server.py --port {port}",
+      "port": 18891,
+      "health_timeout_s": 1800
+    },
+    "portrait_policy": "benchmark_portrait",
+    "gpu": {
+      "count": 1
+    },
+    "output": {
+      "width": 640,
+      "height": 624,
+      "fps": 25
+    },
+    "model_version": "KlingAIResearch/AvatarForcing@63b73e6c0f7bb42180ca6d7e1bf11c1de1a80b39",
+    "weights": {
+      "repo": "lycui/AvatarForcing@e2448919a7b535c29f34e07892884ae1a43c6ace",
+      "text_encoder_vae": "Wan-AI/Wan2.1-T2V-1.3B",
+      "audio_encoder": "facebook/wav2vec2-base-960h",
+      "sha256": {
+        "AvatarForcing/model.pt": "63dd0b3841f4cd2e4f13f810b98ee4fa1695586c600b6ccd1e382477cbdbb2b3",
+        "Wan2.1-T2V-1.3B/Wan2.1_VAE.pth": "38071ab59bd94681c686fa51d75a1968f64e470262043be31f7a094e442fd981",
+        "Wan2.1-T2V-1.3B/models_t5_umt5-xxl-enc-bf16.pth": "7cace0da2b446bbbbc57d031ab6cf163a3d59b366da94e5afe36745b746fd81d",
+        "wav2vec2-base-960h/model.safetensors": "8aa76ab2243c81747a1f832954586bc566090c83a0ac167df6f31f0fa917d74a"
+      }
+    },
+    "steps": 1,
+    "seed": 42,
+    "license": "Conflicting: Apache-2.0 (README) vs academic-use-only terms (repository LICENSE.txt, Tencent RollingForcing licence text); the HF weights repo states no licence; Wan2.1 T5/VAE: Apache-2.0; wav2vec2-base-960h: Apache-2.0",
+    "notes": "Portrait + supplied speech (audio_in) -> 640x624 25 fps video, one-step local-future sliding window (4 blocks of 16 frames at staggered noise levels, one DiT pass per block; causal Wan2.1-1.3B + LoRA + audio pack). Disclosed look-ahead: a block is final only after the 3 following blocks entered the window, so its frames need audio 1.92 s past their end. Visual controls are appended to the text prompt from the next window step (control map avatarforcing-control-map/1); controls without body / face content are acked unsupported. audio_out = the received speech, frame-aligned."
+  },
+  {
+    "model": "avatarforcing",
+    "system_id": "avatarforcing_comp",
+    "model_id": "avatarforcing_comp",
+    "name": "AvatarForcing 1.3B",
+    "provider": "self-hosted (Kling Team, Kuaishou)",
+    "system_kind": "composition",
+    "tracks": [
+      "digital_human_audio",
+      "digital_human_text"
+    ],
+    "server": {
+      "cmd": "{env}/bin/python {model_dir}/server.py --port {port}",
+      "port": 18892,
+      "health_timeout_s": 1800
+    },
+    "composition": {
+      "input": "audio",
+      "audio_out": "server"
+    },
+    "portrait_policy": "benchmark_portrait",
+    "gpu": {
+      "count": 1
+    },
+    "output": {
+      "width": 640,
+      "height": 624,
+      "fps": 25
+    },
+    "model_version": "KlingAIResearch/AvatarForcing@63b73e6c0f7bb42180ca6d7e1bf11c1de1a80b39",
+    "weights": {
+      "repo": "lycui/AvatarForcing@e2448919a7b535c29f34e07892884ae1a43c6ace",
+      "text_encoder_vae": "Wan-AI/Wan2.1-T2V-1.3B",
+      "audio_encoder": "facebook/wav2vec2-base-960h",
+      "sha256": {
+        "AvatarForcing/model.pt": "63dd0b3841f4cd2e4f13f810b98ee4fa1695586c600b6ccd1e382477cbdbb2b3",
+        "Wan2.1-T2V-1.3B/Wan2.1_VAE.pth": "38071ab59bd94681c686fa51d75a1968f64e470262043be31f7a094e442fd981",
+        "Wan2.1-T2V-1.3B/models_t5_umt5-xxl-enc-bf16.pth": "7cace0da2b446bbbbc57d031ab6cf163a3d59b366da94e5afe36745b746fd81d",
+        "wav2vec2-base-960h/model.safetensors": "8aa76ab2243c81747a1f832954586bc566090c83a0ac167df6f31f0fa917d74a"
+      }
+    },
+    "steps": 1,
+    "seed": 42,
+    "license": "Conflicting: Apache-2.0 (README) vs academic-use-only terms (repository LICENSE.txt, Tencent RollingForcing licence text); the HF weights repo states no licence; Wan2.1 T5/VAE: Apache-2.0; wav2vec2-base-960h: Apache-2.0",
+    "notes": "Renderer only: the client's shared DashScope ASR -> Qwen LLM -> Qwen TTS stack pushes the TTS speech as audio_in; the server lip-syncs the portrait to it (generic talking-portrait caption) and plays it back as audio_out (frame-aligned). Disclosed 1.92 s audio look-ahead (sliding window)."
+  }
+]

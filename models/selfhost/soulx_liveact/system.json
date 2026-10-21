@@ -1,0 +1,93 @@
+[
+  {
+    "model": "soulx_liveact",
+    "system_id": "soulx_liveact",
+    "model_id": "soulx_liveact",
+    "name": "SoulX-LiveAct 18B",
+    "provider": "self-hosted (Soul AI Lab)",
+    "system_kind": "native",
+    "tracks": [
+      "avatar_performance"
+    ],
+    "server": {
+      "cmd": "{env}/bin/torchrun --nproc_per_node=2 --master_port=29641 {model_dir}/server.py --port {port} --size 512*512 --fps 20",
+      "port": 18771,
+      "health_timeout_s": 1800
+    },
+    "portrait_policy": "benchmark_portrait",
+    "gpu": {
+      "count": 2
+    },
+    "output": {
+      "width": 512,
+      "height": 512,
+      "fps": 20
+    },
+    "model_version": "SoulX-LiveAct@ac8579b907756f228e975922a5159765c93c6a34",
+    "weights": {
+      "repo": "Soul-AILab/LiveAct@1bcdef1d8941edf2a9a6e1d21f5657f0a69fcd37",
+      "audio_encoder": "TencentGameMate/chinese-wav2vec2-base@3991242c806928916fff4a8c0e4f76acf661b743",
+      "sha256": {
+        "diffusion_pytorch_model-00001-of-00004.safetensors": "13f67d7fb1299ea57377e79e104e4b6b6b5d0dc6169996de150603718c50903c",
+        "diffusion_pytorch_model-00002-of-00004.safetensors": "bb0093088a6f6ff6cfe6a3d96cdeb308a1c9c707174d703140dd228d244482a4",
+        "diffusion_pytorch_model-00003-of-00004.safetensors": "11dc45940b21e438959da11ef2f4a35d844d433715361d32c74373748d312ea8",
+        "diffusion_pytorch_model-00004-of-00004.safetensors": "4f56758049531a0dbc2c375b6a0b6a84818888d15e617c15c2e85e8cab26a67f",
+        "Wan2.1_VAE.pth": "38071ab59bd94681c686fa51d75a1968f64e470262043be31f7a094e442fd981",
+        "models_clip_open-clip-xlm-roberta-large-vit-huge-14.pth": "628c9998b613391f193eb67ff68da9667d75f492911e4eb3decf23460a158c38",
+        "models_t5_umt5-xxl-enc-bf16.pth": "7cace0da2b446bbbbc57d031ab6cf163a3d59b366da94e5afe36745b746fd81d",
+        "chinese-wav2vec2-base/pytorch_model.bin": "be2da40c9e7ae26bfc904a3ed79ebb9e8f060bec6dba85d6a6ae86114bc38901"
+      }
+    },
+    "steps": 3,
+    "license": "code: no licence file upstream (all rights reserved by default); weights: LiveAct Apache-2.0 (model card), chinese-wav2vec2-base MIT",
+    "notes": "Portrait + supplied speech (audio_in) -> lip-synced video at 20 fps in 32-frame blocks (Ulysses SP x2; bf16 GEMM, cuDNN SDPA self-attention, torch.compile). Visual controls replace the action/emotion text prompt of the next block (control map liveact-control-map/1); camera/scene/appearance-only controls are acked unsupported. audio_out = the received speech, frame-aligned."
+  },
+  {
+    "model": "soulx_liveact",
+    "system_id": "soulx_liveact_comp",
+    "model_id": "soulx_liveact_comp",
+    "name": "SoulX-LiveAct 18B",
+    "provider": "self-hosted (Soul AI Lab)",
+    "system_kind": "composition",
+    "tracks": [
+      "digital_human_audio",
+      "digital_human_text"
+    ],
+    "server": {
+      "cmd": "{env}/bin/torchrun --nproc_per_node=2 --master_port=29642 {model_dir}/server.py --port {port} --size 512*512 --fps 20",
+      "port": 18772,
+      "health_timeout_s": 1800
+    },
+    "portrait_policy": "benchmark_portrait",
+    "gpu": {
+      "count": 2
+    },
+    "output": {
+      "width": 512,
+      "height": 512,
+      "fps": 20
+    },
+    "composition": {
+      "input": "audio",
+      "audio_out": "server"
+    },
+    "model_version": "SoulX-LiveAct@ac8579b907756f228e975922a5159765c93c6a34",
+    "weights": {
+      "repo": "Soul-AILab/LiveAct@1bcdef1d8941edf2a9a6e1d21f5657f0a69fcd37",
+      "audio_encoder": "TencentGameMate/chinese-wav2vec2-base@3991242c806928916fff4a8c0e4f76acf661b743",
+      "sha256": {
+        "diffusion_pytorch_model-00001-of-00004.safetensors": "13f67d7fb1299ea57377e79e104e4b6b6b5d0dc6169996de150603718c50903c",
+        "diffusion_pytorch_model-00002-of-00004.safetensors": "bb0093088a6f6ff6cfe6a3d96cdeb308a1c9c707174d703140dd228d244482a4",
+        "diffusion_pytorch_model-00003-of-00004.safetensors": "11dc45940b21e438959da11ef2f4a35d844d433715361d32c74373748d312ea8",
+        "diffusion_pytorch_model-00004-of-00004.safetensors": "4f56758049531a0dbc2c375b6a0b6a84818888d15e617c15c2e85e8cab26a67f",
+        "Wan2.1_VAE.pth": "38071ab59bd94681c686fa51d75a1968f64e470262043be31f7a094e442fd981",
+        "models_clip_open-clip-xlm-roberta-large-vit-huge-14.pth": "628c9998b613391f193eb67ff68da9667d75f492911e4eb3decf23460a158c38",
+        "models_t5_umt5-xxl-enc-bf16.pth": "7cace0da2b446bbbbc57d031ab6cf163a3d59b366da94e5afe36745b746fd81d",
+        "chinese-wav2vec2-base/pytorch_model.bin": "be2da40c9e7ae26bfc904a3ed79ebb9e8f060bec6dba85d6a6ae86114bc38901"
+      }
+    },
+    "steps": 3,
+    "license": "code: no licence file upstream (all rights reserved by default); weights: LiveAct Apache-2.0 (model card), chinese-wav2vec2-base MIT",
+    "notes": "Renderer only: the client's shared DashScope ASR -> Qwen LLM -> Qwen TTS stack pushes the TTS speech as audio_in; the server lip-syncs the portrait to it and plays it back as audio_out (frame-aligned). Dialogue text events are acked unsupported."
+  }
+]

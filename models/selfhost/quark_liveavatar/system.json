@@ -1,0 +1,93 @@
+[
+  {
+    "model": "quark_liveavatar",
+    "system_id": "quark_liveavatar",
+    "model_id": "quark_liveavatar",
+    "name": "Quark Live Avatar 14B",
+    "provider": "self-hosted (Alibaba Quark)",
+    "system_kind": "native",
+    "tracks": [
+      "avatar_performance"
+    ],
+    "server": {
+      "cmd": "{env}/bin/torchrun --nproc_per_node=5 --master_port=29651 {model_dir}/server.py --port {port} --size 512*512",
+      "port": 18781,
+      "health_timeout_s": 3600
+    },
+    "portrait_policy": "benchmark_portrait",
+    "gpu": {
+      "count": 5
+    },
+    "output": {
+      "width": 512,
+      "height": 512,
+      "fps": 25
+    },
+    "model_version": "LiveAvatar@c3c47d031d8bf3247428333c1fe610579c71a551",
+    "weights": {
+      "repo": "Wan-AI/Wan2.2-S2V-14B@dab4e9c55bbe4c8c4d03db1c2c98c7f0ac9c454b",
+      "lora": "Quark-Vision/Live-Avatar@92cdccd12a91e8a63767a7c821b7c75e51d5a172",
+      "sha256": {
+        "Wan2.2-S2V-14B/diffusion_pytorch_model-00001-of-00004.safetensors": "5fb54febf10b729a6da7da222625d6ecaedde78becda01efbc13f6bebaeb6d43",
+        "Wan2.2-S2V-14B/diffusion_pytorch_model-00002-of-00004.safetensors": "922928094d8ea9b075888d473b7f9bf80ec60852eb83934079141b161a186f01",
+        "Wan2.2-S2V-14B/diffusion_pytorch_model-00003-of-00004.safetensors": "017fab8d2845976c9555df841765255118552fbad3e6760629342b47c36c24fc",
+        "Wan2.2-S2V-14B/diffusion_pytorch_model-00004-of-00004.safetensors": "5c194909066b8d7ed91f2c214389aa7ec7f25c60e3dd10ba8f607daf4f5cc6c0",
+        "Wan2.2-S2V-14B/Wan2.1_VAE.pth": "38071ab59bd94681c686fa51d75a1968f64e470262043be31f7a094e442fd981",
+        "Wan2.2-S2V-14B/models_t5_umt5-xxl-enc-bf16.pth": "7cace0da2b446bbbbc57d031ab6cf163a3d59b366da94e5afe36745b746fd81d",
+        "Wan2.2-S2V-14B/wav2vec2-large-xlsr-53-english/model.safetensors": "6144f8464c6aaa220dd57c5a2ad4039b5710dcf8ee6e67057675f76597c19875",
+        "LiveAvatar/liveavatar.safetensors": "fc96b161452c80be46a570e8574ed077703a7f8d66b8313f8023ce580c8448f9"
+      }
+    },
+    "steps": 4,
+    "notes": "Portrait + supplied speech (audio_in) -> lip-synced video at 25 fps in 12-frame blocks (upstream timestep-forcing pipeline: 4 DiT GPUs, one denoising step each, + 1 streaming-VAE GPU; bf16, cuDNN attention, torch.compile). Visual controls are appended to the text prompt of the next block (control map liveavatar-control-map/1); controls without body / face content are acked unsupported. audio_out = the received speech, frame-aligned.",
+    "license": "code Apache-2.0; weights Apache-2.0 (Quark-Vision/Live-Avatar, Wan-AI/Wan2.2-S2V-14B)"
+  },
+  {
+    "model": "quark_liveavatar",
+    "system_id": "quark_liveavatar_comp",
+    "model_id": "quark_liveavatar_comp",
+    "name": "Quark Live Avatar 14B",
+    "provider": "self-hosted (Alibaba Quark)",
+    "system_kind": "composition",
+    "tracks": [
+      "digital_human_audio",
+      "digital_human_text"
+    ],
+    "server": {
+      "cmd": "{env}/bin/torchrun --nproc_per_node=5 --master_port=29652 {model_dir}/server.py --port {port} --size 512*512",
+      "port": 18782,
+      "health_timeout_s": 3600
+    },
+    "portrait_policy": "benchmark_portrait",
+    "gpu": {
+      "count": 5
+    },
+    "output": {
+      "width": 512,
+      "height": 512,
+      "fps": 25
+    },
+    "composition": {
+      "input": "audio",
+      "audio_out": "server"
+    },
+    "model_version": "LiveAvatar@c3c47d031d8bf3247428333c1fe610579c71a551",
+    "weights": {
+      "repo": "Wan-AI/Wan2.2-S2V-14B@dab4e9c55bbe4c8c4d03db1c2c98c7f0ac9c454b",
+      "lora": "Quark-Vision/Live-Avatar@92cdccd12a91e8a63767a7c821b7c75e51d5a172",
+      "sha256": {
+        "Wan2.2-S2V-14B/diffusion_pytorch_model-00001-of-00004.safetensors": "5fb54febf10b729a6da7da222625d6ecaedde78becda01efbc13f6bebaeb6d43",
+        "Wan2.2-S2V-14B/diffusion_pytorch_model-00002-of-00004.safetensors": "922928094d8ea9b075888d473b7f9bf80ec60852eb83934079141b161a186f01",
+        "Wan2.2-S2V-14B/diffusion_pytorch_model-00003-of-00004.safetensors": "017fab8d2845976c9555df841765255118552fbad3e6760629342b47c36c24fc",
+        "Wan2.2-S2V-14B/diffusion_pytorch_model-00004-of-00004.safetensors": "5c194909066b8d7ed91f2c214389aa7ec7f25c60e3dd10ba8f607daf4f5cc6c0",
+        "Wan2.2-S2V-14B/Wan2.1_VAE.pth": "38071ab59bd94681c686fa51d75a1968f64e470262043be31f7a094e442fd981",
+        "Wan2.2-S2V-14B/models_t5_umt5-xxl-enc-bf16.pth": "7cace0da2b446bbbbc57d031ab6cf163a3d59b366da94e5afe36745b746fd81d",
+        "Wan2.2-S2V-14B/wav2vec2-large-xlsr-53-english/model.safetensors": "6144f8464c6aaa220dd57c5a2ad4039b5710dcf8ee6e67057675f76597c19875",
+        "LiveAvatar/liveavatar.safetensors": "fc96b161452c80be46a570e8574ed077703a7f8d66b8313f8023ce580c8448f9"
+      }
+    },
+    "steps": 4,
+    "notes": "Renderer only: the client's shared DashScope ASR -> Qwen LLM -> Qwen TTS stack pushes the TTS speech as audio_in; the server lip-syncs the portrait to it and plays it back as audio_out (frame-aligned).",
+    "license": "code Apache-2.0; weights Apache-2.0 (Quark-Vision/Live-Avatar, Wan-AI/Wan2.2-S2V-14B)"
+  }
+]
