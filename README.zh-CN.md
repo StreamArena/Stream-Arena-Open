@@ -1,11 +1,6 @@
 <div align="left">
 
-<h1 align="left">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/streameval-wordmark-dark.png" />
-    <img src="assets/streameval-wordmark.png" alt="StreamEval" width="175" />
-  </picture>
-</h1>
+<h1 align="left"><img src="assets/streameval-logo.png" alt="" width="36" height="36" align="absmiddle" />&ensp;StreamEval</h1>
 
 **交互式流式视频生成模型评测基准**
 
