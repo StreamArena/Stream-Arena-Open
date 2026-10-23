@@ -18,7 +18,14 @@
 
 </div>
 
-StreamEval evaluates interactive streaming video generation across five tasks and 15–300-second sessions. Inputs arrive incrementally to test how systems follow new requests and preserve context. The harness records outputs and timestamps for automated evaluation.
+StreamEval evaluates interactive streaming video generation in sessions lasting 15 to 300 seconds.
+
+Our benchmark has four key features:
+
+- **First interactive streaming video generation benchmark:** Tests how systems respond to new requests and preserve context as video is generated.
+- **Fully open:** Benchmark data, evaluation code, protocols, and scoring rules are publicly available.
+- **Comprehensive coverage:** Five tasks and ten metrics span avatar interaction, world generation, and video editing.
+- **Updated monthly:** We will evaluate new and updated models and publish leaderboard results monthly.
 
 ## Tasks and metrics
 
